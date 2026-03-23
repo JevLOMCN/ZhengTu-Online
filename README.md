@@ -12,14 +12,16 @@
 
 ## 🎮 About The Game
 
-**征途 (ZhengTu Online)** is a classic **2D MMORPG** developed by Giant Network.  
-Originally released in the mid-2000s, it became one of China’s most successful online games, featuring massive PvP systems and large-scale nation warfare. :contentReference[oaicite:0]{index=0}  
+征途 (ZhengTu Online) is a classic 2D MMORPG developed by Giant Network.  
+Released in the mid-2000s, it became one of China’s most successful online games, known for its massive PvP systems and nation-based warfare.
+
+At its peak, the game reached millions of players and supported extremely large concurrent battles.
 
 ---
 
 ## 🌐 Official Website
 
-👉 https://zt.ztgame.com/
+https://zt.ztgame.com/
 
 ---
 
@@ -33,17 +35,11 @@ Originally released in the mid-2000s, it became one of China’s most successful
 
 ## ⚔️ Core Features
 
-- 🏹 **Nation Warfare** – Large-scale PvP between entire nations  
-- 🧙 **Character Progression** – Skills, leveling, gear upgrades  
-- 💰 **Player Economy** – Trading, markets, and item systems  
-- 🎯 **Quests & Events** – Structured progression and activities  
-- 🎭 **Cosmetics & Systems** – Fashion, collections, enhancements  
-
----
-
-## 📂 Project Structure (Placeholder)
-
-
+- Nation Warfare – Large-scale PvP between entire nations  
+- Character Progression – Skills, leveling, gear upgrades  
+- Player Economy – Trading, markets, and item systems  
+- Quests & Events – Structured progression and activities  
+- Cosmetics & Systems – Fashion, collections, enhancements  
 
 ---
 
@@ -51,77 +47,133 @@ Originally released in the mid-2000s, it became one of China’s most successful
 
 ### I. Directory Structure and File Description
 
-#### 🧩 Core Servers
+Core Servers:
 
-- **Base Server Core**  
+- Base Server Core  
   Contains shared logic, utility functions, database wrappers, and network abstractions.
 
-- **BillServer**  
-  Handles communication with platform services, including payment and currency conversion.
+- BillServer  
+  Handles communication with platform systems, including point card and currency conversion.
 
-- **GatewayServer**  
+- GatewayServer  
   Routes player messages between client and backend services.
 
-- **RecordServer**  
+- RecordServer  
   File server responsible for persistent storage (no caching layer).
 
-- **ScenesServer**  
-  Core gameplay server handling:
-  - Maps
-  - Quests
-  - Trading
-  - PvP
-  - Skills
-  - NPCs  
+- ScenesServer  
+  Handles map management, quest system, trading, PvP, skills, and NPC logic.
 
-- **SessionServer**  
-  Maintains global player state:
-  - Player sessions
-  - Social systems (guilds, friends, family, mentor)
-  - Battle & competition systems  
+- SessionServer  
+  Maintains global player state including social systems (guild, friends, mentor, family), battle systems, and competition systems.
 
-- **MiniServer**  
-  Handles mini-games (e.g. card games, board games).
+- MiniServer  
+  Provides mini-games such as card and board games.
 
-- **SuperServer**  
+- SuperServer  
   Server manager / coordinator.
 
 ---
 
-#### 📁 Data & Scripts
+Data & Scripts:
 
-- **Map Configuration**  
-  XML-based map configuration files (undocumented format).
+- Map Configuration  
+  XML-based map configuration (undocumented).
 
-- **New Quest System**  
-  LUA-based scripting system.
+- New Quest System  
+  LUA-based scripting.
 
-- **Legacy Quest System**  
-  XML-based task system (limited documentation).
+- Legacy Quest System  
+  XML-based scripts.
 
-- **Database Scripts**  
-  SQL files for:
-  - Schema creation  
-  - Initial data setup  
+- Database Scripts  
+  SQL files for database creation and initialization.
 
 ---
 
-#### 🛠️ Additional Components
+Additional Components:
 
-- **Release Output Directory**  
-  Generated build output (`make dist`).
+- Release Output  
+  Generated via: make dist
 
-- **Test Code**  
-  Unit testing and experimental code.
+- Test Code  
+  Unit tests and experimental code.
 
-- **Tools & Bots**  
-  Internal tools, automation, and test utilities.
+- Tools / Bots  
+  Internal tools and automation.
 
 ---
 
 ### II. Documents & Utilities
 
-- **ChangeLog**  
-  Generate using:
-  ```bash
-  make ChangeLog
+ChangeLog:
+make ChangeLog
+
+Doxyfile  
+Documentation generator configuration.
+
+Makefile  
+Build script.
+
+config.xml.example  
+Must be copied to config.xml and configured.
+
+Scripts:
+- findexp (search script)  
+- forbidWords (word filter)  
+- go (server startup script)  
+- gnuify-changelog.pl (ChangeLog generator)  
+- Hellow.lua (example LUA script)  
+
+Tags (ctags):
+make ctags
+
+---
+
+### III. Setup & Run
+
+1. Database Setup  
+- Create database manually  
+- Execute SQL scripts  
+- No automated installer provided  
+
+2. Configuration  
+
+cp config.xml.example config.xml  
+
+- Edit database connection settings inside config.xml  
+
+3. Build & Run  
+
+make  
+./go  
+
+---
+
+### IV. Required Third-Party Libraries
+
+gd  
+http://www.boutell.com/gd  
+
+---
+
+## 📌 Notes
+
+- Based on the original 征途 MMORPG  
+- Intended for development, learning, and preservation  
+- Some systems and formats remain undocumented  
+
+---
+
+## 📜 License
+
+This project is provided for educational purposes only.  
+All original assets, trademarks, and content belong to their respective owners.
+
+---
+
+## ❤️ Credits
+
+- Giant Network  
+- Official Website Assets  
+- Whoever leaked this
