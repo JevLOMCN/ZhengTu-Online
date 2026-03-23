@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="5246" name="初级太庙">
+	<!--new means new quest, default is quest on user-->
+	  <!--脚本编写-君有云：QQ:28030274-->
+<quest id="965246">
+		<embranchment id="10">
+			<conditions>
+        <selfcountry value="-1"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("拆除太庙任务在外国太庙接任务，在本国交任务，你将获得丰厚的经验奖励。\n任务开放时间：每天12：00-00：00，每人每天只能完成3次。等级达到90级的玩家才能拆除太庙。")
+this:ReTTMTask("建设太庙(0)")
+this:AddViewTMListBoard("查看太庙资源(0)")
+this:AddDialogItem("关于太庙(3)","Dialog1")
+this:AddDialogItem("资源快递(3)","Dialog2")
+this:AddDialogItem("太庙新玩法(3)", "Dialog3")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="20">
+			<conditions>
+        <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("拆除太庙任务在外国太庙接任务，在本国交任务，你将获得丰厚的经验奖励。\n任务开放时间：每天12：00-00：00，每人每天只能完成3次。等级达到90级的玩家才能拆除太庙。")
+this:RecvTMTask("拆除太庙(0)")
+this:ExcRecvTMTask("更换资源(0)")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>				
+	</quest>
+</event>

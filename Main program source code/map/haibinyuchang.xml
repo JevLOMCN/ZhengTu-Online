@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!--1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域  512国占复活区  256国战传送区  1024去内景后的区域  4096 攻方集合区域帮会战争 2048 国家战争拉人区域    8192国战时为绝对安全区，平时为非安全区 16384帮会所属地第三方跳转区    131072 比武岛低经验区
+262144, 比武岛中经验区
+524288,比武岛高经验区   32768皇城战守方复活区      65536皇城战攻方复活区   1048576 平时为绝对安全区，NPC争夺战时，只有交战双方才能PK
+
+ZONE_SPA_WARM	= 2097152,	//温泉温水区
+ZONE_SPA_HOT	= 4194304,	//温泉热水区
+-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="73" height="86" x="0" y="3" type="2097152" color="0,0,255,0"/>
+	<zonedef width="23" height="173" x="0" y="89" type="2097152" color="0,255,0,0"/>
+	<zonedef width="43" height="18" x="23" y="88" type="2097152" color="0,255,0,0"/>
+	<zonedef width="32" height="15" x="37" y="101" type="2097152" color="0,255,0,0"/>
+	<zonedef width="20" height="14" x="34" y="96" type="2097152" color="0,255,0,0"/>
+	<zonedef width="30" height="7" x="41" y="105" type="2097152" color="0,255,0,0"/>
+	<zonedef width="30" height="13" x="36" y="116" type="2097152" color="0,255,0,0"/>
+	<zonedef width="8" height="7" x="29" y="122" type="2097152" color="0,255,0,0"/>
+	<zonedef width="39" height="50" x="23" y="128" type="2097152" color="0,255,0,0"/>
+	<zonedef width="11" height="9" x="61" y="169" type="2097152" color="0,255,0,0"/>
+	<zonedef width="74" height="59" x="24" y="206" type="2097152" color="0,255,0,0"/>
+	<zonedef width="57" height="87" x="113" y="174" type="2097152" color="0,255,0,0"/>
+	<zonedef width="97" height="50" x="72" y="0" type="2097152" color="0,255,0,0"/>
+	<zonedef width="28" height="62" x="144" y="49" type="2097152" color="0,255,0,0"/>
+	<zonedef width="20" height="64" x="150" y="110" type="2097152" color="0,255,0,0"/>
+	<zonedef width="29" height="38" x="120" y="146" type="2097152" color="0,255,0,0"/>
+	<zonedef width="43" height="25" x="101" y="49" type="2097152" color="0,255,0,0"/>
+	<zonedef width="16" height="25" x="73" y="49" type="2097152" color="0,255,0,0"/>
+	<zonedef width="12" height="9" x="89" y="68" type="2097152" color="0,255,0,0"/>
+	<zonedef width="10" height="8" x="89" y="76" type="2097152" color="0,255,0,0"/>
+	<zonedef width="25" height="9" x="108" y="74" type="2097152" color="0,255,0,0"/>
+	<zonedef width="20" height="8" x="112" y="83" type="2097152" color="0,255,0,0"/>
+	<zonedef width="8" height="8" x="122" y="84" type="2097152" color="0,255,0,0"/>
+	<zonedef width="8" height="8" x="120" y="91" type="2097152" color="0,255,0,0"/>
+	<zonedef width="9" height="14" x="124" y="110" type="2097152" color="0,255,0,0"/>
+	<zonedef width="12" height="17" x="122" y="124" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="118" y="131" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="10" x="133" y="105" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="13" x="141" y="105" type="2097152" color="0,255,0,0"/>
+	<zonedef width="10" height="9" x="136" y="105" type="2097152" color="0,255,0,0"/>
+	<zonedef width="10" height="11" x="117" y="133" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="38" x="109" y="173" type="2097152" color="0,255,0,0"/>
+	<zonedef width="5" height="8" x="105" y="180" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="98" y="222" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="95" y="219" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="98" y="239" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="98" y="246" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="102" y="228" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="99" y="224" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="102" y="245" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="105" y="230" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="105" y="246" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="108" y="229" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="109" y="245" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="112" y="228" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="111" y="196" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="120" y="172" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="121" y="127" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="149" y="94" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="88" y="57" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="75" y="59" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="74" y="62" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="72" y="65" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="71" y="69" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="70" y="71" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="111" y="66" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="107" y="58" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="64" y="74" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="69" y="71" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="63" y="84" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="62" y="100" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="59" y="114" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="60" y="112" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="59" y="131" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="60" y="146" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="61" y="150" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="62" y="150" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="63" y="153" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="64" y="164" type="2097152" color="0,255,0,0"/>
+	<zonedef width="13" height="29" x="22" y="177" type="2097152" color="0,255,0,0"/>
+	<zonedef width="21" height="32" x="53" y="178" type="2097152" color="0,255,0,0"/>
+	<zonedef width="26" height="21" x="73" y="189" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="32" y="189" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="20" x="35" y="190" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="35" y="200" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="36" y="203" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="51" y="196" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="50" y="198" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="49" y="199" type="2097152" color="0,255,0,0"/>
+	<zonedef width="4" height="18" x="48" y="204" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="33" y="174" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="38" y="189" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="37" y="191" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="40" y="185" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="40" y="182" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="40" y="177" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="39" y="174" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="42" y="178" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="42" y="182" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="41" y="184" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="44" y="177" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="46" y="177" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="49" y="177" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="48" y="180" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="45" y="180" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="50" y="181" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="51" y="184" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="52" y="195" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="71" y="173" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="72" y="175" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="73" y="180" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="73" y="184" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="76" y="180" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="76" y="184" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="78" y="183" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="80" y="183" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="81" y="183" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="81" y="178" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="80" y="179" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="80" y="174" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="97" y="195" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="98" y="198" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="100" y="199" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="100" y="203" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="97" y="204" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="96" y="207" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="97" y="205" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="108" y="185" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="132" y="108" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="113" y="85" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="96" y="72" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="67" y="102" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="67" y="107" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="64" y="114" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="63" y="119" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="28" y="126" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="126" y="88" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="140" y="113" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="148" y="137" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="146" y="141" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="134" y="141" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="132" y="137" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="131" y="141" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="134" y="137" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="117" y="61" type="2097152" color="0,255,0,0"/>
+	<zonedef width="3" height="6" x="120" y="130" type="2097152" color="0,255,0,0"/>
+	<npc id="1032" name="石块" width="15" height="15" x="92" y="130" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="1032" name="石块" width="15" height="15" x="85" y="111" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="1032" name="石块" width="15" height="15" x="80" y="141" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="1032" name="石块" width="15" height="8" x="95" y="172" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="1032" name="石块" width="15" height="15" x="102" y="147" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="1032" name="石块" width="15" height="15" x="107" y="98" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="1608" name="小螃蟹" width="15" height="10" x="81" y="94" num="10" interval="5" color="0,255,0,0"/>
+	<npc id="1608" name="小螃蟹" width="15" height="10" x="76" y="130" num="10" interval="5" color="0,255,0,0"/>
+	<npc id="1608" name="小螃蟹" width="15" height="10" x="88" y="145" num="10" interval="5" color="0,255,0,0"/>
+	<npc id="1198" name="大白鲨" width="18" height="99" x="115" y="72" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="1199" name="大白鲨爱人" width="18" height="99" x="115" y="72" num="1" interval="7200" color="0,255,0,0"/>
+	<waypoint>
+		<point x="1" y="1"/>
+		<point x="1" y="2"/>
+		<point x="2" y="1"/>
+		<point x="2" y="2"/>
+		<point x="3" y="1"/>
+		<point x="3" y="2"/>
+		<point x="4" y="1"/>
+		<point x="4" y="2"/>
+		<point x="5" y="1"/>
+		<point x="5" y="2"/>
+		<point x="6" y="1"/>
+		<point x="6" y="2"/>
+		<point x="7" y="1"/>
+		<point x="7" y="2"/>
+		<point x="8" y="1"/>
+		<point x="8" y="2"/>
+	</waypoint>
+	<npc id="1069" name="海滨救生员" width="1" height="1" x="119" y="101" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="1031" name="温泉接待员" width="1" height="1" x="116" y="98" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="1050" name="任务" width="1" height="1" x="137" y="130" num="1" interval="1800" color="0,255,0,0"/>
+</map>

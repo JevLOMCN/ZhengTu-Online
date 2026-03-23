@@ -1,0 +1,67 @@
+	  				有关Zebra项目源代码的简要说明
+
+    项目代码：		Zebra
+    项目说明：		《征途》服务器端所有源代码及相关工具。
+    版本:		$Id$
+    作者:      		
+
+一、目录结构及文件说明
+    1.目录
+	base		服务器底层代码。一些常用小函数，数据库访问层，网络层的封装等东东。
+
+	BillServer	与平台系统之间进行消息处理的地方，进行点卡与金币转换服务。
+
+ 	GatewayServer	网关服务器，转发玩家消息到各相应服务器，转发各服务器消息到玩家。
+
+	RecordServer	档案服务器，服务器集群中唯一提供读档与写档服务器的地方。没用Cache
+
+	ScenesServer	地图管理，任务系统，交易，PK，技能以及NPC的管理在此进行。最累的地方
+
+	SessionServer	一个玩家在线时，需要维护的所有全局状态，以及整个系统需要保存的状态。
+			提供社会关系（家族，帮会，师徒，好友），对战系统，竞赛系统等系统。
+
+	MiniServer	斗地主,五子棋等休闲游戏在此
+
+	SuperServer	CAO，服务器管理器。好像是最闲的地方。
+
+	dist		运行一下make dist看看就知道了
+
+	map		地图配置文件。XML格式。暂时不知道该XML文件的TAG定义。也没看到文档
+
+	newquest	新的任务脚本，用LUA脚本文书写。
+
+	quest		老的任务脚本，用XML描述。没TAG描述的文档
+
+	release		生成的发布版本放这儿
+
+	script		LUA脚本引擎，为什么不用LUA做目录名？
+
+	sql		建库脚本，以及初始化数据的SQL脚本。没有相应的数据字典。只有些简单的注释
+
+	test		放了些个人的unit test的代码。
+
+	tools		机器人和的一些test代码。
+
+    2.文件说明
+	ChangeLog	版本更新日志，用如下命令得到最新版本:make ChangeLog
+	Doxyfile	文档生成工具的配置文件。
+	Makefile	this is a Makefile
+	config.xml.example 服务器启动时必须的配置文件。需要实例化一个具体文件，文件对象名为config.xml
+	findexp		一个搜索脚本。
+	forbidWords	过滤词汇
+	go		用该脚本运行服务器。用run不知道会不会好点。
+	gnuify-changelog.pl	生成ChangeLog文档时，被调用
+	hellow.lua	自己去看吧
+	readme		this's me
+	tags		提供给VI用的。用以下命令生成:make ctags
+
+二、创建与运行
+	 1. 建立数据库，并建立相应表格并运行初始化数据的脚本。目前手工做，没提供安装脚本。
+	 2. 创建一个config.xml.example的实例，并把里面有关数据库链接串的地方改为指向有效的地方
+	 3. 在FLServer上建立一个新的分区的配置。
+	 3. make
+	 4. ./go
+
+三、所需第三方库
+	gd	www.boutell.com/gd
+	

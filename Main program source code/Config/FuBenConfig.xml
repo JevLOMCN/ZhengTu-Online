@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- 游戏中各种功能和活动的配置表 -->
+<Config>
+<!-- 
+    副本的参数
+    FBID            副本ID
+    FBType	    副本类型 一种副本对应一种类型
+    FBMapID         副本对应的mapID
+    FBCounID        副本对应的CounID 国家ID 区或线
+    FBName          副本的名字 32字节，约8个汉字
+    StartTime       开放时间 ,格式： 20100905 23:59:47
+    LastTime        持续时间 ，单位：秒。 默认两个小时。
+    MaxOpenNumPerDay   每天可开启的最大次数。默认为3次。如果不限次数，填入副本持续时间的秒数。
+    MaxEnterNumPerDay   每天可进入的最大次数。默认为3次。如果不限次数，填入副本持续时间的秒数。
+    MaxUserCount    最大用户数量
+    MaxFBCount      最大副本数量，同时可开启的最大副本数量，默认40.
+    IsNeedTeam      是否需要组队前往 0,无需组队。 1，需要组队
+    MinTeamMembNum  队伍成员数量下限 
+    UserMinLvLimit  玩家最低等级限制
+    UserMaxLvLimit  玩家最高等级限制
+    -->
+    <FuBen FBID="1" FBType="1" FBMapID="20011" FBCounID="6" FBName="云天别墅" StartTime="20240401 00:00:00" LastTime="86400" MaxOpenNumPerDay="86400" MaxEnterNumPerDay="86400" MaxUserCount="1" MaxFBCount="40" IsNeedTeam="0"  MinTeamMembNum="2" UserMinLvLimit="30" UserMaxLvLimit="220"/>
+</Config>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5130" name="团队竞技比赛传送">
+	<!--new means new quest, default is quest on user-->
+<quest id="105130">
+			<embranchment id="1">
+			<conditions>
+				<timer start="19:00:00" end="19:29:59"/>
+				<teamed/>
+				<nation value="8"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;开放时间：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;每天19:00-19:30开放龙脉争夺赛！此项活动仅限组队进入，非单人比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;游戏规则：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;玩家组队进入争夺地图中央的龙脉积分旗，那个团队砍倒积分旗(刷新时间10秒刷新)，团队将获得比赛积分牌，积分牌可右键兑换物品！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;队伍有人死亡，可在当前地图复活！此项比赛不区分国家为世界团队比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("参加龙脉争夺赛(0)", "v5130", 1000, 1)
+this:AddDialogItem("离开","MainDialog")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<timer start="19:00:00" end="19:29:59"/>
+			  	<teamed/>
+				<nation value="12"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;开放时间：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;每天19:00-19:30开放龙脉争夺赛！此项活动仅限组队进入，非单人比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;游戏规则：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;玩家组队进入争夺地图中央的龙脉积分旗，那个团队砍倒积分旗(刷新时间10秒刷新)，团队将获得比赛积分牌，积分牌可右键兑换物品！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;队伍有人死亡，可在当前地图复活！此项比赛不区分国家为世界团队比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("参加龙脉争夺赛(0)", "v5130", 1000, 2)
+this:AddDialogItem("离开","MainDialog")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	<embranchment id="3">
+			<conditions>
+	     <timer start="19:00:00" end="19:29:59"/>
+				</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;开放时间：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;每天19:00-19:30开放龙脉争夺赛！此项活动仅限组队进入，非单人比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;游戏规则：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;玩家组队进入争夺地图中央的龙脉积分旗，那个团队砍倒积分旗(刷新时间10秒刷新)，团队将获得比赛积分牌，积分牌可右键兑换物品！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;队伍有人死亡，可在当前地图复活！此项比赛不区分国家为世界团队比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("参加团队竞技赛(0)", "v5130", 1000, 3)
+this:AddDialogItem("离开","MainDialog")
+end
+				</menu>
+			</actions>
+		</embranchment>	
+		<embranchment id="4">
+			<conditions>
+				</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;开放时间：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;每天19:00-19:30开放龙脉争夺赛！此项活动仅限组队进入，非单人比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;游戏规则：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;玩家组队进入争夺地图中央的龙脉积分旗，那个团队砍倒积分旗(刷新时间10秒刷新)，团队将获得比赛积分牌，积分牌可右键兑换物品！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;队伍有人死亡，可在当前地图复活！此项比赛不区分国家为世界团队比赛！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("参加团队竞技赛(0)", "v5130", 1000, 4)
+this:AddDialogItem("离开","MainDialog")
+end
+				</menu>
+			</actions>
+		</embranchment>				
+	</quest>
+<quest id="1000" new="1">
+		<embranchment id="1" active="1"><!--汉国玩家进入-->
+			<conditions>
+		  <isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·龙脉争夺战" pos="26,30"/>
+				<notify6 content="参与龙脉争夺战成功,请前往地图中央争夺龙脉积分旗吧！砍倒一次团队均可获得奖励！"/>
+        <var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1"><!--楚国玩家进入-->
+			<conditions>
+		  <isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·龙脉争夺战" pos="100,44"/>
+				<notify6 content="参与龙脉争夺战成功,请前往地图中央争夺龙脉积分旗吧！砍倒一次团队均可获得奖励！"/>
+                           <var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+		<embranchment id="3" active="1"><!--非组队玩家进入-->
+			<conditions>
+		  <isguard/>
+			</conditions>
+			<actions>
+				<notify6 content="你没有队伍不能参与此活动"/>
+                         <var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+		<embranchment id="4" active="1"><!--非组队玩家进入-->
+			<conditions>
+		  <isguard/>
+			</conditions>
+			<actions>
+				<notify6 content="不在活动时间,无法进入！"/>
+                        <var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>			
+</quest>		
+</event>

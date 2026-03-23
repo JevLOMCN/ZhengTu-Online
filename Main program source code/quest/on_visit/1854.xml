@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- Edited with XMLSPY C.+ v2007 rel. 2 U  by QQ 631768533 -->
+<event id="1854" name="王城-羽灵儿">
+	<!--new means new quest, default is quest on user-->
+	<quest id="900011">
+		<embranchment id="1">
+			<conditions>
+				<item value="1000" id="3906"/>
+				<gold type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTaskCmdItem("立即兑换-天使之翼（生命）(0)", "v1854", 100901, 11)
+this:AddTaskCmdItem("立即兑换-天使之翼（物攻）(0)", "v1854", 100901, 12)
+this:AddTaskCmdItem("立即兑换-天使之翼（魔攻）(0)", "v1854", 100901, 13)
+this:AddTaskCmdItem("立即兑换-天使之翼（物防）(0)", "v1854", 100901, 14)
+this:AddTaskCmdItem("立即兑换-天使之翼（魔防）(0)", "v1854", 100901, 15)
+this:AddCloseItem("--------------------（取消兑换)")
+this:AddCloseItem("离开(0)")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<gold type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("立即兑换-天使之翼（生命）(0)", "Dialog17")
+this:AddDialogItem("立即兑换-天使之翼（物攻）(0)", "Dialog17")
+this:AddDialogItem("立即兑换-天使之翼（魔攻）(0)", "Dialog17")
+this:AddDialogItem("立即兑换-天使之翼（物防）(0)", "Dialog17")
+this:AddDialogItem("立即兑换-天使之翼（魔防）(0)", "Dialog17")
+this:AddCloseItem("-------------------（取消兑换)")
+this:AddCloseItem("离开(0)")
+end
+function Dialog17()
+this:AddTalk("    对不起，您的包袱里面没有足够的魔法羽毛。")
+
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="100901" new="1">
+		<embranchment id="11" active="1">
+			<conditions>
+				<item value="1000" id="3906"/>
+				<gold type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<flexmenu content="兑换成功，获得天使之翼（生命）"/>
+				<notify content="获得天使之翼（生命）"/>
+                <removeitem value="1000" id="3906" log="删除魔法羽毛"/>
+				<addbinditem value="1" id="3900"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<item value="1000" id="3906"/>
+				<gold type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<flexmenu content="兑换成功，获得天使之翼（物攻）"/>
+				<notify content="获得天使之翼（物攻）"/>
+                <removeitem value="1000" id="3906" log="删除魔法羽毛"/>
+				<addbinditem value="1" id="3901"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<item value="1000" id="3906"/>
+				<gold type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<flexmenu content="兑换成功，获得天使之翼（魔攻）"/>
+				<notify content="获得天使之翼（魔攻）"/>
+                <removeitem value="1000" id="3906" log="删除魔法羽毛"/>
+				<addbinditem value="1" id="3902"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+				<item value="1000" id="3906"/>
+				<gold type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<flexmenu content="兑换成功，获得天使之翼（物防）"/>
+				<notify content="获得天使之翼（物防）"/>
+                <removeitem value="1000" id="3906" log="删除魔法羽毛"/>
+				<addbinditem value="1" id="3903"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+				<item value="1000" id="3906"/>
+				<gold type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<flexmenu content="兑换成功，获得天使之翼（魔防）"/>
+				<notify content="获得天使之翼（魔防）"/>
+                <removeitem value="1000" id="3906" log="删除魔法羽毛"/>
+				<addbinditem value="1" id="3904"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

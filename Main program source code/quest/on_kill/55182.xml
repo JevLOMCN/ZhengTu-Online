@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="55182" name="天芯草">
+	<quest id="20311" new="1">
+		<embranchment id="1">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+			</conditions>
+			<actions>
+				<additem value="1" id="2081"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20613" new="1">
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Less" name="kill_小石头" value="20"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_小石头" value="1"/>
+				<refresh name="kill_小石头"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Great" name="kill_小石头" value="19"/>
+			</conditions>
+			<actions>
+				<refresh name="kill_小石头"/>
+				<var type="Set" name="state" value="-1"/>
+				<refresh name="state"/>
+				<notify content="追忆任务完成赶快去交付任务把!"/>
+				<flexmenu content="追忆任务完成赶快去交付任务把!"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

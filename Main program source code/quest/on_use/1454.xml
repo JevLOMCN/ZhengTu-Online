@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1454" name="星灵卡片">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<addGradebinditem value="1" id="548" level="6"/>
+				<notify1 content="得到1个七等绑定星灵石"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="3756" name="新手逍遥卡">
+	<quest id="300121">
+		<embranchment id="101">
+			<conditions>
+			    <level type="Great" value="50"/>
+				<item value="1" id="3756"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+this:AddTalk("尊敬的(GetName)您好,欢迎使用新手启动福利。")
+this:AddTaskCmdItem("领取新手福利(0)", "u3756", 121216, 10)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+				<var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>
+		<embranchment id="102">
+			<conditions>
+			    <level type="Less" value="50"/>
+			<item value="1" id="3756"/>
+			</conditions>
+			<actions>
+	 <mainmenu>
+function MainDialog()
+this:AddTalk("尊敬的(GetName)您好,欢迎使用新手启动福利。")
+this:AddTaskCmdItem("领取新手福利(0)", "u3756", 121216, 99)
+this:AddCloseItem("离开")
+end
+
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+
+			</actions>
+		</embranchment>
+	</quest>
+
+  <quest id="121216" new="1">
+    <embranchment id="10" active="1">
+      <conditions>
+       <item value="1" id="3756"/>
+	   <level type="Great" value="50"/>
+      </conditions>
+      <actions>
+	<removeitem value="1" id="3756"/> 
+	<addbinditem  value="1" id="689"/><!-- 月光宝盒 -->
+	
+<addbinditem value="500" id="799"/><!--获得物品绑定-->
+<addbinditem value="2" id="810"/><!--获得物品绑定-->
+	<gold type="Add" value="500000000"/><!--3000锭银子-->
+	<var1bulletin kind="42" content="兑换新手福利包，获取丰厚奖励，祝你征途愉快。"/>
+<notify6 content="请找王城“礼官”领取新手装备！"/>
+      </actions>
+    </embranchment>
+<embranchment id="99" active="1">
+<conditions>
+</conditions>
+<actions>
+<notify6 content="等级需到达50级方可领取！"/>
+</actions>
+</embranchment>
+  </quest>
+</event>

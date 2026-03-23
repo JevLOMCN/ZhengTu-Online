@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="123107" name="一号地图">
+	<quest id="1231070">
+		<embranchment id="101">
+			<conditions>
+				<item value="1" id="123107"/>
+			</conditions>
+			<actions>
+	    <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt; 欢迎赞助天下征途，免费乘坐私人地图！ &lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("进入专属[7号地图](0)", "u123107", 1000, 1)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+				</actions>
+		</embranchment>
+	</quest>
+	
+<quest id="1000" new="1">
+     <embranchment id="1" active="1">
+       <conditions>
+				<item value="1" id="123107"/>
+				  <level type="Great" value="109"/>
+       </conditions>
+				<actions>
+				<notify content="你被带到了专属地图7号"/>
+				<removeitem value="1" id="123107"/>
+				<addgreenbinditem value="1" id="123107"/>
+				<goto name="中立区·VIP7专属地图" pos="37,31"/>
+				<var1bulletin kind="42" content="欢迎进入（天下征途）私人地图7号（满屏幕BOSS）！"/> 
+			</actions>
+    </embranchment>
+  </quest>
+</event>

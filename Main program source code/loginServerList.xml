@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<Zebra>
+	<!-- FLServer列表 -->
+	<LoginServerList>		
+		<server ip="127.0.0.1" port="7001"/> 		
+	</LoginServerList>
+
+	<!-- InfoServer列表 -->
+	<InfoServerList>
+		<!--server ip="192.168.160.128" port="9903"/-->
+	</InfoServerList>
+
+	<!-- roleRegServer列表 -->
+	<RoleregServerList>
+		<!--server ip="192.168.160.128" port="9900"/-->
+	</RoleregServerList>
+</Zebra>
+

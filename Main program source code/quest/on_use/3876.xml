@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="3876" name="高级仙丹">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<exp value="200000" />
+				<notify1 content="经验值+200000"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

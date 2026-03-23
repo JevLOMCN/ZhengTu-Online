@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="912" name="经验王(53,60)">
+	<quest id="200912">
+		<embranchment id="1">
+			<conditions>
+				<uservar type="Less" name="migong1" value="1"/>
+				<mapid id="200912" name="227"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;亲爱的：(GetName)  你好！祝贺你来到迷宫第五层，请领取你的奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("领取本层奖励(28)", "v912", 1000, 1)
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions> 
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<uservar type="Great" name="migong1" value="0"/>
+				<mapid id="200912" name="227"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;系统提示：(GetName)  你好！您已领取本层奖励，请继续前往下一层！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开")
+end
+			</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Less" name="migong2" value="1"/>
+				<mapid id="200912" name="232"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;亲爱的：(GetName)  你好！祝贺你来到迷宫第十层，请领取你的奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("领取本层奖励(28)", "v912", 1000, 2)
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions> 
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<uservar type="Great" name="migong2" value="0"/>
+				<mapid id="200912" name="232"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;系统提示：(GetName)  你好！您已领取本层奖励，请继续前往下一层！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开")
+end
+			</menu>
+			</actions>
+		</embranchment>
+		
+		
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="migong3" value="1"/>
+				<mapid id="200912" name="237"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;亲爱的：(GetName)  你好！祝贺你来到迷宫第十五层，请领取你的奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("领取本层奖励(28)", "v912", 1000, 3)
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions> 
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<uservar type="Great" name="migong3" value="0"/>
+				<mapid id="200912" name="237"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;系统提示：(GetName)  你好！您已领取本层奖励，请继续前往下一层！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开")
+end
+			</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="7">
+			<conditions>
+				<uservar type="Less" name="migong4" value="1"/>
+				<mapid id="200912" name="242"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;亲爱的：(GetName)  你好！祝贺你来到迷宫第二十层，请领取你的奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("领取本层奖励(28)", "v912", 1000, 4)
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions> 
+		</embranchment>
+		<embranchment id="8">
+			<conditions>
+				<uservar type="Great" name="migong4" value="0"/>
+				<mapid id="200912" name="242"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;系统提示：(GetName)  你好！您已领取本层奖励，请继续前往下一层！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开")
+end
+			</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="9">
+			<conditions>
+				<uservar type="Less" name="migong5" value="1"/>
+				<mapid id="200912" name="247"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;亲爱的：(GetName)  你好！祝贺你成功通关迷宫，来到最后一层，请领取你的奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("领取本层奖励(28)", "v912", 1000, 4)
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions> 
+		</embranchment>
+		<embranchment id="10">
+			<conditions>
+				<uservar type="Great" name="migong5" value="0"/>
+				<mapid id="200912" name="247"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;系统提示：(GetName)  你好！您已领取最后一层奖励，请前往返回使者传出迷宫！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开")
+end
+			</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	
+	
+	
+	<quest id="1000" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+			<isguard/>
+			
+			</conditions>
+			<actions>
+				<uservar type="Add" name="migong1" value="1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="2" active="1">
+			<conditions>
+			<isguard/>
+			
+			</conditions>
+			<actions>
+				<uservar type="Add" name="migong2" value="1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="3" active="1">
+			<conditions>
+			<isguard/>
+			
+			</conditions>
+			<actions>
+				<uservar type="Add" name="migong3" value="1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="4" active="1">
+			<conditions>
+			<isguard/>
+			
+			</conditions>
+			<actions>
+				<uservar type="Add" name="migong4" value="1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="5" active="1">
+			<conditions>
+			<isguard/>
+			
+			</conditions>
+			<actions>
+				<uservar type="Add" name="migong5" value="1"/>
+			</actions>
+		</embranchment>
+		
+	</quest>
+</event>

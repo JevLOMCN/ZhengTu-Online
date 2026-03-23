@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<config>
+	<!-- 别墅配置 -->
+	<meridianMap>
+		<meridian index="1">
+			<pointMap>
+				<!--  level:等级[配合层级] exp:当前等级1道具所加经验 costID:扣除道具 salary:单次扣工资(文) gong:双攻 fang:双防 hp:生命 -->
+				<point level="0" exp="10000" costID="120033" salary="10000" gong="0" fang="0" hp="0"/>
+				<point level="1" exp="500" costID="120034" salary="10000" gong="500" fang="500" hp="500"/>
+				<point level="2" exp="500" costID="120034" salary="10000" gong="1000" fang="1000" hp="1000"/>
+				<point level="3" exp="500" costID="120034" salary="10000" gong="1500" fang="1500" hp="1500"/>
+				<point level="4" exp="500" costID="120034" salary="10000" gong="2500" fang="2500" hp="2500"/>
+				<point level="5" exp="500" costID="120034" salary="10000" gong="3500" fang="3500" hp="3500"/>
+				<point level="6" exp="500" costID="120034" salary="10000" gong="4500" fang="4500" hp="4500"/>
+				<point level="7" exp="500" costID="120034" salary="10000" gong="5500" fang="5500" hp="5500"/>
+				<point level="8" exp="500" costID="120034" salary="10000" gong="6500" fang="6500" hp="6500"/>
+				<point level="9" exp="500" costID="120034" salary="10000" gong="7500" fang="7500" hp="7500"/>
+				<point level="10" exp="500" costID="120034" salary="10000" gong="8500" fang="8500" hp="8500"/>
+				<point level="11" exp="500" costID="120034" salary="10000" gong="9500" fang="9500" hp="9500"/>
+				<point level="12" exp="500" costID="120034" salary="10000" gong="11000" fang="11000" hp="11000"/>
+					
+
+			</pointMap>
+		</meridian>
+	</meridianMap>
+</config>

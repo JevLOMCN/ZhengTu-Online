@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<waypoint>
+		<point x="63" y="158"/>
+		<point x="63" y="159"/>
+		<point x="63" y="160"/>
+		<point x="63" y="161"/>
+		<point x="63" y="162"/>
+		<point x="64" y="159"/>
+		<point x="64" y="160"/>
+		<point x="64" y="161"/>
+		<point x="64" y="162"/>
+		<point x="63" y="158"/>
+		<point x="63" y="159"/>
+		<point x="63" y="160"/>
+		<point x="63" y="161"/>
+		<point x="63" y="162"/>
+		<point x="64" y="159"/>
+		<point x="64" y="160"/>
+		<point x="64" y="161"/>
+		<point x="64" y="162"/>
+		<dest name="shengshou3" country="6" x="33" y="37"/>
+		<dest name="shengshou3" country="6" x="34" y="37"/>
+		<dest name="shengshou3" country="6" x="35" y="37"/>
+		<dest name="shengshou3" country="6" x="36" y="37"/>
+		<dest name="shengshou3" country="6" x="37" y="37"/>
+		<dest name="shengshou3" country="6" x="38" y="37"/>
+		<dest name="shengshou3" country="6" x="39" y="37"/>
+		<dest name="shengshou3" country="6" x="33" y="37"/>
+		<dest name="shengshou3" country="6" x="34" y="37"/>
+		<dest name="shengshou3" country="6" x="35" y="37"/>
+		<dest name="shengshou3" country="6" x="36" y="37"/>
+		<dest name="shengshou3" country="6" x="37" y="37"/>
+		<dest name="shengshou3" country="6" x="38" y="37"/>
+		<dest name="shengshou3" country="6" x="39" y="37"/>
+		<dest name="shengshou3" country="6" x="33" y="37"/>
+		<dest name="shengshou3" country="6" x="34" y="37"/>
+		<dest name="shengshou3" country="6" x="35" y="37"/>
+		<dest name="shengshou3" country="6" x="36" y="37"/>
+	</waypoint>
+	<waypoint>
+		<point x="191" y="62"/>
+		<point x="191" y="63"/>
+		<point x="191" y="64"/>
+		<point x="191" y="64"/>
+		<point x="192" y="61"/>
+		<point x="192" y="62"/>
+		<point x="192" y="63"/>
+		<point x="192" y="64"/>
+		<point x="192" y="64"/>
+		<point x="191" y="62"/>
+		<point x="191" y="63"/>
+		<point x="191" y="64"/>
+		<point x="191" y="64"/>
+		<point x="192" y="61"/>
+		<point x="192" y="62"/>
+		<point x="192" y="63"/>
+		<dest name="shengshou3" country="6" x="114" y="24"/>
+		<dest name="shengshou3" country="6" x="114" y="25"/>
+		<dest name="shengshou3" country="6" x="114" y="26"/>
+		<dest name="shengshou3" country="6" x="114" y="27"/>
+		<dest name="shengshou3" country="6" x="114" y="28"/>
+		<dest name="shengshou3" country="6" x="114" y="29"/>
+		<dest name="shengshou3" country="6" x="114" y="30"/>
+		<dest name="shengshou3" country="6" x="114" y="31"/>
+		<dest name="shengshou3" country="6" x="114" y="32"/>
+		<dest name="shengshou3" country="6" x="114" y="33"/>
+		<dest name="shengshou3" country="6" x="114" y="34"/>
+		<dest name="shengshou3" country="6" x="114" y="29"/>
+		<dest name="shengshou3" country="6" x="114" y="30"/>
+		<dest name="shengshou3" country="6" x="114" y="31"/>
+		<dest name="shengshou3" country="6" x="114" y="32"/>
+		<dest name="shengshou3" country="6" x="114" y="33"/>
+	</waypoint>
+	<waypoint>
+		<point x="206" y="275"/>
+		<point x="206" y="276"/>
+		<point x="206" y="277"/>
+		<point x="206" y="278"/>
+		<point x="207" y="274"/>
+		<point x="207" y="275"/>
+		<point x="207" y="275"/>
+		<point x="207" y="276"/>
+		<point x="207" y="277"/>
+		<point x="207" y="278"/>
+		<dest name="shengshou3" country="6" x="152" y="55"/>
+		<dest name="shengshou3" country="6" x="152" y="56"/>
+		<dest name="shengshou3" country="6" x="152" y="57"/>
+		<dest name="shengshou3" country="6" x="152" y="58"/>
+		<dest name="shengshou3" country="6" x="152" y="59"/>
+		<dest name="shengshou3" country="6" x="152" y="60"/>
+		<dest name="shengshou3" country="6" x="152" y="61"/>
+		<dest name="shengshou3" country="6" x="152" y="62"/>
+		<dest name="shengshou3" country="6" x="152" y="63"/>
+		<dest name="shengshou3" country="6" x="152" y="64"/>
+	</waypoint>
+	<waypoint>
+		<point x="293" y="169"/>
+		<point x="293" y="170"/>
+		<point x="293" y="171"/>
+		<point x="293" y="172"/>
+		<point x="293" y="173"/>
+		<point x="294" y="168"/>
+		<point x="294" y="169"/>
+		<point x="294" y="170"/>
+		<point x="294" y="171"/>
+		<point x="294" y="172"/>
+		<point x="294" y="173"/>
+		<dest name="shengshou3" country="6" x="156" y="127"/>
+		<dest name="shengshou3" country="6" x="156" y="128"/>
+		<dest name="shengshou3" country="6" x="156" y="129"/>
+		<dest name="shengshou3" country="6" x="156" y="130"/>
+		<dest name="shengshou3" country="6" x="156" y="131"/>
+		<dest name="shengshou3" country="6" x="156" y="132"/>
+		<dest name="shengshou3" country="6" x="156" y="133"/>
+		<dest name="shengshou3" country="6" x="156" y="134"/>
+		<dest name="shengshou3" country="6" x="156" y="135"/>
+		<dest name="shengshou3" country="6" x="156" y="136"/>
+		<dest name="shengshou3" country="6" x="156" y="127"/>
+	</waypoint>
+	<npc id="800237" name="藏宝妖" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="800239" name="冰封魔鬼" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="800240" name="劈山斧魔" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880241" name="鼎天" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880242" name="地域领主" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880243" name="蛮族首领" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880244" name="蛮荒军师" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880245" name="五行兽" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880246" name="血巢尸母" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880247" name="地斧王" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880248" name="恶灵法师" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880249" name="水麟卫士" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<npc id="880251" name="东海鲤鱼王" width="156" height="178" x="89" y="90" num="1" interval="3600" bossAI="4"/>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="16" height="28" x="196" y="262" type="1" color="0,0,255,0"/>
+	<zonedef width="17" height="26" x="56" y="145" type="1" color="0,0,255,0"/>
+	<zonedef width="17" height="26" x="182" y="49" type="1" color="0,0,255,0"/>
+	<zonedef width="17" height="26" x="285" y="156" type="1" color="0,0,255,0"/>
+</map>

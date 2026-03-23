@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1500" name="军需官">
+   <!--new means new quest, default is quest on user-->
+	  <!--脚本编写-独自悠哉：QQ:97667124-->
+<quest id="9001500">
+<embranchment id="10">
+     <conditions>
+      </conditions>
+    <actions>
+	<menu>
+function TaskDialog()
+this:AddTalk("少侠！相见就是有缘！有什么可以帮你的吗？")
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;龙虎令说明：\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\&quot;6111\&quot;&gt; 扣除龙虎令1000个.记得不可以越级..&lt;/object&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\&quot;\&quot;&gt;&lt;/object&gt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;配合材料:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 1059\"&gt;  魂之结晶20个&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("兑换说明:龙虎令每级攻防加2%！")
+this:AddTaskCmdItem("兑换·龙虎令【LV.1】(0)", "v1500", 1900, 1)
+this:AddTaskCmdItem("兑换·龙虎令【LV.2】(0)", "v1500", 1900, 2)
+this:AddTaskCmdItem("兑换·龙虎令【LV.3】(0)", "v1500", 1900, 3)
+this:AddTaskCmdItem("兑换·龙虎令【LV.4】(0)", "v1500", 1900, 4)
+this:AddTaskCmdItem("兑换·龙虎令【LV.3】(0)", "v1500", 1900, 5)
+this:AddTaskCmdItem("兑换·龙虎令【LV.6】(0)", "v1500", 1900, 6)
+this:AddTaskCmdItem("兑换·龙虎令【LV.7】(0)", "v1500", 1900, 7)
+this:AddTaskCmdItem("兑换·龙虎令【LV.8】(0)", "v1500", 1900, 8)
+this:AddTaskCmdItem("兑换·龙虎令【LV.9】(0)", "v1500", 1900, 9)
+this:AddTaskCmdItem("兑换·龙虎令【LV.10】(0)", "v1500", 1900, 10)
+this:AddCloseItem("离开")
+end
+
+        </menu>
+    </actions>
+</embranchment>
+</quest> 
+<quest id="1900" new="1">  
+   <embranchment id="1" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+       </conditions>
+	<actions>
+
+        <addbinditem value="1" id="6100"/><!--【圣器】-->
+        <notify content="获得卓越·龙虎令·一阶" />
+   <var1bulletin kind="41" content="获得龙虎令·一阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="20" id="1059"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment>   
+
+   <embranchment id="2" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6100"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6101"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·二阶" />
+   <var1bulletin kind="41" content="获得龙虎令·二阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment>  
+
+   <embranchment id="3" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6101"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6102"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·三阶" />
+   <var1bulletin kind="41" content="获得龙虎令·三阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6101"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment> 
+   <embranchment id="4" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6102"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6103"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·四阶" />
+   <var1bulletin kind="41" content="获得龙虎令·四阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6102"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment> 
+   <embranchment id="5" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6103"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6104"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·五阶" />
+   <var1bulletin kind="41" content="获得龙虎令·五阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6103"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment> 
+        <removeitem value="20" id="1059"/>
+   <embranchment id="6" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6104"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6105"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·六阶" />
+   <var1bulletin kind="41" content="获得龙虎令·六阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6104"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment>  
+   <embranchment id="7" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6105"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6106"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·七阶" />
+   <var1bulletin kind="41" content="获得龙虎令·七阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6105"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment>  
+        <removeitem value="20" id="1059"/>
+   <embranchment id="8" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6106"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6107"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·八阶" />
+   <var1bulletin kind="41" content="获得龙虎令·八阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6106"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment>  
+        <removeitem value="20" id="1059"/>
+   <embranchment id="9" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6107"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6108"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·九阶" />
+   <var1bulletin kind="41" content="获得龙虎令·九阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6107"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment>  
+   <embranchment id="10" active="1">
+       <conditions>
+        <item value="1000" id="6111"/>
+        <item value="20" id="1059"/>
+        <item value="1" id="6108"/>
+       </conditions>
+	<actions>
+        <removeitem value="20" id="1059"/>
+        <addbinditem value="1" id="6109"/><!--【获取】-->
+        <notify content="获得卓越·龙虎令·十阶" />
+   <var1bulletin kind="41" content="获得龙虎令·十阶！"/>
+        <removeitem value="1000" id="6111"/>
+        <removeitem value="1" id="6108"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+    </embranchment> 
+
+ </quest> 
+		 
+</event>

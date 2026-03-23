@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo img {
+  height: 80px;
+}
+.nav button {
+  margin-left: 1rem;
+  background: #ff4747;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.banner {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.banner-content h1 {
+  font-size: 3rem;
+  color: #9A32CD;
+}
+.banner-content p {
+  margin: 1rem 0;
+  color: #008B00;
+}
+.banner-content button {
+  padding: 0.75rem 1.5rem;
+  background: #ff4747;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.features {
+  position: relative;
+  max-width: 1120px;
+  margin: 54px auto 0 auto;
+  padding: 0 24px;
+}
+
+.feature-title-vertical {
+  position: absolute;
+  left: -80px;
+  top: 45px;
+  width: 70px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.feature-title-vertical span {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #315cbf;
+  letter-spacing: 2px;
+  text-shadow: 2px 0 16px #48aaff66, 0 2px 12px #2226;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background: linear-gradient(180deg,#a4caff 0%,#1b376d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .96;
+}
+
+@media (max-width:900px) {
+  .feature-title-vertical { display: none; }
+}.download, .recharge {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #1c1c1c;
+}
+.download-options button, .recharge-box button {
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #ff4747;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  font-size: 0.9rem;
+}
+
+
+.notice-content {
+  width: 100%;
+  background: linear-gradient(90deg, #2587d3 0%, #42e9f6 100%);
+  color: #fff;
+  text-align: center;
+  font-size: 1.15rem;
+  padding: 8px 0 6px 0;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  box-shadow: 0 2px 10px 0 #37a1ff15;
+  position: relative;
+  z-index: 888;
+}
+.notice-content {
+  margin-left: 40px;
+}
+.gameplay-intro {
+  max-width: 1120px;
+  margin: 54px auto 0 auto;
+  padding: 0 24px 24px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 18px 0 #52a6ff18;
+}
+.gameplay-intro h2 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #2587d3;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+}
+.gameplay-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px 36px;
+  justify-content: center;
+}
+.gameplay-item {
+  background: linear-gradient(90deg,#f3faff 0%,#e4f2fd 100%);
+  border-left: 5px solid #37a1ff;
+  border-radius: 11px;
+  padding: 18px 28px 13px 20px;
+  width: 320px;
+  min-height: 92px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 8px 0 #6ec7ff22;
+  transition: box-shadow .18s;
+}
+.gameplay-item:hover {
+  box-shadow: 0 4px 32px 0 #37a1ff55;
+}
+.gp-title {
+  font-size: 1.18rem;
+  color: #256bb6;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.gp-desc {
+  font-size: 1.01rem;
+  color: #404e67;
+  letter-spacing: .2px;
+}

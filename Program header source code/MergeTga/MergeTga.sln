@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeTga", "MergeTga.vcproj", "{52BE9EB8-D10C-4862-B556-642437FF9723}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26542611-9E38-4313-B936-E1F28BBBE775} = {26542611-9E38-4313-B936-E1F28BBBE775}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xml_parse", "..\..\work\xml_parse\xml_parse.vcproj", "{26542611-9E38-4313-B936-E1F28BBBE775}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		HAVE_NEW = HAVE_NEW
+		Release = Release
+		ReleaseTest = ReleaseTest
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.Debug.ActiveCfg = Debug|Win32
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.Debug.Build.0 = Debug|Win32
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.HAVE_NEW.ActiveCfg = Release|Win32
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.HAVE_NEW.Build.0 = Release|Win32
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.Release.ActiveCfg = Release|Win32
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.Release.Build.0 = Release|Win32
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.ReleaseTest.ActiveCfg = Release|Win32
+		{52BE9EB8-D10C-4862-B556-642437FF9723}.ReleaseTest.Build.0 = Release|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.Debug.ActiveCfg = Debug|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.Debug.Build.0 = Debug|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.HAVE_NEW.ActiveCfg = HAVE_NEW|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.HAVE_NEW.Build.0 = HAVE_NEW|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.Release.ActiveCfg = Release|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.Release.Build.0 = Release|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.ReleaseTest.ActiveCfg = ReleaseTest|Win32
+		{26542611-9E38-4313-B936-E1F28BBBE775}.ReleaseTest.Build.0 = ReleaseTest|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

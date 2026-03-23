@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<Zebra>
+	<!-- BillServer列表 -->
+	<!-- 消费来源,对游戏的编号,目前编号为1,以后的游戏2，3依次类推 -->
+	<sourceID>1</sourceID>	
+	<BillServerList>
+		<server>			
+			<entry ip="127.0.0.1" port="2201"/>			
+		</server>
+	</BillServerList>
+</Zebra>
+

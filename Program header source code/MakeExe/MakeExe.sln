@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MakeExe", "MakeExe.vcproj", "{7A935394-C713-44D4-B130-234CBAFA549E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		ReleaseTest = ReleaseTest
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7A935394-C713-44D4-B130-234CBAFA549E}.Debug.ActiveCfg = Debug|Win32
+		{7A935394-C713-44D4-B130-234CBAFA549E}.Debug.Build.0 = Debug|Win32
+		{7A935394-C713-44D4-B130-234CBAFA549E}.Release.ActiveCfg = Release|Win32
+		{7A935394-C713-44D4-B130-234CBAFA549E}.Release.Build.0 = Release|Win32
+		{7A935394-C713-44D4-B130-234CBAFA549E}.ReleaseTest.ActiveCfg = Release|Win32
+		{7A935394-C713-44D4-B130-234CBAFA549E}.ReleaseTest.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

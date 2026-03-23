@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="100020" name="综合勋章">
+<quest id="1000201">
+<embranchment id="1">
+<conditions>
+<item value="1" id="100020"/>
+</conditions>
+<actions>
+<mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt; 尊敬的玩家(GetName)！很高兴为您服务！请选择下列您需要召唤的军神帮你一起战斗！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("召唤二十阶军神(33)", "u100020", 1000200041, 1)
+this:AddCloseItem("离开")
+end
+
+
+function MoveCanClose()
+	return false
+end 
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+</quest>
+<!--免费-->
+    <quest id="1000200041" new="1">
+<embranchment id="1" active="1">
+                     <conditions>
+<item value="1" id="100020"/>
+                  <isguard/>
+            </conditions>
+                <actions>
+<removeitem value="1" id="100020"/>
+<addbinditem value="1" id="100020"/>
+                <useskill id="235" level="10"/>
+                </actions>
+               </embranchment>
+<embranchment id="2" active="1">
+                     <conditions>
+<item value="1" id="100020"/>
+                  <isguard/>
+            </conditions>
+                <actions>
+<removeitem value="1" id="100020"/>
+<addbinditem value="1" id="100020"/>
+                <useskill id="233" level="10"/>
+                </actions>
+               </embranchment>
+    </quest>
+</event> 

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="5406" name="黄金圣器·许愿树">
+   <!--new means new quest, default is quest on user-->
+<quest id="900259">
+<embranchment id="10">
+     <conditions>
+      </conditions>
+    <actions>
+	<menu>
+function TaskDialog()
+this:AddTalk("    尊敬的(GetName)您好,我这里可以兑换各种材料哦。")
+this:AddDialogItem("兑换法宝类(0)", "Dialog1")
+this:AddDialogItem("传国玉玺碎片兑换(0)", "Dialog2")
+this:AddDialogItem("兑换怪物图鉴类(0)", "Dialog4")
+this:AddCloseItem("离开")
+end 
+function Dialog1()
+this:AddTalk("    法宝碎片可以兑换任意一个法宝道具。")
+this:AddTaskCmdItem("===========法宝类兑换===========", "v5406", 1900, 99)	
+this:AddTaskCmdItem("500个碎片兑换 法宝*混天绫(0)", "v5406", 1900, 1)	
+this:AddTaskCmdItem("500个碎片兑换 法宝*金箍棒(0)", "v5406", 1900, 2)	
+this:AddTaskCmdItem("500个碎片兑换 法宝*金刚圈(0)", "v5406", 1900, 3)	
+this:AddTaskCmdItem("500个碎片兑换 法宝*八卦镜(0)", "v5406", 1900, 4)	
+this:AddTaskCmdItem("100个碎片兑换 法宝符石*神力(0)", "v5406", 1900, 5)	
+this:AddTaskCmdItem("100个碎片兑换 法宝符石*领悟(0)", "v5406", 1900, 6)	
+this:AddTaskCmdItem("100个碎片兑换 法宝符石*通灵(0)", "v5406", 1900, 7)	
+this:AddTaskCmdItem("100个碎片兑换 法宝符石*坚韧(0)", "v5406", 1900, 8)	
+this:AddTaskCmdItem("100个碎片兑换 法宝符石*强攻(0)", "v5406", 1900, 9)	
+this:AddTaskCmdItem("100个碎片兑换 法宝符石*冥思(0)", "v5406", 1900, 10)	
+this:AddTaskCmdItem("100个碎片兑换 法宝灵石*凝神(0)", "v5406", 1900, 11)	
+this:AddTaskCmdItem("100个碎片兑换 法宝灵石*灌顶(0)", "v5406", 1900, 12)	
+this:AddTaskCmdItem("100个碎片兑换 法宝灵石*穿刺(0)", "v5406", 1900, 13)	
+this:AddTaskCmdItem("100个碎片兑换 法宝灵石*护体(0)", "v5406", 1900, 14)	
+this:AddTaskCmdItem("100个碎片兑换 法宝灵石*神佑(0)", "v5406", 1900, 15)	
+this:AddTaskCmdItem("100个碎片兑换 法宝灵石*意志(0)", "v5406", 1900, 16)	
+this:AddCloseItem("离开")
+end
+function Dialog2()
+this:AddTalk("    传国玉玺碎片可以兑换以下道具。")
+this:AddTaskCmdItem("===========神兵类兑换===========", "v5406", 1900, 99)	
+this:AddTaskCmdItem("100个碎片兑换 王者之刃*物攻(0)", "v5406", 1900, 21)	
+this:AddTaskCmdItem("100个碎片兑换 王者之刃*魔攻(0)", "v5406", 1900, 22)	
+this:AddTaskCmdItem("100个碎片兑换 王者之刃*物防(0)", "v5406", 1900, 23)	
+this:AddTaskCmdItem("100个碎片兑换 王者之刃*魔防(0)", "v5406", 1900, 24)
+this:AddTaskCmdItem("===========神兽类兑换===========", "v5406", 1900, 99)	
+this:AddTaskCmdItem("100个碎片兑换 金月神兽*物攻(0)", "v5406", 1900, 25)	
+this:AddTaskCmdItem("100个碎片兑换 金月神兽*魔攻(0)", "v5406", 1900, 26)	
+this:AddTaskCmdItem("100个碎片兑换 金月神兽*物防(0)", "v5406", 1900, 27)	
+this:AddTaskCmdItem("100个碎片兑换 金月神兽*魔防(0)", "v5406", 1900, 28)	
+this:AddTaskCmdItem("=========尚方宝剑类兑换=========", "v5406", 1900, 99)	
+this:AddTaskCmdItem("100个碎片兑换 尚方宝剑*物攻(0)", "v5406", 1900, 29)	
+this:AddTaskCmdItem("100个碎片兑换 尚方宝剑*魔攻(0)", "v5406", 1900, 30)	
+this:AddTaskCmdItem("100个碎片兑换 尚方宝剑*物防(0)", "v5406", 1900, 31)	
+this:AddTaskCmdItem("100个碎片兑换 尚方宝剑*魔防(0)", "v5406", 1900, 32)	
+this:AddTaskCmdItem("=========紫金龙袍类兑换=========", "v5406", 1900, 99)	
+this:AddTaskCmdItem("100个碎片兑换 紫金龙袍*物攻(0)", "v5406", 1900, 33)	
+this:AddTaskCmdItem("100个碎片兑换 紫金龙袍*魔攻(0)", "v5406", 1900, 34)	
+this:AddTaskCmdItem("100个碎片兑换 紫金龙袍*物防(0)", "v5406", 1900, 35)	
+this:AddTaskCmdItem("100个碎片兑换 紫金龙袍*魔防(0)", "v5406", 1900, 36)	
+	
+this:AddCloseItem("离开")
+end
+function Dialog3()
+this:AddTalk("    神兽碎片可以兑换神兽道具。")
+this:AddTaskCmdItem("===========神兽类兑换===========", "v5406", 1900, 99)	
+this:AddTaskCmdItem("100个碎片兑换 神兽*白月神兽(0)", "v5406", 1900, 31)	
+this:AddTaskCmdItem("500个碎片兑换 神兽*金月神兽(0)", "v5406", 1900, 32)		
+this:AddCloseItem("离开")
+end
+function Dialog4()
+this:AddTalk("    100个怪物图鉴碎片可以兑换任意一个怪物图鉴道具。")
+this:AddTaskCmdItem("===========怪物图鉴类兑换===========", "v5406", 1900, 99)	
+this:AddTaskCmdItem("100个碎片兑换 图鉴*山寨霸王(0)", "v5406", 1900, 41)	
+this:AddTaskCmdItem("100个碎片兑换 图鉴*至尊蚌魔(0)", "v5406", 1900, 42)
+this:AddTaskCmdItem("100个碎片兑换 图鉴*魔徒(0)", "v5406", 1900, 43)	
+this:AddTaskCmdItem("100个碎片兑换 图鉴*恶魔统领(0)", "v5406", 1900, 44)
+this:AddTaskCmdItem("100个碎片兑换 图鉴*铁爪鬼王(0)", "v5406", 1900, 45)	
+this:AddTaskCmdItem("100个碎片兑换 图鉴*恶魔尊主(0)", "v5406", 1900, 46)
+this:AddTaskCmdItem("100个碎片兑换 图鉴*嗜血屠魔(0)", "v5406", 1900, 47)	
+this:AddTaskCmdItem("100个碎片兑换 图鉴*僵尸小将(0)", "v5406", 1900, 48)
+this:AddTaskCmdItem("100个碎片兑换 图鉴*刑天(0)", "v5406", 1900, 49)	
+this:AddTaskCmdItem("100个碎片兑换 图鉴*南山老怪(0)", "v5406", 1900, 50)		
+this:AddCloseItem("离开")
+end
+
+        </menu>
+    </actions>
+</embranchment>
+</quest> 
+<quest id="1900" new="1">  
+<embranchment id="1" active="1">
+       <conditions>
+        <item value="500" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20000"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="500" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment>   
+<embranchment id="2" active="1">
+       <conditions>
+        <item value="500" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20001"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="500" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment>         
+<embranchment id="3" active="1">
+       <conditions>
+        <item value="500" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20002"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="500" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="4" active="1">
+       <conditions>
+        <item value="500" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20003"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="500" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="5" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20004"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="6" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20005"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="7" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20006"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="8" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20007"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="9" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20008"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="10" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20009"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="11" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20010"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="12" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20011"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="13" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20012"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="14" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20013"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="15" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20014"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="16" active="1">
+       <conditions>
+        <item value="100" id="21002"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="20015"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21002"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+
+
+<embranchment id="21" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3922"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="22" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4331"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="23" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4332"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="24" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4333"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="25" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3930"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="26" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4301"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="27" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4302"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="28" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4303"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+
+<embranchment id="29" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3932"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="30" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4311"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="31" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4312"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="32" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4313"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="33" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3933"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="34" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4321"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="35" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4322"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+<embranchment id="36" active="1">
+       <conditions>
+        <item value="100" id="35100"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="4323"/>>
+        <notify content="兑换成功" />
+        <removeitem value="100" id="35100"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+
+
+<embranchment id="41" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3981"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment>   
+<embranchment id="42" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3982"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment>         
+<embranchment id="43" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3983"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="44" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3984"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="45" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3985"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="46" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3986"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="47" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3987"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="48" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3988"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="49" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3989"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+<embranchment id="50" active="1">
+       <conditions>
+        <item value="100" id="21004"/>
+       </conditions>
+	<actions>
+        <addbinditem value="1" id="3990"/><!--【圣器】-->
+        <notify content="兑换成功" />
+        <removeitem value="100" id="21004"/>
+        <var type="Set" name="state" value="-2"/>    
+	    </actions>	    
+</embranchment> 
+</quest> 
+		 
+</event>

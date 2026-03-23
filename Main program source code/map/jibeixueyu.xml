@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by zhengtu (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<waypoint>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<npc id="5504" name="火麒麟·寒冰" width="1" height="1" x="205" y="25" num="1" interval="1" color="0,255,0,0"/>
+	<npc id="21031" name="寒冰封印之灵" width="1" height="1" x="83" y="333" num="1" interval="1" color="0,255,0,0"/>
+	<npc id="21032" name="寒冰·雪国勇士" width="1" height="1" x="196" y="85" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21032" name="寒冰·雪国勇士" width="1" height="1" x="232" y="139" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21032" name="寒冰·雪国勇士" width="1" height="1" x="213" y="210" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21032" name="寒冰·雪国勇士" width="1" height="1" x="166" y="255" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21032" name="寒冰·雪国勇士" width="1" height="1" x="143" y="157" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21032" name="寒冰·雪国勇士" width="1" height="1" x="71" y="163" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21032" name="寒冰·雪国勇士" width="1" height="1" x="40" y="216" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21033" name="寒冰·冰霜麒麟(物)" width="1" height="1" x="211" y="120" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21034" name="寒冰·冰霜麒麟(魔)" width="1" height="1" x="233" y="178" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21033" name="寒冰·冰霜麒麟(物)" width="1" height="1" x="189" y="236" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21034" name="寒冰·冰霜麒麟(魔)" width="1" height="1" x="152" y="208" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21033" name="寒冰·冰霜麒麟(物)" width="1" height="1" x="102" y="179" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21034" name="寒冰·冰霜麒麟(魔)" width="1" height="1" x="45" y="99" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21033" name="寒冰·冰霜麒麟(物)" width="1" height="1" x="86" y="52" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21034" name="寒冰·冰霜麒麟(魔)" width="1" height="1" x="31" y="284" num="1" interval="120" color="0,255,0,0"/>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="24" height="31" x="10" y="244" type="1" color="0,0,255,0"/>
+</map>

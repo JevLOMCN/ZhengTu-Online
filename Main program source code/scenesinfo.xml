@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<ScenesInfo>
+	<!--id:服务器编号,country:国家编号,mapID:地图编号-->
+	<server id="21">
+		<country id="6">
+			<map mapID="20011"/><!--云天别墅-->	
+			<map mapID="20000"/><!--新地图-->	
+			<map mapID="20001"/><!--新地图-->	
+			<map mapID="20002"/><!--新地图-->	
+			<map mapID="20003"/><!--新地图-->	
+			<map mapID="20004"/><!--新地图-->	
+			<map mapID="20005"/><!--新地图-->	
+			<map mapID="20006"/><!--新地图-->	
+			<map mapID="20007"/><!--新地图-->	
+			<map mapID="20008"/><!--新地图-->	
+			<map mapID="20009"/><!--新地图-->	
+			<map mapID="20010"/><!--新地图-->	
+			<map mapID="10999"/><!--国家BOSS争夺战-->	
+			<map mapID="10001"/><!--天下第一-->	
+			<map mapID="10002"/><!--天下第一-->	
+			<map mapID="10003"/><!--天下第一-->	
+			<map mapID="10004"/><!--天下第一-->	
+			<map mapID="10005"/><!--天下第一-->	
+			<map mapID="10006"/><!--天下第一-->	
+			<map mapID="10007"/><!--天下第一-->	
+			<map mapID="10008"/><!--天下第一-->	
+			<map mapID="10009"/><!--天下第一-->	
+			<map mapID="10010"/><!--天下第一-->	
+			<map mapID="10011"/><!--天下第一-->	
+			<map mapID="10012"/><!--天下第一-->	
+			<map mapID="10013"/><!--天下第一-->	
+			<map mapID="10014"/><!--天下第一-->	
+			<map mapID="10015"/><!--天下第一-->	
+			<map mapID="10016"/><!--天下第一-->	
+			
+			<map mapID="10101"/><!--天下第一-->	
+			<map mapID="10102"/><!--天下第一-->	
+			<map mapID="10103"/><!--天下第一-->	
+			<map mapID="10104"/><!--天下第一-->	
+			<map mapID="10105"/><!--天下第一-->	
+			<map mapID="10106"/><!--天下第一-->	
+			<map mapID="10107"/><!--天下第一-->	
+			<map mapID="10108"/><!--天下第一-->	
+			
+			<map mapID="10201"/><!--天下第一-->	
+			<map mapID="10202"/><!--天下第一-->	
+			<map mapID="10203"/><!--天下第一-->	
+			<map mapID="10204"/><!--天下第一-->	
+			
+			<map mapID="10301"/><!--天下第一-->	
+			<map mapID="10302"/><!--天下第一-->	
+			
+			<map mapID="10401"/><!--天下第一-->	
+			
+			<map mapID="101"/><!--中立区清源村-->
+                         <!--20500-20550为副本地图需要激活副本状态-->
+			<map mapID="10500"/><!--万宝宫1-->
+			<map mapID="10501"/><!--万宝宫2-->
+			<map mapID="10502"/><!--万宝宫3-->
+			<map mapID="10503"/><!--万宝宫4-->
+			<map mapID="10504"/><!--万宝宫5-->
+			<map mapID="10505"/><!--万宝宫6-->
+			<map mapID="10506"/><!--万宝宫7-->
+			<map mapID="10507"/><!--万宝宫8-->
+			<map mapID="10508"/><!--万宝宫9-->
+			<map mapID="10509"/><!--万宝宫10-->
+			<map mapID="13000"/><!--封龙之地-->
+			<map mapID="13001"/><!--财神宝地-->
+			<map mapID="13002"/><!--封龙副本-->
+
+			<map mapID="20511"/><!--镇妖塔1-->
+			<map mapID="20512"/><!--镇妖塔2-->
+			<map mapID="20513"/><!--镇妖塔3-->
+			<map mapID="20514"/><!--镇妖塔4-->
+			<map mapID="20515"/><!--镇妖塔5-->
+			<map mapID="20516"/><!--镇妖塔6-->
+			<map mapID="20517"/><!--镇妖塔7-->
+			<map mapID="20518"/><!--镇妖塔8-->
+			<map mapID="20519"/><!--镇妖塔9-->
+
+			<map mapID="22500"/><!--战力1-->
+			<map mapID="22501"/><!--战力2-->
+			<map mapID="22502"/><!--战力3-->
+			<map mapID="22503"/><!--战力4-->
+			<map mapID="22504"/><!--战力5-->
+			<map mapID="22505"/><!--战力6-->
+			<map mapID="22506"/><!--战力7-->
+			<map mapID="22507"/><!--战力8-->
+			<map mapID="22508"/><!--战力9-->
+			<map mapID="22509"/><!--战力10-->
+s
+			<map mapID="340"/><!--附件-->
+			<map mapID="341"/><!--元神-->
+			<map mapID="342"/><!--法宝-->
+			<map mapID="343"/><!--生肖-->
+
+			<map mapID="223"/><!--迷宫-->
+			<map mapID="224"/><!--迷宫-->
+			<map mapID="225"/><!--迷宫-->
+			<map mapID="226"/><!--迷宫-->
+			<map mapID="227"/><!--迷宫-->
+			<map mapID="228"/><!--迷宫-->
+			<map mapID="229"/><!--迷宫-->
+			<map mapID="230"/><!--迷宫-->
+			<map mapID="231"/><!--迷宫-->
+			<map mapID="232"/><!--迷宫-->
+			<map mapID="233"/><!--迷宫-->
+			<map mapID="234"/><!--迷宫-->
+			<map mapID="235"/><!--迷宫-->
+			<map mapID="236"/><!--迷宫-->
+			<map mapID="237"/><!--迷宫-->
+			<map mapID="238"/><!--迷宫-->
+			<map mapID="239"/><!--迷宫-->
+			<map mapID="240"/><!--迷宫-->
+			<map mapID="241"/><!--迷宫-->
+			<map mapID="242"/><!--迷宫-->
+			<map mapID="243"/><!--迷宫-->
+			<map mapID="244"/><!--迷宫-->
+			<map mapID="245"/><!--迷宫-->
+			<map mapID="246"/><!--迷宫-->
+			<map mapID="247"/><!--迷宫-->
+
+			
+			
+			<map mapID="251"/><!--地图-->
+
+			<map mapID="252"/><!--地图-->
+			<map mapID="253"/><!--地图-->
+			<map mapID="254"/><!--地图-->
+			<map mapID="255"/><!--地图-->
+			<map mapID="256"/><!--地图-->
+			<map mapID="257"/><!--地图-->
+			<map mapID="262"/><!--地图-->
+			<map mapID="259"/><!--地图-->
+			<map mapID="260"/><!--地图-->
+			<map mapID="263"/><!--专属地图-->
+
+			<map mapID="31001"/><!--八卦迷阵-->
+			<map mapID="31002"/><!--星魂战场-->
+			<map mapID="31003"/><!--冥界地宫-->
+			<map mapID="31004"/><!--封魔神殿-->
+			<map mapID="31005"/><!--上古战场-->
+			<map mapID="31006"/><!--云顶仙墅-->
+			<map mapID="31007"/><!--雅丹鬼城-->
+			<map mapID="107"/><!--滨海之岛-->
+			<map mapID="134"/><!--皇城-->
+			<map mapID="151"/><!--魔族巢穴一层-->
+			<map mapID="152"/><!--魔族巢穴二层-->
+			<map mapID="156"/><!--武夷王墓一层-->
+			<map mapID="157"/><!--武夷王墓二层-->
+			<map mapID="158"/><!--武夷王墓三层-->
+			<map mapID="159"/><!--武夷王墓四层-->
+			<map mapID="160"/><!--武夷王墓五层-->
+			<map mapID="161"/><!--武夷王墓六层-->
+			<map mapID="162"/><!--武夷王墓七层-->
+			<map mapID="163"/><!--武夷王墓八层-->
+			<map mapID="164"/><!--武夷王墓九层-->
+			<map mapID="165"/><!--武夷王墓十层-->
+			<map mapID="166"/><!--武夷王墓十一层-->
+			<map mapID="167"/><!--武夷王墓十二层-->
+			<map mapID="168"/><!--武夷王墓十三层-->
+			<map mapID="172"/><!--机械工厂一层-->
+			<map mapID="173"/><!--机械工厂二层-->
+			<map mapID="174"/><!--机械工厂三层-->
+			<map mapID="175"/><!--机械工厂四层-->
+			<map mapID="176"/><!--机械工厂五层-->
+			<map mapID="177"/><!--机械工厂六层-->
+			<map mapID="178"/><!--机械工厂七层-->
+			<map mapID="179"/><!--机械工厂八层-->
+			<map mapID="180"/><!--机械工厂九层-->
+			<map mapID="181"/><!--机械工厂十层-->
+			<map mapID="182"/><!--栖息地-->
+			<map mapID="189"/><!--牢狱-->
+			<map mapID="190"/><!--古墓-->
+			<map mapID="203"/><!--监牢-->
+			<map mapID="210"/><!--皇城木房-->
+			<map mapID="211"/><!--皇城木房子-->
+			<map mapID="212"/><!--皇城木房子-->
+            <map mapID="213"/><!--初级比武岛-->
+			<map mapID="214"/><!--中级比武岛-->
+			<map mapID="215"/><!--高级比武岛-->
+			<map mapID="217"/><!--安逸村-->	
+            <map mapID="221"/><!--看守所-->
+			<map mapID="2511"/><!--华山总舵密室-->
+			<map mapID="258"/><!--华山总舵大堂-->
+			<map mapID="265"/><!--华山总舵密道-->
+			<map mapID="278"/><!--世外桃源-->
+			<map mapID="279"/><!--男温泉-->
+			<map mapID="280"/><!--女温泉-->
+            <map mapID="291"/><!--海选赛第一轮-->
+            <map mapID="292"/><!--海选赛第二轮-->
+            <map mapID="293"/><!--海选赛第三轮-->
+            <map mapID="1111"/><!--十五强选拔赛 1vs1地图-->
+			<map mapID="303"/><!--山外山一层-->
+			<map mapID="330"/><!--初级副本-->
+			<map mapID="331"/><!--中级副本-->
+			<map mapID="332"/><!--高级副本-->
+            <map mapID="333"/><!--虚空禁地-->
+			<map mapID="671"/><!--帝王陵-->
+			<map mapID="1071"/><!--滨海之岛帮会战-->
+			<map mapID="1072"/><!--滨海之岛密道-->
+			<map mapID="1721"/><!--机械工厂帮会战-->
+			<map mapID="1722"/><!--机械工厂密道-->
+			<map mapID="1821"/><!--栖息地帮会战-->
+			<map mapID="1822"/><!--栖息地密道-->
+			<map mapID="701"/><!--天关一层-->
+			<map mapID="702"/><!--天关二层-->
+			<map mapID="703"/><!--天关三层-->
+			<map mapID="704"/><!--天关四层-->
+			<map mapID="705"/><!--天关五层-->
+			<map mapID="706"/><!--天关六层-->
+			<map mapID="707"/><!--天关七层-->
+			<map mapID="708"/><!--天关八层-->
+			<map mapID="709"/><!--天关九层-->
+			<map mapID="710"/><!--天关十层-->
+			<map mapID="248"/><!--赌符-->
+			<map mapID="337"/><!--夕照崖-->
+			<map mapID="338"/><!--云天阁-->
+			<map mapID="475"/><!--VIP1-->
+			<map mapID="476"/><!--VIP2-->
+			<map mapID="477"/><!--VIP3--> 
+			<map mapID="478"/><!--VIP4-->
+			<map mapID="479"/><!--VIP4-->
+		</country>
+		<country id="8">
+			<map mapID="101"/><!--清源村-->
+		    <map mapID="102"/><!--凤凰城-->
+			<map mapID="103"/><!--北郊-->
+			<map mapID="104"/><!--凤尾村-->
+			<map mapID="105"/><!--山寨前哨-->
+			<map mapID="106"/><!--凤祥镇-->
+			<map mapID="108"/><!--白骨洞一层-->
+			<map mapID="109"/><!--白骨洞二层-->
+			<map mapID="110"/><!--白骨洞三层-->
+			<map mapID="111"/><!--白骨洞四层-->
+			<map mapID="112"/><!--白骨洞五层-->
+			<map mapID="113"/><!--白骨洞六层-->
+			<map mapID="114"/><!--白骨洞七层-->
+			<map mapID="115"/><!--白骨洞八层-->
+			<map mapID="116"/><!--白骨洞九层-->
+			<map mapID="117"/><!--白骨洞十层-->
+			<map mapID="118"/><!--活动室-->
+			<map mapID="119"/><!--龙冈山一寨-->
+			<map mapID="120"/><!--龙冈山二寨-->
+			<map mapID="121"/><!--龙冈山三寨-->
+			<map mapID="122"/><!--龙冈山四寨-->
+			<map mapID="123"/><!--千江镇-->
+			<map mapID="124"/><!--凤祥镇西郊-->
+			<map mapID="125"/><!--西郊-->
+			<map mapID="128"/><!--百兽谷-->
+			<map mapID="129"/><!--兽王谷-->
+			<map mapID="130"/><!--蛟龙洞一-->
+			<map mapID="131"/><!--蛟龙洞二-->
+			<map mapID="132"/><!--沼泽湿地-->
+			<map mapID="135"/><!--南郊-->
+			<map mapID="136"/><!--东郊-->
+			<map mapID="137"/><!--边境-->
+			<map mapID="138"/><!--下水道-->
+			<map mapID="139"/><!--王城-->
+			<map mapID="141"/><!--精怪洞穴一层-->
+			<map mapID="142"/><!--精怪洞穴二层-->
+			<map mapID="143"/><!--精怪洞穴三层-->
+			<map mapID="144"/><!--精怪洞穴四层-->
+			<map mapID="145"/><!--精怪洞穴五层-->
+			<map mapID="146"/><!--精怪洞穴六层-->
+			<map mapID="147"/><!--精怪洞穴七层-->
+			<map mapID="148"/><!--精怪洞穴八层-->
+			<map mapID="149"/><!--精怪洞穴九层-->
+			<map mapID="150"/><!--精怪洞穴十层-->
+			<map mapID="183"/><!--凤凰城宅子-->
+			<map mapID="184"/><!--凤凰城民宅-->
+			<map mapID="185"/><!--凤凰城客栈-->
+			<map mapID="186"/><!--王城宅子-->
+			<map mapID="187"/><!--王城民宅-->
+			<map mapID="188"/><!--王城百货休息室-->
+			<map mapID="204"/><!--边境木房-->
+			<map mapID="205"/><!--边境木房-->
+			<map mapID="206"/><!--边境木屋-->
+			<map mapID="207"/><!--南郊木房-->
+			<map mapID="208"/><!--南郊木屋-->
+			<map mapID="209"/><!--东郊木房-->
+			<map mapID="218"/><!--王城宅屋-->
+			<map mapID="219"/><!--王城皇宫-->
+			<map mapID="220"/><!--王城皇宫密道-->
+            <map mapID="1021"/><!--凤凰城密室-->
+			<map mapID="1022"/><!--凤凰城密道-->
+			<map mapID="1031"/><!--北郊密室-->
+			<map mapID="1032"/><!--北郊密道-->
+			<map mapID="1041"/><!--凤尾村密室-->
+			<map mapID="1042"/><!--凤尾村密道-->
+			<map mapID="1081"/><!--白骨洞密室-->
+			<map mapID="1082"/><!--白骨洞密道-->
+			<map mapID="1391"/><!--王城密室-->
+			<map mapID="1392"/><!--王城密道-->
+			<map mapID="1411"/><!--精怪洞穴密室-->
+			<map mapID="1412"/><!--精怪洞穴密道-->
+		</country>
+		<country id="12">
+			<map mapID="101"/><!--清源村-->
+		    <map mapID="102"/><!--凤凰城-->
+			<map mapID="103"/><!--北郊-->
+			<map mapID="104"/><!--凤尾村-->
+			<map mapID="105"/><!--山寨前哨-->
+			<map mapID="106"/><!--凤祥镇-->
+			<map mapID="108"/><!--白骨洞一层-->
+			<map mapID="109"/><!--白骨洞二层-->
+			<map mapID="110"/><!--白骨洞三层-->
+			<map mapID="111"/><!--白骨洞四层-->
+			<map mapID="112"/><!--白骨洞五层-->
+			<map mapID="113"/><!--白骨洞六层-->
+			<map mapID="114"/><!--白骨洞七层-->
+			<map mapID="115"/><!--白骨洞八层-->
+			<map mapID="116"/><!--白骨洞九层-->
+			<map mapID="117"/><!--白骨洞十层-->
+			<map mapID="118"/><!--活动室-->
+			<map mapID="119"/><!--龙冈山一寨-->
+			<map mapID="120"/><!--龙冈山二寨-->
+			<map mapID="121"/><!--龙冈山三寨-->
+			<map mapID="122"/><!--龙冈山四寨-->
+			<map mapID="123"/><!--千江镇-->
+			<map mapID="124"/><!--凤祥镇西郊-->
+			<map mapID="125"/><!--西郊-->
+			<map mapID="128"/><!--百兽谷-->
+			<map mapID="129"/><!--兽王谷-->
+			<map mapID="130"/><!--蛟龙洞一-->
+			<map mapID="131"/><!--蛟龙洞二-->
+			<map mapID="132"/><!--沼泽湿地-->
+			<map mapID="135"/><!--南郊-->
+			<map mapID="136"/><!--东郊-->
+			<map mapID="137"/><!--边境-->
+			<map mapID="138"/><!--下水道-->
+			<map mapID="139"/><!--王城-->
+			<map mapID="141"/><!--精怪洞穴一层-->
+			<map mapID="142"/><!--精怪洞穴二层-->
+			<map mapID="143"/><!--精怪洞穴三层-->
+			<map mapID="144"/><!--精怪洞穴四层-->
+			<map mapID="145"/><!--精怪洞穴五层-->
+			<map mapID="146"/><!--精怪洞穴六层-->
+			<map mapID="147"/><!--精怪洞穴七层-->
+			<map mapID="148"/><!--精怪洞穴八层-->
+			<map mapID="149"/><!--精怪洞穴九层-->
+			<map mapID="150"/><!--精怪洞穴十层-->
+			<map mapID="183"/><!--凤凰城宅子-->
+			<map mapID="184"/><!--凤凰城民宅-->
+			<map mapID="185"/><!--凤凰城客栈-->
+			<map mapID="186"/><!--王城宅子-->
+			<map mapID="187"/><!--王城民宅-->
+			<map mapID="188"/><!--王城百货休息室-->
+			<map mapID="204"/><!--边境木房-->
+			<map mapID="205"/><!--边境木房-->
+			<map mapID="206"/><!--边境木屋-->
+			<map mapID="207"/><!--南郊木房-->
+			<map mapID="208"/><!--南郊木屋-->
+			<map mapID="209"/><!--东郊木房-->
+			<map mapID="218"/><!--王城宅屋-->
+			<map mapID="219"/><!--王城皇宫-->
+			<map mapID="220"/><!--王城皇宫密道-->
+                        <map mapID="1021"/><!--凤凰城密室-->
+			<map mapID="1022"/><!--凤凰城密道-->
+			<map mapID="1031"/><!--北郊密室-->
+			<map mapID="1032"/><!--北郊密道-->
+			<map mapID="1041"/><!--凤尾村密室-->
+			<map mapID="1042"/><!--凤尾村密道-->
+			<map mapID="1081"/><!--白骨洞密室-->
+			<map mapID="1082"/><!--白骨洞密道-->
+			<map mapID="1391"/><!--王城密室-->
+			<map mapID="1392"/><!--王城密道-->
+			<map mapID="1411"/><!--精怪洞穴密室-->
+			<map mapID="1412"/><!--精怪洞穴密道-->
+		</country>
+	</server>
+
+	<!--id:国家编号,name:国家名称,mapID:该国家主城(新手出生等);国家名称不能有特殊字符"·"function:0表示可以注册，1表示不可以注册。-->
+	<countryinfo>
+		<country id="8" name="汉国" mapID="101" function="0"/>
+	    <!--<country id="10" name="赵国" mapID="101" function="0"/>-->
+		<country id="12" name="楚国" mapID="101" function="0"/>
+		<country id="6" name="中立区" function="1"/>
+	</countryinfo>
+	<!--mapID:地图编号,name:地图名称,fileName:地图文件名,foreignerbackto:外国人死亡候重生地图,commoncountrybackto:在公共国的公共地图上死亡后重生地图,commonuserbackto:无国籍人在国外死亡重生地,backto:死亡后重生地图编号;地图名称不能有特殊字符"·",文件名称不能有特殊字符".",backtocity:表示回城符可以回到的城市 backtodare正式国战复活 countrydarebackto 就是指定在该地图上，国战期间死亡的攻方国家的人，死后去哪个地图复活。countrydefbackto 守方复活地图国战期间 exprate经验加成-->
+	<!--special特殊功能定义(用二进制表示),function特殊功能定义(用二进制表示),包括:不可骑马(1),主城(2). 练功点（4）  转轴不可以使用（8） 不红名地图（16） 收费地图（32） 不可组队（64）不可使用令牌 （128） ：256,表示该地图杀人不增加功勋    512表示不可以使用家族战车    1024 ， 不能使用技能地图 2048表示不能骑训练后的马 4096为不可使用轩辕符和玄天符地图 8192地图不记疲劳值-->
+	<!--如果需要角色在中立区死亡后回到各自的王城，需要通知程序作出改动，目前山外山地图需要这样处理-->
+	<!--所有动态地图不需要在服务器进程、国家下添加，但必须保证皇室宝藏地图所在的服务器开启-->
+	<!--330 - 339 为副本地图，请不要占用-->
+	<mapinfo>
+		<map mapID="101" name="清源村" fileName="qingyuancun-main" backtocity="101" foreignerbackto="102" function="" commonuserbackto="134" backtodare="102" pklevel="59"/>
+		<map mapID="102" name="凤凰城" fileName="fenghuangcheng-main" backtocity="102" foreignerbackto="102" function="2" commonuserbackto="134" backtodare="102" level="10" pklevel="59"/>
+		<map mapID="103" name="北郊" fileName="fengzuiling" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="104" name="凤尾村" fileName="fengweicun-main" backtocity="102" foreignerbackto="102" backto="102" function="" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="105" name="山寨前哨" fileName="fengshoucun-main" backtocity="102" foreignerbackto="102" backto="102" function="4" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="106" name="凤祥镇" fileName="fengxiangzhen-main" backtocity="139" foreignerbackto="139" backto="139" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="107" name="滨海之岛" fileName="haizeiyingdi" backtocity="134" foreignerbackto="134" backto="5" function="4" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134" exprate="10"/>
+		<map mapID="108" name="白骨洞一层" fileName="luanzangku1" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="109" name="白骨洞二层" fileName="luanzangku2" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="110" name="白骨洞三层" fileName="luanzangku3" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="111" name="白骨洞四层" fileName="luanzangku4" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="112" name="白骨洞五层" fileName="luanzangku5" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="113" name="白骨洞六层" fileName="luanzangku6" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="114" name="白骨洞七层" fileName="luanzangku7" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="115" name="白骨洞八层" fileName="luanzangku8" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="116" name="白骨洞九层" fileName="luanzangku9" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="117" name="白骨洞十层" fileName="luanzangku10" backtocity="139" foreignerbackto="139" backto="139" function="389" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="118" name="活动室" fileName="shilian2" backtocity="118" foreignerbackto="118" function="137" commonuserbackto="118" backtodare="118"/>
+		<map mapID="119" name="龙冈山一寨" fileName="shanzhai1" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="120" name="龙冈山二寨" fileName="shanzhai2" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="121" name="龙冈山三寨" fileName="shanzhai3" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="122" name="龙冈山四寨" fileName="shanzhai4" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="123" name="千江镇" fileName="qianjiangzhen-main" backtocity="139" foreignerbackto="139" backto="139" function="" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="124" name="凤祥镇西郊" fileName="fengxiangzhenxijiao" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="13000" name="封龙之地" fileName="fenglongzhidi" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+		<map mapID="13001" name="财神宝地" fileName="caishenbaodi" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+		<map mapID="13002" name="封龙之地副本" fileName="longmaizhengduozhan" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+       
+		<map mapID="125" name="西郊" fileName="xijiao" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" countrydarebackto="" level="30"/>
+		<map mapID="128" name="百兽谷" fileName="baishougu" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="129" name="兽王谷" fileName="shouwanggu" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="130" name="蛟龙洞一" fileName="jiaolongdong1" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="131" name="蛟龙洞二" fileName="jiaolongdong2" backtocity="139" foreignerbackto="139" backto="139" function="133" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="132" name="沼泽湿地" fileName="zhaozeshidi" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="134" name="皇城" fileName="huangcheng" backtocity="134" foreignerbackto="134" function="" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="30" exprate="10"/>
+		<map mapID="135" name="南郊" fileName="nanjiao" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" countrydarebackto="" level="30"/>
+		<map mapID="136" name="东郊" fileName="dongjiao" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" countrydarebackto="" level="30"/>
+		<map mapID="137" name="边境" fileName="chuansongdcz" backtocity="139" foreignerbackto="139" backto="139" function="" commonuserbackto="134" backtodare="139" countrydarebackto="" level="30"/>
+		<map mapID="138" name="下水道" fileName="xiashuidao" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" countrydarebackto="" level="30"/>
+		<map mapID="139" name="王城" fileName="wushuangcheng-main" backtocity="139" foreignerbackto="139" function="2" commonuserbackto="134" backtodare="139" countrydarebackto="136" countrydefbackto="135" level="30"/>
+		<map mapID="141" name="精怪洞穴一层" fileName="jingguai1" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="142" name="精怪洞穴二层" fileName="jingguai2" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="143" name="精怪洞穴三层" fileName="jingguai3" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="144" name="精怪洞穴四层" fileName="jingguai4" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="145" name="精怪洞穴五层" fileName="jingguai5" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="146" name="精怪洞穴六层" fileName="jingguai6" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="147" name="精怪洞穴七层" fileName="jingguai7" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="148" name="精怪洞穴八层" fileName="jingguai8" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="149" name="精怪洞穴九层" fileName="jingguai9" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="150" name="精怪洞穴十层" fileName="jingguai10" backtocity="139" foreignerbackto="139" backto="139" function="261" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="151" name="魔族巢穴一层" fileName="shengshou1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="100" exprate="10" commoncountrybackto="134"/>
+		<map mapID="152" name="魔族巢穴二层" fileName="shengshou2" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="100" exprate="10" commoncountrybackto="134"/>		
+		<map mapID="156" name="武夷王墓一层" fileName="wangmu1" backtocity="134" foreignerbackto="134" backto="134" function="133" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="157" name="武夷王墓二层" fileName="wangmu2" backtocity="134" foreignerbackto="134" backto="134" function="133" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="158" name="安全挂机地图" fileName="wangmu3" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="159" name="非安全挂机地图" fileName="wangmu4" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="160" name="武夷王墓五层" fileName="wangmu5" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="161" name="武夷王墓六层" fileName="wangmu6" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="162" name="武夷王墓七层" fileName="wangmu7" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="163" name="武夷王墓八层" fileName="wangmu8" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="164" name="武夷王墓九层" fileName="wangmu9" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="165" name="武夷王墓十层" fileName="wangmu10" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="166" name="武夷王墓十一层" fileName="wangmu11" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="167" name="武夷王墓十二层" fileName="wangmu12" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="168" name="武夷王墓十三层" fileName="wangmu13" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="170" commoncountrybackto="134"/>
+		<map mapID="172" name="机械工厂一层" fileName="jixie1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="173" name="机械工厂二层" fileName="jixie2" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="174" name="机械工厂三层" fileName="jixie3" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="175" name="机械工厂四层" fileName="jixie4" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="176" name="机械工厂五层" fileName="jixie5" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="177" name="机械工厂六层" fileName="jixie6" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="178" name="机械工厂七层" fileName="jixie7" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="179" name="机械工厂八层" fileName="jixie8" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="180" name="机械工厂九层" fileName="jixie9" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="181" name="机械工厂十层" fileName="jixie10" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="182" name="栖息地" fileName="muchang" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="30" exprate="10" commoncountrybackto="134"/>
+		<map mapID="183" name="凤凰城宅子" fileName="fminzhai1" backtocity="102" foreignerbackto="102" backto="102" function="129" commonuserbackto="134" backtodare="102" level="19"/>
+		<map mapID="184" name="凤凰城民宅" fileName="fminzhai2" backtocity="102" foreignerbackto="102" backto="102" function="129" commonuserbackto="134" backtodare="102" level="19"/>
+		<map mapID="185" name="凤凰城客栈" fileName="kezhan" backtocity="102" foreignerbackto="102" backto="102" function="129" commonuserbackto="134" backtodare="102" level="19"/>
+		<map mapID="186" name="王城宅子" fileName="wminzhai1" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="187" name="王城民宅" fileName="wminzhai2" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="188" name="王城百货休息室" fileName="zahuodianxiuxi" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="189" name="牢狱" fileName="jianyu" backtocity="189" foreignerbackto="189" backto="189" function="217" commonuserbackto="189" commoncountrybackto="189" backtodare="189" level="20"/>
+		<map mapID="190" name="古墓" fileName="gumu" backtocity="134" foreignerbackto="134" backto="134" function="133" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="200" name="初级角斗场" fileName="juedouchang" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="201" name="中级角斗场" fileName="juedouchang2" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="202" name="高级角斗场" fileName="juedouchang3" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="203" name="监牢" fileName="jianlao" backtocity="203" foreignerbackto="203" backto="203" function="217" commonuserbackto="203" commoncountrybackto="203" backtodare="203" level="20"/>
+		<map mapID="204" name="边境木房" fileName="bmufang" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="205" name="边境木屋" fileName="bmuwu" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="206" name="南郊木房" fileName="nmufang" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="207" name="南郊木屋" fileName="nmuwu" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="208" name="东郊木房" fileName="dmufang" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="209" name="东郊木屋" fileName="dmuwu" backtocity="139" foreignerbackto="139" backto="139" function="129" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="210" name="皇城木房" fileName="hmufang" backtocity="134" foreignerbackto="134" backto="134" function="129" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="211" name="皇城木房子" fileName="hmufangzi" backtocity="134" foreignerbackto="134" backto="134" function="129" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="212" name="皇城宅子" fileName="hzhaizi" backtocity="134" foreignerbackto="134" backto="134" function="129" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		<map mapID="213" name="初级比武岛" fileName="jingjidao" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="214" name="中级比武岛" fileName="jingjidao2" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="215" name="高级比武岛" fileName="jingjidao3" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="217" name="安逸村" fileName="anyicun" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="218" name="王城宅屋" fileName="wminzhai3" backtocity="139" foreignerbackto="139" backto="139" function="128" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="219" name="王城皇宫" fileName="wangchenghuanggong" backtocity="139" foreignerbackto="139" backto="139" commonuserbackto="134" commoncountrybackto="134" level="30" function="137"/>
+		<map mapID="220" name="王城皇宫密道" fileName="wangchengmidao" backtocity="139" foreignerbackto="139" backto="139" commonuserbackto="134" commoncountrybackto="134" backtodare="139" level="30" function="137"/>
+		<map mapID="221" name="看守所" fileName="kanshousuo" backtocity="221" foreignerbackto="221" backto="221" function="201" commonuserbackto="221" commoncountrybackto="221" backtodare="221" level="30"/>
+		<map mapID="223" name="迷宫一层" fileName="migong1" backtocity="223" foreignerbackto="223" backto="" function="201" commonuserbackto="223" commoncountrybackto="223" backtodare="223"/>
+		<map mapID="224" name="迷宫二层" fileName="migong2" backtocity="224" foreignerbackto="224" backto="" function="201" commonuserbackto="224" commoncountrybackto="224" backtodare="224"/>
+		<map mapID="225" name="迷宫三层" fileName="migong3" backtocity="225" foreignerbackto="225" backto="" function="201" commonuserbackto="225" commoncountrybackto="225" backtodare="225"/>
+		<map mapID="226" name="迷宫四层" fileName="migong4" backtocity="226" foreignerbackto="226" backto="" function="201" commonuserbackto="226" commoncountrybackto="226" backtodare="226"/>
+		<map mapID="227" name="迷宫五层" fileName="migong5" backtocity="227" foreignerbackto="227" backto="" function="201" commonuserbackto="227" commoncountrybackto="227" backtodare="227"/>
+		<map mapID="228" name="迷宫六层" fileName="migong6" backtocity="228" foreignerbackto="228" backto="" function="201" commonuserbackto="228" commoncountrybackto="228" backtodare="228"/>
+		<map mapID="229" name="迷宫七层" fileName="migong7" backtocity="229" foreignerbackto="229" backto="" function="201" commonuserbackto="229" commoncountrybackto="229" backtodare="229"/>
+		<map mapID="230" name="迷宫八层" fileName="migong8" backtocity="230" foreignerbackto="230" backto="" function="201" commonuserbackto="230" commoncountrybackto="230" backtodare="230"/>
+		<map mapID="231" name="迷宫九层" fileName="migong9" backtocity="231" foreignerbackto="231" backto="" function="201" commonuserbackto="231" commoncountrybackto="231" backtodare="231"/>
+		<map mapID="232" name="迷宫十层" fileName="migong10" backtocity="232" foreignerbackto="232" backto="" function="201" commonuserbackto="232" commoncountrybackto="232" backtodare="232"/>
+		<map mapID="233" name="迷宫十一层" fileName="migong11" backtocity="233" foreignerbackto="233" backto="" function="201" commonuserbackto="233" commoncountrybackto="233" backtodare="233" level="10"/>
+		<map mapID="234" name="迷宫十二层" fileName="migong12" backtocity="234" foreignerbackto="234" backto="" function="201" commonuserbackto="234" commoncountrybackto="234" backtodare="234" level="10"/>
+		<map mapID="235" name="迷宫十三层" fileName="migong13" backtocity="235" foreignerbackto="235" backto="" function="201" commonuserbackto="235" commoncountrybackto="235" backtodare="235" level="10"/>
+		<map mapID="236" name="迷宫十四层" fileName="migong14" backtocity="236" foreignerbackto="236" backto="" function="201" commonuserbackto="236" commoncountrybackto="236" backtodare="236" level="10"/>
+		<map mapID="237" name="迷宫十五层" fileName="migong15" backtocity="237" foreignerbackto="237" backto="" function="201" commonuserbackto="237" commoncountrybackto="237" backtodare="237" level="10"/>
+		<map mapID="238" name="迷宫十六层" fileName="migong16" backtocity="238" foreignerbackto="238" backto="" function="201" commonuserbackto="238" commoncountrybackto="238" backtodare="238" level="10"/>
+		<map mapID="239" name="迷宫十七层" fileName="migong17" backtocity="239" foreignerbackto="239" backto="" function="201" commonuserbackto="239" commoncountrybackto="239" backtodare="239" level="10"/>
+		<map mapID="240" name="迷宫十八层" fileName="migong18" backtocity="240" foreignerbackto="240" backto="" function="201" commonuserbackto="240" commoncountrybackto="240" backtodare="240" level="10"/>
+		<map mapID="241" name="迷宫十九层" fileName="migong19" backtocity="241" foreignerbackto="241" backto="" function="201" commonuserbackto="241" commoncountrybackto="241" backtodare="241" level="10"/>
+		<map mapID="242" name="迷宫二十层" fileName="migong20" backtocity="242" foreignerbackto="242" backto="" function="201" commonuserbackto="242" commoncountrybackto="242" backtodare="242" level="10"/>
+		<map mapID="243" name="迷宫二十一层" fileName="migong21" backtocity="243" foreignerbackto="243" backto="" function="201" commonuserbackto="243" commoncountrybackto="243" backtodare="243" level="10"/>
+		<map mapID="244" name="迷宫二十二层" fileName="migong22" backtocity="244" foreignerbackto="244" backto="" function="201" commonuserbackto="244" commoncountrybackto="244" backtodare="244" level="10"/>
+		<map mapID="245" name="迷宫二十三层" fileName="migong23" backtocity="245" foreignerbackto="245" backto="" function="201" commonuserbackto="245" commoncountrybackto="245" backtodare="245" level="10"/>
+		<map mapID="246" name="迷宫二十四层" fileName="migong24" backtocity="246" foreignerbackto="246" backto="" function="201" commonuserbackto="246" commoncountrybackto="246" backtodare="246" level="10"/>
+		<map mapID="247" name="迷宫二十五层" fileName="migong25" backtocity="247" foreignerbackto="247" backto="" function="201" commonuserbackto="247" commoncountrybackto="247" backtodare="247" level="10"/>
+		<map mapID="248 " name="功勋符地图" fileName="gongxunjingcai" backtocity="139" foreignerbackto="139" backto="139" commonuserbackto="134" commoncountrybackto="134" level="120" function=""/>
+		<map mapID="340" name="附件地图" fileName="fujiancailiao" backtocity="134" foreignerbackto="134" function="64" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="1" exprate="10"/>
+        	<map mapID="341" name="元神地图" fileName="yuanshencailiao" backtocity="134" foreignerbackto="134" function="64" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="1" exprate="10"/>
+		<map mapID="342" name="法宝地图" fileName="fabaocailiao" backtocity="134" foreignerbackto="134" function="64" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="1" exprate="10"/>
+        	<map mapID="343" name="生肖地图" fileName="shengxiaocailiao" backtocity="134" foreignerbackto="134" function="64" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="1" exprate="10"/>
+		
+		<map mapID="475" name="VIP地图1" fileName="vipditu1" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="476" name="VIP地图2" fileName="vipditu2" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="477" name="VIP地图3" fileName="vipditu3" backtocity="139" foreignerbackto="139" backto="139" function="512" commonuserbackto="134" backtodare="139" commoncountrybackto="134" countrydarebackto="134" level="30"/>
+		<map mapID="478" name="VIP地图4" fileName="vipditu4" backtocity="139" foreignerbackto="139" backto="139" function="512" commonuserbackto="134" backtodare="139" commoncountrybackto="134" countrydarebackto="134" level="30"/>
+		<map mapID="479" name="VIP地图5" fileName="vipditu5" backtocity="139" foreignerbackto="139" backto="139" function="512" commonuserbackto="134" backtodare="139" commoncountrybackto="134" countrydarebackto="134" level="30"/>
+
+		<map mapID="2511" name="华山总舵帮会战" fileName="hua_groupmapmishi" backtocity="134" foreignerbackto="134" backto="134" commonuserbackto="134" commoncountrybackto="134" level="30" function="512"/>
+		<map mapID="258" name="华山总舵大堂" fileName="hua_grouphome2" backtocity="134" foreignerbackto="134" backto="134" commonuserbackto="134" commoncountrybackto="134" level="30" function="512"/>
+		<map mapID="265" name="华山总舵密道" fileName="zongduomidao2" backtocity="134" foreignerbackto="134" backto="134" commonuserbackto="134" commoncountrybackto="134" level="30" function="137"/>
+		<map mapID="278" name="世外桃源" fileName="shiwai" backtocity="278" foreignerbackto="278" function="1536" commonuserbackto="278" commoncountrybackto="278" backtodare="278"/>
+		<map mapID="279" name="男温泉" fileName="wenquan1" backtocity="278" foreignerbackto="278" backto="278" function="3025" commonuserbackto="278" commoncountrybackto="278" backtodare="278"/>
+		<map mapID="280" name="女温泉" fileName="wenquan2" backtocity="278" foreignerbackto="278" backto="278" function="3025" commonuserbackto="278" commoncountrybackto="278" backtodare="278"/>
+		<map mapID="291" name="海选赛第一轮" fileName="haixuansai1" backtocity="134" foreignerbackto="134" backto="134" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="120" function="261"/>
+		<map mapID="292" name="海选赛第二轮" fileName="haixuansai2" backtocity="134" foreignerbackto="134" backto="134" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="120" function="261"/>
+		<map mapID="293" name="海选赛第三轮" fileName="haixuansai3" backtocity="134" foreignerbackto="134" backto="134" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="120" function="261"/>
+		<map mapID="1111" name="1vs1挑战赛" fileName="zongjuesai1" backtocity="1111" foreignerbackto="1111" backto="1111" commonuserbackto="134" commoncountrybackto="1111" backtodare="1111" function="" level="2" pklevel="29"/><!--level="2" 是限制的人数 只限地图id 294-->
+		<map mapID="303" name="山外山一层" fileName="shanwaishan1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" commoncountrybackto="134" backtodare="134"/>
+		<map mapID="328" name="海滨浴场" fileName="haibinyuchang" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="330" name="初级副本" fileName="qianniandigong1" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134" exprate="100"/>
+		<map mapID="331" name="中级副本" fileName="qianniandigong2" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134" exprate="100"/>
+		<map mapID="332" name="高级副本" fileName="qianniandigong3" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134" exprate="100"/>
+		<map mapID="333" name="虚空禁地" fileName="xukongjindi" backtocity="139" foreignerbackto="139" backto="139" function="140" commonuserbackto="139" backtodare="139" level="150" commoncountrybackto="139"/>
+		<map mapID="337" name="夕照崖" fileName="New_fengjing770" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="338" name="云天阁" fileName="New_fengjing670" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="671" name="帝王陵" fileName="diwangling4" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>	
+		<map mapID="1022" name="凤凰城密道" fileName="fenghuangchenghuanggongmishi" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1021" name="凤凰城密室" fileName="fenghuangchengdadian" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1031" name="北郊密室" fileName="beijiaomi1" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1032" name="北郊密道" fileName="beijiaomi2" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1041" name="凤尾村密室" fileName="weiyin1" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1042" name="凤尾村密道" fileName="weiyin2" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1071" name="滨海之岛帮会战" fileName="wyin1" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="30" commoncountrybackto="134"/>
+		<map mapID="1072" name="滨海之岛密道" fileName="wyin2" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="30" commoncountrybackto="134"/>
+		<map mapID="1081" name="白骨洞密室" fileName="luanyin1" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1082" name="白骨洞密道" fileName="luanyin2" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1392" name="王城密道" fileName="wushuangchenghuanggongmishi" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1391" name="王城密室" fileName="wushuangchengdadian" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1411" name="精怪洞穴密室" fileName="jinyin1" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1412" name="精怪洞穴密道" fileName="jinyin2" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="30"/>
+		<map mapID="1721" name="机械工厂帮会战" fileName="jyin1" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="30" commoncountrybackto="134"/>
+		<map mapID="1722" name="机械工厂密道" fileName="jyin2" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="30" commoncountrybackto="134"/>
+		<map mapID="1821" name="栖息地帮会战" fileName="myin1" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="30" commoncountrybackto="134"/>
+		<map mapID="1822" name="栖息地密道" fileName="myin2" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="30" commoncountrybackto="134"/>
+		<map mapID="701" name="天关一层" fileName="neidianditu1" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="702" name="天关二层" fileName="neidianditu2" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="703" name="天关三层" fileName="neidianditu3" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="704" name="天关四层" fileName="neidianditu4" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="705" name="天关五层" fileName="neidianditu5" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="706" name="天关六层" fileName="neidianditu6" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="707" name="天关七层" fileName="neidianditu7" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="708" name="天关八层" fileName="neidianditu8" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="709" name="天关九层" fileName="neidianditu9" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+		<map mapID="710" name="天关十层" fileName="neidianditu10" foreignerbackto="134" function="512" backtocity="134" commoncountrybackto="134" level="" commonuserbackto="134"/>
+ 		<map mapID="251" name="神魔之隙" fileName="hua_groupmap2" backtocity="134" foreignerbackto="134" backto="134" commonuserbackto="134" commoncountrybackto="134" level="30" function="512"/><!--function="261" 133是进地图下马是不能使用内挂系统-->
+		<map mapID="252" name="月牙荒谷" fileName="tai_groupmap1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+	    	<map mapID="253" name="蜀山古镇" fileName="heng_groupmap3" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		        	
+		<map mapID="254" name="太阳华池" fileName="song_groupmap4" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="255" name="丹枫峡谷" fileName="hen_groupmap5" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="256" name="魔界之门" fileName="shu_groupmap6" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="257" name="月光城寨" fileName="kunlun_groupmap7" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="262" name="九黎旧祠" fileName="tai_groupmap1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="259" name="绝行天径" fileName="hua_groupmap2" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="260" name="迷踪林" fileName="ziyuanxiongdi_b" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="263" name="专属副本" fileName="baozangconglin" backtocity="134" foreignerbackto="134" backto="134" function="140" commonuserbackto="134" backtodare="134" level="30" commoncountrybackto="134"/>
+		
+		<map mapID="31001" name="昆仑仙境" fileName="kunlunxuyiceng" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="31002" name="星魂战场" fileName="a_LHZC" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="31003" name="冥界地宫" fileName="a_YMJ" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="31004" name="封魔神殿" fileName="a_MWD" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="31005" name="炼狱秘境" fileName="a_mk" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="31006" name="云顶仙墅" fileName="a_jiazu" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		<map mapID="31007" name="VIP专属副本图" fileName="yadanguicheng1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" exprate="10" commoncountrybackto="134"/>
+		
+ 		<!--10500-10550是20-23点自动踢人地图-->
+        <!--20500-20550是副本地图,需要开启副本状态-->
+        <map mapID="10500" name="万宝宫一层" fileName="a_WBG1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10501" name="万宝宫二层" fileName="a_WBG2" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10502" name="万宝宫三层" fileName="a_WBG3" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10503" name="万宝宫四层" fileName="a_WBG4" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10504" name="万宝宫五层" fileName="a_WBG5" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10505" name="万宝宫六层" fileName="a_WBG6" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10506" name="万宝宫七层" fileName="a_WBG7" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10507" name="万宝宫八层" fileName="a_WBG8" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10508" name="万宝宫九层" fileName="a_WBG9" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="10509" name="万宝宫十层" fileName="a_WBG10" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+
+        <map mapID="20511" name="镇妖塔一层" fileName="jiucengyaota11" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20512" name="镇妖塔二层" fileName="jiucengyaota12" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20513" name="镇妖塔三层" fileName="jiucengyaota13" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20514" name="镇妖塔四层" fileName="jiucengyaota14" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20515" name="镇妖塔五层" fileName="jiucengyaota15" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20516" name="镇妖塔六层" fileName="jiucengyaota16" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20517" name="镇妖塔七层" fileName="jiucengyaota17" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20518" name="镇妖塔八层" fileName="jiucengyaota18" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="20519" name="镇妖塔九层" fileName="jiucengyaota19" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+      <!--22500-22509是战力地图-->
+		<map mapID="22500" name="战力副本一层" fileName="zhanli1" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22501" name="战力副本二层" fileName="zhanli2" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22502" name="战力副本三层" fileName="zhanli3" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22503" name="战力副本四层" fileName="zhanli4" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22504" name="战力副本五层" fileName="zhanli5" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22505" name="战力副本六层" fileName="zhanli6" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22506" name="战力副本七层" fileName="zhanli7" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22507" name="战力副本八层" fileName="zhanli8" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22508" name="战力副本九层" fileName="zhanli9" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+        <map mapID="22509" name="战力副本十层" fileName="zhanli9" backtocity="134" foreignerbackto="134" backto="134" function="512" commonuserbackto="134" backtodare="134" level="80" commoncountrybackto="134" countrydarebackto="134"/>
+		<map mapID="10001" name="天下第一海选1组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10002" name="天下第一海选2组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10003" name="天下第一海选3组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10004" name="天下第一海选4组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10005" name="天下第一海选5组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10006" name="天下第一海选6组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10007" name="天下第一海选7组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10008" name="天下第一海选8组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10009" name="天下第一海选9组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10010" name="天下第一海选10组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10011" name="天下第一海选11组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10012" name="天下第一海选12组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10013" name="天下第一海选13组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10014" name="天下第一海选14组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10015" name="天下第一海选15组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10016" name="天下第一海选16组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10101" name="天下第一初选1组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10102" name="天下第一初选2组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10103" name="天下第一初选3组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10104" name="天下第一初选4组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10105" name="天下第一初选5组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10106" name="天下第一初选6组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10107" name="天下第一初选7组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10108" name="天下第一初选8组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10201" name="天下第一复选1组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10202" name="天下第一复选2组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10203" name="天下第一复选3组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10204" name="天下第一复选4组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10301" name="天下第一半决赛1组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10302" name="天下第一半决赛2组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10401" name="天下第一总决赛1组" fileName="zongjuesai1" backtocity="134" foreignerbackto="294" backto="294" commonuserbackto="294" commoncountrybackto="294" backtodare="294" function="" level="2" pklevel="29"/>
+		<map mapID="10999" name="国家BOSS争夺战" fileName="shengcheng" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		
+		<map mapID="20000" name="帝王陵墓" fileName="diwanglingmu" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20001" name="昆仑仙境一层" fileName="kunlunxuyiceng" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20002" name="昆仑仙境二层" fileName="kunlunxuerceng" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20003" name="昆仑仙境三层" fileName="kunlunxusanceng" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20004" name="烈火地狱" fileName="mingrenfuben1" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20005" name="地狱之境" fileName="mingrenfuben2" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20006" name="蓬莱仙境" fileName="penglaidao" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20007" name="雪山之巅" fileName="xiaodui1" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20008" name="火山之巅" fileName="xiaodui1" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20009" name="BOSS集中营一" fileName="yewai" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		<map mapID="20010" name="BOSS集中营二" fileName="yewai01" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+		
+		<map mapID="20011" name="云天别墅" fileName="sirenbieshu" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="50" commoncountrybackto="134"/>
+	</mapinfo>
+</ScenesInfo>

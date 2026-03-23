@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5504" name="回收系统">
+	<!--new means new quest, default is quest on user-->
+	<quest id="15504">
+		<embranchment id="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    尊敬的(GetName)您好,我这里可以回收所有你不需要的东西。")
+this:AddDialogItem("废旧神石兑换指定神石(0)", "Dialog74")
+this:AddCloseItem("离开")
+end
+function Dialog74()
+this:AddTalk("    这么多垃圾神石，我帮你兑换指定神石但是需要收取一颗神石作为费用。")
+this:AddTaskCmdItem("两颗武器神石兑换一颗指定神石(1)", "v5504", 25504, 1)
+this:AddTaskCmdItem("两颗衣服神石兑换一颗指定神石(1)", "v5504", 25504, 2)
+this:AddTaskCmdItem("两颗项链神石兑换一颗指定神石(1)", "v5504", 25504, 3)
+this:AddTaskCmdItem("两颗头盔神石兑换一颗指定神石(1)", "v5504", 25504, 4)
+this:AddTaskCmdItem("两颗护腕神石兑换一颗指定神石(1)", "v5504", 25504, 5)
+this:AddTaskCmdItem("两颗戒指神石兑换一颗指定神石(1)", "v5504", 25504, 6)
+this:AddTaskCmdItem("两颗鞋子神石兑换一颗指定神石(1)", "v5504", 25504, 7)
+this:AddTaskCmdItem("两颗盾牌神石兑换一颗指定神石(1)", "v5504", 25504, 8)
+this:AddTaskCmdItem("两颗腰带神石兑换一颗指定神石(1)", "v5504", 25504, 9)
+this:AddTaskCmdItem("两颗血衣神石兑换一颗指定神石(1)", "v5504", 25504, 10)
+this:AddTaskCmdItem("两颗马蹄神石兑换一颗指定神石(1)", "v5504", 25504, 11)
+this:AddTaskCmdItem("两颗马绳神石兑换一颗指定神石(1)", "v5504", 25504, 12)
+this:AddTaskCmdItem("两颗马镫神石兑换一颗指定神石(1)", "v5504", 25504, 13)
+this:AddTaskCmdItem("两颗马鞍神石兑换一颗指定神石(1)", "v5504", 25504, 14)
+this:AddTaskCmdItem("两颗马甲神石兑换一颗指定神石(1)", "v5504", 25504, 15)
+this:AddCloseItem("离开")
+end
+function Dialog75()
+this:AddTalk("    你可以把不想要的垃圾石头在我这里兑换成金子..好的石头请放仓库")
+this:AddTaskCmdItem("回收冰片10两/个(1)", "v5504", 25504, 16)
+this:AddTaskCmdItem("回收冰片10锭/100个(1)", "v5504", 25504, 17)
+this:AddTaskCmdItem("回收犄角50两/个(1)", "v5504", 25504, 18)
+this:AddTaskCmdItem("回收犄角50锭/100个(1)", "v5504", 25504, 19)
+this:AddTaskCmdItem("回收麒麟之魄250两/个(1)", "v5504", 25504, 20)
+this:AddTaskCmdItem("回收麒麟之魄250锭/100个(1)", "v5504", 25504, 21)
+this:AddCloseItem("离开")
+end
+function Dialog76()
+this:AddTalk("    你可以把不想要的垃圾石头在我这里兑换成金子..好的石头请放仓库")
+this:AddTaskCmdItem("属性石（力量）10锭/颗((1)", "v5504", 25504, 22)
+this:AddTaskCmdItem("属性石（智力）10锭/颗(1)", "v5504", 25504, 23)
+this:AddTaskCmdItem("属性石（敏捷）10锭/颗(1)", "v5504", 25504, 24)
+this:AddTaskCmdItem("属性石（精神）10锭/颗(1)", "v5504", 25504, 25)
+this:AddTaskCmdItem("属性石（体质）10锭/颗(1)", "v5504", 25504, 26)
+this:AddTaskCmdItem("属性石（力量）50锭/5颗((1)", "v5504", 25504, 27)
+this:AddTaskCmdItem("属性石（智力）50锭/5颗(1)", "v5504", 25504, 28)
+this:AddTaskCmdItem("属性石（敏捷）50锭/5颗(1)", "v5504", 25504, 29)
+this:AddTaskCmdItem("属性石（精神）50锭/5颗(1)", "v5504", 25504, 30)
+this:AddTaskCmdItem("属性石（体质）50锭/5颗(1)", "v5504", 25504, 31)
+this:AddCloseItem("离开")
+end
+function Dialog77()
+this:AddTalk("    你可以把不想要的垃圾石头在我这里兑换成有用的")
+this:AddTaskCmdItem("属性石（力量）兑换智力((1)", "v5504", 25504, 32)
+this:AddTaskCmdItem("属性石（力量）兑换敏捷(1)", "v5504", 25504, 33)
+this:AddTaskCmdItem("属性石（力量）兑换精神(1)", "v5504", 25504, 34)
+this:AddTaskCmdItem("属性石（力量）兑换体质(1)", "v5504", 25504, 35)
+this:AddTaskCmdItem("属性石（智力）兑换力量(1)", "v5504", 25504, 36)
+this:AddTaskCmdItem("属性石（智力）兑换敏捷((1)", "v5504", 25504, 37)
+this:AddTaskCmdItem("属性石（智力）兑换精神(1)", "v5504", 25504, 38)
+this:AddTaskCmdItem("属性石（智力）兑换体质(1)", "v5504", 25504, 39)
+this:AddTaskCmdItem("属性石（敏捷）兑换力量((1)", "v5504", 25504, 40)
+this:AddTaskCmdItem("属性石（敏捷）兑换智力(1)", "v5504", 25504, 41)
+this:AddTaskCmdItem("属性石（敏捷）兑换精神(1)", "v5504", 25504, 42)
+this:AddTaskCmdItem("属性石（敏捷）兑换体质(1)", "v5504", 25504, 43)
+this:AddTaskCmdItem("属性石（精神）兑换力量(1)", "v5504", 25504, 44)
+this:AddTaskCmdItem("属性石（精神）兑换智力((1)", "v5504", 25504, 45)
+this:AddTaskCmdItem("属性石（精神）兑换敏捷(1)", "v5504", 25504, 46)
+this:AddTaskCmdItem("属性石（精神）兑换体质(1)", "v5504", 25504, 47)
+this:AddTaskCmdItem("属性石（体质）兑换力量(1)", "v5504", 25504, 48)
+this:AddTaskCmdItem("属性石（体质）兑换智力((1)", "v5504", 25504, 49)
+this:AddTaskCmdItem("属性石（体质）兑换敏捷(1)", "v5504", 25504, 50)
+this:AddTaskCmdItem("属性石（体质）兑换精神(1)", "v5504", 25504, 51)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="25504" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<space size="1"/>
+				<item value="2" id="52020"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52020"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<item value="2" id="52021"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52021"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<item value="2" id="52022"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52022"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<item value="2" id="52023"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52023"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<item value="2" id="52024"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52024"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<item value="2" id="52025"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52025"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<item value="2" id="52026"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52026"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<item value="2" id="52027"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52027"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<item value="2" id="52028"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52028"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<item value="2" id="52029"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52029"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<item value="2" id="52050"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52050"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<item value="2" id="52051"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52051"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<item value="2" id="52052"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52052"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+				<item value="2" id="52053"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52053"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+				<item value="2" id="52054"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取指定神石"/>
+				<var1bulletin kind="41" content="在系统回收，使用废旧神石兑换成指定神石。"/>
+				<removeitem value="2" id="52054"/> 
+				<addbinditem value="1" id="22140"/><!--指定神石一颗-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<item value="1" id="22124"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="22124"/> 
+				<umaxgold type="Add" value="1000"/><!--10两金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="17" active="1">
+			<conditions>
+				<item value="100" id="22124"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="100" id="22124"/> 
+				<umaxgold type="Add" value="100000"/><!--10锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="18" active="1">
+			<conditions>
+				<item value="1" id="22125"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="22125"/> 
+				<umaxgold type="Add" value="5000"/><!--50两金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<item value="100" id="22125"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="100" id="22125"/> 
+				<umaxgold type="Add" value="500000"/><!--20锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<item value="1" id="22126"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="22126"/> 
+				<umaxgold type="Add" value="25000"/><!--2.5锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<item value="100" id="22126"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="100" id="22126"/> 
+				<umaxgold type="Add" value="2500000"/><!--250锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<item value="1" id="1465"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="1465"/> 
+				<umaxgold type="Add" value="100000"/><!--10锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<item value="1" id="1470"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="1470"/> 
+				<umaxgold type="Add" value="100000"/><!--10锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="24" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="1475"/> 
+				<umaxgold type="Add" value="100000"/><!--10锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="25" active="1">
+			<conditions>
+				<item value="1" id="1480"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="1480"/> 
+				<umaxgold type="Add" value="100000"/><!--10锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<item value="1" id="1485"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="1" id="1485"/> 
+				<umaxgold type="Add" value="100000"/><!--10锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="27" active="1">
+			<conditions>
+				<item value="5" id="1465"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="5" id="1465"/> 
+				<umaxgold type="Add" value="500000"/><!--50锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="28" active="1">
+			<conditions>
+				<item value="5" id="1470"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="5" id="1470"/> 
+				<umaxgold type="Add" value="500000"/><!--50锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<item value="5" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="5" id="1475"/> 
+				<umaxgold type="Add" value="500000"/><!--50锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<item value="5" id="1480"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="5" id="1480"/> 
+				<umaxgold type="Add" value="500000"/><!--50锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<item value="5" id="1485"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获取金子"/>
+				<var1bulletin kind="4" content="在系统回收，回收垃圾获得金子。"/>
+				<removeitem value="5" id="1485"/> 
+				<umaxgold type="Add" value="500000"/><!--50锭金子-->
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<item value="1" id="1465"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1465"/> 
+				<addbinditem value="1" id="1470"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="33" active="1">
+			<conditions>
+				<item value="1" id="1465"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1465"/> 
+				<addbinditem value="1" id="1475"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="34" active="1">
+			<conditions>
+				<item value="1" id="1465"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1465"/> 
+				<addbinditem value="1" id="1480"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="35" active="1">
+			<conditions>
+				<item value="1" id="1465"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1465"/> 
+				<addbinditem value="1" id="1485"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="36" active="1">
+			<conditions>
+				<item value="1" id="1470"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1470"/> 
+				<addbinditem value="1" id="1465"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="37" active="1">
+			<conditions>
+				<item value="1" id="1470"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1470"/> 
+				<addbinditem value="1" id="1475"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="38" active="1">
+			<conditions>
+				<item value="1" id="1470"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1470"/> 
+				<addbinditem value="1" id="1480"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="39" active="1">
+			<conditions>
+				<item value="1" id="1470"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1470"/> 
+				<addbinditem value="1" id="1485"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="40" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1465"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1470"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1480"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="43" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1485"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+			<embranchment id="40" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1465"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1470"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1480"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="43" active="1">
+			<conditions>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1475"/> 
+				<addbinditem value="1" id="1485"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="44" active="1">
+			<conditions>
+				<item value="1" id="1480"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1480"/> 
+				<addbinditem value="1" id="1465"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="45" active="1">
+			<conditions>
+				<item value="1" id="1480"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1480"/> 
+				<addbinditem value="1" id="1470"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="46" active="1">
+			<conditions>
+				<item value="1" id="1480"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1480"/> 
+				<addbinditem value="1" id="1475"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="47" active="1">
+			<conditions>
+				<item value="1" id="1480"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1480"/> 
+				<addbinditem value="1" id="1485"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="48" active="1">
+			<conditions>
+				<item value="1" id="1485"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1485"/> 
+				<addbinditem value="1" id="1465"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="49" active="1">
+			<conditions>
+				<item value="1" id="1485"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1485"/> 
+				<addbinditem value="1" id="1470"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="50" active="1">
+			<conditions>
+				<item value="1" id="1485"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1485"/> 
+				<addbinditem value="1" id="1475"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="51" active="1">
+			<conditions>
+				<item value="1" id="1485"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获的魂魄"/>
+				<var1bulletin kind="4" content="魂魄石互换。"/>
+				<removeitem value="1" id="1485"/> 
+				<addbinditem value="1" id="1480"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="10047" name="海贼">
+	<quest id="9999">
+		<embranchment id="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<adddropitem value="1" id="35102" odds="6"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

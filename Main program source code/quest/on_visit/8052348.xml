@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="8052348" name="45W战力礼包领取">
+	<!--new means new quest, default is quest on user-->
+	<quest id="1000">
+		<embranchment id="1">
+			<conditions>
+				<charzhanli type="Less" value="160000"/>
+				<var type="Differ" name="state" value="-1" id="28009"/>
+			</conditions>
+			<actions>
+				<flexmenu content="战力值不满足领取条件！请继续努力提升战力再来领取"/>
+                                <notify6 content="战力值不满足领取条件！请继续努力提升战力再来领取"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--已经领取过对话-->
+			<conditions>
+				<charzhanli type="Great" value="159999"/>
+				<var type="Equal" name="state" value="-1" id="28009"/>
+			</conditions>
+			<actions>
+				<flexmenu content="此项战力福利礼包你已经领取过了！"/>
+                                <notify6 content="此项战力福利礼包你已经领取过了！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<charzhanli type="Great" value="159999"/>
+				<var type="Differ" name="state" value="-1" id="28009"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,255\&quot;&gt;勇士！&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;当你的战力值达到一定战力可找我领取一次战力礼包福利哦！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;\n温馨提示：&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;\n每一次达标战力数值即可领取一次礼包，一种礼包终生只能领取一次！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("确定战力领取(0)", "v8052348", 28009, 10)
+this:AddTaskCmdItem("返回(0)", "v5234", 205234, 0)
+this:AddCloseItem("离开")
+end 
+               </menu>
+               <var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="28009" new="1">
+		<embranchment id="10" active="1">
+			<!--9W战力礼包领取参数-->
+			<conditions>
+				<charzhanli type="Great" value="159999"/>
+				<var type="Differ" name="state" value="-1" id="28009"/>
+			</conditions>
+			<actions>
+				<flexmenu content="领取16W战力礼包成功,请背包查看!"/>
+				<!--9W战力礼包-->
+				<addbinditem value="300" id="3540"/>
+				<addbinditem value="200" id="50000"/>
+				<addbinditem value="500" id="1402"/>
+				<var1bulletin kind="41" content="在“慕容雪”处领取了16W战力福利礼包！"/>
+				<var type="Set" name="state" value="-1" id="28009"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

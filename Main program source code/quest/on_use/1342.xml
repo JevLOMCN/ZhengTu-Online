@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1342" name="玉卡片">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<addbindnewitem value="1" id="526" level="3"/>
+				<notify1 content="得到1个四等绑定玉"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

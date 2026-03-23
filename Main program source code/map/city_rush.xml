@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<info>
+    <!--<rush id="1" name="王城1小时倒计时-王城" mapid="139" boss="60001" bossname="红BOSS" cleardelay="7200" lasttime="7200">
+	<starttext str="万宝宫活动将在time后在皇城开放，让我们拿起武器，去抢夺万宝宫的宝物！"/>
+           <boss x="1" y="1" region="1" num="1" script=""/>
+    </rush>
+        <rush id="2" name="皇城1小时倒计时-凤凰城" mapid="102" boss="60001" bossname="红BOSS" cleardelay="7200" lasttime="7200">
+	<starttext str="皇城终极BOSS将在time后在皇城桥上再次降临，让我们拿起武器，去抢夺宝物！"/>
+           <boss x="1" y="1" region="1" num="1" script=""/>
+    </rush>-->
+
+	
+    <!--<rush id="111" name="世界boss刷新" mapid="178" boss="144001" bossname="世界boss" cleardelay="7200" lasttime="7200">
+           <boss x="133" y="63" region="1" num="1" script=""/>
+	</rush>-->
+       <!-- <rush id="101" name="万宝宫倒计时10秒-边境" mapid="137" boss="60001" bossname="红BOSS" cleardelay="7200" lasttime="7200">
+         <notify str="万宝宫活动将在10秒钟后在皇城(827,699)开启"/>
+           <boss x="1" y="1" region="1" num="1" script=""/>
+    </rush>
+        <rush id="102" name="皇城倒计时10秒-北郊" mapid="103" boss="60001" bossname="红BOSS" cleardelay="7200" lasttime="7200">
+         <notify str="皇城终极BOSS将在10秒钟后在皇城(669,604)开启"/>
+           <boss x="1" y="1" region="1" num="1" script=""/>
+    </rush>-->
+</info>
+<!-- 说明 author 邢万里 -->
+<!-- rush id="攻城行动的编号" name="行动名字" mapid="目标地图" boss="boss编号" bossname="boss名" cleardelay="结束后清除怪物的时间" lasttime="持续时间，无论攻城进行到哪一步，该时间一到就进入清除阶段" -->
+<!-- boss x="出生地点" y="出生地点" region="范围" num="数量" boss只有一个，攻城开始时随机选择一个进行召唤-->
+<!-- servant id="召唤小怪的编号" num="数量" rate="几率" interval="间隔" -->
+<!-- phase action="该阶段boss的动作" x="位置" y="位置" region="范围" lasttime="该阶段持续时间" -->
+<!-- 所有阶段都可以指定所有参数，不同阶段参数意义略不相同 -->
+<!-- say="" ，阶段开始时boss会说话 -->
+<!-- 动作说明-->
+<!-- 动作分为瞬间和持续两种-->
+<!-- 持续动作中boss会重复动作直到阶段时间结束-->
+<!-- 瞬间动作在阶段开始时执行，在该阶段内boss做普通攻击-->
+<!-- moveto boss移动到某位置附近，region表示范围，持续时间结束后，boss会跳转到目标位置。持续 -->
+<!-- recover 恢复boss全部hp。瞬间 -->
+<!-- summon 召唤小怪，根据几率，可能一次召唤出所有小怪，也可能什么都没召唤。瞬间 -->
+<!-- summon_off 关闭召唤，boss受到攻击不会召唤小怪。瞬间 -->
+<!-- summon_on 打开召唤，boss受到攻击随机召唤小怪，延迟时间内不会召唤。瞬间 -->
+<!-- attack 在指定的位置和范围内攻击，直到阶段时间结束。持续 -->
+<!-- clear 清除召唤出来的小怪。瞬间 -->
+<!-- warp x="100" y="100" 瞬间移动到某位置(未完成)。瞬间 -->
+<!-- 所有阶段完成或boss被杀死后进入end阶段，end阶段持续时间为攻城的cleardelay时间，end阶段结束时清除boss和所有召唤出来的小怪-->

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gui", "gui.vcproj", "{C91E7E41-22CA-44BA-8724-E21C30A6E86D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		ReleaseTest = ReleaseTest
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C91E7E41-22CA-44BA-8724-E21C30A6E86D}.Debug.ActiveCfg = Debug|Win32
+		{C91E7E41-22CA-44BA-8724-E21C30A6E86D}.Debug.Build.0 = Debug|Win32
+		{C91E7E41-22CA-44BA-8724-E21C30A6E86D}.Release.ActiveCfg = Release|Win32
+		{C91E7E41-22CA-44BA-8724-E21C30A6E86D}.Release.Build.0 = Release|Win32
+		{C91E7E41-22CA-44BA-8724-E21C30A6E86D}.ReleaseTest.ActiveCfg = ReleaseTest|Win32
+		{C91E7E41-22CA-44BA-8724-E21C30A6E86D}.ReleaseTest.Build.0 = ReleaseTest|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

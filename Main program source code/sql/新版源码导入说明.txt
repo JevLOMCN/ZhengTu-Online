@@ -1,0 +1,14 @@
+
+创建数据库表名
+
+create database LoginSzt2DB;
+
+create database Upzt2GameDB;
+
+
+2.导入数据库源码文件 SessionServer.sql、NpcDare.sql、country_data.sql、SuperServer.sql、serverlist_demo.sql、 
+                      tech_data.sql、BillServer.sql、MiniServer.sql、RecordServer.sql
+
+3.导入题库answer.txt
+
+打开数据库Upzt2GameDB 选择 ANSWER - 右键选择 - 导出/导入 - 从CSV 导入数据库 - 选择本地目录answer.txt文件 - 导入

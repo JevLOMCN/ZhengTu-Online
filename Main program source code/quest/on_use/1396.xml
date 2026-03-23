@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1396" name="福利袋(大)">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<gold type="Add" value="100000000"/>
+				<notify1 content="得到银子10000锭"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

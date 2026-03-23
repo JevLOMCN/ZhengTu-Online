@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5407" name="圣诞树抽奖">
+	<!--new means new quest, default is quest on user-->
+	<quest id="10001">
+		<embranchment id="1">
+			<conditions>
+                        <uservar type="Less" name="fulichoujiang1" value="50"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,143,0\"&gt;今日抽奖累积次数：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;当前0次>冲刺50次  &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("领取额外奖励(21)", "Dialog5")
+
+this:AddCloseItem("离开")
+end
+function Dialog5()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网,请领取你专属的抽奖福利【每日从新计算】！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("查阅50次奖励(22)", "Dialog101")
+this:AddDialogItem("查阅150次奖励(22)", "Dialog102")
+this:AddDialogItem("查阅300次奖励(22)", "Dialog103")
+this:AddDialogItem("查阅800次奖励(22)", "Dialog104")
+this:AddDialogItem("查阅2000次奖励(22)", "Dialog105")
+this:AddDialogItem("查阅5000次奖励(22)", "Dialog106")
+this:AddTaskCmdItem("领取今日抽奖50次奖励(82)", "v5407", 105, 1)
+this:AddTaskCmdItem("领取今日抽奖150次奖励(82)", "v5407", 105, 2)
+this:AddTaskCmdItem("领取今日抽奖300次奖励(82)", "v5407", 105, 3)
+this:AddTaskCmdItem("领取今日抽奖800次奖励(82)", "v5407", 105, 4)
+this:AddTaskCmdItem("领取今日抽奖2000次奖励(82)", "v5407", 105, 5)
+this:AddTaskCmdItem("领取今日抽奖5000次奖励(82)", "v5407", 105, 6)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog6()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到回收系统！ &lt;/n&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("回收紫金龙袍【返还黄金仙锄*10】(82)", "v5407", 111, 1)
+this:AddTaskCmdItem("回收尚方宝剑【返还黄金仙锄*10】(82)", "v5407", 111, 2)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog101()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;50次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹50个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog102()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;150次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹150个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog103()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;300次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹300个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog104()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;800次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹800个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog105()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;2000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹2000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog106()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;5000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹5000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")  
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+	
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+                        <uservar type="Less" name="fulichoujiang1" value="150"/>
+                        <uservar type="Great" name="fulichoujiang1" value="49"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,143,0\"&gt;今日抽奖累积次数：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;当前50次>冲刺150次  &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("领取额外奖励(21)", "Dialog5")
+
+this:AddCloseItem("离开")
+end
+function Dialog5()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网,请领取你专属的抽奖福利【每日从新计算】！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("查阅50次奖励(22)", "Dialog101")
+this:AddDialogItem("查阅150次奖励(22)", "Dialog102")
+this:AddDialogItem("查阅300次奖励(22)", "Dialog103")
+this:AddDialogItem("查阅800次奖励(22)", "Dialog104")
+this:AddDialogItem("查阅2000次奖励(22)", "Dialog105")
+this:AddDialogItem("查阅5000次奖励(22)", "Dialog106")
+this:AddTaskCmdItem("领取今日抽奖50次奖励(82)", "v5407", 105, 1)
+this:AddTaskCmdItem("领取今日抽奖150次奖励(82)", "v5407", 105, 2)
+this:AddTaskCmdItem("领取今日抽奖300次奖励(82)", "v5407", 105, 3)
+this:AddTaskCmdItem("领取今日抽奖800次奖励(82)", "v5407", 105, 4)
+this:AddTaskCmdItem("领取今日抽奖2000次奖励(82)", "v5407", 105, 5)
+this:AddTaskCmdItem("领取今日抽奖5000次奖励(82)", "v5407", 105, 6)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog6()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到回收系统！ &lt;/n&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("回收紫金龙袍【返还黄金仙锄*10】(82)", "v5407", 111, 1)
+this:AddTaskCmdItem("回收尚方宝剑【返还黄金仙锄*10】(82)", "v5407", 111, 2)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog101()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;50次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹50个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog102()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;150次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹150个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog103()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;300次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹300个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog104()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;800次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹800个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog105()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;2000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹2000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog106()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;5000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹5000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")  
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+	
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+                        <uservar type="Less" name="fulichoujiang1" value="300"/>
+                        <uservar type="Great" name="fulichoujiang1" value="149"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,143,0\"&gt;今日抽奖累积次数：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;当前150次>冲刺300次  &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("领取额外奖励(21)", "Dialog5")
+
+this:AddCloseItem("离开")
+end
+function Dialog5()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网,请领取你专属的抽奖福利【每日从新计算】！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("查阅50次奖励(22)", "Dialog101")
+this:AddDialogItem("查阅150次奖励(22)", "Dialog102")
+this:AddDialogItem("查阅300次奖励(22)", "Dialog103")
+this:AddDialogItem("查阅800次奖励(22)", "Dialog104")
+this:AddDialogItem("查阅2000次奖励(22)", "Dialog105")
+this:AddDialogItem("查阅5000次奖励(22)", "Dialog106")
+this:AddTaskCmdItem("领取今日抽奖50次奖励(82)", "v5407", 105, 1)
+this:AddTaskCmdItem("领取今日抽奖150次奖励(82)", "v5407", 105, 2)
+this:AddTaskCmdItem("领取今日抽奖300次奖励(82)", "v5407", 105, 3)
+this:AddTaskCmdItem("领取今日抽奖800次奖励(82)", "v5407", 105, 4)
+this:AddTaskCmdItem("领取今日抽奖2000次奖励(82)", "v5407", 105, 5)
+this:AddTaskCmdItem("领取今日抽奖5000次奖励(82)", "v5407", 105, 6)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog6()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到回收系统！ &lt;/n&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("回收紫金龙袍【返还黄金仙锄*10】(82)", "v5407", 111, 1)
+this:AddTaskCmdItem("回收尚方宝剑【返还黄金仙锄*10】(82)", "v5407", 111, 2)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog101()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;50次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹50个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog102()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;150次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹150个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog103()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;300次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹300个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog104()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;800次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹800个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog105()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;2000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹2000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog106()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;5000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹5000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")  
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+	
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+                        <uservar type="Less" name="fulichoujiang1" value="800"/>
+                        <uservar type="Great" name="fulichoujiang1" value="299"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,143,0\"&gt;今日抽奖累积次数：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;当前300次>冲刺800次  &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("领取额外奖励(21)", "Dialog5")
+
+this:AddCloseItem("离开")
+end
+
+function Dialog5()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网,请领取你专属的抽奖福利【每日从新计算】！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("查阅50次奖励(22)", "Dialog101")
+this:AddDialogItem("查阅150次奖励(22)", "Dialog102")
+this:AddDialogItem("查阅300次奖励(22)", "Dialog103")
+this:AddDialogItem("查阅800次奖励(22)", "Dialog104")
+this:AddDialogItem("查阅2000次奖励(22)", "Dialog105")
+this:AddDialogItem("查阅5000次奖励(22)", "Dialog106")
+this:AddTaskCmdItem("领取今日抽奖50次奖励(82)", "v5407", 105, 1)
+this:AddTaskCmdItem("领取今日抽奖150次奖励(82)", "v5407", 105, 2)
+this:AddTaskCmdItem("领取今日抽奖300次奖励(82)", "v5407", 105, 3)
+this:AddTaskCmdItem("领取今日抽奖800次奖励(82)", "v5407", 105, 4)
+this:AddTaskCmdItem("领取今日抽奖2000次奖励(82)", "v5407", 105, 5)
+this:AddTaskCmdItem("领取今日抽奖5000次奖励(82)", "v5407", 105, 6)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog6()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到回收系统！ &lt;/n&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("回收紫金龙袍【返还黄金仙锄*10】(82)", "v5407", 111, 1)
+this:AddTaskCmdItem("回收尚方宝剑【返还黄金仙锄*10】(82)", "v5407", 111,2)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog101()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;50次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹50个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog102()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;150次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹150个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog103()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;300次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹300个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog104()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;800次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹800个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog105()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;2000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹2000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog106()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;5000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹5000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")  
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+	
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+                        <uservar type="Less" name="fulichoujiang1" value="2000"/>
+                        <uservar type="Great" name="fulichoujiang1" value="799"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,143,0\"&gt;今日抽奖累积次数：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;当前800次>冲刺2000次  &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("领取额外奖励(21)", "Dialog5")
+
+this:AddCloseItem("离开")
+end
+function Dialog5()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网,请领取你专属的抽奖福利【每日从新计算】！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("查阅50次奖励(22)", "Dialog101")
+this:AddDialogItem("查阅150次奖励(22)", "Dialog102")
+this:AddDialogItem("查阅300次奖励(22)", "Dialog103")
+this:AddDialogItem("查阅800次奖励(22)", "Dialog104")
+this:AddDialogItem("查阅2000次奖励(22)", "Dialog105")
+this:AddDialogItem("查阅5000次奖励(22)", "Dialog106")
+this:AddTaskCmdItem("领取今日抽奖50次奖励(82)", "v5407", 105, 1)
+this:AddTaskCmdItem("领取今日抽奖150次奖励(82)", "v5407", 105, 2)
+this:AddTaskCmdItem("领取今日抽奖300次奖励(82)", "v5407", 105, 3)
+this:AddTaskCmdItem("领取今日抽奖800次奖励(82)", "v5407", 105, 4)
+this:AddTaskCmdItem("领取今日抽奖2000次奖励(82)", "v5407", 105, 5)
+this:AddTaskCmdItem("领取今日抽奖5000次奖励(82)", "v5407", 105, 6)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog6()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到回收系统！ &lt;/n&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("回收紫金龙袍【返还黄金仙锄*10】(82)", "v5407", 111, 1)
+this:AddTaskCmdItem("回收尚方宝剑【返还黄金仙锄*10】(82)", "v5407", 111, 2)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog101()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;50次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹50个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog102()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;150次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹150个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog103()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;300次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹300个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog104()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;800次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹800个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog105()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;2000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹2000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog106()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;5000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹5000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")  
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+	
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+                        <uservar type="Less" name="fulichoujiang1" value="5000"/>
+                        <uservar type="Great" name="fulichoujiang1" value="1999"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,143,0\"&gt;今日抽奖累积次数：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;当前2000次>冲刺5000次  &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("领取额外奖励(21)", "Dialog5")
+
+this:AddCloseItem("离开")
+end
+function Dialog5()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网,请领取你专属的抽奖福利【每日从新计算】！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("查阅50次奖励(22)", "Dialog101")
+this:AddDialogItem("查阅150次奖励(22)", "Dialog102")
+this:AddDialogItem("查阅300次奖励(22)", "Dialog103")
+this:AddDialogItem("查阅800次奖励(22)", "Dialog104")
+this:AddDialogItem("查阅2000次奖励(22)", "Dialog105")
+this:AddDialogItem("查阅5000次奖励(22)", "Dialog106")
+this:AddTaskCmdItem("领取今日抽奖50次奖励(82)", "v5407", 105, 1)
+this:AddTaskCmdItem("领取今日抽奖150次奖励(82)", "v5407", 105, 2)
+this:AddTaskCmdItem("领取今日抽奖300次奖励(82)", "v5407", 105, 3)
+this:AddTaskCmdItem("领取今日抽奖800次奖励(82)", "v5407", 105, 4)
+this:AddTaskCmdItem("领取今日抽奖2000次奖励(82)", "v5407", 105, 5)
+this:AddTaskCmdItem("领取今日抽奖5000次奖励(82)", "v5407", 105, 6)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog6()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到回收系统！ &lt;/n&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("回收紫金龙袍【返还黄金仙锄*10】(82)", "v5407", 111, 1)
+this:AddTaskCmdItem("回收尚方宝剑【返还黄金仙锄*10】(82)", "v5407", 111, 2)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog101()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;50次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹50个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog102()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;150次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹150个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog103()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;300次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹300个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog104()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;800次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹800个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog105()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;2000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹2000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog106()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;5000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹5000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")  
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+	
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+                        <uservar type="Less" name="fulichoujiang1" value="10000"/>
+                        <uservar type="Great" name="fulichoujiang1" value="4999"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,143,0\"&gt;今日抽奖累积次数：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt; ＞5000次-冲刺无限  &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("领取额外奖励(21)", "Dialog5")
+
+this:AddCloseItem("离开")
+end
+function Dialog5()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网,请领取你专属的抽奖福利【每日从新计算】！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("查阅50次奖励(22)", "Dialog101")
+this:AddDialogItem("查阅150次奖励(22)", "Dialog102")
+this:AddDialogItem("查阅300次奖励(22)", "Dialog103")
+this:AddDialogItem("查阅800次奖励(22)", "Dialog104")
+this:AddDialogItem("查阅2000次奖励(22)", "Dialog105")
+this:AddDialogItem("查阅5000次奖励(22)", "Dialog106")
+this:AddTaskCmdItem("领取今日抽奖50次奖励(82)", "v5407", 105, 1)
+this:AddTaskCmdItem("领取今日抽奖150次奖励(82)", "v5407", 105, 2)
+this:AddTaskCmdItem("领取今日抽奖300次奖励(82)", "v5407", 105, 3)
+this:AddTaskCmdItem("领取今日抽奖800次奖励(82)", "v5407", 105, 4)
+this:AddTaskCmdItem("领取今日抽奖2000次奖励(82)", "v5407", 105, 5)
+this:AddTaskCmdItem("领取今日抽奖5000次奖励(82)", "v5407", 105, 6)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog6()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到回收系统！ &lt;/n&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("回收紫金龙袍【返还黄金仙锄*10】(82)", "v5407", 111, 1)
+this:AddTaskCmdItem("回收尚方宝剑【返还黄金仙锄*10】(82)", "v5407", 111, 2)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog101()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;50次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹50个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog102()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;150次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹150个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog103()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;300次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹300个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog104()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;800次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹800个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog105()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;2000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹2000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+function Dialog106()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 以下为奖励相关信息！ &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;5000次奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1059\"&gt; 宠物经验丹5000个 &lt;/object&gt;&lt;/p&gt;&lt;p&gt;")  
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+       </quest>
+	<quest id="101" new="1">
+	<embranchment id="1" active="1">
+			<conditions>    
+                     		<item value="1" id="20800"/><!--检测道具-->
+			</conditions>
+			<actions>
+                       <removeitem value="1" id="20800" log="扣除道具"/><!--减少道具-->
+                        <!--必得-->
+<addbinditem value="1000" id="50000" odds="50"/><!--补天碎片-->
+<addbinditem value="1" id="3542" odds="300"/><!--魂魄3等-->
+<addbinditem value="50" id="1100" odds="1468"/><!--鲜花-->
+<addbinditem value="50" id="1450" odds="1888"/><!--银锭-->
+<addbinditem value="1" id="120025" odds="6000"/><!--头衔令--> 
+
+<addbinditem value="5" id="50012" odds="1000"/><!--称号卡-->
+
+<addbinditem value="1" id="120001" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120002" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120003" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120004" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120005" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120006" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120007" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120008" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120009" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120010" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120011" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120012" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120013" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120014" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120015" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120016" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120017" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120018" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120019" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120020" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120021" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120022" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120023" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120024" odds="3"/><!--称号卡-->
+                        <uservar type="Add" name="fulichoujiang1" value="1"/><!--统计抽奖次数-->
+                     <var1bulletin kind="41" content="正在参与每日抽奖中！获得大量金银细软 当达到限定次数 可额外获得神秘好东西 ！666666！666666 "/>
+			<var type="Set" name="state" value="-2"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网抽奖玩法,抽奖可以获得游戏内所有物品碎片和成品，还有概率获得活动专属马铠！【每次抽奖需要支付一定的资金,可选择不同的消费方式，概率相同】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("继续·消耗黄金仙锄/次(80)", "v5407", 101, 1)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+				</menu>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+       </quest>
+	<quest id="103" new="10">
+	<embranchment id="10" active="10">
+			<conditions>    
+                   		<item value="1" id="20800"/><!--检测道具-->
+			</conditions>
+			<actions>
+                       <removeitem value="1" id="20800" log="扣除道具"/><!--减少道具-->
+                        <!--必得-->
+                        <!--必得-->
+<addbinditem value="1000" id="50000" odds="50"/><!--补天碎片-->
+<addbinditem value="1" id="3542" odds="300"/><!--魂魄3等-->
+<addbinditem value="50" id="1100" odds="1468"/><!--鲜花-->
+<addbinditem value="50" id="1450" odds="1888"/><!--银锭-->
+<addbinditem value="1" id="120025" odds="6000"/><!--头衔令--> 
+
+<addbinditem value="5" id="50012" odds="1000"/><!--称号卡-->
+
+<addbinditem value="1" id="120001" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120002" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120003" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120004" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120005" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120006" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120007" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120008" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120009" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120010" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120011" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120012" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120013" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120014" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120015" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120016" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120017" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120018" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120019" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120020" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120021" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120022" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120023" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120024" odds="3"/><!--称号卡-->
+                        <uservar type="Add" name="fulichoujiang1" value="1"/><!--统计抽奖次数-->
+                     <var1bulletin kind="41" content="正在参与每日抽奖中！获得大量金银细软 当达到限定次数 可额外获得神秘好东西 ！666666！666666 "/>			<var type="Set" name="state" value="-2"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)您好：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,250,255,250\"&gt; 欢迎来到李晓爽综合征途网抽奖玩法,抽奖可以获得游戏内所有物品碎片和成品，还有概率获得活动专属马铠！【每次抽奖需要支付一定的资金,可选择不同的消费方式，概率相同】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("继续·消耗黄金仙锄/次(80)", "v5407", 103, 1)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+				</menu>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+       </quest>
+	<quest id="104" new="1">
+	<embranchment id="1" active="1">
+			<conditions>    
+                    		<item value="1" id="20800"/><!--检测道具-->
+			</conditions>
+			<actions>
+                      <removeitem value="1" id="20800" log="扣除道具"/><!--减少道具-->
+                        <!--必得-->
+                        <!--必得-->
+<addbinditem value="1000" id="50000" odds="50"/><!--补天碎片-->
+<addbinditem value="1" id="3542" odds="300"/><!--魂魄3等-->
+<addbinditem value="50" id="1100" odds="1468"/><!--鲜花-->
+<addbinditem value="50" id="1450" odds="1888"/><!--银锭-->
+<addbinditem value="1" id="120025" odds="6000"/><!--头衔令--> 
+
+<addbinditem value="5" id="50012" odds="1000"/><!--称号卡-->
+
+<addbinditem value="1" id="120001" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120002" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120003" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120004" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120005" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120006" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120007" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120008" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120009" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120010" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120011" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120012" odds="2"/><!--称号卡-->
+<addbinditem value="1" id="120013" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120014" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120015" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120016" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120017" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120018" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120019" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120020" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120021" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120022" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120023" odds="3"/><!--称号卡-->
+<addbinditem value="1" id="120024" odds="3"/><!--称号卡-->
+
+              <uservar type="Add" name="fulichoujiang1" value="1"/><!--统计抽奖次数-->
+                     <var1bulletin kind="41" content="正在参与每日抽奖中！获得大量金银细软 当达到限定次数 可额外获得神秘好东西 ！666666！666666 "/>			<var type="Set" name="state" value="-2"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,255,0\"&gt;(GetName)您好.欢迎你参与特色抽奖环节&lt;/n&gt;&lt;n&gt;\n有几率获得以下道具\n&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"932\" group=\"0\" OnClick=\"SelectObject1\"&gt; 生命型战车&lt;/object&gt;&lt;n&gt;  &lt;/n&gt;&lt;object id=\"933\" group=\"0\" OnClick=\"SelectObject2\"&gt; 防御型战车&lt;/object&gt;&lt;n&gt;  &lt;/n&gt;&lt;object id=\"934\" group=\"0\" OnClick=\"SelectObject2\"&gt; 攻击型战车&lt;/object&gt;&lt;n&gt;  &lt;/n&gt;&lt;object id=\"3663\" group=\"0\" OnClick=\"SelectObject2\"&gt; 切割阵法&lt;/object&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\&quot;0\&quot;&gt;&lt;/object&gt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,246,0,143\"&gt;额外奖励：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,246,143\"&gt;达到50/150/300/800/2000/5000次可领取额外丰厚奖励【特定神秘道具】 &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("继续·消耗黄金仙锄/次(80)", "v5407", 104, 1)
+this:AddDialogItem("返回","MainDialog")
+this:AddCloseItem("离开")
+end
+				</menu>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+        </quest>
+	<quest id="105" new="1">
+	<embranchment id="1" active="1">
+			<conditions>
+                        <uservar type="Less" name="choujianglin1" value="1"/>
+                        <uservar type="Great" name="fulichoujiang1" value="49"/>
+			</conditions>
+			<actions>
+                        <uservar type="Add" name="choujianglin1" value="1"/>
+                      <addbinditem value="50" id="3980"/><!--怪物灵魂-->
+
+                    <var1bulletin kind="41" content="领取了今日50次额外奖励！可获得神秘好东西 更有概率获取隐藏道具"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	<embranchment id="2" active="1">
+			<conditions>
+                        <uservar type="Less" name="choujianglin2" value="1"/>
+                        <uservar type="Great" name="fulichoujiang1" value="149"/>
+			</conditions>
+			<actions>
+                        <uservar type="Add" name="choujianglin2" value="1"/>
+						 <addbinditem value="150" id="3980"/><!--怪物灵魂-->
+
+                    <var1bulletin kind="41" content="领取了今日150次额外奖励！可获得神秘好东西 更有概率获取隐藏道具"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	<embranchment id="3" active="1">
+			<conditions>    
+                        <uservar type="Less" name="choujianglin3" value="1"/>
+                        <uservar type="Great" name="fulichoujiang1" value="299"/>
+			</conditions>
+			<actions>
+                        <uservar type="Add" name="choujianglin3" value="1"/>
+
+	 <addbinditem value="200" id="3980"/><!--怪物灵魂-->
+                    <var1bulletin kind="41" content="领取了今日300次额外奖励！可获得神秘好东西 更有概率获取隐藏道具"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	<embranchment id="4" active="1">
+			<conditions>    
+                        <uservar type="Less" name="choujianglin4" value="1"/>
+                        <uservar type="Great" name="fulichoujiang1" value="799"/>
+			</conditions>
+			<actions>
+                        <uservar type="Add" name="choujianglin4" value="1"/>
+						 <addbinditem value="300" id="3980"/><!--怪物灵魂-->
+
+      
+                    <var1bulletin kind="41" content="领取了今日800次额外奖励！可获得神秘好东西 更有概率获取隐藏道具"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	<embranchment id="5" active="1">
+			<conditions>    
+                        <uservar type="Less" name="choujianglin5" value="1"/>
+                        <uservar type="Great" name="fulichoujiang1" value="1999"/>
+			</conditions>
+			<actions>
+                        <uservar type="Add" name="choujianglin5" value="1"/>
+
+	 <addbinditem value="800" id="3980"/><!--怪物灵魂-->
+                    <var1bulletin kind="41" content="领取了今日2000次额外奖励！可获得神秘好东西 更有概率获取隐藏道具"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	<embranchment id="6" active="1">
+			<conditions>    
+                        <uservar type="Less" name="choujianglin6" value="1"/>
+                        <uservar type="Great" name="fulichoujiang1" value="4999"/>
+			</conditions>
+			<actions>
+                        <uservar type="Add" name="choujianglin6" value="1"/>
+
+
+			<addbinditem value="2000" id="3980"/><!--怪物灵魂-->
+
+                    <var1bulletin kind="41" content="领取了今日5000次额外奖励！可获得神秘好东西 更有概率获取隐藏道具"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	
+	
+	<quest id="111" new="1">
+	<embranchment id="1" active="1">
+			<conditions>
+                 	<item value="1" id="3933"/>
+			</conditions>
+			<actions>
+                        <removeitem value="1" id="3933"/> 
+                      <addbinditem value="10" id="20800"/><!--获得钥匙-->
+                    <var1bulletin kind="41" content="回收了紫金龙袍获得了黄金仙锄*10个！"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+                 	<item value="1" id="3932"/>
+			</conditions>
+			<actions>
+                        <removeitem value="1" id="3932"/> 
+                      <addbinditem value="10" id="20800"/><!--获得钥匙-->
+                    <var1bulletin kind="41" content="回收了尚方宝剑获得了黄金仙锄*10个！"/>
+			<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	
+	</quest>
+</event>

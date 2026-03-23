@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<config>
+	<!-- 头衔配置 -->
+	<meridianMap>
+		<meridian index="1">
+			<pointMap>
+				<!--  level:等级[配合层级] exp:当前等级1头衔令所加经验 costID:扣除道具 salary:单次扣工资(文) pDam:物攻 mDam:魔攻 pDef:物防 mDef:魔防 hp:血量 -->
+				<point level="1" exp="10" costID="120025" salary="50000" pDam="500" mDam="500" pDef="500" mDef="500" hp="5000"/>
+				<point level="2" exp="10" costID="120025" salary="50000" pDam="10000" mDam="10000" pDef="10000" mDef="10000" hp="100000"/>
+				<point level="3" exp="10" costID="120025" salary="50000" pDam="1500" mDam="1500" pDef="1500" mDef="1500" hp="15000"/>
+				<point level="4" exp="10" costID="120025" salary="50000" pDam="2000" mDam="2000" pDef="2000" mDef="2000" hp="20000"/>
+				<point level="5" exp="10" costID="120025" salary="50000" pDam="2500" mDam="2500" pDef="2500" mDef="2500" hp="25000"/>
+				<point level="6" exp="10" costID="120025" salary="50000" pDam="3000" mDam="3000" pDef="3000" mDef="3000" hp="30000"/>
+				<point level="7" exp="10" costID="120025" salary="50000" pDam="4500" mDam="4500" pDef="4500" mDef="4500" hp="45000"/>
+				<point level="8" exp="10" costID="120025" salary="50000" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point level="9" exp="10" costID="120025" salary="50000" pDam="5500" mDam="5500" pDef="5500" mDef="5500" hp="55000"/>
+				<point level="10" exp="10" costID="120025" salary="50000" pDam="6000" mDam="6000" pDef="6000" mDef="6000" hp="60000"/>
+				<point level="11" exp="10" costID="120025" salary="50000" pDam="6500" mDam="6500" pDef="6500" mDef="6500" hp="65000"/>
+				<point level="12" exp="10" costID="120025" salary="50000" pDam="7000" mDam="7000" pDef="7000" mDef="7000" hp="70000"/>
+				<point level="13" exp="10" costID="120025" salary="50000" pDam="7500" mDam="7500" pDef="7500" mDef="7500" hp="75000"/>
+				<point level="14" exp="10" costID="120025" salary="50000" pDam="8000" mDam="8000" pDef="8000" mDef="8000" hp="80000"/>
+				<point level="15" exp="10" costID="120025" salary="50000" pDam="8500" mDam="8500" pDef="8500" mDef="8500" hp="85000"/>
+				<point level="16" exp="10" costID="120025" salary="50000" pDam="9000" mDam="9000" pDef="9000" mDef="9000" hp="90000"/>
+			</pointMap>
+		</meridian>
+	</meridianMap>
+</config>

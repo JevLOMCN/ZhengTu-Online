@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1110" name="太子">
+	<quest id="20701" new="1">
+		<embranchment id="1">
+			<conditions>
+				<selfcountry value="0"/>
+				<var type="Equal" name="state" value="1"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3"/>
+				<refresh name="state"/>
+				<notify1 content="太子：1/1"/>
+				<notify content="恭喜你完成了刺杀太子任务，快去找九公主报告"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

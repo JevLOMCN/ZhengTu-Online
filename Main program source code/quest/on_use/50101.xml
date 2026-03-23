@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="50101" name="技能礼包">
+ <quest id="501010">
+   <embranchment id="2">
+	<conditions>
+        <tongcollection value="0"/>	
+	   <item value="1" id="50101"/>
+	</conditions>
+      <actions>
+ <mainmenu>
+function MainDialog()
+this:AddTalk("尊敬的 (GetName) 阁下！很高兴为您服务！")
+this:AddTalk("&lt;p&gt;&lt;n&gt;兑换提示：\n&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;直接打开就能获取帮会行动力1点哦！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("获取行动力(0)", "u50101", 50101001, 1)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end 
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+<embranchment id="1">
+<conditions>
+	   <item value="1" id="50101"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+this:AddTalk("尊敬的 (GetName) 阁下！很高兴为您服务！")
+this:AddTalk("&lt;p&gt;&lt;n&gt;兑换提示：\n&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;直接打开就能获取帮会行动力1点哦！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("获取行动力(0)", "u50101", 50101001, 2)
+this:AddCloseItem("离开")
+end
+
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+<quest id="50101001" new="1">
+    <embranchment id="1" active="1">
+       <conditions>
+	          <item value="1" id="50101"/>
+       </conditions>
+      <actions>
+<removeitem value="1" id="50101"/>
+<actionpoint type="Add" value="1"/>
+<notify3 content="获得帮会行动力1点!"/>
+				<timeouts/>
+            </actions>
+        </embranchment>
+    <embranchment id="2" active="1">
+       <conditions>
+	          <item value="1" id="50101"/>
+       </conditions>
+      <actions>
+<notify6 content="对不起!你当前没有帮会!"/>
+				<timeouts/>
+            </actions>
+        </embranchment>		
+     </quest>
+</event>

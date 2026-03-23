@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1383" name="定魂石卡">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<addbindnewitem value="1" id="678"/>
+				<notify1 content="得到1个一等绑定定魂石"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

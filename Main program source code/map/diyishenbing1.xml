@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+<!--怪物安置-->
+	<npc id="20017" name="天下第一神兵" width="1" height="1" x="13" y="35" num="1" interval="79200" color="0,255,0,0"/>
+<!--地图点对点传送-->
+	<waypoint>
+	</waypoint>
+<!--地图属性 1=PK 2=绝对安全 16=竞技区 -->
+	<zonedef width="20" height="25" x="6" y="17" type="1" color="0,0,255,0"/>
+	<zonedef width="20" height="25" x="41" y="5" type="1" color="0,0,255,0"/>
+</map>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5300" name="家族收藏家(871,478)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="1036040">
+		<embranchment id="2">
+			<conditions>
+				<level type="Great" value="99"/>
+				<uservar type="Less" name="shiershengxiao_state_1" value="3"/>
+				<var type="Differ" name="state" value="-3" id="20660"/>
+				<var type="Differ" name="state" value="1" id="20660"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("   任务提示：每天可以帮我做一次在这里找寻12生肖NPC去收集12生肖卡片")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;任务名称：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;【十二生肖】&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;目标地点：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;【敌国王城】&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;\n收集12生肖卡片！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;任务奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1398\"&gt;  金子40锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1451\"&gt;  工资10锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"665\"&gt;  银子100锭&lt;/object&gt;&lt;/p&gt;")
+this:AddDialogItem("接受任务(2)", "Dialog8")
+this:AddCloseItem("离开")
+end
+function Dialog8()
+this:AddTalk("   你在这里找寻12生肖NPC去收集12生肖卡片任务\n\n    目标国家：敌国白骨洞")
+this:AddTaskCmdItem("接受任务{10002}", "v5300", 20660, 3)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="99"/>
+				<item value="12" id="1412"/>
+
+				<var type="Equal" name="state" value="1" id="20660"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("恭喜你完成收集12生肖卡片任务(2)", "Dialog10")
+this:AddCloseItem("离开")
+end
+function Dialog10()
+this:AddTaskCmdItem("接受奖励{10002}", "v5300", 20660, 10)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20660" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Differ" name="state" value="-1" id="20660"/>
+				<var type="Differ" name="state" value="1" id="20660"/>
+				<var type="Differ" name="state" value="-3" id="20660"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1" id="20660"/>
+				<getname name="name" id="80040"/>
+		<countryname name="country_name" id="80040"/>
+		<var1bulletin kind="41" content="接受了十二生肖任务任务"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("    去敌国白骨洞收集12生肖卡片吧.")
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="baseexp" value="2220"/>
+				<var type="Set" name="selflevel2" value="4"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<vars type="Mul" name1="selflevel" name2="kill_player"/>
+				<var type="Set" name="baseexp" value="350"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<refresh name="selflevel"/>
+				<uservar type="Add" name="shiershengxiao_state_1" value="3"/>
+			</actions>
+		</embranchment>
+
+		<embranchment id="10" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="20660"/>
+				<item value="12" id="1412"/>
+			</conditions>
+			<actions>
+				<exp1 value="4000" id="20660" name="selflevel"/>
+				<removeitem value="12" id="1412"/>
+
+				<uservar type="Set" name="shiershengxiaowu_state_12" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_12" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_11" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_11" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_9" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_9" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_8" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_8" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_10" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_10" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_7" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_7" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_6" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_6" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_5" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_5" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_4" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_4" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_3" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_3" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_2" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_2" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu1_state_1" value="0"/>
+				<uservar type="Set" name="shiershengxiaowu_state_1" value="0"/>
+        <exp value="100000000"/>
+        <exp value="100000000"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+			
+	<var1bulletin kind="41" content="完成了十二生肖任务，获得丰厚奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

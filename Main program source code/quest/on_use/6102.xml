@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="6102" name="礼包">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<space size="2"/>
+				
+			</conditions>
+			<actions>
+                <useskill id="801" level="3"/>
+        <notify5 content="【获得龙虎令物攻6%·魔攻6%】" />  
+			</actions>
+		</embranchment>
+	</quest>
+</event>

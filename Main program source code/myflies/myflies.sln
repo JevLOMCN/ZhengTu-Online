@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "myflies", "myflies.vcproj", "{045ADEBE-9252-42E9-8A97-A2139EFCEF95}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{045ADEBE-9252-42E9-8A97-A2139EFCEF95}.Debug.ActiveCfg = Debug|Win32
+		{045ADEBE-9252-42E9-8A97-A2139EFCEF95}.Debug.Build.0 = Debug|Win32
+		{045ADEBE-9252-42E9-8A97-A2139EFCEF95}.Release.ActiveCfg = Release|Win32
+		{045ADEBE-9252-42E9-8A97-A2139EFCEF95}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

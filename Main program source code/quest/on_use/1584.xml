@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1584" name="神秘礼物">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+       <item value="1" id="1584"/>
+      </conditions>
+			<actions>
+				<addranditem id="799" value="20" odds="1000" id2="3810" value2="20" odds2="1000" id3="799" value3="50" odds3="1000" id4="3810" value4="50" odds4="1000" id5="556" value5="1" odds5="1000" id6="556" value6="2" odds6="1000" id7="1399" value7="5" odds7="1000" id8="1399" value8="8" odds8="1000" id9="1400" value9="1" odds9="1000" id10="1400" value10="2" odds10="1000" id11="22127" value11="10" odds11="1000" id12="22128" value12="5" odds12="1000" id13="22129" value13="30" odds13="1000" id14="22129" value14="10" odds14="1000" id15="1451" value15="50" odds15="1000"/>
+				<var1bulletin kind="45" content="打开神秘礼物,获得极品道具"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

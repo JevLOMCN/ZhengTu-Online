@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="17" height="26" x="149" y="39" type="1" color="0,0,255,0"/>
+	<zonedef width="17" height="26" x="152" y="113" type="1" color="0,0,255,0"/>
+	<zonedef width="17" height="26" x="113" y="5" type="1" color="0,0,255,0"/>
+	<zonedef width="17" height="26" x="29" y="14" type="1" color="0,0,255,0"/>
+	<zonedef width="17" height="26" x="16" y="81" type="1" color="0,0,255,0"/>
+	<npc id="16920" name="上古月魔护法（魔）" width="21" height="9" x="73" y="51" num="1" interval="2" color="0,255,0,0"/>
+	<npc id="16921" name="上古月魔卫士" width="9" height="15" x="27" y="99" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16922" name="上古月魔猛士" width="13" height="10" x="46" y="36" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16922" name="上古月魔猛士" width="9" height="14" x="75" y="74" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16922" name="上古月魔猛士" width="9" height="18" x="79" y="111" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16922" name="上古月魔猛士" width="9" height="15" x="115" y="108" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16922" name="上古月魔猛士" width="9" height="13" x="140" y="63" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16922" name="上古月魔猛士" width="9" height="13" x="95" y="153" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16922" name="上古月魔猛士" width="9" height="15" x="148" y="130" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16937" name="上古月魔邪士" width="9" height="15" x="112" y="23" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16937" name="上古月魔邪士" width="9" height="15" x="103" y="80" num="60" interval="2" color="0,255,0,0"/>
+	<npc id="16937" name="上古月魔邪士" width="9" height="15" x="55" y="128" num="60" interval="2" color="0,255,0,0"/>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<npc id="16920" name="上古月魔护法（魔）" width="156" height="178" x="14" y="6" num="8" interval="5"/>
+	<npc id="16920" name="上古月魔护法（魔）" width="156" height="178" x="14" y="6" num="1" interval="7200"/>
+	<npc id="16921" name="上古月魔卫士" width="156" height="178" x="14" y="6" num="5" interval="7200"/>
+	<npc id="16920" name="上古月魔护法（魔）" width="156" height="178" x="14" y="6" num="1" interval="7200"/>
+	<npc id="16922" name="上古月魔猛士" width="156" height="178" x="14" y="6" num="5" interval="7200"/>
+	<npc id="16921" name="上古月魔卫士" width="156" height="178" x="14" y="6" num="5" interval="7200"/>
+	<npc id="5155" name="魔族巢穴传送师" width="1" height="1" x="76" y="150" num="1" interval="2" color="0,255,0,0"/>
+</map>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域     16384帮会所属地第三方跳转区   512国占复活区  256国战传送区  1024去内景后的区域  4096 攻方集合区域帮会战争 2048 国家战争拉人区域  8192 国战时为绝对安全区，平时为非安全区
+-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<waypoint>
+		<point x="81" y="82"/>
+		<point x="81" y="83"/>
+		<point x="81" y="84"/>
+		<point x="81" y="85"/>
+		<point x="81" y="86"/>
+		<point x="81" y="87"/>
+		<point x="81" y="88"/>
+		<point x="81" y="89"/>
+		<point x="80" y="89"/>
+		<point x="79" y="89"/>
+		<point x="81" y="82"/>
+		<point x="81" y="83"/>
+		<point x="81" y="84"/>
+		<point x="81" y="85"/>
+		<point x="81" y="86"/>
+		<point x="81" y="87"/>
+		<point x="81" y="88"/>
+		<point x="81" y="89"/>
+		<point x="80" y="89"/>
+		<point x="81" y="82"/>
+		<point x="81" y="83"/>
+		<point x="81" y="84"/>
+		<point x="81" y="85"/>
+		<point x="81" y="86"/>
+		<point x="81" y="87"/>
+		<point x="81" y="88"/>
+		<point x="81" y="89"/>
+		<point x="80" y="89"/>
+		<point x="79" y="89"/>
+		<point x="79" y="89"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="791"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="792"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="793"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="794"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="795"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="796"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="797"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="798"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="799"/>
+		<dest name="wushuangcheng-main" country="0" x="17" y="800"/>
+	</waypoint>
+	<zonedef width="1" height="1" x="1" y="1" type="2" color="0,0,255,0"/>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<npc id="1133" name="金钢小妹" width="1" height="1" x="44" y="52" num="1" interval="3000"/>
+	<npc id="1134" name="王城方向" width="1" height="1" x="80" y="81" num="1" interval="3000"/>
+	<npc id="578" name="小兔子" width="2" height="2" x="55" y="34" num="1" interval="3000"/>
+	<npc id="578" name="小兔子" width="2" height="2" x="38" y="54" num="1" interval="3000"/>
+	<npc id="578" name="小兔子" width="2" height="2" x="51" y="25" num="1" interval="3000"/>
+	<npc id="578" name="小兔子" width="2" height="2" x="45" y="74" num="1" interval="3000"/>
+	<npc id="578" name="小兔子" width="2" height="2" x="51" y="73" num="1" interval="3000"/>
+</map>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="16750" name="红眼魔">
+	<quest id="281" new="1">
+		<!--@@@一档任务计算@@@@@@@@@@@@@@@@@-->
+		<embranchment id="1">
+			<!--未完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="281"/>
+				<var type="Less" name="kill_16750_num1" value="1000"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_16750_num1" value="1"/>
+				<refresh name="kill_16750_num1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="281"/>
+				<var type="Great" name="kill_16750_num1" value="999"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3" id="281"/>
+				<notify content="恭喜你完成了1档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第1档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<!--完成任务提示-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="281"/>
+				<var type="Equal" name="kill_16750_num1" value="1000"/>
+			</conditions>
+			<actions>
+				<notify content="恭喜你完成了1档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第1档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="282" new="1">
+		<!--@@@二档任务计算@@@@@@@@@@@@@@@@@-->
+		<embranchment id="1">
+			<!--未完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="282"/>
+				<var type="Less" name="kill_16750_num2" value="1000"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_16750_num2" value="1"/>
+				<refresh name="kill_16750_num2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="282"/>
+				<var type="Great" name="kill_16750_num2" value="999"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3" id="282"/>
+				<notify content="恭喜你完成了2档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第2档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<!--完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="282"/>
+				<var type="Equal" name="kill_16750_num2" value="1000"/>
+			</conditions>
+			<actions>
+				<notify content="恭喜你完成了2档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第2档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="283" new="1">
+		<!--@@@三档任务计算@@@@@@@@@@@@@@@@@-->
+		<embranchment id="1">
+			<!--未完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="283"/>
+				<var type="Less" name="kill_16750_num3" value="1000"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_16750_num3" value="1"/>
+				<refresh name="kill_16750_num3"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="283"/>
+				<var type="Great" name="kill_16750_num3" value="999"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3" id="283"/>
+				<notify content="恭喜你完成了3档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第3档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<!--完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="283"/>
+				<var type="Equal" name="kill_16750_num3" value="1000"/>
+			</conditions>
+			<actions>
+				<notify content="恭喜你完成了3档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第3档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="284" new="1">
+		<!--@@@四档任务计算@@@@@@@@@@@@@@@@@-->
+		<embranchment id="1">
+			<!--未完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="284"/>
+				<var type="Less" name="kill_16750_num4" value="1000"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_16750_num4" value="1"/>
+				<refresh name="kill_16750_num4"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="284"/>
+				<var type="Great" name="kill_16750_num4" value="999"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3" id="284"/>
+				<notify content="恭喜你完成了4档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第4档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<!--完成任务提示-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="284"/>
+				<var type="Equal" name="kill_16750_num4" value="1000"/>
+			</conditions>
+			<actions>
+				<notify content="恭喜你完成了4档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第4档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="285" new="1">
+		<!--@@@五档任务计算@@@@@@@@@@@@@@@@@-->
+		<embranchment id="1">
+			<!--未完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="285"/>
+				<var type="Less" name="kill_16750_num5" value="1000"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_16750_num5" value="1"/>
+				<refresh name="kill_16750_num2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--完成任务计算-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="285"/>
+				<var type="Great" name="kill_16750_num5" value="999"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3" id="285"/>
+				<notify content="恭喜你完成了5档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第5档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<!--完成任务提示-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="285"/>
+				<var type="Equal" name="kill_16750_num5" value="1000"/>
+			</conditions>
+			<actions>
+				<notify content="恭喜你完成了5档赏金任务！赶快去交任务吧！"/>
+				<notify1 content="赏金猎人第5档任务完成！赶快去交任务吧！"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

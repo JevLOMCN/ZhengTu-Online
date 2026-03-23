@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- Edited with XMLSPY C.+ v2007 rel. 2 U  by QQ 28030274 -->
+<event id="5132" name="王城-天机老人">
+	<!--new means new quest, default is quest on user-->
+	<quest id="900011">
+		<embranchment id="1">
+			<conditions>
+				<item value="1" id="32110"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 1)
+this:AddCloseItem("离开(0)")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<item value="1" id="32111"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 2)
+this:AddCloseItem("离开(0)")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<item value="1" id="32112"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 3)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<item value="1" id="32113"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 4)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<item value="1" id="32114"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 5)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<item value="1" id="32115"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 6)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+				<item value="1" id="32116"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 7)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="8">
+			<conditions>
+				<item value="1" id="32117"/>
+				<item value="100" id="50002"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 8)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="9">
+			<conditions>
+				<item value="1" id="32118"/>
+				<item value="100" id="50002"/>		
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 9)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我现在可以强化紧箍咒。&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,100,249,0\"&gt;物品需求:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50002\"&gt;  人参果x100&lt;/object&gt;&lt;/p&gt; ")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;强化成功率100%&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255.50,0\"&gt;温馨提示:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,100\"&gt;请把紧箍咒放在包袱内升级!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("立即强化-紧箍咒(0)", "v5132", 100901, 99)
+this:AddCloseItem("离开(0)")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="100901" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32110"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32110"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32111"/>
+				<notify6 content="升级成功！"/>				
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32111"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32111"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32112"/>
+				<notify6 content="升级成功！"/>						
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32112"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32112"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32113"/>
+				<notify6 content="升级成功！"/>						
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32113"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32113"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32114"/>
+				<notify6 content="升级成功！"/>		
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32114"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32114"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32115"/>
+				<notify6 content="升级成功！"/>		
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32115"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32115"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32116"/>
+				<notify6 content="升级成功！"/>		
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32116"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32116"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32117"/>
+				<notify6 content="升级成功！"/>		
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32117"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32117"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32118"/>
+				<notify6 content="升级成功！"/>		
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<item value="100" id="50002"/>
+				<item value="1" id="32118"/>
+			</conditions>
+			<actions>
+                <removeitem value="1" id="32118"/>
+              	<removeitem value="100" id="50002"/>
+				<addbinditem value="1" id="32119"/>
+				<notify6 content="升级成功！"/>		
+			</actions>
+		</embranchment>
+		<embranchment id="99" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<flexmenu content="你的背包内没有当前需要升级的紧箍咒,或者你的玄麟精魄数量不足10个！"/>
+				<notify6 content="你的背包内没有当前需要升级的紧箍咒,或者你的玄麟精魄数量不足10个！"/>
+			</actions>
+		</embranchment>			
+	</quest>
+</event>

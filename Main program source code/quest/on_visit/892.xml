@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="892" name="王城-兵马大元帅(832,441)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="970100">
+
+		<embranchment id="14">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog21")
+this:AddCloseItem("离开")
+end
+function Dialog21()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 130)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog22")
+this:AddCloseItem("离开")
+end
+function Dialog22()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 20)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog29")
+this:AddCloseItem("离开")
+end
+function Dialog29()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 126)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog30")
+this:AddCloseItem("离开")
+end
+function Dialog30()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 56)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="40">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog21")
+this:AddCloseItem("离开")
+end
+function Dialog21()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 130)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog22")
+this:AddCloseItem("离开")
+end
+function Dialog22()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 60)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+
+		<embranchment id="48">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog29")
+this:AddCloseItem("离开")
+end
+function Dialog29()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 126)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="49">
+			<conditions>
+				<selfcountry value="1"/>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,250,0\"&gt;  国王发布了国探任务，国探时间内完成刺探任务，获得经验上升30%!&lt;/n&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog30")
+this:AddCloseItem("离开")
+end
+function Dialog30()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 56)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog21")
+this:AddCloseItem("离开")
+end
+function Dialog21()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 120)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="61">
+			<conditions>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog22")
+this:AddCloseItem("离开")
+end
+function Dialog22()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 20)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="68">
+			<conditions>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog29")
+this:AddCloseItem("离开")
+end
+function Dialog29()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 116)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="69">
+			<conditions>
+				<timer start="10:00:00" end="23:59:59"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog30")
+this:AddCloseItem("离开")
+end
+function Dialog30()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 16)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+
+		<embranchment id="80">
+			<conditions>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog21")
+this:AddCloseItem("离开")
+end
+function Dialog21()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 120)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="81">
+			<conditions>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="8"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog22")
+this:AddCloseItem("离开")
+end
+function Dialog22()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+
+this:AddTaskCmdItem("去楚国(0)", "v892", 20619, 20)
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="88">
+			<conditions>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog29")
+this:AddCloseItem("离开")
+end
+function Dialog29()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在凤凰城凤饮潭附近。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 116)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="89">
+			<conditions>
+				<timer start="00:00:00" end="02:00:00"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<countryid value="12"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  在这天下大乱，群雄纷争的时代。国家的安危，百姓的生活时刻受到威胁。\n  如果能收集到别国的情报，我们就能准确的作好防御。\n  你愿意去国外刺探国情吗？&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("任务：刺探情报(0)", "Dialog30")
+this:AddCloseItem("离开")
+end
+function Dialog30()
+this:AddTalk("    (GetName)，看的出来你是一位胆色过人的人，在你正式出国之前，你需要了解这次任务的详细信息：\n  1、本次任务需要你联络到我国潜伏在他国的情报人员-流浪者，他的藏身之处在王城的白骨洞一层。\n  2、你可以对任何一个国家进行情报刺探。\n  3、为了不暴露目标，每次只能对一个国家进行国情收集。\n  4、如果你放弃对目标国家的情报收集，当天当天我是不会把同样的任务交给你的。5、记住！你完成刺探任务的次数越多，经验奖励也就越多。")
+
+this:AddTaskCmdItem("去汉国(0)", "v892", 20615, 16)
+
+ 
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="108">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Equal" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20614, 2)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="109">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Equal" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20614, 2)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="110">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Equal" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20615, 2)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="111">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Equal" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20615, 2)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="118">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Equal" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20619, 2)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="119">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20616"/>
+				<var type="Differ" name="state" value="1" id="20616"/>
+				<var type="Equal" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20619, 2)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="128">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Equal" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20614, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="129">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Equal" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20614, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="130">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Equal" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20615, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="131">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Equal" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20615, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="138">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Equal" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20619, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="139">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Equal" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你的确是一位英雄。为了表彰你对国家作出的贡献，请接受我给你的奖励。&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受奖励(0)", "v892", 20619, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="242">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Equal" name="state" value="1" id="20614"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：刺探情报(0)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你已经接受了去唐国刺探情报的任务，赶快行动吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("我知道了")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="243">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Equal" name="state" value="1" id="20614"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：刺探情报(0)", "Dialog40")
+end
+function Dialog40()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你已经接受了去唐国刺探情报的任务，赶快行动吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("我知道了")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="252">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Equal" name="state" value="1" id="20615"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：刺探情报(0)", "Dialog41")
+end
+function Dialog41()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你已经接受了去汉国刺探情报的任务，赶快行动吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("我知道了")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="253">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Equal" name="state" value="1" id="20615"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：刺探情报(0)", "Dialog42")
+end
+function Dialog42()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你已经接受了去汉国刺探情报的任务，赶快行动吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("我知道了")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="292">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<var type="Equal" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：刺探情报(0)", "Dialog49")
+end
+function Dialog49()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你已经接受了去楚国刺探情报的任务，赶快行动吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("我知道了")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="293">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<var type="Equal" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：刺探情报(0)", "Dialog50")
+end
+function Dialog50()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你已经接受了去楚国刺探情报的任务，赶快行动吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("我知道了")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="351">
+			<conditions>
+				<innation/>
+				<level type="Less" value="50"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你现在的能力不够，修炼到50级再来找我吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20614" new="1">
+		<embranchment id="125" active="1">
+			<conditions>
+				<selfcountry value="1"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<uservar type="Differ" name="checkover_7_country" value="1"/>
+				<uservar type="Differ" name="check_7_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_7_country" value="1"/>
+				<var type="Set" name="check_country_id" value="7" id="20614"/>
+				<var type="Set" name="state" value="1" id="20614"/>
+				<notify1 content="你接受了去唐国刺探情报的任务。"/>
+				<notify1 content="出国去唐国凤凰城的凤饮潭附近找流浪者"/>
+				<notify content="你接受了去唐国刺探情报的任务。"/>
+				<notify content="出国去唐国凤凰城的凤饮潭附近找流浪者"/>
+				<useusersvar name="check_country_travel" id="20614"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="4"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="55" active="1">
+			<conditions>
+				<selfcountry value="1"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<uservar type="Differ" name="checkover_7_country" value="1"/>
+				<uservar type="Differ" name="check_7_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_7_country" value="1"/>
+				<var type="Set" name="check_country_id" value="7" id="20614"/>
+				<var type="Set" name="state" value="1" id="20614"/>
+				<notify1 content="你接受了去唐国刺探情报的任务。"/>
+				<notify1 content="出国去唐国王城的白骨洞一层找流浪者"/>
+				<notify content="你接受了去唐国刺探情报的任务。"/>
+				<notify content="出国去唐国王城的白骨洞一层找流浪者"/>
+				<useusersvar name="check_country_travel" id="20614"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="4"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="115" active="1">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<uservar type="Differ" name="checkover_7_country" value="1"/>
+				<uservar type="Differ" name="check_7_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_7_country" value="1"/>
+				<var type="Set" name="check_country_id" value="7" id="20614"/>
+				<var type="Set" name="state" value="1" id="20614"/>
+				<notify1 content="你接受了去唐国刺探情报的任务。"/>
+				<notify1 content="出国去唐国凤凰城的凤饮潭附近找流浪者"/>
+				<notify content="你接受了去唐国刺探情报的任务。"/>
+				<notify content="出国去唐国凤凰城的凤饮潭附近找流浪者"/>
+				<useusersvar name="check_country_travel" id="20614"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="3"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<uservar type="Differ" name="checkover_7_country" value="1"/>
+				<uservar type="Differ" name="check_7_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_7_country" value="1"/>
+				<var type="Set" name="check_country_id" value="7" id="20614"/>
+				<var type="Set" name="state" value="1" id="20614"/>
+				<notify1 content="你接受了去唐国刺探情报的任务。"/>
+				<notify1 content="出国去唐国王城的白骨洞一层找流浪者"/>
+				<notify content="你接受了去唐国刺探情报的任务。"/>
+				<notify content="出国去唐国王城的白骨洞一层找流浪者"/>
+				<useusersvar name="check_country_travel" id="20614"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="3"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="1" active="1">
+			<conditions>
+				<innation/>
+				<uservar type="Differ" name="checkover_7_country" value="1"/>
+				<var type="Equal" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Add" name="__selfcountry" value="128"/>
+				<var type="Set" name="state" value="-2"/>
+				<uservar type="Set" name="checkover_7_country" value="1"/>
+				<uservar type="Add" name="check_country_travel" value="1"/>
+				<refresh name="state"/>
+                                <umaxgold type="Add" value="30000"/>
+                                <salary type="Add" value="30000"/> 
+                                <flexmenu content="完成刺探情报任务，获得金子3锭/工资3锭"/>
+				<exp1 value="100" id="20614" name="check_country_selflevel"/>
+				<varnotify1 content="你完成了去唐国刺探情报的任务，经验增加%u" value="check_country_selflevel" id="20614"/>
+				<varnotify2 content="你完成了去唐国刺探情报的任务，经验增加%u" value="check_country_selflevel" id="20614"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<innation/>
+				<uservar type="Differ" name="checkover_7_country" value="1"/>
+				<var type="Equal" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Add" name="__selfcountry" value="128"/>
+				<countrysvar type="Add" name="r_king_c_walk" value="1"/>
+				<var type="Set" name="state" value="-2"/>
+				<uservar type="Set" name="checkover_7_country" value="1"/>
+				<uservar type="Add" name="check_country_travel" value="1"/>
+				<refresh name="state"/>
+                                <umaxgold type="Add" value="30000"/>
+                                <salary type="Add" value="30000"/> 
+                                <flexmenu content="完成刺探情报任务，获得金子3锭/工资3锭"/>
+				<exp1 value="100" id="20614" name="check_country_selflevel"/>
+				<varnotify1 content="你完成了去唐国刺探情报的任务，经验增加%u" value="check_country_selflevel" id="20614"/>
+				<varnotify2 content="你完成了去唐国刺探情报的任务，经验增加%u" value="check_country_selflevel" id="20614"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20615" new="1">
+		<embranchment id="126" active="1">
+			<conditions>
+				<selfcountry value="1"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<uservar type="Differ" name="checkover_8_country" value="1"/>
+				<uservar type="Differ" name="check_8_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_8_country" value="1"/>
+				<var type="Set" name="check_country_id" value="8" id="20615"/>
+				<var type="Set" name="state" value="1" id="20615"/>
+				<countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了汉国刺探，去汉国的凤凰城流浪者拿回情报"/>
+				<useusersvar name="check_country_travel" id="20615"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="4"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="56" active="1">
+			<conditions>
+				<selfcountry value="1"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<uservar type="Differ" name="checkover_8_country" value="1"/>
+				<uservar type="Differ" name="check_8_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_8_country" value="1"/>
+				<var type="Set" name="check_country_id" value="8" id="20615"/>
+				<var type="Set" name="state" value="1" id="20615"/>
+				<countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了汉国刺探，去汉国的王城白骨洞流浪者拿回情报"/>
+				<useusersvar name="check_country_travel" id="20615"/>
+				<useusersvar name="check_country_travel" id="20615"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="4"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="116" active="1">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<uservar type="Differ" name="checkover_8_country" value="1"/>
+				<uservar type="Differ" name="check_8_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_8_country" value="1"/>
+				<var type="Set" name="check_country_id" value="8" id="20615"/>
+				<var type="Set" name="state" value="1" id="20615"/>
+				<getname name="name" id="80040"/>
+		        <countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了汉国刺探，去汉国的凤凰城流浪者拿回情报"/>
+				<useusersvar name="check_country_travel" id="20615"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="3"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<uservar type="Differ" name="checkover_8_country" value="1"/>
+				<uservar type="Differ" name="check_8_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_8_country" value="1"/>
+				<var type="Set" name="check_country_id" value="8" id="20615"/>
+				<var type="Set" name="state" value="1" id="20615"/>
+				<getname name="name" id="80040"/>
+		        <countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了汉国刺探，去汉国王城白骨洞找流浪者拿回情报"/>
+				<useusersvar name="check_country_travel" id="20615"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="3"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="1" active="1">
+			<conditions>
+				<innation/>
+				<uservar type="Differ" name="checkover_8_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Equal" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Add" name="__selfcountry" value="256"/>
+				<var type="Set" name="state" value="-2"/>
+				<uservar type="Set" name="checkover_8_country" value="1"/>
+				<uservar type="Add" name="check_country_travel" value="1"/>
+				<refresh name="state"/>
+				        <exp value="50000000"/>
+                        <exp value="50000000"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+				
+                <getname name="name" id="80040"/>
+	            <countryname name="country_name" id="80040"/>
+	                              <var1bulletin kind="41" content="完成了汉国刺探任务，获得丰厚奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<innation/>
+				<uservar type="Differ" name="checkover_8_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Equal" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Add" name="__selfcountry" value="256"/>
+				<countrysvar type="Add" name="r_king_c_walk" value="1"/>
+				<var type="Set" name="state" value="-2"/>
+				<uservar type="Set" name="checkover_8_country" value="1"/>
+				<uservar type="Add" name="check_country_travel" value="1"/>
+				<refresh name="state"/>
+				        <exp value="50000000"/>
+                        <exp value="50000000"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+				
+                <getname name="name" id="80040"/>
+	            <countryname name="country_name" id="80040"/>
+	                              <var1bulletin kind="41" content="完成了汉国刺探任务，获得丰厚奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20619" new="1">
+		<embranchment id="130" active="1">
+			<conditions>
+				<selfcountry value="1"/>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<uservar type="Differ" name="checkover_12_country" value="1"/>
+				<uservar type="Differ" name="check_12_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_12_country" value="1"/>
+				<var type="Set" name="check_country_id" value="12" id="20619"/>
+				<var type="Set" name="state" value="1" id="20619"/>
+				<getname name="name" id="80040"/>
+		        <countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了楚国刺探，去楚国凤凰城找流浪者拿回情报"/>
+				<useusersvar name="check_country_travel" id="20619"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="4"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="60" active="1">
+			<conditions>
+				<selfcountry value="1"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<uservar type="Differ" name="checkover_12_country" value="1"/>
+				<uservar type="Differ" name="check_12_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_12_country" value="1"/>
+				<var type="Set" name="check_country_id" value="12" id="20619"/>
+				<var type="Set" name="state" value="1" id="20619"/>
+				<getname name="name" id="80040"/>
+		        <countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了楚国刺探，去楚国王城的白骨洞找流浪者拿回情报"/>
+				<useusersvar name="check_country_travel" id="20619"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="4"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="120" active="1">
+			<conditions>
+				<innation/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="49"/>
+				<uservar type="Differ" name="checkover_12_country" value="1"/>
+				<uservar type="Differ" name="check_12_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_12_country" value="1"/>
+				<var type="Set" name="check_country_id" value="12" id="20619"/>
+				<var type="Set" name="state" value="1" id="20619"/>
+				<getname name="name" id="80040"/>
+		        <countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了楚国刺探，去楚国凤凰城找流浪者拿回情报"/>
+				<useusersvar name="check_country_travel" id="20619"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="3"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<innation/>
+				<level type="Great" value="99"/>
+				<uservar type="Differ" name="checkover_12_country" value="1"/>
+				<uservar type="Differ" name="check_12_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Differ" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="check_12_country" value="1"/>
+				<var type="Set" name="check_country_id" value="12" id="20619"/>
+				<var type="Set" name="state" value="1" id="20619"/>
+				<getname name="name" id="80040"/>
+		        <countryname name="country_name" id="80040"/>
+		        <var1bulletin kind="41" content="接受了楚国刺探，去楚国王城的白骨洞找流浪者拿回情报"/>
+		 		<useusersvar name="check_country_travel" id="20619"/>
+				<var type="Set" name="check_country_times" value="1"/>
+				<var type="Set" name="check_country_baseexps" value="5"/>
+				<vars type="Add" name1="check_country_travel" name2="check_country_times"/>
+				<vars type="Mul" name1="check_country_travel" name2="check_country_baseexps"/>
+				<var type="GetP" name="check_country_selflevel" value="1"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="check_country_selflevel"/>
+				<var type="Set" name="baseexp" value="45"/>
+				<vars type="Add" name1="baseexp" name2="check_country_travel"/>
+				<var type="Set" name="other_baseexp_big" value="3"/>
+				<var type="Set" name="other_baseexp_small" value="2"/>
+				<vars type="Mul" name1="baseexp" name2="other_baseexp_big"/>
+				<vars type="Div" name1="baseexp" name2="other_baseexp_small"/>
+				<vars type="Mul" name1="check_country_selflevel" name2="baseexp"/>
+				<refresh name="check_country_selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="1" active="1">
+			<conditions>
+				<innation/>
+				<uservar type="Differ" name="checkover_12_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Equal" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Add" name="__selfcountry" value="4096 "/>
+				<var type="Set" name="state" value="-2"/>
+				<uservar type="Set" name="checkover_12_country" value="1"/>
+				<uservar type="Add" name="check_country_travel" value="1"/>
+				<refresh name="state"/>
+				        <exp value="50000000"/>
+                        <exp value="50000000"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+				
+                <getname name="name" id="80040"/>
+	            <countryname name="country_name" id="80040"/>
+	                              <var1bulletin kind="41" content="完成了刺探任务，获取了不少奖励哦！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<innation/>
+				<uservar type="Differ" name="checkover_12_country" value="1"/>
+				<var type="Differ" name="state" value="-3" id="20614"/>
+				<var type="Differ" name="state" value="1" id="20614"/>
+				<var type="Differ" name="state" value="-3" id="20615"/>
+				<var type="Differ" name="state" value="1" id="20615"/>
+				<var type="Equal" name="state" value="-3" id="20619"/>
+				<var type="Differ" name="state" value="1" id="20619"/>
+			</conditions>
+			<actions>
+				<uservar type="Add" name="__selfcountry" value="4096 "/>
+				<countrysvar type="Add" name="r_king_c_walk" value="1"/>
+				<var type="Set" name="state" value="-2"/>
+				<uservar type="Set" name="checkover_12_country" value="1"/>
+				<uservar type="Add" name="check_country_travel" value="1"/>
+				<refresh name="state"/>
+				        <exp value="50000000"/>
+                        <exp value="50000000"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+				
+                <getname name="name" id="80040"/>
+	            <countryname name="country_name" id="80040"/>
+	                              <var1bulletin kind="41" content="完成了刺探任务，获取了不少奖励哦！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

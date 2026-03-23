@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5046" name="皇城-守墓者(573,41)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="250004">
+	<embranchment id="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+
+this:AddCountryStrategy("武夷王墓十层(0)", "v5046", 150007, 10)
+
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="150007" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓一层" pos="172,265"/>
+				<notify content="你来到了中立区·武夷王墓一层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓二层" pos="257,144"/>
+				<notify content="你来到了中立区·武夷王墓二层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓三层" pos="34,188"/>
+				<notify content="你来到了中立区·武夷王墓三层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓四层" pos="139,270"/>
+				<notify content="你来到了中立区·武夷王墓四层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓五层" pos="69,192"/>
+				<notify content="你来到了中立区·武夷王墓五层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓六层" pos="217,208"/>
+				<notify content="你来到了中立区·武夷王墓六层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓七层" pos="245,200"/>
+				<notify content="你来到了中立区·武夷王墓七层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓八层" pos="78,187"/>
+				<notify content="你来到了中立区·武夷王墓八层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓九层" pos="107,204"/>
+				<notify content="你来到了中立区·武夷王墓九层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="110" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓十层" pos="190,45"/>
+				<notify content="你来到了中立区·武夷王墓十层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓十一层" pos="147,126"/>
+				<notify content="你来到了中立区·武夷王墓十一层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓十二层" pos="223,186"/>
+				<notify content="你来到了中立区·武夷王墓十二层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+			<goto name="中立区·武夷王墓十三层" pos="141,273"/>
+				<notify content="你来到了中立区·武夷王墓十三层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

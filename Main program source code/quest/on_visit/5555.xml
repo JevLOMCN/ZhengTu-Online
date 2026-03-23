@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5555" name="龙王雕像">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960100">
+		<embranchment id="1">
+			<conditions>
+			    <item value="1" id="5280"/>
+				<gold type="Great" value="499999"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("龙胆鉴定(0)", "Dialog74")
+
+end
+function Dialog74()
+this:AddTalk("在我这里可以为你鉴定龙蛋，只需要50锭银子，龙蛋有几率鉴定出幼龙和小龙");
+this:AddTaskCmdItem("龙蛋鉴定--50锭(0)", "v5555", 160100, 11)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+			    <item value="1" id="5280"/>
+				<gold type="Less" value="500000"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("龙蛋鉴定(0)", "Dialog75")
+
+end
+function Dialog75()
+this:AddTalk("在我这里可以为你鉴定龙蛋，只需要50锭银子，龙蛋有几率鉴定出幼龙和小龙");
+this:AddDialogItem("龙蛋鉴定--50锭(0)", "Dialog98")
+this:AddCloseItem("离开")
+end
+function Dialog98()
+this:AddTalk("对不起，您的银子不足或没有龙蛋。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160100" new="1">
+		<embranchment id="11" active="1">
+			<conditions>
+				<space size="1"/>
+				<gold type="Great" value="499999"/>
+				<item value="1" id="5280"/>
+			</conditions>
+			<actions>
+				<notify content="鉴定成功"/>
+				<notify1 content="鉴定成功"/>
+				<removeitem value="1" id="5280"/>
+				<addranditem id="5272" value="1" odds="2500" id2="5273" value2="1" odds2="2500" id3="5272" value3="1" odds3="2500" id4="5272" value4="1" odds4="2500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

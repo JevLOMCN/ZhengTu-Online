@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="GB2312"?>
+<giftboxs>
+	<!-- item quality="物品档次划分" -->
+	<item quality="71">
+		<object obj_id="3540" num="1" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3866" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		
+	</item>
+	<item quality="72">
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	</item>
+	<item quality="73">
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	</item>
+	<item quality="74">
+		<object obj_id="3540" num="1" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3540" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+	</item>
+	
+	<item quality="75">
+		<object obj_id="3540" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="50000" num="200" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	
+	</item>
+	
+	<item quality="76">
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="200" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="300" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	
+	</item>
+	
+	
+	<item quality="77">
+		<object obj_id="3540" num="1" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	
+	</item>
+	
+	<item quality="78">
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3850" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="34567" num="300" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	
+	</item>
+	
+	<item quality="79">
+		<object obj_id="3540" num="1" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	
+	</item>
+	
+	
+	<item quality="80">
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3850" num="50" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--璀璨石-->	
+		<object obj_id="3853" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--精金石-->	
+		<object obj_id="3851" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+		<object obj_id="3540" num="10" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--魂魄1等-->
+		<object obj_id="50000" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--补天-->	
+		<object obj_id="3905" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3905" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神翼白羽-->	
+		<object obj_id="3866" num="30" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--麒麟丹-->	
+		<object obj_id="3844" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--玄麟精魄-->	
+		<object obj_id="3851" num="150" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--神斧石-->	
+		<object obj_id="34567" num="100" level="0" kind="1" sex="0" itemkind="0" itemlevel="0" material="1" /><!--护身符碎片-->	
+	
+	</item>
+	
+	<!-- giftbox id="大类ID" -->
+	<giftbox id="1">
+		<!-- id="钥匙ID" size="格子个数" maxnumber="再来1次次数上限" price="基础价格"-->
+		<boxitem itemid="963" size="17" maxnumber="1" price="0"/>
+		<!-- quality="物品档次" qualityodds="选中该档几率" maxnum="最大选中数量"  numkind="小类型数"-->
+			<qualitys quality="70" qualityodds="100000" maxnum="1" numkind="1"/><!--补天神石-->
+		</giftbox>
+	<!-- giftbox id="大类ID" -->
+	<giftbox id="2">
+		<!-- id="钥匙ID" size="格子个数" maxnumber="再来1次次数上限" price="基础价格"-->
+		<boxitem itemid="964" size="17" maxnumber="1" price="0"/>
+		<!-- quality="物品档次" qualityodds="选中该档几率" maxnum="最大选中数量"  numkind="小类型数"-->
+		<qualitys quality="71" qualityodds="100000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="72" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="73" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="74" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="75" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="76" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="77" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="78" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="79" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+		<qualitys quality="80" qualityodds="10000" maxnum="1" numkind="1"/><!--补天仙石-->	
+	</giftbox>
+</giftboxs>

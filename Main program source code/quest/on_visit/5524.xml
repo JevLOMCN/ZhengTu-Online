@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5524" name="天工使者(十层)">
+	<!--new means new quest, default is quest on user-->
+		<quest id="10510">
+		<embranchment id="8">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="509"/>
+				<var type="Differ" name="state" value="-1" id="510"/>
+				<var type="Differ" name="state" value="1" id="510"/>
+				<var type="Differ" name="state" value="-3" id="510"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("击杀BOSS")
+this:AddTaskCmdItem("好，我这就去{10001}", "v5524", 510, 1)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+		<embranchment id="9">
+			<conditions>
+				<var type="Differ" name="state" value="-1" id="510"/>
+				<var type="Differ" name="state" value="1" id="510"/>
+				<var type="Differ" name="state" value="-3" id="510"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("你上一个任务还没完成")
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="510"/>
+				<var type="Differ" name="state" value="-3" id="510"/>
+				<var type="Differ" name="state" value="-1" id="510"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    (GetName),你还没有完成任务。");
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+				<space size="2"/>
+				<item value="1" id="32118"/>
+				<var type="Equal" name="state" value="-3" id="510"/>
+				<var type="Differ" name="state" value="-1" id="510"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("这么快就打死了呀!")
+this:AddTaskCmdItem("完成任务{10001}", "v5524", 510, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<item value="1" id="32118"/>
+				<var type="Equal" name="state" value="-3" id="510"/>
+				<var type="Differ" name="state" value="-1" id="510"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：天关十层", "Dialog17")
+end
+function Dialog17()
+this:AddTalk("    对不起，你的包裹满了，请清空一些再来吧。");
+this:AddCloseItem("离开")
+end				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="18">
+			<conditions>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="510"/>
+				<var type="Differ" name="state" value="-1" id="510"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：天关十层", "Dialog17")
+end
+function Dialog17()
+this:AddTalk("    你的天关勋章(九级)要放在包裹里面才能完成任务。");
+this:AddCloseItem("离开")
+end				</menu>
+			</actions>
+		</embranchment>
+		</quest>
+		<quest id="510" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="509"/>
+				<var type="Differ" name="state" value="-1" id="510"/>
+				<var type="Differ" name="state" value="1" id="510"/>
+				<var type="Differ" name="state" value="-3" id="510"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<notify content="任务：打死BOSS"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="510"/>
+			</conditions>
+			<actions>
+				<var1bulletin kind="42" content="通过了天关十层,获得神阶紧箍咒,实力大增."/>
+				<removeitem value="1" id="32118" log="删除紧箍咒(九级)"/>
+				<addpurplebinditem value="1" id="32119"/>
+				<notify1 content="完成任务"/>
+				<var type="Set" name="state" value="-1"/>
+		<menu>
+function TaskDialog()
+this:AddTalk("传送至新龙城")
+this:AddTaskCmdItem("传送{10001}", "v5524", 1510, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		</quest>
+		<quest id="11510">
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="510"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("传送至新龙城")
+this:AddTaskCmdItem("传送{10001}", "v5524", 1510, 3)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="1510" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="510"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·皇城" pos="848,694"/>
+				<notify content="你被马车载到了皇城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

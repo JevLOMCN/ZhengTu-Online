@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by wt (zt) -->
+<event id="31110" name="万宝宫副本">
+	<!--new means new quest, default is quest on user-->
+		<quest id="80040" new="1">		
+		<embranchment id="5">
+			<conditions>
+				<timeouts long="1" id="80040" less="0"/>	
+				<global type="Equal" name="jifenleiji_name_9" value="1" id="41000001"/>					
+				<global type="Differ" name="jifenleiji_name_10" value="1" id="41000001"/>
+			   <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<global type="Set" name="jifenleiji_name_10" value="1" id="41000001"/>
+				<notify6 content="恭喜您成功击杀守宫将军·十阶，今日万宝宫活动圆满结束！"/>	
+<var1bulletin kind="43" content="在中立区·万宝宫十层成功击杀BOSS　守宫将军·十阶　今日万宝宫活动圆满结束！"/>
+<var1bulletin kind="42" content="在中立区·万宝宫十层　成功击杀BOSS　守宫将军·十阶　今日万宝宫活动圆满结束！"/>				
+                <var type="Set" name="state" value="1"/>
+				<timeouts/>			
+				</actions>
+		</embranchment>	
+	</quest>
+</event>				

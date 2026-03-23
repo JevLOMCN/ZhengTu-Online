@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# stop --- stop the servers
+#
+
+tmp=$IFS
+IFS='
+'
+for var  in $(ps -u $(basename $HOME) | grep Server) 
+do
+	pid=$(echo $var | cut -c1-5)
+	pname=$(echo $var | cut -c25-)	
+
+	if  kill -9 $pid
+	then
+		echo "$pname stoped"
+	else
+		echo "$pname can't be stoped"
+	fi
+done
+
+cond=$(ps -u $(basename $HOME) | grep Server | wc -l)
+while [ $cond -gt 0 ]
+do
+	sleep 1
+	cond=$(ps -u $(basename $HOME) | grep Server | wc -l)
+	echo "ServerNum:$cond"
+done
+

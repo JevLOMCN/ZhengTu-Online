@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="50019" name="会员礼包">
+<quest id="9850019">
+		<embranchment id="10"><!--材料不足-->
+			<conditions>
+				<item value="1" id="50019"/><!--不满足兑换要求-->
+			</conditions>
+			<actions>
+	    <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,255\"&gt;兑换比例：&lt;/n&gt;&lt;n color=\"255,0,255,100\"&gt;100碎片=山寨霸王图鉴&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;兑换物品:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 3981\"&gt;  山寨霸王图鉴&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("兑换山寨霸王图鉴(0)", "u50019", 114311, 99)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+				<var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>
+		<embranchment id="11">
+			<conditions>
+				<item value="100" id="50019"/><!--满足兑换要求-->
+			</conditions>
+			<actions>
+	 <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,255\"&gt;兑换比例：&lt;/n&gt;&lt;n color=\"255,0,255,100\"&gt;100碎片=山寨霸王图鉴&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;兑换物品:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 3981\"&gt;  山寨霸王图鉴&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("兑换山寨霸王图鉴(0)", "u50019", 114311, 1)
+this:AddTaskCmdItem("兑换至尊蚌魔图鉴(0)", "u50019", 114311, 2)
+this:AddTaskCmdItem("兑换魔徒图鉴(0)", "u50019", 114311, 3)
+this:AddTaskCmdItem("兑换恶魔统领图鉴(0)", "u50019", 114311, 4)
+this:AddTaskCmdItem("兑换铁爪鬼王图鉴(0)", "u50019", 114311, 5)
+this:AddTaskCmdItem("兑换恶魔尊主图鉴(0)", "u50019", 114311, 6)
+this:AddTaskCmdItem("兑换嗜血屠魔图鉴(0)", "u50019", 114311, 7)
+this:AddTaskCmdItem("兑换僵尸小将图鉴(0)", "u50019", 114311, 8)
+this:AddTaskCmdItem("兑换刑天图鉴(0)", "u50019", 114311, 9)
+this:AddTaskCmdItem("兑换南山老怪图鉴(0)", "u50019", 114311, 10)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+			 <var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>		    		     	    	            	    
+	</quest>
+<quest id="114311" new="1">
+<embranchment id="1" active="1">
+<conditions>
+<item value="100" id="50019"/>
+</conditions>
+<actions>
+<removeitem value="100" id="50019"/>
+<addbinditem value="1" id="3981"/><!--道具--> 
+<notify1 content="获得山寨霸王图鉴"/>
+      </actions>
+    </embranchment>
+	<embranchment id="2" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3982"/><!--道具--> 
+			 <notify1 content="获得至尊蚌魔图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="3" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3983"/><!--道具--> 
+			 <notify1 content="获得魔徒图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="4" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3984"/><!--道具--> 
+			 <notify1 content="获得恶魔统领图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="5" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3985"/><!--道具--> 
+			 <notify1 content="获得铁爪鬼王图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="6" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3986"/><!--道具--> 
+			 <notify1 content="获得恶魔尊主图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="7" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3987"/><!--道具--> 
+			 <notify1 content="获得嗜血屠魔图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="8" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3988"/><!--道具--> 
+			 <notify1 content="获得僵尸小将图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="9" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3989"/><!--道具--> 
+			 <notify1 content="获得刑天图鉴"/>
+			       </actions>
+    </embranchment>
+	<embranchment id="10" active="1">
+      <conditions>
+			<item value="100" id="50019"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="50019"/> 
+			<addGradebinditem value="1" id="3990"/><!--道具--> 
+			 <notify1 content="获得南山老怪图鉴"/>
+</actions>
+</embranchment>
+<embranchment id="99" active="1">
+<conditions>
+</conditions>
+<actions>
+<notify6 content="道具不足，无法兑换！"/>
+</actions>
+</embranchment>
+</quest>
+</event>

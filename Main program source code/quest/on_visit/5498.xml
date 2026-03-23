@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5498" name="圣城传送师">
+	<!--new means new quest, default is quest on user-->
+	<quest id="9605498">
+		<embranchment id="9">
+			<conditions>
+				<salary type="Great" value="199"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我可以带你去遥远而神秘的圣城！");
+this:AddTaskCmdItem("圣城-2两工资(0)", "v5498", 160100, 11)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+				<salary type="Less" value="200"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我可以带你去遥远而神秘的圣城！")
+this:AddDialogItem("圣城-2两工资(0)", "Dialog98")
+this:AddCloseItem("离开")
+end
+function Dialog98()
+this:AddTalk("对不起，您的工资不够。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160100" new="1">
+		<embranchment id="11" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="9"/> 
+				<salary type="Great" value="199"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·圣城" pos="113,222"/>
+				<notify content="你来到了圣城,花费2两工资"/>
+				<salary type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

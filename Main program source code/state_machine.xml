@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--游戏状态机参数-->
+<state_machine>
+	<quiz_state_machine>
+	<state name="default" event="question" `next_state="ready"/>
+	<state name="ready"   event="ready_time_out" next_state="readyover"/>
+	<state name="ready"   event="question" next_state="active"/>
+	<state name="active"  event="active_time_out" next_state="readyover"/>
+	<state name="readyover"  next_state="over"/>
+	</quiz_state_machine>
+</state_machine>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1193" name="无暇礼包(八折)">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<addbinditem value="500" id="799"/>
+				<notify1 content="获得无暇升级宝石x500"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域 512 -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家  512国战传送区-->
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<waypoint>
+		<point x="18" y="111"/>
+		<point x="19" y="111"/>
+		<point x="20" y="111"/>
+		<point x="21" y="111"/>
+		<point x="18" y="112"/>
+		<point x="19" y="112"/>
+		<point x="20" y="112"/>
+		<point x="21" y="112"/>
+		<point x="17" y="113"/>
+		<point x="18" y="113"/>
+		<point x="19" y="113"/>
+		<point x="20" y="113"/>
+		<dest name="jixie8" country="6" x="93" y="30"/>
+		<dest name="jixie8" country="6" x="94" y="30"/>
+		<dest name="jixie8" country="6" x="95" y="30"/>
+		<dest name="jixie8" country="6" x="96" y="30"/>
+		<dest name="jixie8" country="6" x="93" y="31"/>
+		<dest name="jixie8" country="6" x="94" y="31"/>
+		<dest name="jixie8" country="6" x="95" y="31"/>
+		<dest name="jixie8" country="6" x="96" y="31"/>
+		<dest name="jixie8" country="6" x="92" y="32"/>
+		<dest name="jixie8" country="6" x="93" y="32"/>
+		<dest name="jixie8" country="6" x="94" y="32"/>
+		<dest name="jixie8" country="6" x="95" y="32"/>
+	</waypoint>
+	<waypoint>
+		<point x="49" y="173"/>
+		<point x="50" y="173"/>
+		<point x="51" y="173"/>
+		<point x="52" y="173"/>
+		<point x="49" y="174"/>
+		<point x="50" y="174"/>
+		<point x="51" y="174"/>
+		<point x="52" y="174"/>
+		<point x="48" y="175"/>
+		<point x="49" y="175"/>
+		<point x="50" y="175"/>
+		<point x="51" y="175"/>
+		<dest name="jixie6" country="6" x="133" y="34"/>
+		<dest name="jixie6" country="6" x="134" y="34"/>
+		<dest name="jixie6" country="6" x="135" y="34"/>
+		<dest name="jixie6" country="6" x="136" y="34"/>
+		<dest name="jixie6" country="6" x="133" y="35"/>
+		<dest name="jixie6" country="6" x="134" y="35"/>
+		<dest name="jixie6" country="6" x="135" y="35"/>
+		<dest name="jixie6" country="6" x="136" y="35"/>
+		<dest name="jixie6" country="6" x="132" y="36"/>
+		<dest name="jixie6" country="6" x="133" y="36"/>
+		<dest name="jixie6" country="6" x="134" y="36"/>
+		<dest name="jixie6" country="6" x="135" y="36"/>
+	</waypoint>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="23" height="39" x="5" y="90" type="1" color="0,0,255,0"/>
+	<zonedef width="15" height="30" x="41" y="156" type="1" color="0,0,255,0"/>
+	<npc id="5061" name="周保全" width="1" height="1" x="26" y="122" num="1" interval="1800"/>
+		<fixedrush id="111" startTime="22:00:00" endTime="23:00:00" delay="0"/>
+</map>

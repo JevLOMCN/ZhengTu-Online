@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5125" name="超级传送">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960103">
+		<embranchment id="20">
+			<conditions>
+                <charvip type="Great" value="89"/><!-- VIP点数最低 -->
+			
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("你好。")
+this:AddTalk("有什么想去的地方吗？")
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,255\&quot;&gt;最近开发了新的地图可以自动打怪，挂机必备“专属VIP地图”。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,255,0\&quot;&gt;开放时间：全天，只能1玩家进入！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;只有VIP10玩家才可进入VIP地图哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("进入VIP地图【时装布料】", "v5125", 160103, 1)
+this:AddTaskCmdItem("进入VIP地图【怪物图鉴】", "v5125", 160103, 2)
+this:AddTaskCmdItem("进入VIP地图【传国碎片】", "v5125", 160103, 3)
+this:AddTaskCmdItem("进入VIP地图【王者碎片】", "v5125", 160103, 4)
+this:AddTaskCmdItem("进入VIP地图【儿女碎片】", "v5125", 160103, 5)
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="21">
+			<conditions>
+               <charvip type="Less" value="90"/><!-- VIP点数最高 -->
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("你好。")
+this:AddTalk("有什么想去的地方吗？")
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,255\&quot;&gt;最近开发了新的地图可以自动打怪，挂机必备“专属VIP地图”。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,255,0\&quot;&gt;开放时间：全天，只能1玩家进入！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;只有VIP10玩家才可进入VIP地图哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("进入VIP地图【时装布料】", "v5125", 160103, 99)
+this:AddTaskCmdItem("进入VIP地图【怪物图鉴】", "v5125", 160103, 99)
+this:AddTaskCmdItem("进入VIP地图【传国碎片】", "v5125", 160103, 99)
+this:AddTaskCmdItem("进入VIP地图【王者碎片】", "v5125", 160103, 99)
+this:AddTaskCmdItem("进入VIP地图【儿女碎片】", "v5125", 160103, 99)
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160103" new="1">
+		<embranchment id="1" active="1">
+			<conditions>			
+				
+			</conditions>
+			<actions>
+				<notify content="已经进入专属地图"/>
+				<notify1 content="绿色BOSS刷新时间为30分钟！"/>
+				<notify1 content="紫色BOSS刷新时间为1小时！"/>
+				<goto name="中立区·VIP地图1" pos="36,31"/>
+				<var1bulletin kind="42" content="欢迎进入（天下征途）VIP地图1号（满屏幕BOSS）！"/> 
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>	
+							
+			</conditions>
+			<actions>
+				<notify content="已经进入专属地图"/>
+				<notify1 content="绿色BOSS刷新时间为30分钟！"/>
+				<notify1 content="紫色BOSS刷新时间为1小时！"/>
+				<goto name="中立区·VIP地图2" pos="36,31"/>
+				<var1bulletin kind="42" content="欢迎进入（天下征途）VIP地图2号（满屏幕BOSS）！"/> 
+				<var type="Set" name="state" value="-2"/>
+							</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>	
+
+			</conditions>
+			<actions>
+				<notify content="已经进入专属地图"/>
+				<notify1 content="绿色BOSS刷新时间为30分钟！"/>
+				<notify1 content="紫色BOSS刷新时间为1小时！"/>
+				<goto name="中立区·VIP地图3" pos="36,31"/>
+				<var1bulletin kind="42" content="欢迎进入（天下征途）VIP地图3号（满屏幕BOSS）！"/> 
+				<var type="Set" name="state" value="-2"/>
+							</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>	
+						
+			</conditions>
+			<actions>
+				<notify content="已经进入专属地图"/>
+				<notify1 content="绿色BOSS刷新时间为30分钟！"/>
+				<notify1 content="紫色BOSS刷新时间为1小时！"/>
+				<goto name="中立区·VIP地图4" pos="36,31"/>
+				<var1bulletin kind="42" content="欢迎进入（天下征途）VIP地图4号（满屏幕BOSS）！"/> 
+				<var type="Set" name="state" value="-2"/>
+							</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>	
+						
+			</conditions>
+			<actions>
+				<notify content="已经进入专属地图"/>
+				<notify1 content="绿色BOSS刷新时间为30分钟！"/>
+				<notify1 content="紫色BOSS刷新时间为1小时！"/>
+				<goto name="中立区·VIP地图5" pos="36,31"/>
+				<var1bulletin kind="42" content="欢迎进入（天下征途）VIP地图5号（满屏幕BOSS）！"/> 
+				<var type="Set" name="state" value="-2"/>
+							</actions>
+		</embranchment>
+		<embranchment id="99" active="1">
+			<conditions>	
+					
+			</conditions>
+			<actions>
+				<var1bulletin kind="42" content="您不是VIP10无法进入VIP10专属地图！"/> 
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+	</quest>
+</event>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+<!--怪物安置-->
+	<npc id="21021" name="VIP专属BOSS" width="1" height="1" x="49" y="63" num="1" interval="60" color="0,255,0,0"/>
+<!--地图点对点传送-->
+	<waypoint>
+	</waypoint>
+<!--地图属性 1=PK 2=绝对安全 16=竞技区 -->
+	<zonedef width="80" height="80" x="7" y="17" type="1" color="0,0,255,0"/>
+</map>

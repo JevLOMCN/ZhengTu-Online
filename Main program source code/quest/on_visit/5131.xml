@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="5131" name="万宝宫车夫">
+	<!--new means new quest, default is quest on user-->
+	<quest id="90011">
+		<embranchment id="1">
+			<conditions>
+				<global type="Differ" name="jifenleiji_name_1" value="1" id="41000001"/>
+				<mapid id="51311" name="10500"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_1" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_2" value="1" id="41000001"/>
+                <selfcountry value="0"/>
+				<mapid id="51311" name="10500"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 1)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_1" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_2" value="1" id="41000001"/>
+                 <selfcountry value="0"/>
+				<mapid id="51311" name="10501"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_2" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_3" value="1" id="41000001"/>
+                                  <selfcountry value="0"/>
+				<mapid id="51311" name="10501"/>									
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 2)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="13">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_2" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_3" value="1" id="41000001"/>
+                                 <selfcountry value="0"/>
+				<mapid id="51311" name="10502"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="18">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_3" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_4" value="1" id="41000001"/>
+                                  <selfcountry value="0"/>
+				<mapid id="51311" name="10502"/>																	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 3)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="19">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_3" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_4" value="1" id="41000001"/>
+                                <selfcountry value="0"/>
+				<mapid id="51311" name="10503"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_4" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_5" value="1" id="41000001"/>
+                                 <selfcountry value="0"/>
+				<mapid id="51311" name="10503"/>									
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 4)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_4" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_5" value="1" id="41000001"/>
+                                  <selfcountry value="0"/>
+				<mapid id="51311" name="10504"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="30">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_5" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_6" value="1" id="41000001"/>
+                                   <selfcountry value="0"/>
+				<mapid id="51311" name="10504"/>									
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 5)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="31">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_5" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_6" value="1" id="41000001"/>
+                                 <selfcountry value="0"/>
+				<mapid id="51311" name="10505"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每天晚上21:30-23:30开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_6" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_7" value="1" id="41000001"/>
+                                 <selfcountry value="0"/>
+				<mapid id="51311" name="10505"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 6)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="37">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_6" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_7" value="1" id="41000001"/>
+                                <selfcountry value="0"/>
+				<mapid id="51311" name="10506"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="42">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_7" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_8" value="1" id="41000001"/>
+                                  <selfcountry value="0"/>
+				<mapid id="51311" name="10506"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 7)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="43">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_7" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_8" value="1" id="41000001"/>
+                                  <selfcountry value="0"/>
+				<mapid id="51311" name="10507"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="48">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_8" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_9" value="1" id="41000001"/>
+                 <selfcountry value="0"/>
+				<mapid id="51311" name="10507"/>					
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 8)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="49">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_8" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_9" value="1" id="41000001"/>
+                <selfcountry value="0"/>
+				<mapid id="51311" name="10508"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;1只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 201)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="50">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_9" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_10" value="1" id="41000001"/>
+                 <selfcountry value="0"/>
+				<mapid id="51311" name="10508"/>					
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;清理当前地图所有怪物后才能找我进入下一层哦！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 9)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="51">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_10" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_11" value="1" id="41000001"/>
+                 <selfcountry value="0"/>
+				<mapid id="51311" name="10509"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;今天的万宝宫活动已经结束！请明天在参加吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_1" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10500"/>		
+                 <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 1)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="100">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_2" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10501"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 2)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="101">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_3" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10502"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 3)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="102">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_4" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10503"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 4)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="103">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_5" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10504"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 5)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="104">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_6" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10505"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 6)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="105">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_7" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10506"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 7)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="106">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_8" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10507"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 8)
+this:AddCloseItem("离开(0)")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="107">
+			<conditions>
+				<global type="Equal" name="jifenleiji_name_9" value="1" id="41000001"/>
+				<global type="Differ" name="jifenleiji_name_99" value="1" id="41000001"/>
+				<mapid id="51311" name="10508"/>		
+                                <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;英雄，你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;他们已经清理了当前地图怪物了！快去下一层跟着他们的脚步吧！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前地图怪物剩余:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;0只。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;\n温馨提示：每晚21:00-23:00开启！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入下一层(33)", "v5131", 51311, 9)
+this:AddCloseItem("离开(0)")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="51311" new="1">
+		<embranchment id="1" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>	
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫二层，勇士们速度前往万宝宫支援啊！"/>	
+				<goto name="中立区·万宝宫二层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>	
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫三层，勇士们速度前往万宝宫支援啊！"/>	
+				<goto name="中立区·万宝宫三层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>	
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫四层，勇士们速度前往万宝宫支援啊！"/>
+				<goto name="中立区·万宝宫四层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>		
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫五层，勇士们速度前往万宝宫支援啊！"/>
+				<goto name="中立区·万宝宫五层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>	
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫六层，勇士们速度前往万宝宫支援啊！"/>	
+				<goto name="中立区·万宝宫六层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>	
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫七层，勇士们速度前往万宝宫支援啊！"/>	
+				<goto name="中立区·万宝宫七层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>	
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫八层，勇士们速度前往万宝宫支援啊！"/>	
+				<goto name="中立区·万宝宫八层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>		
+                <timer start="00:00:01" end="23:59:55"/>
+			   <selfcountry value="0"/>				
+			</conditions>
+			<actions>		
+        <var1bulletin kind="41" content="已经进入到中立区·万宝宫九层，勇士们速度前往万宝宫支援啊！"/>
+				<goto name="中立区·万宝宫九层" pos="31,31"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+		<embranchment id="201" active="1">
+			<conditions>
+             <timer start="00:00:01" end="23:59:55"/>	
+			</conditions>
+			<actions>
+				<notify6 content="当前地图怪物还未击杀，不可进入下一层！"/>
+				<flexmenu content="当前地图怪物还未击杀，不可进入下一层！"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

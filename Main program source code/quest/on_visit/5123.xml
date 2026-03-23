@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5123" name="超级传送">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960103">
+		<embranchment id="1">
+			<conditions>	
+             <countryid value="8"/>	
+			
+			<innation/>		
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,255\&quot;&gt;神魔之隙内涵城主，玩家可攻城，总舵内另外开放神魔之隙内阁，里面也刷新有1只极品BOSS。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;绿色BOSS刷新时间：15分钟！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,255\&quot;&gt;紫色BOSS刷新时间：30分钟！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,100,0\&quot;&gt;橙色BOSS刷新时间：2小时！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("神魔之隙--火速前往(21)", "v5123", 160103, 6)
+this:AddTaskCmdItem("绝行天径--火速前往(21)", "v5123", 160103, 8)
+this:AddTaskCmdItem("蜀山古镇--火速前往(21)", "v5123", 160103, 9)
+this:AddTaskCmdItem("太阳华池--火速前往(21)", "v5123", 160103, 10)
+this:AddTaskCmdItem("丹枫峡谷--火速前往(21)", "v5123", 160103, 11)
+this:AddTaskCmdItem("月光城寨--火速前往(21)", "v5123", 160103, 12)
+this:AddTaskCmdItem("魔界之门--火速前往(21)", "v5123", 160103, 13)
+this:AddTaskCmdItem("九黎旧祠--火速前往(21)", "v5123", 160103, 14)
+this:AddTaskCmdItem("月牙荒谷--火速前往(21)", "v5123", 160103, 15)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+	
+		<embranchment id="2">
+			<conditions>
+            <countryid value="12"/>
+			
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,255\&quot;&gt;神魔之隙内涵城主，玩家可攻城，总舵内另外开放神魔之隙内阁，里面也刷新有1只极品BOSS。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;绿色BOSS刷新时间：15分钟！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,255\&quot;&gt;紫色BOSS刷新时间：30分钟！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,100,0\&quot;&gt;橙色BOSS刷新时间：2小时！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("神魔之隙--火速前往(21)", "v5123", 160103, 6)
+this:AddTaskCmdItem("绝行天径--火速前往(21)", "v5123", 160103, 8)
+this:AddTaskCmdItem("蜀山古镇--火速前往(21)", "v5123", 160103, 9)
+this:AddTaskCmdItem("太阳华池--火速前往(21)", "v5123", 160103, 10)
+this:AddTaskCmdItem("丹枫峡谷--火速前往(21)", "v5123", 160103, 11)
+this:AddTaskCmdItem("月光城寨--火速前往(21)", "v5123", 160103, 12)
+this:AddTaskCmdItem("魔界之门--火速前往(21)", "v5123", 160103, 13)
+this:AddTaskCmdItem("九黎旧祠--火速前往(21)", "v5123", 160103, 14)
+this:AddTaskCmdItem("月牙荒谷--火速前往(21)", "v5123", 160103, 15)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		
+	</quest>
+	<quest id="160103" new="1">
+		<embranchment id="6" active="1">
+			<conditions>	
+				<level type="Great" value="29"/>			
+			</conditions>
+			<actions>
+				<notify content="已经进入神魔之隙"/>
+				<notify1 content="绿色BOSS刷新时间为30分钟！"/>
+				<notify5 content="紫色BOSS刷新时间为1小时！"/>			
+				<goto name="中立区·神魔之隙" pos="221,243"/>
+          <var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　神魔之隙　地图！！！"/>
+				<var type="Set" name="state" value="-2"/>
+				</actions>
+		</embranchment>
+                <embranchment id="7" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　蓬莱岛　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·蓬莱岛" pos="77,121"/>
+				<notify content="你被带到了蓬莱岛,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+								</actions>
+		</embranchment>
+                <embranchment id="8" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　绝行天径　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·绝行天径" pos="100,89"/>
+				<notify content="你被带到了绝行天径,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+								</actions>
+		</embranchment>
+                <embranchment id="9" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　蜀山古镇　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·蜀山古镇" pos="221,243"/>
+				<notify content="你被带到了蜀山古镇,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+								</actions>
+		</embranchment>
+                <embranchment id="10" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　太阳华池　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·太阳华池" pos="221,243"/>
+				<notify content="你被带到了太阳华池,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+								</actions>
+		</embranchment>
+                <embranchment id="11" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　丹枫峡谷　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·丹枫峡谷" pos="221,243"/>
+				<notify content="你被带到了丹枫峡谷,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+								</actions>
+		</embranchment>
+                <embranchment id="12" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　月光城寨　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·月光城寨" pos="221,243"/>
+				<notify content="你被带到了月光城寨,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+								</actions>
+		</embranchment>
+                <embranchment id="13" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　魔界之门　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·魔界之门" pos="221,243"/>
+				<notify content="你被带到了魔界之门,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+								</actions>
+		</embranchment>
+                <embranchment id="14" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　九黎旧祠　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·九黎旧祠" pos="70,232"/>
+				<notify content="你被带到了九黎旧祠,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+												</actions>
+		</embranchment>
+                <embranchment id="15" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　月牙荒谷　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·月牙荒谷" pos="221,243"/>
+				<notify content="你被带到了月牙荒谷,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+																</actions>
+		</embranchment>
+                <embranchment id="16" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="4" content="在王城≮总舵传送师≯处进入到了　迷踪林　地图！！！"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="中立区·迷踪林" pos="100,100"/>
+				<notify content="你被带到了迷踪林,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="98" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<notify6 content="对不起！你VIP等级低于10级，无法进入！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+ 	</quest>
+</event>

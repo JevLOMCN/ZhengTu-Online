@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>征途私服 - 赤炼征途 - 官方正版端游下载</title>
+<meta name="description" content="赤炼征途，原汁原味怀旧征途私服，永久免费、极速注册、绿色安全，官方正版唯一入口。">
+<link rel="icon" href="images/favicon.ico" />
+<style>
+html,body{margin:0;padding:0;background:#f7f8fa;font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;color:#222;}
+.header{display:flex;justify-content:space-between;align-items:center;background:#181f2b;padding:0 32px;height:90px;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:1000;}
+.logo img{height:54px;vertical-align:middle;}
+.nav{display:grid;grid-template-columns:repeat(2,auto);grid-column-gap:40px;grid-row-gap:8px;justify-content:center;align-items:center;}
+.nav a{color:#fff;font-size:17px;text-decoration:none;position:relative;transition:color .2s;white-space:nowrap;}
+.nav a:hover{color:#37a1ff;}
+.nav a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;background:#37a1ff;transition:width .25s;}
+.nav a:hover::after{width:100%;}
+
+.notice-content{color:#fff;background:rgba(55,161,255,.15);padding:4px 12px;border-radius:8px;font-size:15px;animation:fadeNotice 6s infinite;margin-left:16px;}
+@keyframes fadeNotice{0%,100%{opacity:0;}10%,90%{opacity:1;}}
+
+.banner{position:relative;height:420px;background:linear-gradient(90deg,#222c46 0%,#2a3456 100%);
+display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.video-bg{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;opacity:.25;}
+.banner-content{position:relative;z-index:2;color:#fff;text-align:center;padding:32px 24px;max-width:760px;}
+.banner-content h1{font-size:2.7rem;margin-bottom:16px;text-shadow:0 4px 18px rgba(0,0,0,.3);}
+.banner-content p{font-size:1.3rem;margin-bottom:24px;opacity:.95;text-shadow:0 2px 10px rgba(0,0,0,.3);}
+.banner-btn{display:inline-block;background:linear-gradient(90deg,#37a1ff 0%,#42e9f6 100%);
+color:#fff;padding:15px 46px;font-size:1.25rem;border-radius:26px;font-weight:bold;text-decoration:none;transition:transform .15s;}
+.banner-btn:hover{transform:translateY(-2px) scale(1.03);}
+
+.features{max-width:1120px;margin:54px auto 0;padding:0 24px;}
+.features h2{text-align:center;font-size:2rem;margin-bottom:30px;color:#232e45;}
+.feature-list{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;}
+.feature-item{flex:1 1 260px;max-width:340px;background:#fff;border-radius:18px;box-shadow:0 6px 24px rgba(55,161,255,.08);
+padding:32px 20px;margin-bottom:24px;border-top:3px solid #37a1ff;transition:.2s;}
+.feature-item:hover{box-shadow:0 16px 40px rgba(66,233,246,.15);transform:translateY(-4px) scale(1.03);}
+.feature-item h3{font-size:1.4rem;color:#2587d3;margin-bottom:10px;}
+.feature-item p{font-size:1.04rem;color:#464e5f;line-height:1.7;}
+
+.download,.recharge{max-width:800px;margin:60px auto 0;padding:0 24px 48px;background:#fff;border-radius:14px;
+box-shadow:0 2px 24px rgba(66,233,246,.08);text-align:center;}
+.download h2,.recharge h2{font-size:1.8rem;font-weight:bold;margin-bottom:24px;color:#2d4067;}
+.download-btn,.recharge-btn{background:linear-gradient(90deg,#37a1ff 0%,#42e9f6 100%);
+color:#fff;padding:15px 36px;border-radius:22px;font-size:1.12rem;font-weight:500;border:none;
+cursor:pointer;box-shadow:0 4px 24px rgba(55,161,255,.2);text-decoration:none;transition:.12s;}
+.download-btn:hover,.recharge-btn:hover{transform:translateY(-1px) scale(1.04);}
+
+/* === 新增书卷样式图文区 === */
+.scroll-section{
+  position:relative;
+  max-width:1000px;
+  margin:80px auto;
+  padding:60px 50px;
+  background:#fffaf2;
+  border-radius:16px;
+  box-shadow:0 8px 40px rgba(0,0,0,.1);
+  font-family:"STKaiti","KaiTi","Microsoft YaHei",serif;
+  background-image:linear-gradient(to right,#f2e6c9 0%,#fff8eb 30%,#fff8eb 70%,#f2e6c9 100%);
+}
+.scroll-section::before,
+.scroll-section::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:40px;
+  height:100%;
+  background:url('images/scroll_edge_left.png') no-repeat center/contain;
+}
+.scroll-section::after{
+  right:0;
+  transform:scaleX(-1);
+  background:url('images/scroll_edge_right.png') no-repeat center/contain;
+}
+.scroll-title{
+  text-align:center;
+  font-size:1.8rem;
+  font-weight:700;
+  color:#7b4a12;
+  margin-bottom:24px;
+  letter-spacing:2px;
+}
+.scroll-paragraph{
+  font-size:1.15rem;
+  color:#3e2e10;
+  line-height:2;
+  text-indent:2em;
+  margin-bottom:20px;
+}
+.scroll-image{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,.1);
+  margin:20px 0;
+}
+
+/* 页脚 */
+.footer{background:#1b2230;color:#b3bbd6;text-align:center;padding:22px 0;margin-top:60px;}
+</style>
+</head>
+<body>
+<div id="app">
+<header class="header">
+  <div class="logo"><a href="/"><img src="images/logo.png" alt="赤炼征途"></a></div>
+  <div id="notice-content" class="notice-content"></div>
+  <nav class="nav">
+    <a href="register.html">注册账号</a>
+    <a href="reset_password.html">密码重置</a>
+    <a href="#download">客户端下载</a>
+    <a href="#recharge">快速充值</a>
+    <a href="/lottery.html">抽奖中心</a>
+  </nav>
+</header>
+
+<main>
+  <section class="banner">
+    <video autoplay muted loop playsinline class="video-bg">
+      <source src="https://videogame.ztgame.com.cn/zt/20251023/ztintro1023-17612174676803691.mp4" type="video/mp4">
+    </video>
+    <div class="banner-content">
+      <h1>赤炼征途官方私服端游</h1>
+      <p>极致画面、热血战斗，开启属于你的征途之路。经典怀旧，永久免费。</p>
+      <a href="#download" class="banner-btn">立即下载游戏</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>游戏特色</h2>
+    <div class="feature-list">
+      <div class="feature-item" v-for="item in features" :key="item.title">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.desc }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <h2>客户端下载</h2>
+    <div class="download-options">
+      <a href="http://e.haory.cn/e/e7/08/征途-安装程序.exe" class="download-btn">Windows客户端下载</a>
+      <a href="https://qm.qq.com/q/X8CX4hvw8U" class="download-btn">加入官方QQ群</a>
+    </div>
+  </section>
+
+  <section class="recharge" id="recharge">
+    <h2>快速充值</h2>
+    <div class="recharge-box">
+      <a href="recharge.html" class="recharge-btn">立即充值中心</a>
+    </div>
+  </section>
+
+  <!-- 新增书卷式图文介绍区 -->
+  <section class="scroll-section" id="scroll">
+    <div class="scroll-title">赤炼之卷 · 征途缘起</div>
+    <p class="scroll-paragraph">
+      世间传说，征途大陆自混沌初开便孕育着无数英雄与宿命。岁月流转，百战之魂再燃，昔日的荣耀与热血，
+      在赤炼征途中重生。这里没有肝度束缚，只有真刀真枪的激情较量。
+    </p>
+    <img src="images/dd.jpg" alt="征途之魂" class="scroll-image">
+    <p class="scroll-paragraph">
+      征战、兄弟、荣耀、信仰，这些早已烙印在每一位老玩家心中。我们坚持还原经典，保留热血，不忘初心，
+      让所有征途人再次并肩驰骋，在熟悉的国战呐喊中找回那份感动。
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 赤炼征途官方 版权所有 | 官方正版端游 | 未成年人请自觉防沉迷</p>
+</footer>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script>
+const { createApp } = Vue;
+createApp({
+  data(){return{features:[
+    {title:'1:1仿官还原',desc:'深度复刻征途2008，最正统端游，体验原汁原味激情。'},
+    {title:'激情百人战斗',desc:'跨服攻城，战斗爽快真实，装备全靠打。'},
+    {title:'自由交易经济',desc:'装备掉落可交易，金银摆摊，自由买卖无忧。'}
+  ]}},
+  mounted(){
+    const notices=[
+      "新区将于周五火爆开启，注册即送大礼！",
+      "全新福利活动上线，永久免费、散人好混！",
+      "QQ群 499948494 免费送礼包，进群领取福利！",
+      "限时充值返利100%，更多福利进群了解！",
+      "严禁外挂，维护公平，举报奖励丰厚！"
+    ];
+    let i=0;
+    const el=document.getElementById('notice-content');
+    function showNext(){el.textContent=notices[i];i=(i+1)%notices.length;}
+    setInterval(showNext,6000);
+    showNext();
+  }
+}).mount('#app');
+</script>
+</body>
+</html>

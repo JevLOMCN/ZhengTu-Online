@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1011" name="王城-西施(856,510)">	
+	<quest id="90040">
+			<embranchment id="1">
+			<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<level type="Great" value="49"/>
+				<uservar type="Less" name="tulong_state_1" value="3"/>
+				<var type="Differ" name="state" value="-1" id="80040"/>
+				<var type="Differ" name="state" value="1" id="80040"/>
+				<var type="Differ" name="state" value="-3" id="80040"/>
+			</conditions>
+			<actions>
+				<menu>
+				function TaskDialog()
+				this:AddDialogItem("圣海屠龙(0)", "Dialog4")
+				end
+				function Dialog4()
+				this:AddTalk("    传说圣城的海边有苍龙出没，天下勇士无不希望战胜它来证明自己的实力！如果你想证明你是一位真正的勇士，就去击败圣海苍龙吧！\n    注：苍龙有三种，击败不同强度的苍龙会得到不同的奖励哦。\n    杀死白色名字的龙会获得丰厚的经验奖励\n    杀死蓝色名字的龙会获得更加丰厚的经验奖励\n    杀死金色名字的龙会获得非常丰厚的奖励")
+				this:AddTaskCmdItem("接受任务(0)", "v1011", 80040, 1)
+				end
+				</menu>
+			</actions>
+		</embranchment>
+		
+			<embranchment id="2">
+			<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<level type="Great" value="49"/>
+				<uservar type="Equal" name="tulong_state_1" value="3"/>
+				<var type="Differ" name="state" value="-1" id="80040"/>
+				<var type="Differ" name="state" value="1" id="80040"/>
+				<var type="Differ" name="state" value="-3" id="80040"/>
+			</conditions>
+			<actions>
+				<menu>
+				function TaskDialog()
+				this:AddDialogItem("圣海屠龙(0)", "Dialog6")
+				end
+				function Dialog6()
+				this:AddTalk("   听说你今天杀死的是他们老大，其他的龙已经闻风而逃了，明天他可能还会出现，你明天再来帮我报仇吧！")
+				end
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="4">
+			<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<level type="Great" value="49"/>
+				<var type="Equal" name="shcl_level" value="1" id="80040"/>
+				<var type="Differ" name="state" value="1" id="80040"/>
+				<var type="Equal" name="state" value="-3" id="80040"/>
+				<var type="Differ" name="state" value="-1" id="80040"/>
+			</conditions>
+			<actions>
+				<menu>
+				function TaskDialog()
+				this:AddTalk("    你真是一位了不起的勇士！真希望我们国家能多几个你这样的勇士！")
+				this:AddTaskCmdItem("接受奖励(白){10002}", "v1011", 80040, 2)
+				end
+				</menu>
+			</actions>
+		</embranchment>
+
+		<embranchment id="5">
+			<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<level type="Great" value="49"/>
+				<var type="Equal" name="shcl_level" value="2" id="80040"/>
+				<var type="Differ" name="state" value="1" id="80040"/>
+				<var type="Equal" name="state" value="-3" id="80040"/>
+				<var type="Differ" name="state" value="-1" id="80040"/>
+			</conditions>
+			<actions>
+				<menu>
+				function TaskDialog()
+				this:AddTalk("    你真是一位了不起的勇士！真希望我们国家能多几个你这样的勇士！")
+				this:AddTaskCmdItem("接受奖励(黄){10002}", "v1011", 80040, 3)
+				end
+				</menu>
+			</actions>
+		</embranchment>
+
+		<embranchment id="6">
+			<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<level type="Great" value="49"/>
+				<var type="Equal" name="shcl_level" value="3" id="80040"/>
+				<var type="Differ" name="state" value="1" id="80040"/>
+				<var type="Equal" name="state" value="-3" id="80040"/>
+				<var type="Differ" name="state" value="-1" id="80040"/>
+			</conditions>
+			<actions>
+				<menu>
+				function TaskDialog()
+				this:AddTalk("    你真是一位了不起的勇士！真希望我们国家能多几个你这样的勇士！")
+				this:AddTaskCmdItem("接受奖励(蓝){10002}", "v1011", 80040, 4)
+				end
+				</menu>
+			</actions>
+		</embranchment>	
+	</quest>
+	
+		<quest id="80040" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="49"/>
+				<var type="Differ" name="state" value="-3" id="80040"/>
+				<var type="Differ" name="state" value="1" id="80040"/>
+				<uservar type="Less" name="tulong_state_1" value="3"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="1"/>
+				<uservar type="Add" name="tulong_state_1" value="1"/>
+				<var type="GetP" name="tulong_kill_selflevel" value="1"/>
+				<vars type="Mul" name1="taizi_kill_selflevel" name2="taizi_kill_selflevel"/>
+				<var type="Set" name="baseexp" value="2220"/>
+				<var type="Set" name="tulong_kill_selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="taizi_kill_selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="taizi_kill_selflevel2" name2="taizi_kill_selflevel"/>
+				<vars type="Mul" name1="taizi_kill_selflevel" name2="stupid"/>
+				<vars type="Div" name1="taizi_kill_selflevel" name2="div"/>
+				<vars type="Mul" name1="taizi_kill_selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="taizi_kill_selflevel2" name2="div"/>
+				<vars type="Add" name1="taizi_kill_selflevel" name2="taizi_kill_selflevel2"/>
+				<refresh name="tulong_kill_selflevel"/>
+				<getname name="name" id="80040"/>
+		<countryname name="country_name" id="80040"/>
+		<var1bulletin kind="41" content="接受了屠龙任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="shcl_level" value="1" id="80040"/>
+				<var type="Equal" name="state" value="-3" id="80040"/>
+			</conditions>
+			<actions>
+                <exp value="100000000"/>
+                 <umaxgold type="Add" value="200000"/><!--20锭金子-->
+		         <salary type="Add" value="400000"/><!--40锭工资-->
+                 <gold type="Add" value="500000"/><!--50锭银子-->
+				<getname name="name" id="80040"/>
+	            <countryname name="country_name" id="80040"/>
+	            <var1bulletin kind="41" content="完成了屠（白龙）任务，1亿经验，20锭金子，40锭工资。50锭银子奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="shcl_level" value="2" id="80040"/>
+				<var type="Equal" name="state" value="-3" id="80040"/>
+			</conditions>
+			<actions>
+                <exp value="100000000"/>
+				<exp value="50000000"/>
+                 <umaxgold type="Add" value="250000"/><!--25锭金子-->
+		         <salary type="Add" value="500000"/><!--50锭工资-->
+                 <gold type="Add" value="500000"/><!--50锭银子-->
+				<getname name="name" id="80040"/>
+	            <countryname name="country_name" id="80040"/>
+	            <var1bulletin kind="41" content="完成了屠（蓝龙）任务，1.5亿经验，25锭金子，50锭工资，50锭银子奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<var type="Equal" name="shcl_level" value="3" id="80040"/>
+				<var type="Equal" name="state" value="-3" id="80040"/>
+			</conditions>
+			<actions>
+
+                <exp value="100000000"/>
+                <exp value="100000000"/>
+                <umaxgold type="Add" value="300000"/><!--30锭金子-->
+		         <salary type="Add" value="500000"/><!--50锭工资-->
+                 <gold type="Add" value="500000"/><!--50锭银子-->
+				<getname name="name" id="80040"/>
+	            <countryname name="country_name" id="80040"/>
+	            <var1bulletin kind="41" content="完成了屠（黄龙）任务，2亿经验，30锭金子，50锭工资，50锭银子奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5122" name="超级传送">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960103">
+		<embranchment id="2">
+			<conditions>
+                          <isguard/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;本国地图也会刷新少量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;1.限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;60级以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;2.每次收取1锭银子手续费！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("    百兽谷- -本国传送(0)", "v5122", 160103, 1)
+this:AddTaskCmdItem("    兽王谷- -本国传送(0)", "v5122", 160103, 2)
+this:AddTaskCmdItem("龙岗山四层- -本国传送(0)", "v5122", 160103, 3)
+this:AddTaskCmdItem("白骨洞五层- -本国传送(0)", "v5122", 160103, 4)
+this:AddTaskCmdItem("白骨洞十层- -本国传送(0)", "v5122", 160103, 5)
+this:AddTaskCmdItem("精怪洞八层- -本国传送(0)", "v5122", 160103, 6)
+this:AddTaskCmdItem("精怪洞十层- -本国传送(0)", "v5122", 160103, 7)
+this:AddTaskCmdItem("　    北郊- -本国传送(0)", "v5122", 160103, 8)
+this:AddTaskCmdItem("凤祥镇西郊- -本国传送(0)", "v5122", 160103, 9)
+this:AddTaskCmdItem("　沼泽湿地- -本国传送(0)", "v5122", 160103, 10)
+this:AddTaskCmdItem("蛟龙洞一层- -本国传送(0)", "v5122", 160103, 12)
+this:AddTaskCmdItem("蛟龙洞二层- -本国传送(0)", "v5122", 160103, 13)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="1">
+			<conditions>
+                          <isguard/>
+			 <selfcountry value="0"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt; 对不起！只能在本国传送！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+                          <isguard/>
+                          <level type="Less" value="60"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt; 对不起！你等级低于60级无法使用！&lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("离开")
+end
+
+
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160103" new="1">
+                 <embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了百兽谷地图"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="百兽谷" pos="134,160"/>
+				<notify content="你被带到了百兽谷,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+                <embranchment id="2" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了兽王谷地图"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="兽王谷" pos="77,121"/>
+				<notify content="你被带到了兽王谷,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+                <embranchment id="3" active="1"> 
+			<conditions>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+                          <level type="Great" value="59"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了龙冈山四寨地图"/>
+				<gold type="Sub" value="10000"/>
+				<goto name="龙冈山四寨" pos="175,152"/>
+				<notify content="你被带到了龙冈山四寨,花费1锭银子"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了白骨洞五层地图"/>
+				<goto name="白骨洞五层" pos="259,134"/>
+				<notify content="你来到了白骨洞五层,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了白骨洞十层地图"/>
+				<goto name="白骨洞十层" pos="331,313"/>
+				<notify content="你来到了白骨洞十层,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了精怪洞穴八层地图"/>
+				<goto name="精怪洞穴八层" pos="153,72"/>
+				<notify content="你来到了精怪洞穴八层,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了精怪洞穴十层地图"/>
+				<goto name="精怪洞穴十层" pos="141,82"/>
+				<notify content="你来到了精怪洞穴十层,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了北郊地图"/>
+				<goto name="北郊" pos="426,395"/>
+				<notify content="你来到了北郊,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了凤祥镇西郊地图"/>
+				<goto name="凤祥镇西郊" pos="270,258"/>
+				<notify content="你来到了凤祥镇西郊,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了沼泽湿地地图"/>
+				<goto name="沼泽湿地" pos="37,48"/>
+				<notify content="你来到了沼泽湿地,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了蛟龙洞一层地图"/>
+				<goto name="蛟龙洞一" pos="133,110"/>
+				<notify content="你来到了蛟龙洞一,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Great" value="59"/>
+				<gold type="Great" value="9999"/>
+			</conditions>
+			<actions>
+<var1bulletin kind="31" content="在王城NPC{国内BOSS传送}处进入了蛟龙洞二层地图"/>
+				<goto name="蛟龙洞二" pos="121,69"/>
+				<notify content="你来到了蛟龙洞二,花费1锭银子"/>
+				<gold type="Sub" value="10000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+</quest>
+</event>

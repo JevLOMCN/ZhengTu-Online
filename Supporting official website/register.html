@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<title>征途私服 - 注册 - 征途</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+  body{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Microsoft Yahei",sans-serif;
+    margin:0;padding:24px;background:#f7f7fb;
+  }
+  .card{
+    max-width:720px;margin:0 auto;background:#fff;border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);padding:24px;
+  }
+  h1{margin:0 0 16px 0;font-size:22px}
+  label{display:block;margin-top:12px;font-weight:600}
+  input{
+    width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:8px;margin-top:6px;
+    font-size:15px;
+  }
+  .row{display:flex;gap:8px;align-items:flex-end}
+  .row input{flex:1}
+  .row button{width:130px;white-space:nowrap}
+  button{
+    padding:10px 14px;border:0;border-radius:10px;background:#3b82f6;
+    color:#fff;font-weight:700;cursor:pointer;transition:background .2s;
+  }
+  button:hover{background:#2563eb}
+  button.secondary{
+    background:#1118270f;color:#111827;border:1px solid #e5e7eb;
+  }
+  button.secondary:hover{background:#f3f4f6}
+  .muted{color:#6b7280;font-size:12px;margin-top:6px}
+  .highlight{
+    background:#fef9c3;
+    border-left:6px solid #facc15;
+    color:#78350f;
+    padding:10px 12px;
+    border-radius:8px;
+    margin-top:12px;
+    font-size:14px;
+    line-height:1.8;
+  }
+  .highlight b.num{
+    font-family:"Courier New",Consolas,monospace;
+    font-weight:700;
+    color:#b45309;
+    display:inline-block;
+    min-width:120px;
+    text-align:right;
+    letter-spacing:0.5px;
+  }
+  @media(max-width:480px){
+    .row{flex-direction:column;align-items:stretch}
+    .row button{width:100%}
+  }
+  pre{
+    background:#0b1020;color:#e5e7eb;padding:12px;border-radius:10px;
+    overflow:auto;max-height:260px;font-size:13px;
+  }
+  .tip{
+    background:#ecfdf5;color:#065f46;padding:10px;border-radius:8px;
+    margin-top:12px;font-size:14px;display:none;
+  }
+
+  /* === 新增：底部导航按钮区域 === */
+  .footer-links {
+    margin-top:24px;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+  }
+  .footer-links a {
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:700;
+    transition:all .25s;
+  }
+  .footer-links a.recharge {
+    background:#f0f9ff;
+    color:#0369a1;
+    border:1px solid #bae6fd;
+  }
+  .footer-links a.recharge:hover {
+    background:#e0f2fe;
+  }
+  .footer-links a.reset {
+    background:#fef2f2;
+    color:#b91c1c;
+    border:1px solid #fecaca;
+  }
+  .footer-links a.reset:hover {
+    background:#fee2e2;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+<h1>新用户注册</h1>
+<div class="muted">说明：本页面用于账号注册与推荐验证。同一 IP 仅能注册 1 个账号，请妥善保管密码。</div>
+
+<label>邮箱（作为账号 请牢记）</label>
+<input id="email" placeholder="请输入真实邮箱（如 123@qq.com）"/>
+
+<label>邮箱验证码（6 位数字）</label>
+<div class="row">
+  <input id="code" placeholder="请输入邮箱验证码"/>
+  <button class="secondary" id="btnSend">发送验证码</button>
+</div>
+
+<label>密码（请牢记）</label>
+<input id="passwd" type="password" placeholder="6–20 位密码"/>
+
+<label>推荐人账号（可选）</label>
+<input id="referrer" placeholder="请输入推荐人账号（留空则无奖励）"/>
+
+<div class="muted">
+  注册成功推荐人获得 500000 点，被推荐人获得 600000 点（每日最多 10 次，每次间隔 ≥5 分钟）。
+</div>
+
+<div class="highlight">
+  🎯 <b class="num">推广成就奖励：</b><br>
+  当您的累计推荐人数达到<br>
+  🔸 10 人 → 奖励 <b class="num">5000000点</b><br>
+  🔸 20 人 → 奖励 <b class="num">20000000点</b><br>
+  🔸 50 人 → 奖励 <b class="num">100000000点</b><br>
+  奖励自动发放，无需申请！
+</div>
+
+<div class="row" style="margin-top:20px">
+  <button id="btnReg">提交注册</button>
+  <button class="secondary" id="btnReset">清空</button>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<h3 style="margin-top:18px">操作结果</h3>
+<pre id="out">{ "提示": "操作结果会显示在这里" }</pre>
+
+<!-- 🔥 底部显目导航 -->
+<div class="footer-links">
+  <a href="/lottery.html" class="lottery" style="background:#fff7ed;color:#92400e;border:1px solid #fed7aa;">🎁 抽奖中心</a>
+  <a href="recharge.html" class="recharge">💰 前往充值中心</a>
+  <a href="reset_password.html" class="reset">🔑 忘记密码 / 找回密码</a>
+</div>
+</div>
+
+<script>
+function show(o){document.getElementById('out').textContent = JSON.stringify(o, null, 2);}
+function val(id){return document.getElementById(id).value.trim();}
+function tip(msg, ok=true){
+  const t=document.getElementById('tip');
+  t.style.display='block';
+  t.style.background= ok?'#ecfdf5':'#fef2f2';
+  t.style.color= ok?'#065f46':'#b91c1c';
+  t.textContent=msg;
+}
+
+document.getElementById('btnSend').onclick = async function(){
+  const email = val('email');
+  if(!email){return tip('请输入邮箱', false);}
+  const fd = new FormData();
+  fd.append('action','send_code');
+  fd.append('email', email);
+  const r = await fetch('register_compat.php',{method:'POST',body:fd});
+  const j = await r.json().catch(()=>({ok:false,msg:'返回不是JSON'}));
+  show(j);
+  tip(j.ok ? '验证码已发送，请查收邮箱' : j.msg, j.ok);
+};
+
+document.getElementById('btnReg').onclick = async function(){
+  const email = val('email');
+  const code = val('code');
+  const passwd = val('passwd');
+  const referrer = val('referrer');
+  if(!email || !code || !passwd){return tip('请填写完整信息', false);}
+  const fd = new FormData();
+  fd.append('action','register');
+  fd.append('email', email);
+  fd.append('account', email);
+  fd.append('code', code);
+  fd.append('passwd', passwd);
+  fd.append('referrer', referrer);
+  const r = await fetch('register_compat.php',{method:'POST',body:fd});
+  const j = await r.json().catch(()=>({ok:false,msg:'返回不是JSON'}));
+  show(j);
+  if(j.ok){
+    let m = j.msg;
+    if(j.bonus_new || j.bonus_ref){
+      m += `（被推荐奖励 ${j.bonus_new||0} 点，推荐人奖励 ${j.bonus_ref||0} 点）`;
+    }
+    tip(m,true);
+  }else{
+    tip(j.msg,false);
+  }
+};
+
+document.getElementById('btnReset').onclick = ()=>{
+  ['email','code','passwd','referrer'].forEach(id=>document.getElementById(id).value='');
+  show({提示:'已清空'});
+  tip('已清空',true);
+};
+</script>
+</body>
+</html>

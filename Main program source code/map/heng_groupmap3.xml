@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by sss (ss) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<waypoint>
+</waypoint>
+	<waypoint>
+	</waypoint>
+	<waypoint>
+</waypoint>
+	<zonedef width="12" height="12" x="46" y="132" type="2" color="0,0,255,0"/>
+	<zonedef width="26" height="33" x="181" y="243" type="2" color="0,0,255,0"/>
+	<npc id="33001" name="绿" width="1" height="1" x="174" y="225" num="1" interval="900"/>
+	<npc id="33002" name="绿" width="1" height="1" x="142" y="233" num="1" interval="900"/>
+	<npc id="33003" name="绿" width="1" height="1" x="139" y="205" num="1" interval="900"/>
+	<npc id="33004" name="绿" width="1" height="1" x="146" y="177" num="1" interval="900"/>
+	<npc id="33005" name="绿" width="1" height="1" x="120" y="209" num="1" interval="900"/>
+	<npc id="33006" name="绿" width="1" height="1" x="84" y="155" num="1" interval="900"/>
+	<npc id="33007" name="绿" width="1" height="1" x="102" y="135" num="1" interval="900"/>
+	<npc id="33008" name="绿" width="1" height="1" x="94" y="128" num="1" interval="900"/>
+	<npc id="33009" name="绿" width="1" height="1" x="75" y="147" num="1" interval="900"/>
+	
+
+	<npc id="30132" name="紫" width="1" height="1" x="69" y="139" num="1" interval="1800"/>
+	<npc id="30133" name="紫" width="1" height="1" x="88" y="120" num="1" interval="1800"/>
+	<npc id="30134" name="紫" width="1" height="1" x="105" y="159" num="1" interval="1800"/>
+	<npc id="30135" name="紫" width="1" height="1" x="154" y="191" num="1" interval="1800"/>
+	<npc id="30101" name="紫" width="1" height="1" x="130" y="213" num="1" interval="1800"/>
+	
+	<npc id="30087" name="橙" width="1" height="1" x="89" y="140" num="1" interval="3600"/>
+</map>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by wt (zt) -->
+<event id="30154" name="圣城-圣海苍龙(白)">
+	<!--new means new quest, default is quest on user-->
+		<quest id="80040" new="1">
+		<embranchment id="1">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80040"/>
+				<timer start="00:00:00" end="23:59:59"/>
+			</conditions>
+			<actions>
+				<notify content="在12点到24点内击败圣海苍龙才能完成任务"/>
+				<notify1 content="在12点到24点内击败圣海苍龙才能完成任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80040"/>
+				<timer start="12:00:00" end="23:59:59"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3" id="80040"/>
+				<refresh name="state"/>
+				<var type="Set" name="shcl_level" value="1" id="80040"/>		    
+				<refresh name="shcl_level"/>
+				<notify content="击败了圣海苍龙，可以找西施领取奖励了！"/>
+				<notify1 content="击败了圣海苍龙，可以找西施领取奖励了！"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

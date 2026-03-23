@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="26819" name="积分旗">
+	<quest id="1000" new="1">
+		<embranchment id="9"><!--不在任务时间内-->
+			<conditions>
+			 <timer start="19:00:00" end="19:29:59"/>
+			</conditions>
+			<actions>
+                        <notify6 content="不在比赛活动时间内!活动时间:19:00-19:30!"/>
+			</actions>
+		</embranchment>
+<embranchment id="10"><!--有6人组队奖励-->
+			<conditions>
+			 <timer start="19:00:00" end="19:29:59"/>
+                           <teamed number="6" male="0" female="0"/>
+			</conditions>
+			<actions>
+             <addbinditem value="40" id="1398"/><!--团队积分-->	
+             <notify content="恭喜您的团队每人获得40团队金币!"/>
+             <notify3 content="恭喜您的团队每人获得40团队金币!"/>  
+			<var1bulletin kind="41" content="在团队竞技中抢夺到一个上古神石，获得40给人团队金币！"/>      
+			</actions>
+		</embranchment>
+<embranchment id="11"><!--有5人组队奖励-->
+			<conditions>
+			 <timer start="19:00:00" end="19:29:59"/>
+              <teamed number="5" male="0" female="0"/>
+			</conditions>
+			<actions>
+             <addbinditem value="40" id="1398"/><!--团队积分-->	
+             <notify content="恭喜您的团队每人获得40团队金币!"/>
+             <notify3 content="恭喜您的团队每人获得40团队金币!"/>     
+			<var1bulletin kind="41" content="在团队竞技中抢夺到一个上古神石，获得40团队金币！"/>              
+			</actions>
+		</embranchment>
+<embranchment id="12"><!--有4人组队奖励-->
+			<conditions>
+			 <timer start="19:00:00" end="19:29:59"/>
+          <teamed number="4" male="0" female="0"/>
+			</conditions>
+			<actions>
+             <addbinditem value="40" id="1398"/><!--团队积分-->	
+             <notify content="恭喜您的团队每人获得40团队金币!"/>        
+             <notify3 content="恭喜您的团队每人获得40团队金币!"/>
+			<var1bulletin kind="41" content="在团队竞技中抢夺到一个上古神石，获得40团队金币！"/>
+			</actions>
+		</embranchment>
+<embranchment id="13"><!--有3人组队奖励-->
+			<conditions>
+			 <timer start="19:00:00" end="19:29:59"/>
+                            <teamed number="3" male="0" female="0"/>
+			</conditions>
+			<actions>
+             <addbinditem value="40" id="1398"/><!--积分竞技牌-->       	
+             <notify content="恭喜您的团队每人获得40团队金币!"/>
+              <notify3 content="恭喜您的团队每人获得40团队金币!"/>
+			<var1bulletin kind="41" content="在团队竞技中抢夺到一个上古神石，获得40团队金币！"/>
+			</actions>
+		</embranchment>
+<embranchment id="14"><!--有2人组队奖励-->
+			<conditions>
+			 <timer start="19:00:00" end="19:29:59"/>
+                        <teamed number="2" male="0" female="0"/>
+			</conditions>
+			<actions>
+           <addbinditem value="40" id="1398"/><!--积分竞技牌-->	            
+           <notify content="恭喜您的团队每人获得40团队金币!"/>
+            <notify3 content="恭喜您的团队每人获得40团队金币!"/>  
+			<var1bulletin kind="41" content="在团队竞技中抢夺到一个上古神石，获得40团队金币！"/>
+			</actions>
+		</embranchment>
+<embranchment id="100"><!--不在任务时间内-->
+			<conditions>
+			 <timer start="00:00:00" end="18:59:59"/>
+			</conditions>
+			<actions>
+                        <notify6 content="不在比赛活动时间内!活动时间:19:00-19:30!"/>
+			</actions>
+		</embranchment>		
+
+	</quest>
+</event>

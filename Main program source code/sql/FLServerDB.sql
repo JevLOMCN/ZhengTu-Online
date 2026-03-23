@@ -1,0 +1,138 @@
+/*
+SQLyog 企业版 - MySQL GUI v5.02
+主机 - 6.0.11-alphayes-log : 数据库 - FLServerDB
+*********************************************************************
+服务器版本 : 6.0.11-alphayes-log
+*/
+
+
+create database if not exists `FLServerDB`;
+
+USE `FLServerDB`;
+
+/*数据表 `ACCSTORE0000` 的表结构*/
+
+DROP TABLE IF EXISTS `ACCSTORE0000`;
+
+CREATE TABLE `ACCSTORE0000` (
+  `UID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ACCOUNT` char(48) NOT NULL DEFAULT '',
+  `PASSWD` char(32) NOT NULL DEFAULT '',
+  `STATE` tinyint(4) NOT NULL DEFAULT '0',
+  `TYPE` int(10) unsigned NOT NULL DEFAULT '0',
+  `LASTACTIVEDATE` datetime DEFAULT NULL,
+  PRIMARY KEY (`UID`),
+  UNIQUE KEY `index` (`ACCOUNT`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*数据表 `ACCSTORE0000` 的数据*/
+
+/*数据表 `BASEINFO0000` 的表结构*/
+
+DROP TABLE IF EXISTS `BASEINFO0000`;
+
+CREATE TABLE `BASEINFO0000` (
+  `UID` int(10) unsigned NOT NULL DEFAULT '0',
+  `ACCOUNT` char(48) NOT NULL DEFAULT '',
+  `EMAIL` char(48) NOT NULL DEFAULT '',
+  `TOKENRING` char(64) NOT NULL DEFAULT '',
+  `SUPERPASSWD` char(32) NOT NULL DEFAULT '',
+  `TNAME` char(32) NOT NULL DEFAULT '',
+  `NICKNAME` char(32) NOT NULL DEFAULT '',
+  `SEX` tinyint(4) NOT NULL DEFAULT '0',
+  `BIRTH` date DEFAULT '1900-00-00',
+  `PHONE` char(32) DEFAULT '',
+  `ADDRESS` char(200) DEFAULT '',
+  `POSTNUM` char(6) DEFAULT '',
+  `IDCARD` char(18) DEFAULT '',
+  `MPHONE` char(20) DEFAULT '',
+  `MPTYPE` tinyint(4) DEFAULT '0',
+  `CREATETIME` bigint(20) unsigned DEFAULT '0',
+  PRIMARY KEY (`UID`),
+  UNIQUE KEY `index` (`ACCOUNT`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*数据表 `BASEINFO0000` 的数据*/
+
+/*数据表 `CONSUMELOG0000` 的表结构*/
+
+DROP TABLE IF EXISTS `CONSUMELOG0000`;
+
+CREATE TABLE `CONSUMELOG0000` (
+  `CONSUMEID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `TID` char(24) NOT NULL DEFAULT '',
+  `UID` int(10) unsigned NOT NULL DEFAULT '0',
+  `ACCOUNT` char(48) NOT NULL DEFAULT '',
+  `TYPE` tinyint(4) NOT NULL DEFAULT '0',
+  `SOURCE` int(11) NOT NULL DEFAULT '0',
+  `CARDID` char(16) DEFAULT NULL,
+  `FILLPOINT` int(11) DEFAULT '0',
+  `CONSUMEPOINT` int(11) DEFAULT '0',
+  `THISPOINT` int(11) NOT NULL DEFAULT '0',
+  `OPERTIME` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`CONSUMEID`),
+  UNIQUE KEY `index` (`TID`),
+  KEY `UID` (`UID`),
+  KEY `ACCOUNT` (`ACCOUNT`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*数据表 `CONSUMELOG0000` 的数据*/
+
+/*数据表 `POINTBONUS0000` 的表结构*/
+
+DROP TABLE IF EXISTS `POINTBONUS0000`;
+
+CREATE TABLE `POINTBONUS0000` (
+  `UID` int(10) unsigned NOT NULL DEFAULT '0',
+  `ACCOUNT` char(48) NOT NULL DEFAULT '',
+  `POINT` int(11) NOT NULL DEFAULT '0',
+  `BONUS` int(11) NOT NULL DEFAULT '0',
+  `HADFILLED` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`UID`),
+  UNIQUE KEY `index` (`ACCOUNT`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*数据表 `POINTBONUS0000` 的数据*/
+
+/*数据表 `ZTGOODBUY` 的表结构*/
+
+DROP TABLE IF EXISTS `ZTGOODBUY`;
+
+CREATE TABLE `ZTGOODBUY` (
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `GOODID` int(10) NOT NULL DEFAULT '0',
+  `GOODNUM` int(10) NOT NULL DEFAULT '1',
+  `POINT` int(10) NOT NULL DEFAULT '0',
+  `MEMO` char(24) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*数据表 `ZTGOODBUY` 的数据*/
+
+/*数据表 `ZTGOODDATA` 的表结构*/
+
+DROP TABLE IF EXISTS `ZTGOODDATA`;
+
+CREATE TABLE `ZTGOODDATA` (
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `GOODID` int(10) NOT NULL DEFAULT '0',
+  `BINDATA` blob,
+  `MEMO` varchar(24) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*数据表 `ZTGOODDATA` 的数据*/
+
+/*数据表 `ZTLEVELBUY` 的表结构*/
+
+DROP TABLE IF EXISTS `ZTLEVELBUY`;
+
+CREATE TABLE `ZTLEVELBUY` (
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `LEVEL` int(10) NOT NULL DEFAULT '0',
+  `POINT` int(10) NOT NULL DEFAULT '0',
+  `MEMO` char(24) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*数据表 `ZTLEVELBUY` 的数据*/

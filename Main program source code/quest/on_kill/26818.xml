@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="26818" name="龙脉">
+	<quest id="21151" new="1">
+		<embranchment id="1">
+			<conditions>
+				<selfcountry value="0"/>
+				<var type="Equal" name="state" value="1"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3"/>
+				<refresh name="state"/>
+				<notify1 content="龙脉：1/1"/>
+				<var1bulletin kind="42" content="击杀完成了龙脉(任务)，快去找卧龙居士交付任务去把"/>
+		</actions>
+	</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by wt (zt) -->
+<event id="31106" name="万宝宫副本">
+	<!--new means new quest, default is quest on user-->
+		<quest id="80040" new="1">		
+		<embranchment id="5">
+			<conditions>
+				<timeouts long="1" id="80040" less="0"/>	
+				<global type="Equal" name="jifenleiji_name_5" value="1" id="41000001"/>					
+				<global type="Differ" name="jifenleiji_name_6" value="1" id="41000001"/>
+			   <selfcountry value="0"/>
+			</conditions>
+			<actions>
+				<global type="Set" name="jifenleiji_name_6" value="1" id="41000001"/>
+<var1bulletin kind="43" content="在中立区·万宝宫六层成功击杀BOSS　守宫小妖·六阶　已开启万宝宫七层副本！"/>			
+                <var type="Set" name="state" value="1"/>
+				<timeouts/>			
+				</actions>
+		</embranchment>	
+	</quest>
+</event>				

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GB2312"?>
+<messageSystem>
+	<messages starttime="2004/3/25 23:33:45" login="1">
+		<message>欢迎来到 xxx 封闭测试专区。</message>
+	</messages>
+	<messages starttime="2004/3/25 23:33:45" interval="120">
+		<message>欢迎来到xxx世界，参与本次封闭测试。</message>
+		<message>xxx力求打造品质第一的国产2D网游，满足您的需求是我们不懈的追求！</message>
+		<message>本次封闭测试将展现大量新颖的游戏内容，请您用心体验，并提出宝贵意见！</message>
+		<message>您的参与就是对我们最大的支持！您的理解是对我们最大的鼓励！</message>
+		<message>您的rmgame，一段我们共同的理想从此开始！</message>
+	</messages>
+	<messages starttime="2004/3/25 23:33:45" endtime="2007/3/25 23:33:45" interval="60" order="1">
+		<!--message>这是一分钟一次的顺序消息，第一条</message>
+		<message>这是一分钟一次的顺序消息，第二条</message>
+		<message>这是一分钟一次的顺序消息，第三条</message-->
+	</messages>
+	<messages endtime="2005/3/25 23:33:45">
+		<message>test end time</message>
+	</messages>
+</messageSystem>
+
+

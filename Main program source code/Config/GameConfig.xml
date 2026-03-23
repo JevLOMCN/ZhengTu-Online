@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- 游戏中各种功能和活动的配置表 -->
+<Config>
+	<!-- 温泉系统配置-->
+	<spa>
+    <!-- 温泉多少级可以进入-->
+    <levellimit level="60"/>
+    <dest name="fenghuangcheng-main" country="0" x="114" y="587"/>
+		<dest name="fenghuangcheng-main" country="0" x="115" y="588"/>
+	</spa>
+
+</Config>

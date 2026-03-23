@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="515101" name="1档任务接取">
+	<!--new means new quest, default is quest on user-->
+	<quest id="1000">
+		<embranchment id="1">
+			<!--已经接取过对话-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="281"/>
+			</conditions>
+			<actions>
+				<flexmenu content="你已经接取了1档赏金任务,请前往完成吧"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--已经接取过对话-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="282"/>
+			</conditions>
+			<actions>
+				<flexmenu content="你已经接取了2档赏金任务,请前往完成吧"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<!--已经接取过对话-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="283"/>
+			</conditions>
+			<actions>
+				<flexmenu content="你已经接取了3档赏金任务,请前往完成吧"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<!--已经接取过对话-->
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="284"/>
+			</conditions>
+			<actions>
+				<flexmenu content="你已经接取了4档赏金任务,请前往完成吧"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<!--已经接取过对话-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="285"/>
+			</conditions>
+			<actions>
+				<flexmenu content="你已经接取了5档赏金任务,请前往完成吧"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10">
+			<!--可以接取任务访问-->
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+				<var type="Differ" name="state" value="1" id="281"/>
+				<var type="Differ" name="state" value="-3" id="281"/>
+				<var type="Differ" name="state" value="1" id="282"/>
+				<var type="Differ" name="state" value="-3" id="282"/>
+				<var type="Differ" name="state" value="1" id="283"/>
+				<var type="Differ" name="state" value="-3" id="283"/>	
+				<var type="Differ" name="state" value="1" id="284"/>
+				<var type="Differ" name="state" value="-3" id="284"/>	
+				<var type="Differ" name="state" value="1" id="285"/>
+				<var type="Differ" name="state" value="-3" id="285"/>													
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！我这里有悬赏任务需要交付给你!")
+this:AddTalk("当前任务档次：1档")
+this:AddTalk("任务要求:\n 前往《中立区·紫金岭》击杀 1000只红眼魔")
+this:AddCloseItem("-----------------------------------------")
+this:AddTaskCmdItem("确定接取任务(0)", "v515101", 281, 10)
+this:AddCloseItem("-----------------------------------------")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="281" new="1">
+		<embranchment id="10" active="1">
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+				<var type="Differ" name="state" value="-1" id="281"/>
+				<var type="Differ" name="state" value="1" id="281"/>
+				<var type="Differ" name="state" value="-3" id="281"/>										
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1" id="281"/>
+				<var type="Set" name="kill_16750_num1" value="0"/>
+				<refresh name="kill_16750_num1"/>
+				<notify content="任务：前往《中立区·紫金岭》击杀 1000只红眼魔"/>
+				<notify1 content="任务：前往《中立区·紫金岭》击杀 1000只红眼魔"/>
+				<var1bulletin kind="41" content="在王城·赏金使者处接取了1档赏金猎人任务！"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<!--1档奖励参数-->
+			<conditions>
+				<var type="Differ" name="state" value="-1" id="281"/>
+				<var type="Differ" name="state" value="1" id="281"/>
+				<var type="Equal" name="state" value="-3" id="281"/>
+			</conditions>
+			<actions>
+				<addbinditem value="100" id="3818"/>
+				<!--活跃积分100点-->
+				<addbinditem value="100" id="1608"/>
+				<!--金元宝100个-->
+				<var1bulletin kind="4" content="完成1档赏金任务！获得任务奖励：活跃积分100点、金元宝100个。"/>
+				<var type="Set" name="state" value="-2" id="281"/>
+				<var type="Set" name="kill_16750_num1" value="0"/>
+				<refresh name="kill_16750_num1"/>
+				<uservar type="Add" name="sgold_num" value="1"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

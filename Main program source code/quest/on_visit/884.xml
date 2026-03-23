@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="884" name="高级杂货">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960100">
+		<embranchment id="5">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<menu>
+
+function TaskDialog()
+id=this:AddTradeItem("高级杂货(1)","杂货{id[810,799*100,799*1000,1450*10,1450*100,1453*10,18001,18006,18011,18016,18021,34567*10,34567*100,3850*10,3850*100,3851*10,3851*100,3853*10,3853*100,684,50001,123127,123127*10,962,962*10,964,964*10,3844*10,3844*100]}|马匹图鉴{id[202400-202424]}","type[16-23,25-33,35-49,51-160]","杂货买卖")         end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="16010" new="1">
+		<embranchment id="10" active="1">
+			<conditions>
+				<level type="Great" value="120"/>	
+			</conditions>
+			<actions>
+                                 <addbinditem value="1" id="18006"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

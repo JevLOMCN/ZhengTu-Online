@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<config>
+	<!-- 头衔配置 -->
+	<meridianMap>
+		<meridian index="1">
+			<pointMap>
+				<!--  id:称号ID(1~36) stateID:对应状态ID pDam:物攻 mDam:魔攻 pDef:物防 mDef:魔防 hp:血量 -->
+				<point id="0" stateID="9999" pDam="0" mDam="0" pDef="0" mDef="0" hp="0"/>
+				<point id="1" stateID="1601" pDam="30000" mDam="30000" pDef="30000" mDef="30000" hp="30000"/>
+				<point id="2" stateID="1602" pDam="10000" mDam="10000" pDef="10000" mDef="10000" hp="100000"/>
+				<point id="3" stateID="1603" pDam="60000" mDam="60000" pDef="60000" mDef="60000" hp="300000"/>
+				<point id="4" stateID="1604" pDam="40000" mDam="40000" pDef="40000" mDef="40000" hp="200000"/>
+				<point id="5" stateID="1605" pDam="30000" mDam="30000" pDef="30000" mDef="30000" hp="150000"/>
+				<point id="6" stateID="1606" pDam="20000" mDam="20000" pDef="20000" mDef="20000" hp="100000"/>
+				<point id="7" stateID="1607" pDam="20000" mDam="20000" pDef="20000" mDef="20000" hp="20000"/>
+				<point id="8" stateID="1608" pDam="20000" mDam="20000" pDef="20000" mDef="20000" hp="20000"/>
+				<point id="9" stateID="1609" pDam="20000" mDam="20000" pDef="20000" mDef="20000" hp="20000"/>
+				<point id="10" stateID="1610" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="11" stateID="1611" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="12" stateID="1612" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="13" stateID="1701" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="14" stateID="1702" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="15" stateID="1703" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="16" stateID="1704" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="17" stateID="1705" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="18" stateID="1706" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="19" stateID="1707" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="20" stateID="1708" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="21" stateID="1709" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="22" stateID="1710" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="23" stateID="1711" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="24" stateID="1712" pDam="1000" mDam="1000" pDef="1000" mDef="1000" hp="1000"/>
+				<point id="25" stateID="1801" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="26" stateID="1802" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="27" stateID="1803" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="28" stateID="1804" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="29" stateID="1805" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="30" stateID="1806" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="31" stateID="1807" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="32" stateID="1808" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="33" stateID="1809" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="34" stateID="1810" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="35" stateID="1811" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+				<point id="36" stateID="1812" pDam="5000" mDam="5000" pDef="5000" mDef="5000" hp="50000"/>
+			</pointMap>
+		</meridian>
+	</meridianMap>
+</config>

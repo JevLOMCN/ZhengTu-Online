@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1670" name="东李">   
+    <quest id="90038">
+		<embranchment id="8"><!--财产保护完成任务NPC对话-->
+			<conditions>
+                <space size="2"/>
+			    <goldsafe value="1"/>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("完成任务：移宫案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了移宫案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，您在财产保护状态下。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1670", 80038, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="9"><!--金子不足完成任务NPC对话-->
+			<conditions>
+			    <salary  type="Less"  value="500"  bindgold="0"/>
+			    <goldsafe value="0"/>
+			    <space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("完成任务：移宫案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了移宫案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，使用本转盘，需要5两金子。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1670", 80038, 11)
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="10"><!--完成任务NPC对话-->
+			<conditions>
+			    <goldsafe value="0"/>
+			    <salary  type="Great"  value="499"  bindgold="0"/>
+			    <space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("完成任务：移宫案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了移宫案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    使用本转盘，可获得最少5倍经验奖励，最多可获得10倍经验奖励，只需5两金子即可。\n    使用本转盘完成任务后不可再用普通方式完成。")
+this:AddTaskCmdItem("花费5两金子获得更高奖励{10002}", "v1670", 80038, 13)
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1670", 80038, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="11">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    对不起，您的背包剩余不足两个空格了。")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		
+	</quest>
+	<quest id="80038" new="1">
+		<embranchment id="11" active="1"><!--转盘-->
+			<conditions>
+			    <space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+			    <magicdialog factor="yigong_exp" event="v1670" questid="80038" offset="12"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="12" active="1"><!--完成任务-->
+			<conditions>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+			    <var type="Set" name="state" value="-2" id="80037"/><!--状态置为其它值防止刷-->
+				<tracelog name="成功完成“移宫案”任务" state="1"/>
+				<exp1 value="100" id="80038" name="selflevel"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="10" id="1328"/>
+				<notify content="得到鲜花10朵！"/>
+				<addbinditem value="1" id="1324"/>
+				<notify content="得到《移宫案抄录》1本！"/>
+				<var type="Set" name="state" value="-2"/>
+				<refresh name="state"/>
+				<uservar type="Set" name="yg_times" value="1" broadcast="1"/>
+				<refresh name="yg_times"/>
+				<questlog log="完成“移宫案”任务*80038"/>
+				<notify content="完成“移宫案”任务"/>
+				<notify1 content="完成“移宫案”任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1"><!--转盘2-->
+			<conditions>
+				<space size="2"/>
+			    <goldsafe value="0"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+			    <magicdialog factor="yigong_exp1" event="v1670" questid="80038" offset="14" type="1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="14" active="1"><!--收钱完成任务-->
+			<conditions>
+				<space size="2"/>
+			    <goldsafe value="0"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<var type="Equal" name="state" value="-3" id="80038"/>
+			</conditions>
+			<actions>
+			    <var type="Set" name="state" value="-2" id="80037"/><!--状态置为其它值防止刷-->
+				<tracelog name="成功完成“移宫案”任务" state="1"/>
+			    <salary type="Sub" value="500" bindgold="0"/>
+			    <notify content="扣除5两金子"/>
+				<exp1 value="100" id="80038" name="selflevel1"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="10" id="1328"/>
+				<notify content="得到鲜花10朵！"/>
+				<addbinditem value="1" id="1324"/>
+				<notify content="得到《移宫案抄录》1本！"/>
+				<var type="Set" name="state" value="-2"/>
+				<refresh name="state"/>
+				<uservar type="Set" name="yg_times" value="1" broadcast="1"/>
+				<refresh name="yg_times"/>
+				<questlog log="完成“移宫案”任务*80038"/>
+				<notify content="完成“移宫案”任务"/>
+				<notify1 content="完成“移宫案”任务"/>
+			</actions>
+		</embranchment>
+
+	</quest>
+</event>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区), 32表示他国复活区 64表示外国死亡，本国复活 128摆摊区域 512国战复活区域-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的 country:0表示本国 非0表示指定国家-->
+	<zonedef width="200" height="200" x="1" y="1" type="1" color="0,0,255,0"/>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!--NPC-->
+	<npc id="5074" name="镇妖塔守护者" width="1" height="1" x="60" y="53" num="1" interval="1" color="0,255,0,0"/>
+	<!--镇妖守卫-->
+	<npc id="100300" name="镇妖守卫" width="100" height="100" x="1" y="1" num="2" interval="60" color="0,255,0,0"/>
+	<npc id="100300" name="镇妖守卫" width="100" height="100" x="1" y="1" num="2" interval="60" color="0,255,0,0"/>
+	<npc id="100300" name="镇妖守卫" width="100" height="100" x="1" y="1" num="2" interval="60" color="0,255,0,0"/>
+	<npc id="100300" name="镇妖守卫" width="100" height="100" x="1" y="1" num="2" interval="60" color="0,255,0,0"/>
+	<!--BOSS-->
+	<npc id="100361" name="雷电法王" width="100" height="100" x="1" y="1" num="1" interval="300" color="0,255,0,0"/>
+	<npc id="100361" name="雷电法王" width="100" height="100" x="1" y="1" num="1" interval="300" color="0,255,0,0"/>
+	<npc id="100361" name="雷电法王" width="100" height="100" x="1" y="1" num="1" interval="300" color="0,255,0,0"/>
+	<npc id="100361" name="雷电法王" width="100" height="100" x="1" y="1" num="1" interval="300" color="0,255,0,0"/>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+</map>

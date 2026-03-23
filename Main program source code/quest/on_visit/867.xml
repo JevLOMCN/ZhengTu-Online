@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="867" name="王城-托运官(848,548)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960104">
+         <!--以下是50级镖车托运情况判断-->
+		<embranchment id="1">
+			<conditions>
+				<canjump value="1"/>
+                <gold type="Great" value="249999"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  你好，你是来找我托运货物的吗？如果你出足够的银子的话，我就会把你的货物安全运到边境。");
+this:AddTaskCmdItem("托运到边境-25锭银子(0)", "v867", 160104, 11)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+         <!--以下是镖车不在身边的提示判断-->
+
+		<embranchment id="500">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="21005"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="501">
+			<conditions>
+				<var type="Equal" name="state" value="2" id="21005"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="502">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="21006"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="503">
+			<conditions>
+				<var type="Equal" name="state" value="2" id="21006"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="504">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="21007"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="505">
+			<conditions>
+				<var type="Equal" name="state" value="2" id="21007"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="506">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="21008"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="507">
+			<conditions>
+				<var type="Equal" name="state" value="2" id="21008"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="508">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="21009"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="509">
+			<conditions>
+				<var type="Equal" name="state" value="2" id="21009"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+		<embranchment id="510">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="22005"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="511">
+			<conditions>
+				<var type="Equal" name="state" value="2" id="22005"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+		<embranchment id="512">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="22006"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="513">
+			<conditions>
+				<var type="Equal" name="state" value="2" id="22006"/>
+				<canjump value="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("  对不起，你的镖车不在你身边。我无法帮你托运。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+		<embranchment id="1034">
+			<conditions>
+                                <gold type="Less" value="25000"/>
+				<canjump value="1"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你银子不够付25锭押金的，等存够了再来吧。")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160104" new="1">
+
+		<embranchment id="11" active="1">
+			<conditions>
+				<gold type="Great" value="24999"/>
+				<canjump  value="1"/>
+			</conditions>
+			<actions>
+				<goto name="边境" pos="362,196"/>
+				<notify content="你的货物安全运到边境，付了25锭银子托运费"/>
+				<gold type="Sub" value="250000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+
+
+	</quest>
+</event>

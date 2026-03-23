@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="878" name="王城-秘籍收藏家">
+	<!--new means new quest, default is quest on user-->
+	<quest id="901605">
+		<embranchment id="10">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="1"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：战士，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="2"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：弓手，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="3"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：法师，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="13">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="4"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：召唤，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="5"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：天仙，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="6"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：刺客，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="7"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：卫士，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="8"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：枪系，请清洗职业后再来吧。")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="18">
+			<conditions>
+				<innation/>				
+				<timer start="00:00:00" end="23:59:00"/>
+				<changejob value="9"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，你当前的职业是：全职业，还要转职？")
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="20">
+			<conditions>
+				<innation/>				
+				<changejob value="0"/>				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("转职系统(0)", "Dialog16")
+
+end
+function Dialog16()
+this:AddTalk("  (GetName)，无职业的玩家可以在我这里转职。VIP1玩家可转职全职业，全职业可以学习任意职业技能。")
+this:AddTaskCmdItem("转职全职业(0)", "v878", 101605, 9)
+this:AddCloseItem("离开")
+end				
+
+				</menu>
+			</actions>
+		</embranchment>
+
+	</quest>
+	<quest id="101605" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="1"/>
+
+				<notify content="转职战士成功"/>
+				<notify1 content="转职战士成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/> 
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="2"/>
+
+				<notify content="转职弓手成功"/>
+				<notify1 content="转职弓手成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="3"/>
+
+				<notify content="转职法师成功"/>
+				<notify1 content="转职法师成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="4"/>
+
+				<notify content="转职召唤成功"/>
+				<notify1 content="转职召唤成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="5"/>
+
+				<notify content="转职天仙成功"/>
+				<notify1 content="转职天仙成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="6"/>
+
+				<notify content="转职刺客成功"/>
+				<notify1 content="转职刺客成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="7"/>
+
+				<notify content="转职卫士成功"/>
+				<notify1 content="转职卫士成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="8"/>
+
+				<notify content="转职枪系成功"/>
+				<notify1 content="转职枪系成功"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="9"/>
+
+				<notify content="转职全职业成功"/>
+				<notify1 content="转职全职业成功"/>
+				<var1bulletin kind="42" content="成功转职-全职业"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		
+	</quest>
+</event>

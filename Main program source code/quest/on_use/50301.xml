@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="50301" name="礼包奖励">
+	<quest id="30050301">
+        <!--第一次领取-->
+		<embranchment id="3">
+			<conditions>
+			<item value="1" id="50301"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+this:AddTalk("打开后:获得丰厚的道具奖励......")
+this:AddTalk("恭·喜·发·财");
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;礼包奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 50130\"&gt;  王者碎片:100个&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("使用礼包(0)", "u50301", 202352, 1)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+</mainmenu>
+</actions>
+</embranchment>
+	</quest>
+  <quest id="202352" new="1">
+                <embranchment id="1" active="1">
+                           <conditions>
+				<item value="1" id="50301"/>
+                <space size="1"/>
+                </conditions>
+				<actions>
+				<uservar type="Add" name="meirixiangoubao01" value="1"/><!--扣除次数-->
+				<removeitem value="1" id="50301"/>
+				<addbinditem value="100" id="50130"/>	
+				<var1bulletin kind="41" content="使用了·礼包奖励·获得丰厚的奖励！"/>
+				<notify content="获得奖励 祝您游戏愉快"/>
+				<var type="Set" name="state" value="-1"/>
+				<refresh name="state"/>
+                <timeouts/>
+			</actions>
+              </embranchment>
+		<embranchment id="99" active="1">
+			<conditions>
+				<item value="1" id="50301"/>
+			</conditions>
+			<actions>
+			   <removeitem value="1" id="50301"/>
+              <chongzhi type="Add" value="100"/><!--还回充值点-->		
+                <flexmenu content="对不起！你今日已经使用过1次礼包奖励了。无法再次使用！系统自动还回充值点给你！"/>
+				<notify6 content="对不起！你今日已经使用过1次礼包奖励了。无法再次使用！系统自动还回充值点给你！"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+  </quest>
+</event>

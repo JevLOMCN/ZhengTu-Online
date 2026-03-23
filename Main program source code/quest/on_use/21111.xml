@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="21111" name="元神石">
+	<quest id="300121">
+		<embranchment id="101">
+			<conditions>
+				<item value="1" id="21111"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+				function MainDialog()
+this:AddTalk("    尊敬的(GetName)您好,我这里可以用鬼谷子金币兑换各种材料哦。")
+this:AddTaskCmdItem("200元神石兑换【天元】(0)", "u21111", 121216, 1)	
+this:AddTaskCmdItem("200元神石兑换【地元】(0)", "u21111", 121216, 2)
+this:AddTaskCmdItem("100元神石兑换【宝莲灯】(0)", "u21111", 121216, 3)		
+this:AddTaskCmdItem("100元神石兑换【照妖镜】(0)", "u21111", 121216, 4)		
+this:AddTaskCmdItem("100元神石兑换【轮回盘】(0)", "u21111", 121216, 5)		
+this:AddTaskCmdItem("100元神石兑换【紫金葫】(0)", "u21111", 121216, 6)		
+this:AddTaskCmdItem("100元神石兑换【山河图】(0)", "u21111", 121216, 7)		
+this:AddTaskCmdItem("100元神石兑换【神农鼎】(0)", "u21111", 121216, 8)		
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+
+			</actions>
+		</embranchment>
+	</quest>
+
+  <quest id="121216" new="1">
+  
+	<!--补天类兑换-->
+    <embranchment id="1" active="1">
+      <conditions>
+			<item value="200" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="200" id="21111"/> 
+			<addbinditem value="1" id="21100"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	 <embranchment id="2" active="1">
+      <conditions>
+			<item value="200" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="200" id="21111"/> 
+			<addbinditem value="1" id="21101"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	 <embranchment id="3" active="1">
+      <conditions>
+			<item value="100" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="21111"/> 
+			<addbinditem value="1" id="21102"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	<embranchment id="4" active="1">
+      <conditions>
+			<item value="100" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="21111"/> 
+			<addbinditem value="1" id="21103"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	<embranchment id="5" active="1">
+      <conditions>
+			<item value="100" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="21111"/> 
+			<addbinditem value="1" id="21104"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	<embranchment id="6" active="1">
+      <conditions>
+			<item value="100" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="21111"/> 
+			<addbinditem value="1" id="21105"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	<embranchment id="7" active="1">
+      <conditions>
+			<item value="100" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="21111"/> 
+			<addbinditem value="1" id="21106"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	<embranchment id="8" active="1">
+      <conditions>
+			<item value="100" id="21111"/>
+      </conditions>
+      <actions>
+			<removeitem value="100" id="21111"/> 
+			<addbinditem value="1" id="21107"/>
+			 <notify1 content="兑换成功"/>
+      </actions>
+    </embranchment>
+	
+	
+	
+  </quest>
+</event>

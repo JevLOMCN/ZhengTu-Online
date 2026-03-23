@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<title>征途私服 - 点数抽奖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;}
+body{
+  margin:0;padding:0;
+  font-family:'Inter','PingFang SC',sans-serif;
+  background:linear-gradient(135deg,#eef2ff 0%,#dbeafe 100%);
+  color:#1e293b;
+  min-height:100vh;
+  display:flex;flex-direction:column;
+}
+.material-icons{font-family:'Material Icons';font-size:20px;vertical-align:middle;}
+header{
+  background:linear-gradient(90deg,#1e3a8a,#1e40af,#2563eb);
+  color:#fff;height:52px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  box-shadow:0 6px 20px rgba(30,64,175,.25);
+}
+#marquee{position:absolute;white-space:nowrap;font-size:16px;font-weight:500;
+  animation:scroll 30s linear infinite;padding:0 120px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);}
+@keyframes scroll{from{transform:translateX(100%);}to{transform:translateX(-100%);}}
+
+.container{width:100%;max-width:1200px;margin:24px auto;padding:0 24px;flex:1;}
+.card{background:#fff;border-radius:24px;box-shadow:0 15px 50px rgba(0,0,0,.1);
+  padding:32px 28px;overflow:hidden;}
+h2{text-align:center;color:#1e40af;font-size:28px;margin:0 0 24px;font-weight:700;letter-spacing:-.5px;}
+.form-group{margin-bottom:18px;}
+label{display:block;font-size:15px;font-weight:600;color:#374151;margin-bottom:8px;}
+.input-wrapper{position:relative;}
+input{width:100%;padding:14px 16px 14px 40px;border:2px solid #e2e8f0;border-radius:14px;font-size:16px;transition:all .25s;}
+input:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 4px rgba(37,99,235,.18);}
+.input-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#94a3b8;pointer-events:none;}
+.toggle-pwd{position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  background:none;border:none;cursor:pointer;font-size:22px;color:#64748b;}
+.btn-group{display:flex;gap:16px;margin-top:24px;}
+.btn{flex:1;padding:15px 18px;border:none;border-radius:16px;font-size:16px;font-weight:600;cursor:pointer;transition:all .25s;position:relative;overflow:hidden;}
+.btn-primary{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;box-shadow:0 4px 12px rgba(37,99,235,.3);}
+.btn-primary:hover{filter:brightness(1.08);transform:translateY(-1px);}
+.btn-primary:active{transform:translateY(1px);}
+.btn.win{animation:shine 1.4s ease-out 1;}
+@keyframes shine{0%{box-shadow:0 0 0 rgba(255,215,0,0);}
+35%{box-shadow:0 0 35px rgba(255,215,0,.95);}
+100%{box-shadow:0 0 0 rgba(255,215,0,0);}}
+
+#msg{margin-top:18px;font-size:15px;color:#475569;text-align:center;min-height:24px;font-weight:500;}
+
+#pool{margin-top:28px;background:#f8fafc;border-radius:16px;overflow:hidden;border:1px solid #e2e8f0;}
+.pool-header{padding:16px 20px;background:#eff6ff;cursor:pointer;display:flex;justify-content:space-between;align-items:center;
+  font-weight:600;color:#1e40af;font-size:16px;}
+.pool-header::after{content:"expand_more";font-family:"Material Icons";font-size:24px;transition:transform .3s;color:#1e40af;}
+.pool-header.open::after{transform:rotate(180deg);}
+.pool-content{max-height:0;overflow:hidden;transition:max-height .4s ease;background:#fff;}
+.pool-content.open{max-height:500px;}
+.pool-list{padding:16px 20px;max-height:400px;overflow-y:auto;scrollbar-width:thin;}
+.pool-item{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px dashed #e2e8f0;font-size:15px;transition:background .2s;}
+.pool-item:hover{background:#f8fafc;}
+.pool-item:last-child{border-bottom:none;}
+.pool-name{font-weight:600;display:flex;align-items:center;gap:6px;}
+.tier-0{color:#9CA3AF}.tier-1{color:#22C55E}.tier-2{color:#60A5FA}.tier-3{color:#A855F7}
+.tier-4{color:#F59E0B}.tier-5{color:#F43F5E}.tier-6{color:#EAB308}.tier-7{color:#EF4444}
+.tier-8{background:linear-gradient(90deg,#FFD700,#F59E0B);-webkit-background-clip:text;color:transparent;font-weight:700;}
+
+#historyBox{margin-top:28px;background:#f1f5f9;border-radius:16px;padding:16px 0;overflow:hidden;}
+#historyBox h3{margin:0 0 10px;padding:0 20px;font-size:16px;font-weight:600;color:#1e40af;}
+#historyScroll{max-height:240px;overflow-y:auto;padding:0 20px;}
+#historyList{list-style:none;margin:0;padding:0;}
+#historyList li{font-size:14.5px;color:#475569;margin:7px 0;opacity:0;animation:fadeIn .5s forwards;display:flex;align-items:center;gap:6px;}
+#historyList li .material-icons{font-size:18px;color:#f59e0b;}
+#historyList li.big{color:#c2410c;font-weight:700;font-size:15.5px;}
+#historyList li.big .material-icons{color:#dc2626;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+
+/* 新增：消费说明与动画 */
+.muted{margin-top:18px;text-align:center;font-size:15px;color:#475569;}
+#bonusText{
+  display:inline-block;
+  background:linear-gradient(90deg,#ff0000,#ff9900,#ffff00,#ff9900,#ff0000);
+  -webkit-background-clip:text;
+  color:transparent;
+  font-weight:900;
+  font-size:1.15em;
+  text-shadow:0 0 10px rgba(255,100,0,0.6),0 0 20px rgba(255,0,0,0.4);
+  animation:flash50000 1.2s infinite alternate ease-in-out;
+}
+@keyframes flash50000{
+  0%{filter:brightness(1) drop-shadow(0 0 3px #ff0);}
+  100%{filter:brightness(1.4) drop-shadow(0 0 12px #f00);}
+}
+
+.footer-links{margin:30px 24px;display:flex;gap:10px;}
+.footer-links a{flex:1;text-align:center;text-decoration:none;padding:12px;border-radius:10px;font-weight:700;transition:all .25s;}
+.footer-links a.home{background:#ecfdf5;color:#065f46;border:1px solid #a7f3d0;}
+.footer-links a.recharge{background:#f0f9ff;color:#0369a1;border:1px solid #bae6fd;}
+@media(max-width:640px){.container{padding:0 16px;margin:16px auto;}.card{padding:24px 20px;border-radius:18px;}h2{font-size:24px;}.btn-group{flex-direction:column;}.btn{padding:14px;}}
+</style>
+</head>
+<body>
+
+<header><div id="marquee">加载中...</div></header>
+
+<div class="container">
+  <div class="card">
+    <h2>点数抽奖-五万锭大奖</h2>
+
+    <div class="form-group">
+      <label for="account">账号</label>
+      <div class="input-wrapper">
+        <span class="material-icons input-icon">person</span>
+        <input id="account" placeholder="请输入账号" autocomplete="username"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="passwd">密码</label>
+      <div class="input-wrapper">
+        <span class="material-icons input-icon">lock</span>
+        <input id="passwd" type="password" placeholder="请输入密码" autocomplete="current-password"/>
+        <button type="button" class="toggle-pwd material-icons" aria-label="显示密码">visibility</button>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button id="btnDraw" class="btn btn-primary">单抽</button>
+      <button id="btnDraw10" class="btn btn-primary">10连抽</button>
+    </div>
+
+    <div class="muted">
+      每次消耗点数：<b id="cost">100000</b>；抽中即到账。
+      <span id="bonusText">🔥 最高返利 5000 倍！🔥</span>
+      搏一搏单车变摩托
+    </div>
+
+    <div id="msg">提示：抽奖前请确认账号密码正确。</div>
+
+    <div id="pool">
+      <div class="pool-header" id="poolToggle"><span>当前奖池（点击展开）</span></div>
+      <div class="pool-content" id="poolContent">
+        <div class="pool-list" id="poolList">加载中...</div>
+      </div>
+    </div>
+
+    <div id="historyBox">
+      <h3>抽奖记录</h3>
+      <div id="historyScroll"><ul id="historyList"><li>暂无抽奖记录</li></ul></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-links">
+  <a href="/index.html" class="home">🏠 返回首页</a>
+  <a href="/recharge.html" class="recharge">💰 充值中心</a>
+</div>
+
+<audio id="sndTap" preload="auto" src="audio/2.wav"></audio>
+<audio id="sndWin" preload="auto" src="audio/1.wav"></audio>
+
+<script>
+function safeText(t){try{return decodeURIComponent(escape(t));}catch{return t}}
+async function post(u,d){const fd=new FormData();for(const k in d)fd.append(k,d[k]);const r=await fetch(u,{method:'POST',body:fd});return r.json().catch(()=>({ok:false,msg:'返回不是JSON'}));}
+function tierByReward(p){if(p===0)return 0;if(p<=50000)return 1;if(p<=100000)return 2;if(p<=200000)return 3;if(p<=500000)return 4;if(p<=1000000)return 5;if(p<=2000000)return 6;if(p<=5000000)return 7;return 8;}
+
+const poolToggle=document.getElementById('poolToggle');
+const poolContent=document.getElementById('poolContent');
+const poolList=document.getElementById('poolList');
+
+poolToggle.onclick=()=>{const isOpen=poolContent.classList.toggle('open');poolToggle.classList.toggle('open',isOpen);if(isOpen&&poolList.innerHTML.includes('加载中'))loadPool();};
+
+async function loadPool(){
+  const r=await fetch('lottery_draw.php?action=list');
+  const j=await r.json().catch(()=>({items:[]}));
+  if(j.cost){document.getElementById('cost').textContent=j.cost.toLocaleString();}
+  if(!j.items||!j.items.length){poolList.innerHTML='<div style="text-align:center;color:#94a3b8;padding:20px 0;">暂无奖池</div>';return;}
+  poolList.innerHTML=j.items.map(x=>{
+    const tier=tierByReward(x.REWARD_POINTS);
+    return `<div class="pool-item">
+      <span class="pool-name tier-${tier}">
+        <span class="material-icons">card_giftcard</span> ${safeText(x.NAME)}
+      </span>
+      <span class="tier-${tier}">${x.REWARD_POINTS.toLocaleString()} 点</span>
+    </div>`;
+  }).join('');
+}
+
+async function loadMarquee(){
+  const r=await fetch('lottery_draw.php?action=marquee');
+  const j=await r.json().catch(()=>({items:[]}));
+  const box=document.getElementById('marquee');
+  if(!j.items||!j.items.length){box.textContent='';return;}
+  const msgs=j.items.map(x=>`玩家 ${x.ACCOUNT} 抽中 ${x.CHANGE_POINTS.toLocaleString()} 点 (${safeText(x.PRIZE_NAME)})`).join('   ◆   ');
+  box.textContent=msgs;
+}
+
+const historyList=document.getElementById('historyList');
+function addHistory(entries){
+  if(!entries||!entries.length)return;
+  entries.forEach((e,i)=>{
+    const li=document.createElement('li');
+    li.innerHTML=`<span class="material-icons">auto_awesome</span> ${safeText(e.name)}　+${e.reward.toLocaleString()} 点`;
+    if(e.reward>=1000000)li.classList.add('big');
+    li.style.animationDelay=`${i*90}ms`;
+    historyList.prepend(li);
+  });
+  while(historyList.children.length>35){historyList.removeChild(historyList.lastChild);}
+}
+
+async function doDraw(mode='single'){
+  const btn=mode==='ten'?document.getElementById('btnDraw10'):document.getElementById('btnDraw');
+  const acc=document.getElementById('account').value.trim();
+  const pw=document.getElementById('passwd').value.trim();
+  if(!acc||!pw){alert('请输入账号和密码');return;}
+  const tap=document.getElementById('sndTap');tap.currentTime=0;tap.play().catch(()=>{});
+  btn.disabled=true;btn.classList.remove('win');
+  btn.textContent=mode==='ten'?'10连抽中...':'抽奖中...';
+  const res=await post('lottery_draw.php',{account:acc,passwd:pw,mode});
+  btn.disabled=false;btn.textContent=mode==='ten'?'10连抽':'单抽';
+  if(!res.ok){alert(res.msg||'系统繁忙');return;}
+  const win=document.getElementById('sndWin');
+  setTimeout(()=>{win.currentTime=0;win.play().catch(()=>{});},200);
+  btn.classList.add('win');setTimeout(()=>btn.classList.remove('win'),1400);
+  document.getElementById('msg').textContent=res.msg;
+  if(res.items)addHistory(res.items);
+  loadMarquee();
+}
+
+document.getElementById('btnDraw').onclick=()=>doDraw('single');
+document.getElementById('btnDraw10').onclick=()=>doDraw('ten');
+document.querySelector('.toggle-pwd').onclick=function(){
+  const input=document.getElementById('passwd');const isPwd=input.type==='password';
+  input.type=isPwd?'text':'password';this.textContent=isPwd?'visibility_off':'visibility';
+};
+
+loadPool();
+loadMarquee();
+setInterval(loadMarquee,15000);
+</script>
+</body>
+</html>

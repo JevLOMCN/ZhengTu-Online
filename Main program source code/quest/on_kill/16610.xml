@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="16610" name="嗜血屠夫">
+	<quest id="25553" new="1">
+		<embranchment id="10">
+			<conditions>
+				<selfcountry value="0"/>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Less" name="kill_嗜血屠夫" value="300"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_嗜血屠夫" value="1"/>
+				<refresh name="kill_嗜血屠夫"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+				<selfcountry value="0"/>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Great" name="kill_嗜血屠夫" value="299"/>
+			</conditions>
+			<actions>
+				<refresh name="kill_嗜血屠夫"/>
+				<var type="Set" name="state" value="-1"/>
+				<refresh name="state"/>
+				<notify content="任务完成赶快去交付任务把!"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

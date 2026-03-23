@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="123213" name="礼包">
+<quest id="98123213">
+		<embranchment id="10">
+			<conditions>
+				<item value="1" id="123213"/><!--满足兑换要求-->
+			</conditions>
+			<actions>
+	    <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;兑换提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;1个礼包可兑换VIP地图专属凭证！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;你确定要兑换礼包了嘛！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;礼包奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 123125\"&gt;  VIP地图专属凭证&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("兑换1个VIP地图专属凭证包(0)", "u123213", 114311, 1)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+				<var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>
+		<embranchment id="11"><!--10-->
+			<conditions>
+				<item value="1000" id="123213"/><!--满足兑换要求-->
+			</conditions>
+			<actions>
+	 <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;兑换提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;1个礼包可兑换VIP地图专属凭证！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;你确定要兑换礼包了嘛！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;礼包奖励:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 123125\"&gt;  VIP地图专属凭证&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("兑换 1个VIP地图专属凭证包(0)", "u123213", 114311, 1)
+this:AddTaskCmdItem("兑换10个VIP地图专属凭证包(0)", "u123213", 114311, 2)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+			 <var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>		    		     	    	            	    
+	</quest>
+<quest id="114311" new="1">
+<embranchment id="1" active="1">
+<conditions>
+<item value="1" id="123213"/>
+</conditions>
+<actions>
+<removeitem value="1" id="123213"/>
+<addbinditem value="1" id="123113"/><!--道具-->
+<notify1 content="获得奖励1个VIP13地图专属凭证"/>
+</actions>
+</embranchment>
+<embranchment id="2" active="1">
+<conditions>
+<item value="1000" id="123213"/>
+</conditions>
+<actions>
+<removeitem value="1000" id="123213"/>
+<addbinditem value="1000" id="799"/><!--道具-->
+<notify1 content="获得奖励"/>
+</actions>
+</embranchment>
+</quest>
+</event>

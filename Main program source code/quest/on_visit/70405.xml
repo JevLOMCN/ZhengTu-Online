@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="70405" name="兑换使者">
+	<!--new means new quest, default is quest on user-->
+	<quest id="15504">
+		<embranchment id="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddDialogItem("【一阶】寒冰麒麟(0)", "Dialog74")
+this:AddDialogItem("【二阶】寒冰麒麟(0)", "Dialog75")
+this:AddDialogItem("【三阶】寒冰麒麟(0)", "Dialog76")
+this:AddDialogItem("【四阶】寒冰麒麟(0)", "Dialog77")
+this:AddDialogItem("【五阶】寒冰麒麟(0)", "Dialog78")
+this:AddDialogItem("【六阶】寒冰麒麟(0)", "Dialog79")
+this:AddDialogItem("【七阶】寒冰麒麟(0)", "Dialog80")
+this:AddDialogItem("【八阶】寒冰麒麟(0)", "Dialog81")
+this:AddDialogItem("【九阶】寒冰麒麟(0)", "Dialog82")
+this:AddDialogItem("【十阶】寒冰麒麟(0)", "Dialog83")
+this:AddTaskCmdItem("满级老版本兑换新版本麒麟", "v70405", 25504, 11)
+this:AddCloseItem("离开")
+end
+function Dialog74()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用10个麒麟冰片兑换一阶寒冰麒麟(1)", "v70405", 25504, 1)
+this:AddCloseItem("离开")
+end
+function Dialog75()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用50个麒麟冰片升级二阶寒冰麒麟", "v70405", 25504, 2)
+this:AddCloseItem("离开")
+end
+function Dialog76()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用100个麒麟冰片升级三阶寒冰麒麟", "v70405", 25504, 3)
+this:AddCloseItem("离开")
+end
+function Dialog77()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用10个麒麟犄角升级四阶寒冰麒麟", "v70405", 25504, 4)
+this:AddCloseItem("离开")
+end
+function Dialog78()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用50个麒麟犄角升级五阶寒冰麒麟", "v70405", 25504, 5)
+this:AddCloseItem("离开")
+end
+function Dialog79()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用100个麒麟犄角升级六阶寒冰麒麟", "v70405", 25504, 6)
+this:AddCloseItem("离开")
+end
+function Dialog80()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用10个麒麟之魄升级七阶寒冰麒麟", "v70405", 25504, 7)
+this:AddCloseItem("离开")
+end
+function Dialog81()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用50个麒麟之魄升级八阶寒冰麒麟", "v70405", 25504, 8)
+this:AddCloseItem("离开")
+end
+function Dialog82()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟。")
+this:AddTaskCmdItem("使用100个麒麟之魄升级九阶寒冰麒麟", "v70405", 25504, 9)
+this:AddCloseItem("离开")
+end
+function Dialog83()
+this:AddTalk("    尊敬的(GetName)您好,这里可以帮你升级更高级的寒冰麒麟 \n使用各100个（麒麟冰片，麒麟犄角，麒麟之魄）。")
+this:AddTaskCmdItem("升级十阶寒冰麒麟", "v70405", 25504, 10)
+this:AddCloseItem("离开")
+end
+			</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="25504" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<item value="10" id="22124"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得一阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级一阶麒麟。"/>
+				<removeitem value="10" id="22124"/> 
+				<addpurplebinditem value="1" id="22104"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<item value="50" id="22124"/>
+				<item value="1" id="22104"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得二阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级二阶麒麟。"/>
+				<removeitem value="50" id="22124"/>
+                <removeitem value="1" id="22104"/>				
+				<addpurplebinditem value="1" id="22105"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<item value="100" id="22124"/>
+				<item value="1" id="22105"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得三阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级三阶麒麟。"/>
+				<removeitem value="100" id="22124"/>
+                <removeitem value="1" id="22105"/>				
+				<addpurplebinditem value="1" id="22106"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<item value="10" id="22125"/>
+				<item value="1" id="22106"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得四阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级四阶麒麟。"/>
+				<removeitem value="10" id="22125"/>
+                <removeitem value="1" id="22106"/>				
+				<addpurplebinditem value="1" id="22107"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<item value="50" id="22125"/>
+				<item value="1" id="22107"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得五阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级五阶麒麟。"/>
+				<removeitem value="50" id="22125"/>
+                <removeitem value="1" id="22107"/>				
+				<addpurplebinditem value="1" id="22108"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<item value="100" id="22125"/>
+				<item value="1" id="22108"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得六阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级六阶麒麟。"/>
+				<removeitem value="100" id="22125"/>
+                <removeitem value="1" id="22108"/>				
+				<addpurplebinditem value="1" id="22109"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<item value="10" id="22126"/>
+				<item value="1" id="22109"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得七阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级七阶麒麟。"/>
+				<removeitem value="10" id="22126"/>
+                <removeitem value="1" id="22109"/>				
+				<addpurplebinditem value="1" id="22110"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<item value="50" id="22126"/>
+				<item value="1" id="22110"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得八阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级八阶麒麟。"/>
+				<removeitem value="50" id="22126"/>
+                <removeitem value="1" id="22110"/>				
+				<addpurplebinditem value="1" id="22111"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<item value="100" id="22126"/>
+				<item value="1" id="22111"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得九阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级九阶麒麟。"/>
+				<removeitem value="100" id="22126"/>
+                <removeitem value="1" id="22111"/>				
+				<addpurplebinditem value="1" id="22112"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+			    <item value="100" id="22124"/>
+				<item value="100" id="22125"/>
+				<item value="100" id="22126"/>
+				<item value="1" id="22112"/>
+			</conditions>
+			<actions>
+				<notify1 content="升级成功，获得十阶麒麟"/>
+				<var1bulletin kind="4" content="在麒麟升级使者升级十阶麒麟。"/>
+				<removeitem value="100" id="22124"/>
+				<removeitem value="100" id="22125"/>
+				<removeitem value="100" id="22126"/>
+                <removeitem value="1" id="22112"/>				
+				<addpurplebinditem value="1" id="22113"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<item value="1" id="22113"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获得新版麒麟"/>
+                <removeitem value="1" id="22113"/>				
+				<addpurplebinditem value="1" id="22113"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

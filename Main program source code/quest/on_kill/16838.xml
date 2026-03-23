@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="16838" name="月魔弓手">
+	<quest id="20625" new="1">
+		<embranchment id="1">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Equal" name="three_bed_level" value="1" id="20625"/>
+				<var type="Less" name="kill_月魔弓手_活动" value="5"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_月魔弓手_活动" value="1"/>
+				<refresh name="kill_月魔弓手_活动"/>
+				<var type="Add" name="kill_bed_shock" value="1"/>
+				<refresh name="kill_bed_shock"/>
+				<notify1 content="月魔弓手加1"/>
+				<notify  content="月魔弓手加1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Equal" name="three_bed_level" value="1" id="20625"/>
+				<var type="Great" name="kill_月魔弓手_活动" value="4"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="num_月魔弓手_活动" value="5" id="20625"/>
+				<refresh name="state"/>
+				<refresh name="kill_月魔弓手_活动"/>
+				<notify1 content="你已经打败了5个月魔弓手"/>
+				<notify  content="你已经打败了5个月魔弓手"/>
+			</actions>
+		</embranchment>		
+	  <embranchment id="3">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Equal" name="three_bed_level" value="1" id="20625"/>
+					<var type="Great" name="kill_bed_shock" value="14"/>
+			</conditions>
+			<actions>
+			  <var type="Set" name="state" value="-3" id="20625"/>
+			  <refresh name="state"/>
+				<refresh name="kill_bed_shock"/>
+				<notify1 content="你完成了“幸运之门”任务，快去交任务吧"/>
+				<notify  content="你完成了“幸运之门”任务，快去交任务吧"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

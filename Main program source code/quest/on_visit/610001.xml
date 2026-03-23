@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="610001" name="抽奖判断">
+	<!--new means new quest, default is quest on user-->
+	<quest id="1000" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+			<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="799" value="1" odds="500" 
+id2="799" value2="1" odds2="500" 
+id3="799" value3="1" odds3="500" 
+id4="799" value4="1" odds4="500" 
+id5="799" value5="1" odds5="500" 
+id6="1411" value6="1" odds6="500" 
+id7="1411" value7="1" odds7="500" 
+id8="1411" value8="1" odds8="500" 
+id9="1411" value9="1" odds9="500" 
+id10="1411" value10="1" odds10="500" 
+id11="3810" value11="1" odds11="500" 
+id12="3810" value12="1" odds12="500" 
+id13="3810" value13="1" odds13="500" 
+id14="3810" value14="1" odds14="500" 
+id15="3810" value15="1" odds15="500" 
+id16="795" value16="1" odds16="500" 
+id17="795" value17="1" odds17="500" 
+id18="795" value18="1" odds18="500" 
+id19="795" value19="1" odds19="500" 
+id20="795" value20="1" odds20="500"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 2)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 12)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1081" value="1" odds="2000" id2="1081" value2="1" odds2="2000" id3="1081" value3="1" odds3="2000" id4="1081" value4="1" odds4="2000" id5="1081" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 3)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 13)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1100" value="1" odds="2000" id2="1100" value2="1" odds2="2000" id3="1100" value3="1" odds3="2000" id4="1100" value4="1" odds4="2000" id5="1100" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 4)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 14)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1140" value="1" odds="2000" id2="1140" value2="1" odds2="2000" id3="1140" value3="1" odds3="2000" id4="1140" value4="1" odds4="2000" id5="1140" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 5)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 15)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="1" odds="2000" id2="1141" value2="1" odds2="2000" id3="1141" value3="1" odds3="2000" id4="1141" value4="1" odds4="2000" id5="1141" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 6)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 16)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="1" odds="2000" id2="1141" value2="1" odds2="2000" id3="1141" value3="1" odds3="2000" id4="1141" value4="1" odds4="2000" id5="1141" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 7)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 17)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="1" odds="2000" id2="1141" value2="1" odds2="2000" id3="1141" value3="1" odds3="2000" id4="1141" value4="1" odds4="2000" id5="1141" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 8)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 18)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="1" odds="2000" id2="1141" value2="1" odds2="2000" id3="1141" value3="1" odds3="2000" id4="1141" value4="1" odds4="2000" id5="1141" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 9)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 19)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="1" odds="2000" id2="1141" value2="1" odds2="2000" id3="1141" value3="1" odds3="2000" id4="1141" value4="1" odds4="2000" id5="1141" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 10)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 20)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<umaxgold type="Great" value="1000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="1000000"/>
+				<uservar type="Add" name="num_choujiang" value="1"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="1" odds="2000" id2="1141" value2="1" odds2="2000" id3="1141" value3="1" odds3="2000" id4="1141" value4="1" odds4="2000" id5="1141" value5="1" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 1)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 11)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 2)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 12)
+this:AddDialogItem("离开","TaskDialog")
+end 
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 3)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 13)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 4)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 14)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 5)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 15)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 6)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 16)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 7)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 17)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 8)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 18)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="18" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 9)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 19)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 10)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 20)
+this:AddDialogItem("离开","TaskDialog")
+end
+               </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<umaxgold type="Great" value="10000000"/>
+			</conditions>
+			<actions>
+			<umaxgold type="Sub" value="10000000"/>
+				<uservar type="Add" name="num_choujiang" value="10"/>
+				<refresh name="num_choujiang"/>
+<addranditem id="1141" value="10" odds="2000" id2="1141" value2="10" odds2="2000" id3="1141" value3="10" odds3="2000" id4="1141" value4="10" odds4="2000" id5="1141" value5="10" odds5="2000"/>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;(GetName)&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 你好！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;欢迎来到全新抽奖玩法，抽奖可获得游戏内不少物品！还有几率得稀有道具！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;抽奖额外奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;达到&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,255\"&gt;50 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;150 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;300 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;500 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;1000 &lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;次可领取额外丰厚奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;抽奖土豪奖励：&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;抽奖达1000次奖励绝世坐骑！&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("[一连抽]金子抽奖：100锭金子/次(0)", "v610001", 1000, 1)
+this:AddCloseItem("------------------------------(0)")
+this:AddTaskCmdItem("[十连抽]金子抽奖：1000锭金子/次(0)", "v610001", 1000, 11)
+this:AddDialogItem("离开","TaskDialog")
+end
+
+               </menu>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

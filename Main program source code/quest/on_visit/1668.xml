@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1668" name="李可灼">
+	<quest id="90036">
+	    <embranchment id="2"><!--未接引导任务-->
+        <conditions>
+			<var type="Differ" name="state" value="1" id="80035"/>
+			<var type="Differ" name="state" value="-2" id="80035"/>
+			<var type="Differ" name="state" value="-3" id="80035"/>
+        </conditions>
+        <actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请到世外桃源的独眼捕快处接取四大疑案的任务！")
+end
+				</menu>
+        </actions>
+    </embranchment>
+		<embranchment id="6"><!--未达到任务等级-->
+			<conditions>
+				<level type="Less" value="140"/>
+				<myround value="1"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("对不起，红丸案任务需要140级以上或者转生玩家才可接受！")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="9"><!--转生玩家接任务-->
+			<conditions>
+				<innation/>
+				<myround value="2"/>
+			    <var type="Equal" name="state" value="1" id="80035"/>
+				<uservar type="Less" name="finish_times" value="1"/>
+				<var type="Differ" name="state" value="-1" id="80036"/>
+				<var type="Differ" name="state" value="1" id="80036"/>
+				<var type="Differ" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：红丸案(2)", "Dialog22")
+end
+function Dialog22()
+this:AddTalk("    众人都说我是有心加害，并且有幕后黑手，其实我是无辜的啊！我一生痴迷炼丹，怎么会故意加害皇帝呢？！不信的话，我这就教你红丸是如何炼制的。\n此任务必须当天完成")
+this:AddDialogItem("学习炼制红丸仙丹{10001}", "Dialog33")
+end
+function Dialog33()
+this:AddTalk("    每加一次火，我将念一句口诀，一共九次，每两次之间必须间隔5分钟以上，以防火势太猛烧坏仙丹。注意看我的口诀哦！")
+this:AddDialogItem("开始念口诀吧！{10001}", "Dialog34")
+end  
+function Dialog34()
+this:AddTalk("    李可灼默念道：“万念俱前述，千灵抵一灯。”这是第一句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 9)
+end             
+                </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="10"><!--未转生140-160玩家接任务-->
+			<conditions>
+				<innation/>
+				<var type="Equal" name="state" value="1" id="80035"/>
+				<myround value="1"/>
+				<level type="Great" value="139"/>
+				<uservar type="Less" name="finish_times" value="1"/>
+				<var type="Differ" name="state" value="-1" id="80036"/>
+				<var type="Differ" name="state" value="1" id="80036"/>
+				<var type="Differ" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：红丸案(2)", "Dialog32")
+end
+function Dialog32()
+this:AddTalk("    众人都说我是有心加害，并且有幕后黑手，其实我是无辜的啊！我一生痴迷炼丹，怎么会故意加害皇帝呢？！不信的话，我这就教你红丸是如何炼制的。\n此任务必须当天完成")
+this:AddDialogItem("学习炼制红丸仙丹{10001}", "Dialog43")
+end
+function Dialog43()
+this:AddTalk("    每加一次火，我将念一句口诀，一共九次，每两次之间必须间隔5分钟以上，以防火势太猛烧坏仙丹。注意看我的口诀哦！")
+this:AddDialogItem("开始念口诀吧！{10001}", "Dialog44")
+end  
+function Dialog44()
+this:AddTalk("    李可灼默念道：“万念俱前述，千灵抵一灯。”这是第一句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 10)
+end             
+                </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11"><!--时间不到-->
+			<conditions>
+				<innation/>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="1"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    没有到5分钟呢！")
+end
+             </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="13"><!--财产保护交任务-->
+			<conditions>
+				<innation/>
+				<goldsafe value="1"/>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：红丸案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了红丸案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，您在财产保护状态下。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10001}", "v1668", 80036, 13)
+end
+            </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="16"><!--金子不足交任务-->
+			<conditions>
+				<innation/>
+				<salary  type="Less"  value="500"  bindgold="0"/>
+			    <goldsafe value="0"/>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：红丸案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了红丸案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，使用本转盘，需要5两金子。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10001}", "v1668", 80036, 13)
+end
+            </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="17"><!--交任务-->
+			<conditions>
+				<innation/>
+			    <goldsafe value="0"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：红丸案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了红丸案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    使用本转盘，可获得最少5倍经验奖励，最多可获得10倍经验奖励，只需5两金子即可。\n    使用本转盘完成任务后不可再用普通方式完成。")
+this:AddTaskCmdItem("花费5两金子获得更高奖励{10002}", "v1668", 80036, 15)
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10001}", "v1668", 80036, 13)
+end
+            </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="18"><!--背包空格不足2格-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您的背包剩余不足两格了。")
+end
+            </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="19"><!--今天已经做过-->
+			<conditions>
+				<innation/>
+				<uservar type="Equal" name="finish_times" value="1" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天已经做过了红丸案任务。")
+end
+             </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="21"><!--第二句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="1"  id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“圣域幕边际，仙人禄菩提。”这是第二句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 22)
+end            
+               </menu>
+			</actions>
+		</embranchment>
+		
+ 		<embranchment id="22"><!--第三句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="2" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“之花无碧果，其草有灵犀。”这是第三句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 23)
+end            
+               </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="23"><!--第四句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="3" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“尊者念纯露，善者思归途。”这是第四句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 24)
+end            
+               </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="24"><!--第五句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="4" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“宫富贵人皓，黎落白骨朝。”这是第五句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 25)
+end            </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="25"><!--第六句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="5" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“毙礼虽何必，生轮又如何。”这是第六句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 26)
+end            </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="26"><!--第七句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="6" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“于弥逍遥子，夷起浮啼波。”这是第七句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 27)
+end            
+               </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="27"><!--第八句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="7" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“红绫至净土，绿莹断陀螺。”这是第八句口诀。5分钟之后再来吧。")
+this:AddTaskCmdItem("继续炼丹{10001}", "v1668", 80036, 28)
+end            
+               </menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="28"><!--第九句口诀-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="8" id="80036"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    李可灼默念道：“丸丸去邪露，粒粒解妖魔。”你终于完成了炼成一粒红丸，发现了红丸案的真相，原来每句口诀的第一个字连起来就是“万圣之尊宫毙于红丸”！！！现在可以领取奖励了")
+this:AddTaskCmdItem("结束炼丹{10001}", "v1668", 80036, 29)
+end            
+               </menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="80036" new="1">
+		<embranchment id="9" active="1"><!--转生玩家接任务的服务器端-->
+			<conditions>
+				<innation/>
+				<var type="Equal" name="state" value="1" id="80035"/>
+				<myround value="2"/>
+				<uservar type="Less" name="finish_times" value="1"/>
+				<var type="Differ" name="state" value="-1" id="80036"/>
+				<var type="Differ" name="state" value="1" id="80036"/>
+				<var type="Differ" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<tracelog name="接受红丸案任务" state="0"/>
+				<notify1 content="请每5分钟去李可灼处念一句口诀！"/>
+				<notify content="请每5分钟去李可灼处念一句口诀！"/>
+				<!--接任务时设置今天已经做过-->
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<!--经验系数设置-->
+				<randomfactor value="1:31;2:50;3:10;4:5;5:4" factor="hongwan_exp"/>
+				<randomfactor value="5:31;6:50;7:10;8:5;10:4" factor="hongwan_exp1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp1"/>
+				<var type="Set" name="t1" value="1"/>
+				<var type="Set" name="t2" value="2"/>
+				<var type="Set" name="t3" value="3"/>
+				<var type="Set" name="t4" value="4"/>
+				<var type="Set" name="t5" value="5"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<vars type="Add" name1="selflevel1" name2="selflevel"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel1" name2="baseexp1"/>
+				<vars type="Mul" name1="t1" name2="selflevel"/>
+				<vars type="Mul" name1="t2" name2="selflevel"/>
+				<vars type="Mul" name1="t3" name2="selflevel"/>
+				<vars type="Mul" name1="t4" name2="selflevel"/>
+				<vars type="Mul" name1="t5" name2="selflevel"/>
+				<refresh name="t1"/>
+				<refresh name="t2"/>
+				<refresh name="t3"/>
+				<refresh name="t4"/>
+				<refresh name="t5"/>
+				<vars type="Mul" name1="selflevel" name2="hongwan_exp"/>
+				<vars type="Mul" name1="selflevel1" name2="hongwan_exp1"/>
+				<refresh name="selflevel1"/>
+				<refresh name="selflevel"/>
+				<refresh name="hongwan_exp"/>
+				<refresh name="hongwan_exp1"/>
+				<uservar type="Set" name="hw_times" value="1" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="10" active="1"><!--为转生140-160玩家接任务的服务器端-->
+			<conditions>
+			    <var type="Equal" name="state" value="1" id="80035"/>
+				<myround value="1"/>
+				<level type="Great" value="139"/>
+				<uservar type="Less" name="finish_times" value="1"/>
+				<var type="Differ" name="state" value="-1" id="80036"/>
+				<var type="Differ" name="state" value="1" id="80036"/>
+				<var type="Differ" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<tracelog name="接受红丸案任务" state="0"/>
+				<notify1 content="请每5分钟去李可灼处念一句口诀！"/>
+				<notify content="请每5分钟去李可灼处念一句口诀！"/>
+				<!--接任务时设置今天已经做过-->
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<!--经验系数设置-->
+				<randomfactor value="1:31;2:50;3:10;4:5;5:4" factor="hongwan_exp"/>
+				<randomfactor value="5:31;6:50;7:10;8:5;10:4" factor="hongwan_exp1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp1"/>
+				<var type="Set" name="t1" value="1"/>
+				<var type="Set" name="t2" value="2"/>
+				<var type="Set" name="t3" value="3"/>
+				<var type="Set" name="t4" value="4"/>
+				<var type="Set" name="t5" value="5"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<vars type="Add" name1="selflevel1" name2="selflevel"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel1" name2="baseexp1"/>
+				<vars type="Mul" name1="t1" name2="selflevel"/>
+				<vars type="Mul" name1="t2" name2="selflevel"/>
+				<vars type="Mul" name1="t3" name2="selflevel"/>
+				<vars type="Mul" name1="t4" name2="selflevel"/>
+				<vars type="Mul" name1="t5" name2="selflevel"/>
+				<refresh name="t1"/>
+				<refresh name="t2"/>
+				<refresh name="t3"/>
+				<refresh name="t4"/>
+				<refresh name="t5"/>
+				<vars type="Mul" name1="selflevel" name2="hongwan_exp"/>
+				<vars type="Mul" name1="selflevel1" name2="hongwan_exp1"/>
+				<refresh name="selflevel1"/>
+				<refresh name="selflevel"/>
+				<refresh name="hongwan_exp"/>
+				<refresh name="hongwan_exp1"/>
+				<uservar type="Set" name="hw_times" value="1" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1"><!--触发转盘-->
+			<conditions>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<magicdialog factor="hongwan_exp" event="v1668" questid="80036" offset="14"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1"><!--完成任务-->
+			<conditions>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<tracelog name="成功完成“红丸案”任务" state="1"/>
+			    <var type="Set" name="state" value="-2" id="80035"/><!--状态置为其它值防止刷-->
+				<exp1 value="100" id="80036" name="selflevel"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="1" id="1050"/>
+				<notify content="得到精金之匙1个！"/>
+				<addbinditem value="1" id="1323"/>
+				<notify content="得到《红丸案抄录》1本！"/>
+				<var type="Set" name="state" value="-2" id="80036"/>
+				<refresh name="state"/>
+				<uservar type="Set" name="finish_times" value="1" broadcast="1"/>
+				<refresh name="finish_times"/>
+				<questlog log="完成“红丸案”任务*80036"/>
+				<notify content="完成“红丸案”任务"/>
+				<notify1 content="完成“红丸案”任务"/>
+			</actions>
+		</embranchment>
+		
+        <embranchment id="15" active="1"><!--触发转盘2-->
+			<conditions>
+				<space size="2"/>
+			    <goldsafe value="0"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<magicdialog factor="hongwan_exp1" event="v1668" questid="80036" offset="16"  type="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1"><!--收钱完成任务-->
+			<conditions>
+				<space size="2"/>
+			    <goldsafe value="0"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<var type="Equal" name="state" value="-3" id="80036"/>
+			</conditions>
+			<actions>
+				<tracelog name="成功完成“红丸案”任务" state="1"/>
+			    <var type="Set" name="state" value="-2" id="80035"/><!--状态置为其它值防止刷-->
+			    <salary type="Sub" value="500" bindgold="0"/>
+			    <notify content="扣除5两金子"/>
+				<exp1 value="100" id="80036" name="selflevel1"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="1" id="1050"/>
+				<notify content="得到精金之匙1个！"/>
+				<addbinditem value="1" id="1323"/>
+				<notify content="得到《红丸案抄录》1本！"/>
+				<var type="Set" name="state" value="-2" id="80036"/>
+				<refresh name="state"/>
+				<uservar type="Set" name="finish_times" value="1" broadcast="1"/>
+				<refresh name="finish_times"/>
+				<questlog log="完成“红丸案”任务*80036"/>
+				<notify content="完成“红丸案”任务"/>
+				<notify1 content="完成“红丸案”任务"/>
+			</actions>
+		</embranchment>
+		
+		
+		<embranchment id="22" active="1"><!--加火2次-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="hw_times" value="2" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="23" active="1"><!--加火3次-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="hw_times" value="3" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="24" active="1"><!--加火4次-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="hw_times" value="4" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="25" active="1"><!--加火5次-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="hw_times" value="5" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="26" active="1"><!--加火6次-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="hw_times" value="6" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="27" active="1"><!--加火7次-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="hw_times" value="7" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="28" active="1"><!--加火8次-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+			</conditions>
+			<actions>
+				<uservar type="Set" name="hw_times" value="8" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<timeouts/>
+				<var type="Set" name="clock" value="300"/>
+				<refresh name="clock"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="29" active="1"><!--九次加火完毕-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80036"/>
+				<timeouts long="300" id="80036" less="0"/>
+				<uservar type="Equal" name="hw_times" value="8"/>
+			</conditions>
+			<actions>
+				<uservar type="Add" name="hw_times" value="1" broadcast="1"/>
+				<refresh name="hw_times"/>
+				<var type="Set" name="state" value="-3"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

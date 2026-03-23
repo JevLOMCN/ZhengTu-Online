@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gb2312"?>
+<event id="2344" name="平阳城藏宝图">
+	<quest id="10000" new="1">
+		<embranchment id="1">
+			<conditions>
+				<!--var type="Equal" name="state" value="-1" id="16" /-->
+				<MapPos mapid="102" posx="125" posy="224" value="1" />
+			</conditions>
+			<actions>
+				<notify1 content="终于找到宝箱啦！！" />
+				<gold type="Add" value="10000" />
+                                <var type="Set" name="state" value="-2"/>
+				<removeitem value="1" id="2344" />
+			</actions>
+		</embranchment>
+	</quest>
+</event>

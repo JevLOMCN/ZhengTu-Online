@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5147" name="超级传送">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960103">
+		<embranchment id="2">
+			<conditions>
+				<timer start="20:30:00" end="21:00:00"/><!--时间判定,当天-->
+              			<countryid value="8"/>		
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;每晚8:30分开启国家BOSS争夺战。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;玩法规则：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;1.两国传入地图后落点不同。楚国玩家需击杀东侧小BOSS，汉国玩家击杀西侧小BOSS！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;2.击败小BOSS后可前往地图中心进攻终极BOSS！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;3.优先击败终极BOSS的国家可获得大量奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("国家BOSS争夺战场传送(0)", "v5147", 160103,3)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+              			<timer start="20:30:00" end="21:00:00"/><!--时间判定,当天-->	
+				<countryid value="12"/>		
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;每晚8:30分开启国家BOSS争夺战。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;玩法规则：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;1.两国传入地图后落点不同。楚国玩家需击杀东侧小BOSS，汉国玩家击杀西侧小BOSS！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;2.击败小BOSS后可前往地图中心进攻终极BOSS！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;3.优先击败终极BOSS的国家可获得大量奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("国家BOSS争夺战场传送(0)", "v5147", 160103,1)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+                <isguard/>
+        
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;每周一,周三，周五，周日晚8:30分开启国家BOSS争夺战。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;玩法规则：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;1.两国传入地图后落点不同。楚国玩家需击杀东侧小BOSS，汉国玩家击杀西侧小BOSS！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;2.击败小BOSS后可前往地图中心进攻终极BOSS！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;3.优先击败终极BOSS的国家可获得大量奖励！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("国家BOSS争夺战场传送(0)", "v5147", 160103,2)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160103" new="1">
+        <embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="59"/>
+			</conditions>
+			<actions>
+				<var1bulletin kind="31" content="在王城NPC{国家BOSS争夺战场传送}传入战场！！！"/>
+							<notify6 content="你已进入国家BOSS争夺战场，祝将军大杀四方！！"/>
+				<goto name="中立区·国家BOSS争夺战" pos="147,139"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<level type="Great" value="59"/>
+			</conditions>
+			<actions>
+				<var1bulletin kind="31" content="在王城NPC{国家BOSS争夺战场传送}传入战场！！！"/>
+				<notify6 content="你已进入国家BOSS争夺战场，祝将军大杀四方！！"/>
+				<goto name="中立区·国家BOSS争夺战" pos="84,283"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		 <embranchment id="2" active="1">
+			<conditions>
+	
+			</conditions>
+			<actions>
+		
+				<notify6 content="国家BOSS争夺战暂未开始！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+</quest>
+</event>

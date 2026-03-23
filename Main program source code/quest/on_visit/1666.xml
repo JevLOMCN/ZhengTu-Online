@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1666" name="赵士桢">
+
+<quest id="90032">
+    <embranchment id="2"><!--未接引导任务-->
+        <conditions>
+			<var type="Differ" name="state" value="1" id="80031"/>
+			<var type="Differ" name="state" value="-2" id="80031"/>
+			<var type="Differ" name="state" value="-3" id="80031"/>
+        </conditions>
+        <actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请到世外桃源的独眼捕快处接取四大疑案的任务！")
+end
+				</menu>
+        </actions>
+    </embranchment>
+    <embranchment id="10"><!--等级不够-->
+        <conditions>
+		    <level type="Less" value="60"/>
+			
+        </conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("对不起，妖书案任务需要60级以上玩家才可接受！")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+    </embranchment>
+    <embranchment id="11"><!--未转生140-160玩家接受任务NPC对话-->
+		<conditions>
+		    <var type="Equal" name="state" value="1" id="80031"/>
+			<mapid id="80032" name="149"/>
+			<level type="Great" value="59"/>
+			<uservar type="Less" name="ys_times" value="1"/>
+			<var type="Differ" name="state" value="-1" id="80032"/>
+			<var type="Differ" name="state" value="1" id="80032"/>
+			<var type="Differ" name="state" value="2" id="80032"/>
+			<var type="Differ" name="state" value="3" id="80032"/>
+			<var type="Differ" name="state" value="4" id="80032"/>
+			<var type="Differ" name="state" value="5" id="80032"/>
+			<var type="Differ" name="state" value="6" id="80032"/>
+			<var type="Differ" name="state" value="-3" id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddDialogItem("任务：妖书案(2)", "Dialog22")
+end
+function Dialog22()
+this:AddTalk("    有人诬陷我写的书是一本妖书，我说的只是事实！难道说真话还有被惩罚的道理吗？我已经将这本书撕成6张残页，如果你想知道写的是什么就自己读读看吧。\n此任务必须当天完成")
+this:AddTaskCmdItem("去寻找妖书残页{10001}", "v1666", 80032, 12)
+end
+			</menu>
+		</actions>
+	</embranchment>    
+
+    <embranchment id="16"><!--已经做过任务NPC对话-->
+			<conditions>
+			    <uservar type="Equal" name="ys_times" value="1"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您今天已经做过妖书案任务了")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	
+    <embranchment id="17"><!--财产保护完成任务NPC对话-->
+		<conditions>
+			<var type="Equal" name="state" value="-3" id="80032"/>
+			<goldsafe value="1"/>
+			<space size="2"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：妖书案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了妖书案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，您在财产保护状态下。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1666", 80032, 13)
+end
+			</menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="18"><!--金子不足完成任务NPC对话-->
+		<conditions>
+			<var type="Equal" name="state" value="-3" id="80032"/>
+			<salary  type="Less"  value="500"/>
+			<space size="2"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：妖书案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了妖书案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，需要5两金子。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1666", 80032, 13)
+end
+			</menu>
+		</actions>
+	</embranchment>
+
+    <embranchment id="19"><!--完成任务NPC对话-->
+		<conditions>
+			<var type="Equal" name="state" value="-3" id="80032"/>
+			<salary  type="Great"  value="499"/>
+			<space size="2"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：妖书案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    你完成了妖书案任务。")
+this:AddDialogItem("转取5倍或更高经验奖励(2)", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    使用本转盘，可获得最少5倍经验奖励，最多可获得10倍经验奖励，只需5两金子即可。\n    使用本转盘完成任务后不可再用普通方式完成。")
+this:AddTaskCmdItem("花费5两金子获得更高奖励{10002}", "v1666", 80032, 15)
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1666", 80032, 13)
+end
+
+			</menu>
+		</actions>
+	</embranchment>
+
+	
+	<embranchment id="27"><!--背包空格不足2个-->
+		<conditions>
+			<var type="Equal" name="state" value="-3" id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您的背包剩余不到两个空格了。")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="28"><!--时间不到-->
+		<conditions>
+			<timeouts long="300" id="80032" less="1"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    没有到5分钟呢！")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="29"><!--第九层 需要第一页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="149"/>
+			<var type="Equal" name="state" value="1" id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    有人诬陷我写的书是一本妖书，我说的只是事实！难道说真话还有被惩罚的道理吗？我已经将这本书撕成6张残页，如果你想知道写的是什么就自己读读看吧。")
+this:AddTaskCmdItem("阅读妖书残页之一{10002}", "v1666", 80032, 49)
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="39"><!--第九层 不需要第一页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="149"/>
+			<var type="Differ" name="state" value="1" id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您要找的书页不在我这一层。")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="23"><!--第三层 需要第四页-->
+	    <conditions>
+			<mapid id="80032" name="143"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="4" id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    有人诬陷我写的书是一本妖书，我说的只是事实！难道说真话还有被惩罚的道理吗？我已经将这本书撕成6张残页，如果你想知道写的是什么就自己读读看吧。")
+this:AddTaskCmdItem("阅读妖书残页之四{10002}", "v1666", 80032, 43)
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="33"><!--第三层 不需要第四页-->
+	    <conditions>
+			<mapid id="80032" name="143"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Differ" name="state" value="4"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您要找的书页不在我这一层。")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="27"><!--第七层 需要第三页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="147"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="3"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    有人诬陷我写的书是一本妖书，我说的只是事实！难道说真话还有被惩罚的道理吗？我已经将这本书撕成6张残页，如果你想知道写的是什么就自己读读看吧。")
+this:AddTaskCmdItem("阅读妖书残页之三{10002}", "v1666", 80032, 47)
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="37"><!--第七层 不需要第三页-->
+	    <conditions>
+			<mapid id="80032" name="147"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Differ" name="state" value="3"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您要找的书页不在我这一层。")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="21"><!--第一层 需要第六页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="141"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="6"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    有人诬陷我写的书是一本妖书，我说的只是事实！难道说真话还有被惩罚的道理吗？我已经将这本书撕成6张残页，如果你想知道写的是什么就自己读读看吧。")
+this:AddTaskCmdItem("阅读妖书残页之六{10002}", "v1666", 80032, 41)
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="31"><!--第一层 不需要第六页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="141"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Differ" name="state" value="6"  id="80032"/>
+			<var type="Differ" name="state" value="-3"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您要找的书页不在我这一层。")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="28"><!--第八层 需要第二页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="148"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="2"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    有人诬陷我写的书是一本妖书，我说的只是事实！难道说真话还有被惩罚的道理吗？我已经将这本书撕成6张残页，如果你想知道写的是什么就自己读读看吧。")
+this:AddTaskCmdItem("阅读妖书残页之二{10002}", "v1666", 80032, 48)
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="38"><!--第八层 不需要第二页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="148"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Differ" name="state" value="2"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您要找的书页不在我这一层。")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="22"><!--第二层 需要第五页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="142"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="5"  id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    有人诬陷我写的书是一本妖书，我说的只是事实！难道说真话还有被惩罚的道理吗？我已经将这本书撕成6张残页，如果你想知道写的是什么就自己读读看吧。")
+this:AddTaskCmdItem("阅读妖书残页之五{10002}", "v1666", 80032, 42)
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+	<embranchment id="32"><!--第二层 不需要第五页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="142"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Differ" name="state" value="5" id="80032"/>
+		</conditions>
+		<actions>
+			<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您要找的书页不在我这一层。")
+end
+            </menu>
+		</actions>
+	</embranchment>
+	
+</quest>
+<quest id="80032" new="1">
+		<embranchment id="12" active="1"><!--未转生60-160玩家接受任务-->
+			<conditions>
+		        <var type="Equal" name="state" value="1" id="80031"/>
+			    
+			    <level type="Great" value="59"/>
+			    <uservar type="Less" name="ys_times" value="1"/>
+			    <var type="Differ" name="state" value="-1" id="80032"/>
+			    <var type="Differ" name="state" value="1" id="80032"/>
+			    <var type="Differ" name="state" value="-3" id="80032"/>
+			</conditions>
+			<actions>
+				<notify1 content="你接受了妖书案任务，到第九层赵士桢处寻找妖书残页之一"/>
+				<notify content="你接受了妖书案任务，到第九层赵士桢处寻找妖书残页之一"/>
+				<tracelog name="接受“妖书案”任务" state="0"/>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<!--经验系数设置-->
+				<randomfactor value="1:31;2:50;3:10;4:5;5:4" factor="yaoshu_exp"/>
+				<randomfactor value="5:31;6:50;7:10;8:5;10:4" factor="yaoshu_exp1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp1"/>
+				<var type="Set" name="t1" value="1"/>
+				<var type="Set" name="t2" value="2"/>
+				<var type="Set" name="t3" value="3"/>
+				<var type="Set" name="t4" value="4"/>
+				<var type="Set" name="t5" value="5"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<vars type="Add" name1="selflevel1" name2="selflevel"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel1" name2="baseexp1"/>
+				<vars type="Mul" name1="t1" name2="selflevel"/>
+				<vars type="Mul" name1="t2" name2="selflevel"/>
+				<vars type="Mul" name1="t3" name2="selflevel"/>
+				<vars type="Mul" name1="t4" name2="selflevel"/>
+				<vars type="Mul" name1="t5" name2="selflevel"/>
+				<refresh name="t1"/>
+				<refresh name="t2"/>
+				<refresh name="t3"/>
+				<refresh name="t4"/>
+				<refresh name="t5"/>
+				<vars type="Mul" name1="selflevel" name2="yaoshu_exp"/>
+				<vars type="Mul" name1="selflevel1" name2="yaoshu_exp1"/>
+				<refresh name="selflevel1"/>
+				<refresh name="selflevel"/>
+				<refresh name="yaoshu_exp"/>
+				<refresh name="yaoshu_exp1"/>
+			</actions>
+		</embranchment>
+        
+        <embranchment id="13" active="1"><!--触发转盘-->
+			<conditions>
+			    <space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80032"/>
+			</conditions>
+			<actions>
+				<magicdialog factor="yaoshu_exp" event="v1666" questid="80032" offset="14"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="14" active="1"><!--完成任务-->
+			<conditions>
+			    <space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80032"/>
+			</conditions>
+			<actions>
+			    <var type="Set" name="state" value="-2" id="80031"/><!--状态置为其它值防止刷-->
+				<tracelog name="成功完成“妖书案”任务" state="1"/>
+				<exp1 value="100" id="80032" name="selflevel"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="1" id="969"/>
+				<notify content="得到御赐金符1个！"/>
+				<addbinditem value="1" id="1321"/>
+				<notify content="得到《妖书案抄录》1本！"/>
+				<var type="Set" name="state" value="-2" id="80032"/>
+				<refresh name="state"/>
+				<uservar type="Set" name="ys_times" value="1" broadcast="1"/>
+				<refresh name="ys_times"/>
+				<questlog log="完成“妖书案”任务*80032"/>
+				<notify content="完成“妖书案”任务"/>
+				<notify1 content="完成“妖书案”任务"/>
+			</actions>
+		</embranchment>        
+		
+        <embranchment id="15" active="1"><!--触发转盘2-->
+			<conditions>
+				<space size="2"/>
+			    <goldsafe value="0"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<var type="Equal" name="state" value="-3" id="80032"/>
+			</conditions>
+			<actions>
+				<magicdialog factor="yaoshu_exp1" event="v1666" questid="80032" offset="16" type="1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="16" active="1"><!--收钱完成任务-->
+			<conditions>
+				<space size="2"/>
+			    <goldsafe value="0"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<var type="Equal" name="state" value="-3" id="80032"/>
+			</conditions>
+			<actions>
+				<tracelog name="成功完成“妖书案”任务" state="1"/>
+			    <var type="Set" name="state" value="-2" id="80031"/><!--状态置为其它值防止刷-->
+			    <salary type="Sub" value="500" bindgold="0"/>
+			    <notify content="扣除5两金子"/>
+				<exp1 value="100" id="80032" name="selflevel1"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="1" id="964"/>
+				<notify content="得到黄金之匙个！"/>
+				<addbinditem value="1" id="1321"/>
+				<notify content="得到《妖书案抄录》1本！"/>
+				<var type="Set" name="state" value="-2" id="80032"/>
+				<refresh name="state"/>
+				<uservar type="Set" name="ys_times" value="1" broadcast="1"/>
+				<refresh name="ys_times"/>
+				<questlog log="完成“妖书案”任务*80032"/>
+				<notify content="完成“妖书案”任务"/>
+				<notify1 content="完成“妖书案”任务"/>
+			</actions>
+		</embranchment>        
+		
+        <embranchment id="49" active="1"><!--第一页进度条-->
+			<conditions>
+			    <innation/>
+			    <mapid id="80032" name="149"/>
+			    <var type="Equal" name="state" value="1"/>
+			</conditions>
+			<actions>
+			    <playcartoon eventid="1666" questid="80032" offsetid="29" ustate="0" lasttime="30" color="255.0.255.0" text="阅读妖书残页之一" catoon="1"/>
+			</actions>
+		</embranchment>
+    <embranchment id="29" active="1"><!--阅读第一页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="149"/>
+			<var type="Equal" name="state" value="1"/>
+		</conditions>
+		<actions>
+		    <notify content="请在5分钟以后到第八层赵士桢处寻找妖书残页之二"/>
+		    <notify1 content="请在5分钟以后到第八层赵士桢处寻找妖书残页之二"/>
+			<var type="Set" name="state" value="2"/>
+			<refresh name="state"/>
+			<timeouts/>
+			<var type="Set" name="clock" value="300"/>
+			<refresh name="clock"/>
+		</actions>
+    </embranchment>
+
+        <embranchment id="43" active="1"><!--第四页进度条-->
+			<conditions>
+			<innation/>
+			<mapid id="80032" name="143"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="4"/>
+			</conditions>
+			<actions>
+			    <playcartoon eventid="1666" questid="80032" offsetid="23" ustate="0" lasttime="30" color="255.0.255.0" text="阅读妖书残页之四" catoon="1"/>
+			</actions>
+		</embranchment>
+    <embranchment id="23" active="1"><!--阅读第四页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="143"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="4"/>
+		</conditions>
+		<actions>
+		    <notify content="请在5分钟以后到第二层赵士桢处寻找妖书残页之五"/>
+		    <notify1 content="请在5分钟以后到第二层赵士桢处寻找妖书残页之五"/>
+			<var type="Set" name="state" value="5"/>
+			<refresh name="state"/>
+			<timeouts/>
+			<var type="Set" name="clock" value="300"/>
+			<refresh name="clock"/>
+		</actions>
+    </embranchment>
+    
+        <embranchment id="47" active="1"><!--第三页进度条-->
+			<conditions>
+			<innation/>
+			<mapid id="80032" name="147"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="3"/>
+			</conditions>
+			<actions>
+			    <playcartoon eventid="1666" questid="80032" offsetid="27" ustate="0" lasttime="30" color="255.0.255.0" text="阅读妖书残页之三" catoon="1"/>
+			</actions>
+		</embranchment>
+    <embranchment id="27" active="1"><!--阅读第三页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="147"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="3"/>
+		</conditions>
+		<actions>
+		    <notify content="请在5分钟以后到第三层赵士桢处寻找妖书残页之四"/>
+		    <notify1 content="请在5分钟以后到第三层赵士桢处寻找妖书残页之四"/>
+			<var type="Set" name="state" value="4"/>
+			<refresh name="state"/>
+			<timeouts/>
+			<var type="Set" name="clock" value="300"/>
+			<refresh name="clock"/>
+		</actions>
+    </embranchment>
+    
+        <embranchment id="41" active="1"><!--第六页进度条-->
+			<conditions>
+			<innation/>
+			<mapid id="80032" name="141"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="6"/>
+			</conditions>
+			<actions>
+			    <playcartoon eventid="1666" questid="80032" offsetid="21" ustate="0" lasttime="30" color="255.0.255.0" text="阅读妖书残页之六" catoon="1"/>
+			</actions>
+		</embranchment>
+    <embranchment id="21" active="1"><!--阅读第六页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="141"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="6"/>
+		</conditions>
+		<actions>
+		    <notify content="完成妖书案任务，请领取任务奖励！"/>
+		    <notify1 content="完成妖书案任务，请领取任务奖励！"/>
+			<var type="Set" name="state" value="-3"/>
+			<refresh name="state"/>
+		</actions>
+    </embranchment>
+    
+        <embranchment id="48" active="1"><!--第二页进度条-->
+			<conditions>
+			<innation/>
+			<mapid id="80032" name="148"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="2"/>
+			</conditions>
+			<actions>
+			    <playcartoon eventid="1666" questid="80032" offsetid="28" ustate="0" lasttime="30" color="255.0.255.0" text="阅读妖书残页之二" catoon="1"/>
+			</actions>
+		</embranchment>
+    <embranchment id="28" active="1"><!--阅读第二页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="148"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="2"/>
+		</conditions>
+		<actions>
+		    <notify content="请在5分钟以后到第七层赵士桢处寻找妖书残页之三"/>
+		    <notify1 content="请在5分钟以后到第七层赵士桢处寻找妖书残页之三"/>
+			<var type="Set" name="state" value="3"/>
+			<refresh name="state"/>
+			<timeouts/>
+			<var type="Set" name="clock" value="300"/>
+			<refresh name="clock"/>
+		</actions>
+    </embranchment>
+    
+        <embranchment id="42" active="1"><!--第五页进度条-->
+			<conditions>
+			<innation/>
+			<mapid id="80032" name="142"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="5"/>
+			</conditions>
+			<actions>
+			    <playcartoon eventid="1666" questid="80032" offsetid="22" ustate="0" lasttime="30" color="255.0.255.0" text="阅读妖书残页之五" catoon="1"/>
+			</actions>
+		</embranchment>
+    <embranchment id="22" active="1"><!--阅读第五页-->
+	    <conditions>
+			<innation/>
+			<mapid id="80032" name="142"/>
+			<timeouts long="300" id="80032" less="0"/>
+			<var type="Equal" name="state" value="5"/>
+		</conditions>
+		<actions>
+		    <notify content="请在5分钟以后到第一层赵士桢处寻找妖书残页之六"/>
+		    <notify1 content="请在5分钟以后到第一层赵士桢处寻找妖书残页之六"/>
+			<var type="Set" name="state" value="6"/>
+			<refresh name="state"/>
+			<timeouts/>
+			<var type="Set" name="clock" value="300"/>
+			<refresh name="clock"/>
+		</actions>
+    </embranchment>
+</quest>
+</event>
+

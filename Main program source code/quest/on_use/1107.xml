@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1107" name="3级属性药">
+	<quest id="100901">
+		<embranchment id="1">
+			<conditions>
+                        <timeouts long="30" id="100901" less="1"/>
+			</conditions>
+			<actions>
+			</actions>
+		</embranchment>	
+		<embranchment id="2">
+			<conditions>
+                        <timeouts long="30" id="100901" less="0"/>
+			</conditions>
+			<actions>
+                        <useskill id="2801" level="3"/>
+                        <timeouts/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="22129" name="6X星灵石卡">
+	<quest id="300121">
+		<embranchment id="101">
+			<conditions>
+				<item value="1" id="22129"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+          this:AddTalk("    尊敬的(GetName)您好,欢迎使用六等星灵石兑换系统。")
+				this:AddTaskCmdItem("兑换10个星灵石(0)", "u22129", 121216, 10)
+				this:AddTaskCmdItem("兑换50个星灵石(0)", "u22129", 121216, 11)
+				this:AddTaskCmdItem("兑换100个星灵石(0)", "u22129", 121216, 12)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+
+			</actions>
+		</embranchment>
+	</quest>
+
+  <quest id="121216" new="1">
+    <embranchment id="10" active="1">
+      <conditions>
+       <item value="10" id="22129"/>
+      </conditions>
+      <actions>
+		<removeitem value="10" id="22129"/> 
+		<addGradebinditem value="10" id="548" level="5"/>
+		 <notify1 content="兑换成功，获得六等星灵石"/>
+      </actions>
+    </embranchment>
+	<embranchment id="11" active="1">
+      <conditions>
+       <item value="50" id="22129"/>
+      </conditions>
+      <actions>
+		<removeitem value="50" id="22129"/> 
+		<addGradebinditem value="50" id="548" level="5"/>
+		 <notify1 content="兑换成功，获得六等星灵石"/>
+      </actions>
+    </embranchment>
+	<embranchment id="12" active="1">
+      <conditions>
+       <item value="100" id="22129"/>
+      </conditions>
+      <actions>
+		<removeitem value="100" id="22129"/> 
+		<addGradebinditem value="100" id="548" level="5"/>
+		 <notify1 content="兑换成功，获得六等星灵石"/>
+      </actions>
+    </embranchment>
+  </quest>
+</event>

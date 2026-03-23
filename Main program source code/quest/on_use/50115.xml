@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="50115" name="会员礼包">
+<quest id="9850115">
+		<embranchment id="10"><!--材料不足-->
+			<conditions>
+				<item value="1" id="50115"/><!--不满足兑换要求-->
+			</conditions>
+			<actions>
+	    <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,255\"&gt;兑换比例：&lt;/n&gt;&lt;n color=\"255,0,255,100\"&gt;100残片=1个神器碎片&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;兑换物品:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 3812\"&gt;  神器碎片&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("兑换神器碎片1个(0)", "u50115", 114311, 99)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+				<var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>
+		<embranchment id="11">
+			<conditions>
+				<item value="100" id="50115"/><!--满足兑换要求-->
+			</conditions>
+			<actions>
+	 <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,255\"&gt;兑换比例：&lt;/n&gt;&lt;n color=\"255,0,255,100\"&gt;100残片=1个神器碎片&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;兑换物品:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 3812\"&gt;  神器碎片&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("兑换神器碎片1个(0)", "u50115", 114311, 1)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+				<var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>
+		<embranchment id="12">
+			<conditions>
+				<item value="500" id="50115"/><!--满足兑换要求-->
+			</conditions>
+			<actions>
+	 <mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;温馨提示：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,255\"&gt;兑换比例：&lt;/n&gt;&lt;n color=\"255,0,255,100\"&gt;100残片=1个神器碎片&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;兑换物品:\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\" 3812\"&gt;  神器碎片&lt;/object&gt;&lt;/p&gt; ")
+this:AddTaskCmdItem("兑换神器碎片1个(0)", "u50115", 114311, 1)
+this:AddTaskCmdItem("兑换神器碎片5个(0)", "u50115", 114311, 2)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>     
+			 <var type="Set" name="state" value="-2"/>    
+				</actions>
+	    </embranchment>		    		     	    	            	    
+	</quest>
+<quest id="114311" new="1">
+<embranchment id="1" active="1">
+<conditions>
+<item value="100" id="50115"/>
+</conditions>
+<actions>
+<removeitem value="100" id="50115"/>
+<addbinditem value="1" id="3812"/><!--道具--> 
+<notify1 content="获得1个神器碎片"/>
+</actions>
+</embranchment>
+<embranchment id="2" active="1">
+<conditions>
+<item value="500" id="50115"/>
+</conditions>
+<actions>
+<removeitem value="500" id="50115"/>
+<addbinditem value="5" id="3812"/><!--道具--> 
+<notify1 content="获得5个神器碎片"/>
+</actions>
+</embranchment>
+<embranchment id="99" active="1">
+<conditions>
+</conditions>
+<actions>
+<notify6 content="道具不足，无法兑换！"/>
+</actions>
+</embranchment>
+</quest>
+</event>

@@ -1,0 +1,17 @@
+01/14/25 04:03:42
+version 20250101
+Exception Code 0xc0000005
+Exception Flags 0x00000000
+Exception Address 0x77a44875
+Exception Call Stack:
+0x77a44875
+0x00690cd8
+0x006289c6
+0x0062a1c8
+0x77a4f6f6
+0x56dfd926
+0x77a4c64e
+0x0068edf2
+0x0068ee14
+0x0068ee3f
+0x0068ca22

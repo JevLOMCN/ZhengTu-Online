@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by zhengtu (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的 country:0表示本国 非0表示指定国家-->
+	<waypoint>
+		<point x="37" y="64"/>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 --> 
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="100" height="100" x="1" y="1" type="16"/>
+
+	<npc id="30115" name="紫" width="1" height="1" x="124" y="30" num="1" interval="7200" color="0,255,0,0"/>
+	<npc id="30116" name="紫" width="1" height="1" x="106" y="29" num="1" interval="7200" color="0,255,0,0"/>
+	<npc id="30117" name="紫" width="1" height="1" x="74" y="34" num="1" interval="7200" color="0,255,0,0"/>
+	<npc id="30118" name="紫" width="1" height="1" x="47" y="30" num="1" interval="7200" color="0,255,0,0"/>
+	<npc id="30122" name="紫" width="1" height="1" x="121" y="59" num="1" interval="7200" color="0,255,0,0"/>
+	
+	<npc id="30136" name="绿" width="1" height="1" x="31" y="53" num="1" interval="7200" color="0,255,0,0"/>
+	<npc id="30136" name="绿" width="1" height="1" x="64" y="64" num="1" interval="7200" color="0,255,0,0"/>
+	<npc id="30136" name="绿" width="1" height="1" x="106" y="71" num="1" interval="7200" color="0,255,0,0"/>
+	<npc id="30136" name="绿" width="1" height="1" x="119" y="38" num="1" interval="7200" color="0,255,0,0"/>
+
+	
+</map>

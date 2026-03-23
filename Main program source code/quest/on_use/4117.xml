@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="4117" name="时装外形鉴赏">
+	<quest id="300121">
+		<embranchment id="1">
+			<conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+<umaxgold type="Less" value="1000001"/><!--金子少于100锭-->  
+<item value="1" id="4117"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;尊敬的玩家(GetName)！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;永久此魔盒无限次领取百分比时装不同等级魔盒时装加成属性不同！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;当前的魔盒等级：17级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前升级至18级所需材料:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;时装布料:1700个【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;金子数量:100锭【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("更换-时装外形(33)", "Dialog001")
+this:AddTaskCmdItem("领取-当前时装(33)", "u4117", 121201, 20)
+this:AddTaskCmdItem("升级-时装魔盒(33)", "u4117", 1010, 2)
+this:AddCloseItem("离开")
+end
+function Dialog001()
+this:AddTalk("请选择你要的时装外形！属性均会当前时装等级一致！")
+this:AddTaskCmdItem("领取烟花巷陌(0)", "u4117", 121201, 1)
+this:AddTaskCmdItem("领取顶级西装(0)", "u4117", 121201, 2)
+this:AddTaskCmdItem("领取顶级牛仔(0)", "u4117", 121201, 3)
+this:AddTaskCmdItem("领取雅欢幽会(0)", "u4117", 121201, 4)
+this:AddTaskCmdItem("领取顶级唐装(0)", "u4117", 121201, 5)
+this:AddTaskCmdItem("领取荣耀天狼(0)", "u4117", 121201, 6)
+this:AddTaskCmdItem("领取顶级海盗(0)", "u4117", 121201, 7)
+this:AddTaskCmdItem("领取塞漠风情(0)", "u4117", 121201, 8)
+this:AddTaskCmdItem("领取皇帝新装(0)", "u4117", 121201, 9)
+this:AddTaskCmdItem("领取奈寒时装(0)", "u4117", 121201, 10)
+this:AddTaskCmdItem("领取顶级土著(0)", "u4117", 121201, 11)
+this:AddTaskCmdItem("领取青莲时装(0)", "u4117", 121201, 12)
+this:AddTaskCmdItem("领取周 年 庆(0)", "u4117", 121201, 13)
+this:AddTaskCmdItem("领取渡江逐浪(0)", "u4117", 121201, 14)
+this:AddTaskCmdItem("领取心有灵犀(0)", "u4117", 121201, 15)
+this:AddTaskCmdItem("领取清爽一夏(0)", "u4117", 121201, 16)
+this:AddTaskCmdItem("领取尘缘盈袖(0)", "u4117", 121201, 17)
+this:AddTaskCmdItem("领取余生有你(0)", "u4117", 121201, 18)
+this:AddTaskCmdItem("领取挽墨醉雪(0)", "u4117", 121201, 19)
+this:AddTaskCmdItem("领取风陵海棠(0)", "u4117", 121201, 20)
+this:AddCloseItem("离开")
+end 
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+<umaxgold type="Less" value="1000001"/><!--金子少于100锭-->  
+<item value="1" id="4117"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;尊敬的玩家(GetName)！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;永久此魔盒无限次领取百分比时装不同等级魔盒时装加成属性不同！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;当前的魔盒等级：17级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前升级至18级所需材料:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;时装布料:1700个【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;金子数量:100锭【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("更换-时装外形(33)", "Dialog001")
+this:AddTaskCmdItem("领取-当前时装(33)", "u4117", 121201, 70)
+this:AddTaskCmdItem("升级-时装魔盒(33)", "u4117", 1010, 2)
+this:AddCloseItem("离开")
+end
+function Dialog001()
+this:AddTalk("请选择你要的时装外形！属性均会当前时装等级一致！")
+this:AddTaskCmdItem("领取烟花巷陌(0)", "u4117", 121201, 51)
+this:AddTaskCmdItem("领取顶级西装(0)", "u4117", 121201, 52)
+this:AddTaskCmdItem("领取顶级牛仔(0)", "u4117", 121201, 53)
+this:AddTaskCmdItem("领取雅欢幽会(0)", "u4117", 121201, 54)
+this:AddTaskCmdItem("领取顶级唐装(0)", "u4117", 121201, 55)
+this:AddTaskCmdItem("领取荣耀天狼(0)", "u4117", 121201, 56)
+this:AddTaskCmdItem("领取顶级海盗(0)", "u4117", 121201, 57)
+this:AddTaskCmdItem("领取塞漠风情(0)", "u4117", 121201, 58)
+this:AddTaskCmdItem("领取皇帝新装(0)", "u4117", 121201, 59)
+this:AddTaskCmdItem("领取奈寒时装(0)", "u4117", 121201, 60)
+this:AddTaskCmdItem("领取顶级土著(0)", "u4117", 121201, 61)
+this:AddTaskCmdItem("领取青莲时装(0)", "u4117", 121201, 62)
+this:AddTaskCmdItem("领取周 年 庆(0)", "u4117", 121201, 63)
+this:AddTaskCmdItem("领取渡江逐浪(0)", "u4117", 121201, 64)
+this:AddTaskCmdItem("领取心有灵犀(0)", "u4117", 121201, 65)
+this:AddTaskCmdItem("领取清爽一夏(0)", "u4117", 121201, 66)
+this:AddTaskCmdItem("领取尘缘盈袖(0)", "u4117", 121201, 67)
+this:AddTaskCmdItem("领取余生有你(0)", "u4117", 121201, 68)
+this:AddTaskCmdItem("领取挽墨醉雪(0)", "u4117", 121201, 69)
+this:AddTaskCmdItem("领取风陵海棠(0)", "u4117", 121201, 70)
+this:AddCloseItem("离开")
+end 
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+<umaxgold type="Great" value="999999"/><!--金子大于100锭--> 
+<item value="1" id="4117"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;尊敬的玩家(GetName)！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;永久此魔盒无限次领取百分比时装不同等级魔盒时装加成属性不同！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;当前的魔盒等级：17级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前升级至18级所需材料:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;时装布料:1700个【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;金子数量:100锭【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("更换-时装外形(33)", "Dialog001")
+this:AddTaskCmdItem("领取-当前时装(33)", "u4117", 121201, 20)
+this:AddTaskCmdItem("升级-时装魔盒(33)", "u4117", 1010, 3)
+this:AddCloseItem("离开")
+end
+function Dialog001()
+this:AddTalk("请选择你要的时装外形！属性均会当前时装等级一致！")
+this:AddTaskCmdItem("领取烟花巷陌(0)", "u4117", 121201, 1)
+this:AddTaskCmdItem("领取顶级西装(0)", "u4117", 121201, 2)
+this:AddTaskCmdItem("领取顶级牛仔(0)", "u4117", 121201, 3)
+this:AddTaskCmdItem("领取雅欢幽会(0)", "u4117", 121201, 4)
+this:AddTaskCmdItem("领取顶级唐装(0)", "u4117", 121201, 5)
+this:AddTaskCmdItem("领取荣耀天狼(0)", "u4117", 121201, 6)
+this:AddTaskCmdItem("领取顶级海盗(0)", "u4117", 121201, 7)
+this:AddTaskCmdItem("领取塞漠风情(0)", "u4117", 121201, 8)
+this:AddTaskCmdItem("领取皇帝新装(0)", "u4117", 121201, 9)
+this:AddTaskCmdItem("领取奈寒时装(0)", "u4117", 121201, 10)
+this:AddTaskCmdItem("领取顶级土著(0)", "u4117", 121201, 11)
+this:AddTaskCmdItem("领取青莲时装(0)", "u4117", 121201, 12)
+this:AddTaskCmdItem("领取周 年 庆(0)", "u4117", 121201, 13)
+this:AddTaskCmdItem("领取渡江逐浪(0)", "u4117", 121201, 14)
+this:AddTaskCmdItem("领取心有灵犀(0)", "u4117", 121201, 15)
+this:AddTaskCmdItem("领取清爽一夏(0)", "u4117", 121201, 16)
+this:AddTaskCmdItem("领取尘缘盈袖(0)", "u4117", 121201, 17)
+this:AddTaskCmdItem("领取余生有你(0)", "u4117", 121201, 18)
+this:AddTaskCmdItem("领取挽墨醉雪(0)", "u4117", 121201, 19)
+this:AddTaskCmdItem("领取风陵海棠(0)", "u4117", 121201, 20)
+this:AddCloseItem("离开")
+end 
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+<umaxgold type="Great" value="999999"/><!--金子大于100锭--> 
+<item value="1" id="4117"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;尊敬的玩家(GetName)！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;永久此魔盒无限次领取百分比时装不同等级魔盒时装加成属性不同！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;当前的魔盒等级：17级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前升级至18级所需材料:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;时装布料:1700个【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;金子数量:100锭【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("更换-时装外形(33)", "Dialog001")
+this:AddTaskCmdItem("领取-当前时装(33)", "u4117", 121201, 70)
+this:AddTaskCmdItem("升级-时装魔盒(33)", "u4117", 1010, 3)
+this:AddCloseItem("离开")
+end
+function Dialog001()
+this:AddTalk("请选择你要的时装外形！属性均会当前时装等级一致！")
+this:AddTaskCmdItem("领取烟花巷陌(0)", "u4117", 121201, 51)
+this:AddTaskCmdItem("领取顶级西装(0)", "u4117", 121201, 52)
+this:AddTaskCmdItem("领取顶级牛仔(0)", "u4117", 121201, 53)
+this:AddTaskCmdItem("领取雅欢幽会(0)", "u4117", 121201, 54)
+this:AddTaskCmdItem("领取顶级唐装(0)", "u4117", 121201, 55)
+this:AddTaskCmdItem("领取荣耀天狼(0)", "u4117", 121201, 56)
+this:AddTaskCmdItem("领取顶级海盗(0)", "u4117", 121201, 57)
+this:AddTaskCmdItem("领取塞漠风情(0)", "u4117", 121201, 58)
+this:AddTaskCmdItem("领取皇帝新装(0)", "u4117", 121201, 59)
+this:AddTaskCmdItem("领取奈寒时装(0)", "u4117", 121201, 60)
+this:AddTaskCmdItem("领取顶级土著(0)", "u4117", 121201, 61)
+this:AddTaskCmdItem("领取青莲时装(0)", "u4117", 121201, 62)
+this:AddTaskCmdItem("领取周 年 庆(0)", "u4117", 121201, 63)
+this:AddTaskCmdItem("领取渡江逐浪(0)", "u4117", 121201, 64)
+this:AddTaskCmdItem("领取心有灵犀(0)", "u4117", 121201, 65)
+this:AddTaskCmdItem("领取清爽一夏(0)", "u4117", 121201, 66)
+this:AddTaskCmdItem("领取尘缘盈袖(0)", "u4117", 121201, 67)
+this:AddTaskCmdItem("领取余生有你(0)", "u4117", 121201, 68)
+this:AddTaskCmdItem("领取挽墨醉雪(0)", "u4117", 121201, 69)
+this:AddTaskCmdItem("领取风陵海棠(0)", "u4117", 121201, 70)
+this:AddCloseItem("离开")
+end 
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+<umaxgold type="Great" value="999999"/><!--金子大于100锭--> 
+<item value="1" id="4117"/>
+<item value="1700" id="1411"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;尊敬的玩家(GetName)！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;永久此魔盒无限次领取百分比时装不同等级魔盒时装加成属性不同！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;当前的魔盒等级：17级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前升级至18级所需材料:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;时装布料:1700个【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;金子数量:100锭【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("更换-时装外形(33)", "Dialog001")
+this:AddTaskCmdItem("领取-当前时装(33)", "u4117", 121201, 20)
+this:AddTaskCmdItem("升级-时装魔盒(33)", "u4117", 1010, 1)
+this:AddCloseItem("离开")
+end
+function Dialog001()
+this:AddTalk("请选择你要的时装外形！属性均会当前时装等级一致！")
+this:AddTaskCmdItem("领取烟花巷陌(0)", "u4117", 121201, 1)
+this:AddTaskCmdItem("领取顶级西装(0)", "u4117", 121201, 2)
+this:AddTaskCmdItem("领取顶级牛仔(0)", "u4117", 121201, 3)
+this:AddTaskCmdItem("领取雅欢幽会(0)", "u4117", 121201, 4)
+this:AddTaskCmdItem("领取顶级唐装(0)", "u4117", 121201, 5)
+this:AddTaskCmdItem("领取荣耀天狼(0)", "u4117", 121201, 6)
+this:AddTaskCmdItem("领取顶级海盗(0)", "u4117", 121201, 7)
+this:AddTaskCmdItem("领取塞漠风情(0)", "u4117", 121201, 8)
+this:AddTaskCmdItem("领取皇帝新装(0)", "u4117", 121201, 9)
+this:AddTaskCmdItem("领取奈寒时装(0)", "u4117", 121201, 10)
+this:AddTaskCmdItem("领取顶级土著(0)", "u4117", 121201, 11)
+this:AddTaskCmdItem("领取青莲时装(0)", "u4117", 121201, 12)
+this:AddTaskCmdItem("领取周 年 庆(0)", "u4117", 121201, 13)
+this:AddTaskCmdItem("领取渡江逐浪(0)", "u4117", 121201, 14)
+this:AddTaskCmdItem("领取心有灵犀(0)", "u4117", 121201, 15)
+this:AddTaskCmdItem("领取清爽一夏(0)", "u4117", 121201, 16)
+this:AddTaskCmdItem("领取尘缘盈袖(0)", "u4117", 121201, 17)
+this:AddTaskCmdItem("领取余生有你(0)", "u4117", 121201, 18)
+this:AddTaskCmdItem("领取挽墨醉雪(0)", "u4117", 121201, 19)
+this:AddTaskCmdItem("领取风陵海棠(0)", "u4117", 121201, 20)
+this:AddCloseItem("离开")
+end 
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+<umaxgold type="Great" value="999999"/><!--金子大于100锭--> 
+<item value="1" id="4117"/>
+<item value="1700" id="1411"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;尊敬的玩家(GetName)！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;永久此魔盒无限次领取百分比时装不同等级魔盒时装加成属性不同！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;当前的魔盒等级：17级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;当前升级至18级所需材料:&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;时装布料:1700个【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;金子数量:100锭【游戏怪物均有掉落】&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddDialogItem("更换-时装外形(33)", "Dialog001")
+this:AddTaskCmdItem("领取-当前时装(33)", "u4117", 121201, 70)
+this:AddTaskCmdItem("升级-时装魔盒(33)", "u4117", 1010, 1)
+this:AddCloseItem("离开")
+end
+function Dialog001()
+this:AddTalk("请选择你要的时装外形！属性均会当前时装等级一致！")
+this:AddTaskCmdItem("领取烟花巷陌(0)", "u4117", 121201, 51)
+this:AddTaskCmdItem("领取顶级西装(0)", "u4117", 121201, 52)
+this:AddTaskCmdItem("领取顶级牛仔(0)", "u4117", 121201, 53)
+this:AddTaskCmdItem("领取雅欢幽会(0)", "u4117", 121201, 54)
+this:AddTaskCmdItem("领取顶级唐装(0)", "u4117", 121201, 55)
+this:AddTaskCmdItem("领取荣耀天狼(0)", "u4117", 121201, 56)
+this:AddTaskCmdItem("领取顶级海盗(0)", "u4117", 121201, 57)
+this:AddTaskCmdItem("领取塞漠风情(0)", "u4117", 121201, 58)
+this:AddTaskCmdItem("领取皇帝新装(0)", "u4117", 121201, 59)
+this:AddTaskCmdItem("领取奈寒时装(0)", "u4117", 121201, 60)
+this:AddTaskCmdItem("领取顶级土著(0)", "u4117", 121201, 61)
+this:AddTaskCmdItem("领取青莲时装(0)", "u4117", 121201, 62)
+this:AddTaskCmdItem("领取周 年 庆(0)", "u4117", 121201, 63)
+this:AddTaskCmdItem("领取渡江逐浪(0)", "u4117", 121201, 64)
+this:AddTaskCmdItem("领取心有灵犀(0)", "u4117", 121201, 65)
+this:AddTaskCmdItem("领取清爽一夏(0)", "u4117", 121201, 66)
+this:AddTaskCmdItem("领取尘缘盈袖(0)", "u4117", 121201, 67)
+this:AddTaskCmdItem("领取余生有你(0)", "u4117", 121201, 68)
+this:AddTaskCmdItem("领取挽墨醉雪(0)", "u4117", 121201, 69)
+this:AddTaskCmdItem("领取风陵海棠(0)", "u4117", 121201, 70)
+this:AddCloseItem("离开")
+end 
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>  
+<quest id="121201" new="1">
+    <embranchment id="1" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31701"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="2" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31703"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="3" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31705"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="4" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31707"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="5" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31709"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="6" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31711"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="7" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31713"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="8" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31715"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="9" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31717"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="10" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31719"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="11" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31721"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="12" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31723"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="13" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31725"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="14" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31727"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="15" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31729"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="16" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31731"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="17" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31733"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="18" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31735"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="19" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31737"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="20" active="1">
+      <conditions>
+<!-- 男脚本   -->
+<checksex type="Equal" value="1"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31739"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>		
+     <embranchment id="51" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31702"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="52" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31704"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="53" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31706"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="54" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31708"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="55" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31710"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="56" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31712"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="57" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31714"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>
+    <embranchment id="58" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31716"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="59" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31718"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="60" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31720"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="61" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31722"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="62" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31724"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="63" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31726"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="64" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31728"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="65" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31730"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="66" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31732"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="67" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31734"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="68" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31736"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="69" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31738"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+    <embranchment id="70" active="1">
+      <conditions>
+<!-- 女脚本   -->
+<checksex type="Equal" value="0"/>
+       <item value="1" id="4117"/>
+      </conditions>
+      <actions>
+<addbinditem value="1" id="31740"/>
+		<notify content="获得时装"/>
+		<notify1 content="获得时装"/>
+<var type="Set" name="state" value="-2"/>
+<timeouts/>
+      </actions>
+    </embranchment>	
+  </quest>
+  <quest id="1010" new="1">         
+<embranchment id="1" active="1">
+            <conditions>
+              	<item value="1700" id="1411"/>
+              	<item value="1" id="4117"/>				
+              	<umaxgold type="Great" value="999999"/>        	
+            </conditions>
+                <actions>
+              	<umaxgold type="Sub" value="1000000"/>
+                <removeitem value="1700" id="1411"/>   
+                <removeitem value="1" id="4117"/>				
+                <addbinditem value="1" id="4118"/>
+                <notify6 content="升级成功,获得时装魔盒!" /> 
+                </actions>
+         </embranchment> 
+         <embranchment id="2" active="1">
+            <conditions>
+            </conditions>
+                <actions>
+               <flexmenu content="你没有足够金子！"/> 
+                <notify6 content="你没有足够金子！" /> 				   
+                </actions>
+         </embranchment>  
+         <embranchment id="3" active="1">
+            <conditions>
+            </conditions>
+                <actions>
+               <flexmenu content="你没有足够的时装布料！"/> 
+                <notify6 content="你没有足够的时装布料！" /> 			   
+                </actions>
+         </embranchment>   		 		 
+  </quest>		 
+</event>

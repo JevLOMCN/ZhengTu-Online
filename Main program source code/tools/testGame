@@ -1,0 +1,165 @@
+#!/bin/bash
+#*********************************************************
+#                  testGame.sh                           #
+#             written by yuanhui                         #
+#             March  9,  2005                            #
+#             Stress test for Zebra Game                 #
+#             Usage: testGame                            #
+#*********************************************************
+
+#*********************************************************
+#createAccount()                                         #
+#根据用户输入的数量创建账号和角色                        #
+#*********************************************************
+  createAccount()
+  {
+    #echo '输入你需要登陆的服务器地址'
+    #read hostAddRess
+    echo '输入你需要登陆的服务器(区号)'
+    read zoneNumber
+    echo '创建账号和角色'
+    echo -n '输入创建帐号的起始帐号'
+	read tmp
+    echo -n '需要创建多少角色?'
+    read number
+	number=`expr $number + $tmp`
+	#hostAddRess="192.168.2.11"
+	hostAddRess="127.0.0.1"
+	#hostAddRess="192.168.2.14"
+
+	echo $number
+    tmp=`expr $tmp + 1`
+    name=$tmp"@ztgame.com"
+    #./skill_test_client -c -u $name -P123  -s $hostAddRess -p 7000
+    ./zebraclientService -r -u $name -P111111  -s $hostAddRess -p 7000 -z $zoneNumber -o $number&
+	echo $name
+  }
+#*********************************************************
+#stopGame()                                              #
+#中止游戏，杀掉所有测试客户端                            #
+#*********************************************************
+  stopGame()
+  {
+    echo '中止所有测试游戏进程'
+    /home/`whoami`/testTool/stopGame /home/`whoami`/builder/20050322a/
+    killall skill_test_client
+    exit;
+  }
+#*********************************************************
+#report()                                                #
+#统计游戏在线人数                                        #
+#*********************************************************
+  report()
+  {
+    echo '察看游戏在线人数'
+    echo '现在游戏在线人数为'
+    ps -e|grep skill_test_client|wc -l
+  }
+#*********************************************************
+#runGame()                                               #
+#根据输入的数目运行多个客户端                            #
+#*********************************************************
+  runGame()
+  {
+    #echo '请输入你需要登录的服务器地址'
+    #read hostAddRess
+    echo '输入你需要登陆的服务器(区号)'
+    read zoneNumber
+    echo '开始运行游戏测试客户端'
+    echo -n '输入运行起始帐号'
+	read var
+    echo -n '需要运行多少客户端进行测试？'
+    read number
+    echo -n '每个客户端需要运行多少个用户?'
+    read count
+	number=`expr $number + $var`
+	number=`expr $number - 1`
+	user=`expr $var + 1`
+	#hostAddRess="192.168.2.11"
+	hostAddRess="127.0.0.1"
+	#hostAddRess="192.168.2.14"
+	echo $number
+    #cat /dev/null > userCount
+   while [ "$var" -le "$number" ]            
+  do
+    var=`expr $var + 1`                
+    name=$user
+	echo $name
+    ./zebraclientService  -u $name -P111111  -s $hostAddRess -p 7000 -z $zoneNumber -o $count&
+	user=`expr $user + $count`
+	#count='sed -n '1p' userCount'
+	#tmp=eval $count
+	#ps -e|grep skill_test_clie|wc -l > userCount_1
+	#count_1='sed -n '1p' userCount_1'
+	#tmp_1=eval $count_1
+	#if [$tmp -lt $tmp_1]; then
+		#ps -e|grep skill_test_clie|wc -l > userCount
+	#fi
+     #date >>userCount
+     #echo "$name">>userCount
+    #msleep 200 
+  done
+
+  }
+#*********************************************************
+#startAllServices()                                      #
+#启动所有的服务进程                                      #
+#*********************************************************
+  startAllServices()
+  {
+   /home/`whoami`/testTool/startGame 20050322a/
+  }
+#*********************************************************
+#report_cup()                                            #
+#统计CPU的性能                                           #
+#*********************************************************	
+report_cpu()
+ {
+  top
+ }
+#*********************************************************
+#main_select()                                           #
+#主函数                                                  #
+#*********************************************************
+  main_select()
+  {
+
+ echo  '                             ----------------------------------'
+ echo  '                               |                             |'
+ echo  '                               |游戏压力测试脚本             |'
+ echo  '                               |             --征途R & D     |'
+ echo  '                               |                             |'
+ echo  '                               | 请选择下面的选项 :          |'
+ echo  '                               |                             |'
+ echo  '                               | 0. 启动游戏所有服务         |'
+ echo  '                               |                             |'
+ echo  '                               | 1. 创建账号和角色           |'
+ echo  '                               |                             |'
+ echo  '                               | 2. 多人登录游戏             |'
+ echo  '                               |                             |'
+ echo  '                               | 3. 统计游戏在线人数         |'
+ echo  '                               |                             |'
+ echo  '                               | 4.  察看CPU性能             |'
+ echo  '                               |                             |'
+ echo  '                               | 5. 退出游戏测试程序         |'
+ echo  '                               |                             |'
+ echo  '                             ----------------------------------'
+
+
+    echo -n '请输入你希望执行功能的编号 --> '
+    read choice
+
+    case $choice in
+    0)startAllServices;;
+    1)createAccount;;
+    2)runGame;;
+    3)report;;
+    4)report_cpu;;
+    5)stopGame;;
+    *)echo '无效的选项，请重新输入！'
+      exit;;
+    esac
+  }
+
+
+  main_select 

@@ -1,0 +1,17 @@
+#!/bin/bash
+#rm -f /tmp/*.*
+#SuperServer/SuperServer -d
+#sleep 3
+#FLServer/FLServer -d
+#sleep 3
+#RecordServer/RecordServer -d
+#sleep 3
+#BillServer/BillServer -d
+#sleep 3
+#InfoServer/InfoServer -d
+#roleRegServer/roleRegServer -d
+#MiniServer/MiniServer -d
+#sleep 3
+#SessionServer/SessionServer -d
+#sleep 3
+ScenesServer/ScenesServer -d

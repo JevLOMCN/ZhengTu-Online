@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="3877" name="工资金币">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<salary type="Add" value="10000"/>
+				<notify1 content="得到工资1锭"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

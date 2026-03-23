@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1667" name="张差">	
+	<quest id="90034">
+	    <embranchment id="2"><!--未接引导任务-->
+            <conditions>
+			  <var type="Differ" name="state" value="1" id="80033"/>
+			  <var type="Differ" name="state" value="-2" id="80033"/>
+			  <var type="Differ" name="state" value="-3" id="80033"/>
+            </conditions>
+            <actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请到世外桃源的独眼捕快处接取四大疑案的任务！")
+end
+				</menu>
+            </actions>
+        </embranchment>
+	    <embranchment id="6"><!--未达到任务等级-->
+			<conditions>
+				<level type="Less" value="140"/>
+				<myround value="1"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("对不起，梃击案任务需要140级以上或者转生玩家才可接受！")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	    <embranchment id="7"><!--转生玩家接受任务NPC对话-->
+			<conditions>
+			    <var type="Equal" name="state" value="1" id="80033"/>
+			    <myround value="2"/>
+			    <uservar type="Less" name="tj_times" value="1"/>
+				<var type="Differ" name="state" value="-1" id="80034"/>
+				<var type="Differ" name="state" value="1" id="80034"/>
+				<var type="Differ" name="state" value="-3" id="80034"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：梃击案(2)", "Dialog21")
+end
+function Dialog21()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;任务：&lt;/n&gt;&lt;n&gt;梃击案\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;    去龙冈山四寨消灭50个黑面山贼，替张差报仇！\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    我在进宫前，曾经是一个小买卖人，也想过着安居乐业的日子，谁知道一群来自龙冈山四寨的“黑面山贼”掠夺了我辛辛苦苦积累十来年的家产。我又没有钱去打官司让官府去征讨，真是让人没法活了！\n    想要从我身上知道什么，就去龙冈山四寨击败50个黑面山贼吧！之后我就告诉你梃击案的真相。\n此任务必须当天完成 &lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("没问题。{10001}", "v1667", 80034, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>    
+		<embranchment id="8"><!--未转生140级以上玩家接受任务NPC对话-->
+			<conditions>
+			    <var type="Equal" name="state" value="1" id="80033"/>
+			    <myround value="1"/>
+			    <level type="Great" value="139"/>
+			    <uservar type="Less" name="tj_times" value="1"/>
+				<var type="Differ" name="state" value="-1" id="80034"/>
+				<var type="Differ" name="state" value="1" id="80034"/>
+				<var type="Differ" name="state" value="-3" id="80034"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：梃击案(2)", "Dialog22")
+end
+function Dialog22()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;任务：&lt;/n&gt;&lt;n&gt;梃击案\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;    去龙冈山四寨消灭50个黑面山贼，替张差报仇！\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    我在进宫前，曾经是一个小买卖人，也想过着安居乐业的日子，谁知道一群来自龙冈山四寨的“黑面山贼”掠夺了我辛辛苦苦积累十来年的家产。我又没有钱去打官司让官府去征讨，真是让人没法活了！\n    想要从我身上知道什么，就去龙冈山四寨击败50个黑面山贼吧！之后我就告诉你梃击案的真相。\n此任务必须当天完成&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("没问题。{10001}", "v1667", 80034, 4)
+end
+				</menu>
+			</actions>
+		</embranchment>    
+		<embranchment id="16"><!--已经做过任务NPC对话-->
+			<conditions>
+			    <uservar type="Equal" name="tj_times" value="1"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    对不起，您今天已经做过梃击案任务了！")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17"><!--完成任务NPC对话但金子不足5两-->
+			<conditions>
+			    <goldsafe value="0"/>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+				<space size="2"/>
+				<salary  type="Less"  value="500"  bindgold="0"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：梃击案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    什么？你已经击败了50个黑面山贼了？谢谢你帮我了却了心愿！")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，使用本转盘，需要5两金子。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1667", 80034, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="18"><!--完成任务NPC对话-->
+			<conditions>
+			    <goldsafe value="0"/>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+				<space size="2"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：梃击案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    什么？你已经击败了50个黑面山贼了？谢谢你帮我了却了心愿！")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    使用本转盘，可获得最少5倍经验奖励，最多可获得10倍经验奖励，只需5两金子即可。\n    使用本转盘完成任务后不可再用普通方式完成。")
+this:AddTaskCmdItem("花费5两金子获得更高奖励{10002}", "v1667", 80034, 19)
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1667", 80034, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="19"><!--财产保护情况下完成任务NPC对话-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+				<space size="2"/>
+				<goldsafe value="1"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：梃击案(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("    什么？你已经击败了50个黑面山贼了？谢谢你帮我了却了心愿！")
+this:AddDialogItem("转取5倍或更高经验奖励(2)[21]", "Dialog24")
+this:AddDialogItem("转取经验奖励(2)", "Dialog25")
+end
+function Dialog24()
+this:AddTalk("    对不起，您在财产保护状态下。")
+end
+function Dialog25()
+this:AddTalk("    使用本转盘，可获得最少1倍经验奖励，最多可获得5倍经验奖励。\n    使用本转盘完成任务后不可再用5倍或更高经验方式。")
+this:AddTaskCmdItem("转取经验奖励{10002}", "v1667", 80034, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="20"><!--背包空格少于2格-->
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    对不起，您的背包不足两个空格了。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="21"><!--未完成NPC对话-->
+			<conditions>
+				<var type="Equal" name="state" value="1" id="80034"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    怎么回来了？快去消灭他们吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="80034" new="1">
+		<embranchment id="3" active="1"><!--转生接受任务服务器脚本-->
+			<conditions>
+			    <var type="Equal" name="state" value="1" id="80033"/>
+			    <myround value="2"/>
+			    <uservar type="Less" name="tj_times" value="1"/>
+				<var type="Differ" name="state" value="-1" id="80034"/>
+				<var type="Differ" name="state" value="1" id="80034"/>
+				<var type="Differ" name="state" value="-3" id="80034"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<notify content="任务：去龙冈山四寨消灭50个黑面山贼，替张差报仇！"/>
+				<notify1 content="任务：去龙冈山四寨消灭50个黑面山贼，替张差报仇！"/>
+				<tracelog name="接受支线任务*梃击案"/>
+				<randomfactor value="1:31;2:50;3:10;4:5;5:4" factor="tingji_exp"/>
+				<randomfactor value="5:31;6:50;7:10;8:5;10:4" factor="tingji_exp1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<!--经验系数设置-->
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp1"/>
+				<var type="Set" name="t1" value="1"/>
+				<var type="Set" name="t2" value="2"/>
+				<var type="Set" name="t3" value="3"/>
+				<var type="Set" name="t4" value="4"/>
+				<var type="Set" name="t5" value="5"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<vars type="Add" name1="selflevel1" name2="selflevel"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel1" name2="baseexp1"/>
+				<vars type="Mul" name1="t1" name2="selflevel"/>
+				<vars type="Mul" name1="t2" name2="selflevel"/>
+				<vars type="Mul" name1="t3" name2="selflevel"/>
+				<vars type="Mul" name1="t4" name2="selflevel"/>
+				<vars type="Mul" name1="t5" name2="selflevel"/>
+				<refresh name="t1"/>
+				<refresh name="t2"/>
+				<refresh name="t3"/>
+				<refresh name="t4"/>
+				<refresh name="t5"/>
+				<vars type="Mul" name1="selflevel" name2="tingji_exp"/>
+				<vars type="Mul" name1="selflevel1" name2="tingji_exp1"/>
+				<refresh name="selflevel1"/>
+				<refresh name="selflevel"/>
+				<refresh name="tingji_exp"/>
+				<refresh name="tingji_exp1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="4" active="1"><!--未转生玩家接受任务服务器脚本-->
+			<conditions>
+			    <var type="Equal" name="state" value="1" id="80033"/>
+			    <uservar type="Differ" name="tj_times" value="1" />
+			    <myround value="1"/>
+			    <level type="Great" value="139"/>
+				<var type="Differ" name="state" value="-1" id="80034"/>
+				<var type="Differ" name="state" value="1" id="80034"/>
+				<var type="Differ" name="state" value="-3" id="80034"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<notify content="任务：去龙冈山四寨消灭50个黑面山贼，替张差报仇！"/>
+				<notify1 content="任务：去龙冈山四寨消灭50个黑面山贼，替张差报仇！"/>
+				<tracelog name="接受支线任务*梃击案"/>
+				<randomfactor value="1:31;2:50;3:10;4:5;5:4" factor="tingji_exp"/>
+				<randomfactor value="5:31;6:50;7:10;8:5;10:4" factor="tingji_exp1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<!--经验系数设置-->
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp"/>
+				<userlevel value="140,149-4800;150,299-6000;300,309-20000;310,319-20000;320,329-20000;330,339-23000;340,349-26000;350,1000-30000" factor="baseexp1"/>
+				<var type="Set" name="t1" value="1"/>
+				<var type="Set" name="t2" value="2"/>
+				<var type="Set" name="t3" value="3"/>
+				<var type="Set" name="t4" value="4"/>
+				<var type="Set" name="t5" value="5"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<vars type="Add" name1="selflevel1" name2="selflevel"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel1" name2="baseexp1"/>
+				<vars type="Mul" name1="t1" name2="selflevel"/>
+				<vars type="Mul" name1="t2" name2="selflevel"/>
+				<vars type="Mul" name1="t3" name2="selflevel"/>
+				<vars type="Mul" name1="t4" name2="selflevel"/>
+				<vars type="Mul" name1="t5" name2="selflevel"/>
+				<refresh name="t1"/>
+				<refresh name="t2"/>
+				<refresh name="t3"/>
+				<refresh name="t4"/>
+				<refresh name="t5"/>
+				<vars type="Mul" name1="selflevel" name2="tingji_exp"/>
+				<vars type="Mul" name1="selflevel1" name2="tingji_exp1"/>
+				<refresh name="selflevel1"/>
+				<refresh name="selflevel"/>
+				<refresh name="tingji_exp"/>
+				<refresh name="tingji_exp1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="16" active="1"><!--触发转盘-->
+			<conditions>
+			    <space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+			</conditions>
+			<actions>
+				<magicdialog factor="tingji_exp" event="v1667" questid="80034" offset="18"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="18" active="1"><!--完成任务-->
+			<conditions>
+			    <space size="2"/>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+			</conditions>
+			<actions>
+			    <tracelog name="成功完成“梃击案”任务" state="1"/>
+			    <var type="Set" name="state" value="-2" id="80033"/><!--状态置为其它值防止刷-->
+				<exp1 value="100" id="80034" name="selflevel"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="20" id="967"/>
+				<notify content="得到金符20个！"/>
+				<addbinditem value="1" id="1322"/>
+				<notify content="得到《梃击案抄录》1本！"/>
+				<var type="Set" name="state" value="-2" id="80034"/>
+				<refresh name="state"/>
+			    <uservar type="Set" name="tj_times" value="1" broadcast="1"/>
+				<refresh name="tj_times"/>
+				<questlog log="完成“梃击案”任务*80034"/>
+				<notify content="完成“梃击案”任务"/>
+				<notify1 content="完成“梃击案”任务"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="19" active="1"><!--触发转盘2-->
+			<conditions>
+			    <space size="2"/>
+			    <goldsafe value="0"/>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+			</conditions>
+			<actions>
+				<magicdialog factor="tingji_exp1" event="v1667" questid="80034" offset="20" type="1"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="20" active="1"><!--收钱完成任务-->
+			<conditions>
+			    <space size="2"/>
+			    <goldsafe value="0"/>
+				<var type="Equal" name="state" value="-3" id="80034"/>
+				<salary  type="Great"  value="499"  bindgold="0"/>
+			</conditions>
+			<actions>
+			    <tracelog name="成功完成“梃击案”任务" state="1"/>
+			    <var type="Set" name="state" value="-2" id="80033"/><!--状态置为其它值防止刷-->
+			    <salary type="Sub" value="500" bindgold="0"/>
+			    <notify content="扣除5两金子"/>
+				<exp1 value="100" id="80034" name="selflevel1"/>
+				<notify content="完成任务，经验增加！"/>
+				<addbinditem value="20" id="967"/>
+				<notify content="得到金符20个！"/>
+				<addbinditem value="1" id="1322"/>
+				<notify content="得到《梃击案抄录》1本！"/>
+				<var type="Set" name="state" value="-2" id="80034"/>
+				<refresh name="state"/>
+			    <uservar type="Set" name="tj_times" value="1" broadcast="1"/>
+				<refresh name="tj_times"/>
+				<questlog log="完成“梃击案”任务*80034"/>
+				<notify content="完成“梃击案”任务"/>
+				<notify1 content="完成“梃击案”任务"/>
+			</actions>
+		</embranchment>
+		
+	</quest>
+</event>

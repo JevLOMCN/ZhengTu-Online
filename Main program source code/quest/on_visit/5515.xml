@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5515" name="天工使者(一层)">
+	<!--new means new quest, default is quest on user-->
+		<quest id="10501">
+		<embranchment id="8">
+			<conditions>
+				<var type="Differ" name="state" value="-1" id="501"/>
+				<var type="Differ" name="state" value="1" id="501"/>
+				<var type="Differ" name="state" value="-3" id="501"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("击杀1000只怪物")
+this:AddTaskCmdItem("好，我这就去{10001}", "v5515", 501, 1)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="501"/>
+				<var type="Differ" name="state" value="-3" id="501"/>
+				<var type="Differ" name="state" value="-1" id="501"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    (GetName),你还没有完成任务。");
+this:AddCloseItem("离开")
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+				<space size="2"/>
+				<var type="Equal" name="state" value="-3" id="501"/>
+				<var type="Differ" name="state" value="-1" id="501"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("这么快就杀完了呀!")
+this:AddTaskCmdItem("完成任务{10001}", "v5515", 501, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="501"/>
+				<var type="Differ" name="state" value="-1" id="501"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：天关一层", "Dialog17")
+end
+function Dialog17()
+this:AddTalk("    对不起，你的包裹满了，请清空一些再来吧。");
+this:AddCloseItem("离开")
+end				</menu>
+			</actions>
+		</embranchment>
+		</quest>
+		<quest id="501" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Differ" name="state" value="-1" id="501"/>
+				<var type="Differ" name="state" value="1" id="501"/>
+				<var type="Differ" name="state" value="-3" id="501"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<notify content="任务：杀怪1000只"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="501"/>
+			</conditions>
+			<actions>
+				<var1bulletin kind="42" content="通过了天关一层,获得1阶紧箍咒,实力大增."/>
+				<addpurplebinditem value="1" id="32110"/>
+				<notify1 content="完成任务"/>
+				<var type="Set" name="state" value="-1"/>
+		<menu>
+function TaskDialog()
+this:AddTalk("传送至下一关")
+this:AddTaskCmdItem("传送{10001}", "v5515", 1501, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		</quest>
+		<quest id="11501">
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="501"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("传送至下一层")
+this:AddTaskCmdItem("传送{10001}", "v5515", 1501, 3)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="1501" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="501"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关二层" pos="85,60"/>
+				<notify content="你被马车载到了天关二层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

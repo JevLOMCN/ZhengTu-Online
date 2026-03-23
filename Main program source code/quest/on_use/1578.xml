@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1578" name="材料卡">
+	<quest id="300121">
+		<embranchment id="101">
+			<conditions>
+				<item value="1" id="1578"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+this:AddTalk("    尊敬的(GetName)您好,兑换4等材料。")
+this:AddDialogItem("兑换6等定星石(0)", "Dialog74")
+this:AddCloseItem("离开")
+end
+function Dialog74()
+this:AddTalk("    这么多金元宝和金币一个个点太累了吧!我这里可以帮你批量兑换。")
+this:AddTaskCmdItem("兑换1个6等定星石(1)", "u1578", 121216, 1)
+this:AddTaskCmdItem("兑换50个6等定星石(1)", "u1578", 121216, 2)
+this:AddTaskCmdItem("兑换100个6等定星石(1)", "u1578", 121216, 3)
+this:AddCloseItem("离开")
+end
+function Dialog75()
+this:AddTalk("    这么多金元宝和金币一个个点太累了吧!我这里可以帮你批量兑换。")
+this:AddTaskCmdItem("兑换1个四等丝绸(1)", "u1578", 121216, 4)
+this:AddTaskCmdItem("兑换50个四等丝绸(1)", "u1578", 121216, 5)
+this:AddTaskCmdItem("兑换100个四等丝绸(1)", "u1578", 121216, 6)
+this:AddCloseItem("离开")
+end
+function Dialog76()
+this:AddTalk("    这么多金元宝和金币一个个点太累了吧!我这里可以帮你批量兑换。")
+this:AddTaskCmdItem("兑换1个四等水晶(1)", "u1578", 121216, 7)
+this:AddTaskCmdItem("兑换50个四等水晶(1)", "u1578", 121216, 8)
+this:AddTaskCmdItem("兑换100个四等水晶(1)", "u1578", 121216, 9)
+this:AddCloseItem("离开")
+end
+function Dialog77()
+this:AddTalk("    这么多金元宝和金币一个个点太累了吧!我这里可以帮你批量兑换。")
+this:AddTaskCmdItem("兑换1个四等乌木(1)", "u1578", 121216, 10)
+this:AddTaskCmdItem("兑换50个四等乌木(1)", "u1578", 121216, 11)
+this:AddTaskCmdItem("兑换100个四等乌木(1)", "u1578", 121216, 12)
+this:AddCloseItem("离开")
+end
+function Dialog78()
+this:AddTalk("    这么多金元宝和金币一个个点太累了吧!我这里可以帮你批量兑换。")
+this:AddTaskCmdItem("兑换1个四等硬皮(1)", "u1578", 121216, 13)
+this:AddTaskCmdItem("兑换50个四等硬皮(1)", "u1578", 121216, 14)
+this:AddTaskCmdItem("兑换100个四等硬皮(1)", "u1578", 121216, 15)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+
+			</actions>
+		</embranchment>
+	</quest>
+
+  <quest id="121216" new="1">
+    <embranchment id="1" active="1">
+      <conditions>
+       <item value="1" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="1" id="1578"/>
+			    <addGradebinditem value="1" id="550" level="5"/>
+				<notify1 content="得到定星石6等1个"/>
+      </actions>
+    </embranchment>
+	<embranchment id="2" active="1">
+      <conditions>
+       <item value="50" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="50" id="1578"/>
+			    <addGradebinditem value="50" id="550" level="5"/>
+				<notify1 content="得到定星石6等50个"/>
+      </actions>
+    </embranchment>
+	<embranchment id="3" active="1">
+      <conditions>
+       <item value="100" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="100" id="1578"/>
+			    <addGradebinditem value="100" id="550" level="5"/>
+				<notify1 content="得到定星石6等100个"/>
+      </actions>
+    </embranchment>
+	<embranchment id="4" active="1">
+      <conditions>
+       <item value="1" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="1" id="1578"/>
+			    <addGradebinditem value="1" id="507" level="5"/>
+				<notify1 content="得到银子4等丝绸"/>
+      </actions>
+    </embranchment>
+	<embranchment id="5" active="1">
+      <conditions>
+       <item value="50" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="50" id="1578"/>
+			    <addGradebinditem value="50" id="507" level="5"/>
+				<notify1 content="得到银子4等丝绸"/>
+      </actions>
+    </embranchment>
+	<embranchment id="6" active="1">
+      <conditions>
+       <item value="100" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="100" id="1578"/>
+			    <addGradebinditem value="100" id="507" level="5"/>
+				<notify1 content="得到银子4等丝绸"/>
+      </actions>
+    </embranchment>
+	<embranchment id="7" active="1">
+      <conditions>
+       <item value="1" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="1" id="1578"/>
+			    <addGradebinditem value="1" id="527" level="5"/>
+				<notify1 content="得到银子4等水晶"/>
+      </actions>
+    </embranchment>
+	<embranchment id="8" active="1">
+      <conditions>
+       <item value="50" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="50" id="1578"/>
+			    <addGradebinditem value="50" id="527" level="5"/>
+				<notify1 content="得到银子4等水晶"/>
+      </actions>
+    </embranchment>
+	<embranchment id="9" active="1">
+      <conditions>
+       <item value="100" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="100" id="1578"/>
+			    <addGradebinditem value="100" id="527" level="5"/>
+				<notify1 content="得到银子4等水晶"/>
+      </actions>
+    </embranchment>
+	<embranchment id="10" active="1">
+      <conditions>
+       <item value="1" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="1" id="1578"/>
+			    <addGradebinditem value="1" id="537" level="5"/>
+				<notify1 content="得到银子4等乌木"/>
+      </actions>
+    </embranchment>
+	<embranchment id="11" active="1">
+      <conditions>
+       <item value="50" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="50" id="1578"/>
+			    <addGradebinditem value="50" id="537" level="5"/>
+				<notify1 content="得到银子4等乌木"/>
+      </actions>
+    </embranchment>
+	<embranchment id="12" active="1">
+      <conditions>
+       <item value="100" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="100" id="1578"/>
+			    <addGradebinditem value="100" id="537" level="5"/>
+				<notify1 content="得到银子4等乌木"/>
+      </actions>
+    </embranchment>
+	<embranchment id="13" active="1">
+      <conditions>
+       <item value="1" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="1" id="1578"/>
+			    <addGradebinditem value="1" id="547" level="5"/>
+				<notify1 content="得到银子4等硬皮"/>
+      </actions>
+    </embranchment>
+	<embranchment id="14" active="1">
+      <conditions>
+       <item value="50" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="50" id="1578"/>
+			    <addGradebinditem value="50" id="547" level="5"/>
+				<notify1 content="得到银子4等硬皮"/>
+      </actions>
+    </embranchment>
+	<embranchment id="15" active="1">
+      <conditions>
+       <item value="100" id="1578"/>
+      </conditions>
+      <actions>
+          <removeitem value="100" id="1578"/>
+			    <addGradebinditem value="100" id="547" level="5"/>
+				<notify1 content="得到银子4等硬皮"/>
+      </actions>
+    </embranchment>
+  </quest>
+</event>

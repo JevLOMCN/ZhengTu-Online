@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<testroot>
+	<include filename="inc1.xml"/>
+	<include filename="nofile.xml"/>
+	<root1>
+	<include filename="inc2.xml"/>
+	</root1>
+</testroot>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by zhengtu (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<waypoint>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<npc id="5510" name="神器铸造匠" width="1" height="1" x="121" y="156" num="1" interval="1" color="0,255,0,0"/>
+	<npc id="21091" name="神器·灵魂" width="1" height="1" x="130" y="101" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21091" name="神器·灵魂" width="1" height="1" x="124" y="49" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21091" name="神器·灵魂" width="1" height="1" x="75" y="30" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21091" name="神器·灵魂" width="1" height="1" x="53" y="88" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21091" name="神器·灵魂" width="1" height="1" x="71" y="125" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21092" name="神器·吞灵(物)" width="1" height="1" x="128" y="75" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21093" name="神器·吞灵(魔)" width="1" height="1" x="101" y="20" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21092" name="神器·吞灵(物)" width="1" height="1" x="20" y="26" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21093" name="神器·吞灵(魔)" width="1" height="1" x="43" y="59" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21092" name="神器·吞灵(物)" width="1" height="1" x="31" y="96" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21093" name="神器·吞灵(魔)" width="1" height="1" x="77" y="51" num="1" interval="120" color="0,255,0,0"/>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="24" height="31" x="10" y="244" type="1" color="0,0,255,0"/>
+</map>

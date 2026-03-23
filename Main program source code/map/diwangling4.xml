@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 元元独家制作唯一QQ：759075969-元元 -->
+
+<map>
+
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="2" height="2" x="35" y="147" type="1" color="0,0,255,0"/>
+	<npc id="5604" name="帝王霸主" width="5" height="5" x="70" y="114" num="1" interval="600" color="0,255,0,0"/>
+	<npc id="5277" name="传送石" width="1" height="1" x="72" y="115" num="1" interval="1800" color="0,255,0,0"/>
+	
+
+
+
+
+</map>

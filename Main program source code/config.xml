@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--所有各种服务器参数-->
+<Zebra>
+	<global>
+		<!-- Specify the log level[debug,info,warning,error,fatal,always]. -->
+		<log>debug</log>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://ztgame:psy200247.@127.0.0.1:3306/ZtGameDB3</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+		<!-- Use the specified local network device. -->
+		<ifname>lo</ifname>
+		<!-- Connected to the specified supserserver, property 'port' default value is 10000. -->
+		<superserver port="15201">127.0.0.1</superserver>
+                <!--超级GM权限这里 true 开， false 关,人物ID 1-100 -->
+		<gm_mode>true</gm_mode>
+		<sn>false</sn> 
+		<!--指令统计开关-->
+		<cmdswitch>true</cmdswitch>
+		<!--服务标志 1代表邮件 2拍卖 4向客户端发送特征码 8到达30级时赠送枣红马-->
+		<service_flag>11</service_flag>
+		<serverfy_level>220</serverfy_level>  <!--未转生封印等级上限-->
+		<servermax_level>220</servermax_level><!--未转生最大等级上限-->
+		<trunfy_level>220</trunfy_level>      <!--转生封印等级上限-->
+		<maxtrun_level>220</maxtrun_level>    <!--转生最大等级上限-->
+		<!--特征码文件，客户端登陆成功时发下去-->
+		<process_file>process.dat</process_file>
+		<pet_point>true</pet_point>
+		<merge_version>1</merge_version>
+	</global>
+	<SuperServer>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/superserver.log</logfilename>
+		<!-- 统一用户平台服务器列表文件 -->
+		<loginServerListFile>loginServerList.xml</loginServerListFile>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://ztgame:psy200247.@127.0.0.1:3306/ZtGameDB3</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+		<!--指令统计开关-->
+		<cmdswitch>true</cmdswitch>
+	</SuperServer>
+	<FLServer>
+		<!-- 网关最大连接???0表示无限制 -->
+		<maxGatewayUser>2000</maxGatewayUser>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/flserver.log</logfilename>
+		<!-- 统一用户平台用户管理服务器的列表文件 -->
+		<dbAccessServerListFile>dbAccessServerList.xml</dbAccessServerListFile>
+		<!-- 服务器信息采集的服务器地址 -->
+		<InfoServer port="9903">127.0.0.1</InfoServer>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://ztgame:psy200247.@127.0.0.1:3306/ZtGameDB3</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+		<!-- 区信息列表文件 -->
+		<zoneInfoFile>zoneInfo.xml</zoneInfoFile>
+		<!-- 客户端登陆端口，外部使用 -->
+		<login_port>7000</login_port>
+		<!-- 内部使用端口，用于服务器之间数据传输 -->
+		<inside_port>7001</inside_port>
+		<!-- 客户端PING端口，外部使用 -->
+		<ping_port>7002</ping_port>
+		<!-- 是否验证图形验证码 -->
+		<jpeg_passport>false</jpeg_passport>
+	</FLServer>
+	<RecordServer>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/recordserver.log</logfilename>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://ztgame:psy200247.@127.0.0.1:3306/ZtGameDB3</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+		<!--指令统计开关-->
+		<cmdswitch>true</cmdswitch>
+	</RecordServer>
+	<BillServer>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/billserver.log</logfilename>
+		<tradelogfilename>tmp/billtrade.log</tradelogfilename>
+		<billServerList>billServerList.xml</billServerList>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://ztgame:psy200247.@127.0.0.1:3306/ZtGameDB3</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+		<gold_tradelog>tmp/goldtrade.log</gold_tradelog>
+		<!--指令统计开关-->
+		<cmdswitch>true</cmdswitch>
+	</BillServer>
+	<BillClient>
+		<!-- 交易记录log文件路径 -->
+		<tradelogfilename>tmp/clienttrade.log</tradelogfilename>
+	</BillClient>
+	<SessionServer>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/sessionserver.log</logfilename>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://ztgame:psy200247.@127.0.0.1:3306/ZtGameDB3</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+		<offlineMsgPath>/tmp</offlineMsgPath>
+		<!-- 对战默认时间 -->
+		<dare_active_time>3600</dare_active_time>
+		<!-- 题库题目总数(ID必须是连续的) -->
+		<answer_count>1000</answer_count>
+		<!-- 城战默认开始时间 -->
+		<gongxun_big>10</gongxun_big>       <!-- 功勋竞猜单号箱子奖励倍数 -->
+		<gongxun_smile>2</gongxun_smile>       <!-- 功勋竞猜大小号箱子奖励倍数 -->
+		<union_city_dare_start_hour>20</union_city_dare_start_hour>
+		<union_city_dare_start_min>30</union_city_dare_start_min>
+		<union_city_dare_end_hour>21</union_city_dare_end_hour>
+		<union_city_dare_end_min>30</union_city_dare_end_min>
+		<!--指令统计开关-->
+		<cmdswitch>true</cmdswitch>
+	</SessionServer>
+	<ScenesServer>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/scenesserver.log</logfilename>
+		<objlogfilename>tmp/objscenesserver.log</objlogfilename>
+		<gm_logfile>tmp/gm_log.log</gm_logfile>
+		<wg_logfile>tmp/wg_log.log</wg_logfile>
+		<!-- 打怪经验倍数>0显示红色系统公告配置. -->
+		<double_exp>0</double_exp>
+        <!--智力竞赛(false,关 true,开) -->
+		<double_drop>false</double_drop>
+		<level_double_drop>0</level_double_drop>
+		<sceneinfofile>scenesinfo.xml</sceneinfofile>
+		<npctradefile>npctrade.xml</npctradefile>
+		<messageSystemFile>Config/MessageSystem.xml</messageSystemFile>
+		<charinitinfoFile>initcharinfo.xml</charinitinfoFile>
+		<magicrangefile>magicrangefile.xml</magicrangefile>
+		<!--回写档案平率(单位是秒) -->
+		<writebacktimer>60</writebacktimer>
+		<mapdir>map/</mapdir>
+		<tbldir>tbl/</tbldir>
+		<game_config_dir>Config/</game_config_dir>
+		<ossdir>tmp/</ossdir>
+		<trun_maxround>1</trun_maxround>       <!-- 转生最大次数上限-->
+        <trun_skill_rate>80</trun_skill_rate> <!-- 转生增加技能点配置 -->
+        <trun_point_rate>2000</trun_point_rate><!-- 转生增加属性点配置 -->
+	    <tai_miao_x>759</tai_miao_x>           <!-- 太庙自定义坐标 x -->
+        <tai_miao_y>548</tai_miao_y>           <!-- 太庙自定义坐标 y -->
+		<!-- 00锭00两00文--> 
+		<dian_shu_vip>500000</dian_shu_vip>   <!-- 兑换%d点数增加1点vip --> 
+		<chong_zhi_jr>500000</chong_zhi_jr>   <!-- 兑换%d点数等于1元金额 -->
+		<max_jianzhong>400</max_jianzhong>       <!-- 剑冢升级最大次数上限-->
+		<max_jingmai>1000</max_jingmai>       <!-- 经脉升级最大次数上限-->
+		<max_shengxiao>500</max_shengxiao>       <!-- 生肖升级最大次数上限-->
+		<max_shengqi>2000</max_shengqi>       <!-- 圣器升级最大次数上限-->
+		<max_zhengtuzhuan>2000</max_zhengtuzhuan>       <!-- 征途转最大次数上限-->
+		<lianzhan_time>120</lianzhan_time>       <!-- 连斩判断时长 单位/秒 -->
+		<!--智力竞赛(false,关 true,开) -->
+		<world_quiz>false</world_quiz>
+		<country_dare_jump>false</country_dare_jump>
+		<!--指令统计开关-->
+		<cmdswitch>true</cmdswitch>
+	</ScenesServer>
+	<GatewayServer>
+		<!-- 国家排序方式 0:不排序 , 1:在线人数排序 , 2:注册人数排序 -->
+		<countryorder>2</countryorder>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/gatewayserver.log</logfilename>
+		<!-- 是否启用角色名称唯一性验证服务器来保证角色名称的唯一性 -->
+		<!--  这里为0 不然创建角色名重复 -->
+		<rolereg_verify>0</rolereg_verify>
+		<forbidWordsFile>forbidWords</forbidWordsFile>
+		<gm_ip>gm_conf.xml</gm_ip>
+		<!--指令统计开关-->
+		<cmdswitch>true</cmdswitch>
+		<!-- 是否验证图形验证码(false,关 true,开) -->
+		<jpeg_passport>false</jpeg_passport>
+	</GatewayServer>
+	<MiniServer>
+		<!-- Specify the log filename. -->
+		<logfilename>tmp/miniserver.log</logfilename>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://ztgame:psy200247.@127.0.0.1:3306/ZtGameDB3</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+	</MiniServer>
+</Zebra>

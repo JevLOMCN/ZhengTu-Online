@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<event id="60011" name="维护补偿">
+<!--new means new quest, default is quest on user-->
+<quest id="900012">
+<embranchment id="1">
+<conditions>
+<gold type="Great" value="49"/>
+<timeouts long="864000" id="100903" less="0"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("    服务器维护补偿!")
+this:AddDialogItem("领取服务器维护补偿(0)", "Dialog75")
+end
+function Dialog74()
+this:AddTalk("    服务器维护补偿!")
+this:AddTaskCmdItem("领取维护补偿(0)", "v60011", 100903, 11)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="2">
+<conditions>
+<gold type="Great" value="49"/>
+<timeouts long="864000" id="100903" less="1"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("    你领取了服务器维护补偿!很丰富吧!")
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="15">
+<conditions>
+<gold type="Less" value="50"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddDialogItem("恭喜发财红包拿来(2)", "Dialog75")
+end
+function Dialog75()
+this:AddTalk("今天没有补偿!")
+this:AddCloseItem("离开")
+end
+</menu>
+</actions>
+</embranchment>
+</quest>
+<quest id="100903" new="1">
+<embranchment id="11" active="1">
+<conditions>
+<space size="1"/>
+<timeouts long="864000" id="100903" less="0"/>
+<gold type="Great" value="49"/>
+</conditions>
+<actions>
+<addGradebinditem value="5000" id="548" level="6"/>
+<addGradebinditem value="5000" id="548" level="6"/>
+<var1bulletin kind="42" content="领取了服务器维奖励一万星灵石，赶快去王城NPC服务器维护补偿！"/>
+<timeouts/>
+</actions>
+</embranchment>
+</quest>
+</event>

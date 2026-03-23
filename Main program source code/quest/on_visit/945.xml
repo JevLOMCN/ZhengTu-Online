@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="945" name="大剑师">
+	<!--new means new quest, default is quest on user-->
+	<quest id="320650">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="99"/>
+				<uservar type="Less" name="shan_waishan_1" value="3"/>
+				<var type="Differ" name="state" value="-1" id="20650"/>
+				<var type="Differ" name="state" value="1" id="20650"/>
+				<var type="Differ" name="state" value="-3" id="20650"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("每天可以在我这里进入接收缉拿大盗的任务")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;任务名称：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;【缉拿大盗】&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;目标地点：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;【山 外 山】&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;\n1分钟刷新“飞天神鼠”将其缉拿!&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;任务奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1398\"&gt;  金子40锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1451\"&gt;  工资10锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"665\"&gt;  银子100锭&lt;/object&gt;&lt;/p&gt;")
+this:AddDialogItem("任务:山外山(2)", "Dialog4")
+this:AddDialogItem("去山外山(0)", "Dialog5")
+this:AddCloseItem("离开")
+end
+function Dialog4()
+this:AddTalk("   每天可以在我这里进入接收缉拿大盗的任务\n  奖励系统是根据你的当日运气指数来决定的，丰厚大礼等着你呢！")
+this:AddTaskCmdItem("接受任务: 缉拿大盗{10002}", "v945", 20650, 1)
+this:AddCloseItem("离开")
+end
+function Dialog5()
+this:AddTalk("    你已经准备好了吗？山外山的飞天神鼠可是很厉害的哦！")
+this:AddTaskCmdItem("去山外山-2两(0)", "v945", 160103, 3)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+			        <uservar type="Equal" name="shan_waishan_1" value="3"/>
+				<var type="Differ" name="state" value="-1" id="20650"/>
+				<var type="Differ" name="state" value="1" id="20650"/>
+				<var type="Differ" name="state" value="-3" id="20650"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("   每天可以在我这里进入接收缉拿大盗的任务\n  奖励系统是根据你的当日运气指数来决定的，丰厚大礼等着你呢！")
+this:AddDialogItem("任务:山外山(2)", "Dialog6")
+end
+function Dialog6()
+this:AddTalk("   你今天运气不错！哈哈！")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<var type="Differ" name="state" value="1" id="20650"/>
+				<var type="Equal" name="state" value="-3" id="20650"/>
+				<var type="Differ" name="state" value="-1" id="20650"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天运气不错！哈哈！")
+this:AddTaskCmdItem("接受奖励(22)", "v945", 20650, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20650" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="39"/>
+				<var type="Differ" name="state" value="-3" id="20650"/>
+				<var type="Differ" name="state" value="1" id="20650"/>
+				<uservar type="Less" name="shan_waishan_1" value="3"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="1"/>
+				<uservar type="Add" name="shan_waishan_1" value="1"/>
+				<var type="GetP" name="feitianshenshu_kill_selflevel" value="1"/>
+				<vars type="Mul" name1="feitianshenshu_kill_selflevel" name2="feitianshenshu_kill_selflevel"/>
+				<var type="Set" name="baseexp" value="2220"/>
+				<var type="Set" name="feitianshenshu_kill_selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="feitianshenshu_kill_selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="feitianshenshu_kill_selflevel2" name2="feitianshenshu_kill_selflevel"/>
+				<vars type="Mul" name1="feitianshenshu_kill_selflevel" name2="stupid"/>
+				<vars type="Div" name1="feitianshenshu_kill_selflevel" name2="div"/>
+				<vars type="Mul" name1="feitianshenshu_kill_selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="feitianshenshu_kill_selflevel2" name2="div"/>
+				<vars type="Add" name1="feitianshenshu_kill_selflevel" name2="feitianshenshu_kill_selflevel2"/>
+				<refresh name="feitianshenshu_kill_selflevel"/>
+		<var1bulletin kind="41" content="接受了山外山任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="20650"/>
+			</conditions>
+			<actions>
+        <exp value="100000000"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+	
+	<var1bulletin kind="41" content="完成了山外山任务，获得丰厚奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	       <quest id="160103" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+			<isguard/>
+                        <gold type="Great" value="199"/>
+			</conditions>
+			<actions>
+                <gold type="Sub" value="200"/>
+				<goto name="中立区·山外山一层" pos="94,96"/>
+				<notify content="你被传送到了山外山！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+
+	</quest>
+</event>

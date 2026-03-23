@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="22000" name="会员令牌">	
+	<quest id="122012">
+		<embranchment id="8">
+			<conditions>
+			<nation value="8"/>	
+			</conditions>
+			<actions>
+				<mainmenu>
+				function MainDialog()
+				this:AddTalk("欢迎来到牛牛征途,如果有什么不懂的地方可以随时在下方查找。 ")
+				this:AddDialogItem("游戏说明(0)", "Dialog1")
+				this:AddDialogItem("超级功能(3)", "Dialog3")
+				this:AddCloseItem("离开")
+				end
+				function Dialog1()
+				this:AddDialogItem("升级说明(0)", "Dialog10")
+				this:AddDialogItem("装备说明(0)", "Dialog11")
+				this:AddDialogItem("BOSS说明(0)", "Dialog12")
+				this:AddDialogItem("任务说明(0)", "Dialog13")
+				this:AddCloseItem("离开")
+				end
+				function Dialog10()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;做完第一个新手任务就能到达160级，去王城开始转生刷大饼子，升级到202去王城李官领取202一套圣者装备，领取的非转生装备去改造宗师改成转生的再去天宫神匠改造。&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\n升级主要分为以下几种方式：&lt;/n&gt;&lt;n color=\&quot;255,255,255,0\&quot;&gt;\n1:王城刷馅饼大概半小时左右满级&lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog11()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\n装备简介:\n装备分为&lt;/n&gt;&lt;n color=\&quot;255,139,0,139\&quot;&gt;紫色装备&lt;/n&gt;&lt;n&gt;和&lt;/n&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;绿色装备&lt;/n&gt;&lt;n&gt;\n装备只能升级不能打造,非转生装备需要去（改造宗师-未转生）改成转生装备，装备升级需要相应的定星石去天工神将处升级\n紫色装备由15星绿色装备按C使用装备指引-用祝福石祝福而成。\n\n装备说明:\n顶级装备由非转生202级装备升级而成。230绝世装备需要在高级杂货商够买无双神石去天工神匠装备升级，装备升级后-改造前必须下线一次。202装备只能再礼官领取，158级装备只在装备锻造师打造。&lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog12()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;各种地图一共BOSS上百个不怕没BOSS就怕没时间&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\nBOSS分布地图：&lt;/n&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;\n1:官方原版地图,无聊的人可以去找可以飞随机\n2:白骨一层到十层；每层一只\n3:精怪洞一层到十层；每层一只\n4:魔1 魔2 合计60个让你爽飞天\n5:中立区皇城，坐标661,596终极BOSS 携带极品道具和会员马铠碎片\n6:所有道具均商店出售，绿色刷新半小时，紫色刷新1小时，终极BOSS刷新2小时 &lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog13()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\n任务概况：&lt;/n&gt;&lt;n color=\&quot;255,255,255,0\&quot;&gt;\n十二生肖每天1次（找家族收藏家）\n国家任务每天3次（找国家任务发布官\n山外山每天3次（大剑师）\n龙脉每天一次（找卧龙居士接）\n帝王每天3次（找帝王陵任务使者）\n小日本每天3次（小日本任务使二者）\n屠龙每3次（找西施接任务）\n家族拉车每天1次（找龙镖头）\n种植每天3次（找凤凰城神农）\n太子每天3次（找九公主）\n拉镖每天（王城郑镖头）\n拉骆驼每天3次（凤凰城甲镖头）\n国家刺探每天1次（找边境兵马大元帅\n新手创业计划每天1次666D金子（找新手创业计划）\n皇城采集每天3次（找皇城帮会采集员\n每天任务合计2000-3000金子&lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog3()
+				this:AddTaskCmdItem("王城(0)", "u22000", 222012, 2)
+				this:AddTaskCmdItem("凤凰城(0)", "u22000", 222012, 6)
+                this:AddTaskCmdItem("清源村(0)", "u22000", 222012, 8)
+				this:AddTaskCmdItem("跨国边防官(0)", "u22000", 222012, 32)
+                this:AddTaskCmdItem("皇城(0)", "u22000", 222012, 33)
+                this:AddTaskCmdItem("百兽谷(0)", "u22000", 222012, 10)
+                this:AddTaskCmdItem("白骨洞五层(0)", "u22000", 222012, 12)	
+                this:AddTaskCmdItem("白骨洞十层(0)", "u22000", 222012, 14)
+				this:AddTaskCmdItem("精怪洞穴八层(0)", "u22000", 222012, 16)
+                this:AddTaskCmdItem("精怪洞穴十层(0)", "u22000", 222012, 18)
+                this:AddTaskCmdItem("凤祥镇(0)", "u22000", 222012, 20)
+                this:AddTaskCmdItem("凤祥镇西郊(0)", "u22000", 222012, 22)
+                this:AddTaskCmdItem("沼泽湿地(0)", "u22000", 222012, 24)
+				this:AddTaskCmdItem("蛟龙洞一层(0)", "u22000", 222012, 26)
+                this:AddTaskCmdItem("蛟龙洞二层(0)", "u22000", 222012, 28)
+                this:AddTaskCmdItem("龙冈山寨四层(0)", "u22000", 222012, 30)
+                this:AddTaskCmdItem("栖息地(0)", "u22000", 222012, 34)
+                this:AddTaskCmdItem("滨海之岛(0)", "u22000", 222012, 35)
+                this:AddTaskCmdItem("机械工厂六层(0)", "u22000", 222012, 39)
+                this:AddTaskCmdItem("机械工厂十层(0)", "u22000", 222012, 40)
+				this:AddTaskCmdItem("王墓十一层(0)", "u22000", 222012, 38)
+                this:AddTaskCmdItem("魔族巢穴二层(0)", "u22000", 222012, 41)
+                this:AddTaskCmdItem("世外桃源(0)", "u22000", 222012, 42)
+				this:AddCloseItem("离开")
+				end
+				function MoveCanClose()
+					return false
+				end
+				this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+			<nation value="12"/>	
+			</conditions>
+			<actions>
+				<mainmenu>
+				function MainDialog()
+				this:AddTalk("欢迎来到牛牛征途,如果有什么不懂的地方可以随时在下方查找。 ")
+				this:AddDialogItem("游戏说明(0)", "Dialog1")
+				this:AddDialogItem("超级功能(0)", "Dialog3")
+				this:AddCloseItem("离开")
+				end
+				function Dialog1()
+				this:AddDialogItem("升级说明(0)", "Dialog10")
+				this:AddDialogItem("装备说明(0)", "Dialog11")
+				this:AddDialogItem("BOSS说明(0)", "Dialog12")
+				this:AddDialogItem("任务说明(0)", "Dialog13")
+				this:AddDialogItem("装备说明(0)", "Dialog14")
+				this:AddCloseItem("离开")
+				end
+				function Dialog10()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;做完第一个新手任务就能到达160级，去王城开始转生刷大饼子，升级到202去王城李官领取202一套圣者装备，领取的非转生装备去改造宗师改成转生的再去天宫神匠改造。&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\n升级主要分为以下几种方式：&lt;/n&gt;&lt;n color=\&quot;255,255,255,0\&quot;&gt;\n1:王城刷馅饼大概半小时左右满级&lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog11()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\n装备简介:\n装备分为&lt;/n&gt;&lt;n color=\&quot;255,139,0,139\&quot;&gt;紫色装备&lt;/n&gt;&lt;n&gt;和&lt;/n&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;绿色装备&lt;/n&gt;&lt;n&gt;\n装备只能升级不能打造,非转生装备需要去（改造宗师-未转生）改成转生装备，装备升级需要相应的定星石去天工神将处升级\n紫色装备由15星绿色装备按C使用装备指引-用祝福石祝福而成。\n\n装备说明:\n顶级装备由非转生202级装备升级而成。230绝世装备需要在高级杂货商够买无双神石去天工神匠装备升级，装备升级后-改造前必须下线一次。202装备只能再礼官领取，158级装备只在装备锻造师打造。&lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog12()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;各种地图一共BOSS上百个不怕没BOSS就怕没时间&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\nBOSS分布地图：&lt;/n&gt;&lt;n color=\&quot;255,0,255,0\&quot;&gt;\n1:官方原版地图,无聊的人可以去找可以飞随机\n2:白骨一层到十层；每层一只\n3:精怪洞一层到十层；每层一只\n4:魔1 魔2 合计60个让你爽飞天\n5:中立区皇城，坐标661,596终极BOSS 携带极品道具和会员马铠碎片\n6:所有道具均商店出售，绿色刷新半小时，紫色刷新1小时，终极BOSS刷新2小时 &lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog13()
+				this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;欢迎来到牛牛征途！&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n&gt;\n任务概况：&lt;/n&gt;&lt;n color=\&quot;255,255,255,0\&quot;&gt;\n十二生肖每天1次（找家族收藏家）\n国家任务每天3次（找国家任务发布官\n山外山每天3次（大剑师）\n龙脉每天一次（找卧龙居士接）\n帝王每天3次（找帝王陵任务使者）\n小日本每天3次（小日本任务使二者）\n屠龙每3次（找西施接任务）\n家族拉车每天1次（找龙镖头）\n种植每天3次（找凤凰城神农）\n太子每天3次（找九公主）\n拉镖每天（王城郑镖头）\n拉骆驼每天3次（凤凰城甲镖头）\n国家刺探每天1次（找边境兵马大元帅\n新手创业计划每天1次666D金子（找新手创业计划）\n皇城采集每天3次（找皇城帮会采集员\n每天任务合计2000-3000金子&lt;/n&gt;&lt;/p&gt;")
+				this:AddCloseItem("离开")
+				end
+				function Dialog3()
+				this:AddTaskCmdItem("王城(0)", "u22000", 222012, 3)
+				this:AddTaskCmdItem("凤凰城(0)", "u22000", 222012, 5)
+				this:AddTaskCmdItem("清源村(0)", "u22000", 222012, 7)
+				this:AddTaskCmdItem("跨国边防官(0)", "u22000", 222012, 31)
+                this:AddTaskCmdItem("皇城(0)", "u22000", 222012, 33)
+                this:AddTaskCmdItem("百兽谷(0)", "u22000", 222012, 9)
+                this:AddTaskCmdItem("白骨洞五层(0)", "u22000", 222012, 11)	
+                this:AddTaskCmdItem("白骨洞十层(0)", "u22000", 222012, 13)
+				this:AddTaskCmdItem("精怪洞穴八层(0)", "u22000", 222012, 15)
+                this:AddTaskCmdItem("精怪洞穴十层(0)", "u22000", 222012, 17)
+                this:AddTaskCmdItem("凤祥镇(0)", "u22000", 222012, 19)
+                this:AddTaskCmdItem("凤祥镇西郊(0)", "u22000", 222012, 21)
+                this:AddTaskCmdItem("沼泽湿地(0)", "u22000", 222012, 23)
+				this:AddTaskCmdItem("蛟龙洞一层(0)", "u22000", 222012, 25)
+                this:AddTaskCmdItem("蛟龙洞二层(0)", "u22000", 222012, 27)
+                this:AddTaskCmdItem("龙冈山寨四层(0)", "u22000", 222012, 39)
+                this:AddTaskCmdItem("栖息地(0)", "u22000", 222012, 34)
+                this:AddTaskCmdItem("滨海之岛(0)", "u22000", 222012, 35)
+                this:AddTaskCmdItem("机械工厂六层(0)", "u22000", 222012, 39)
+                this:AddTaskCmdItem("机械工厂十层(0)", "u22000", 222012, 40)
+				this:AddTaskCmdItem("王墓十一层(0)", "u22000", 222012, 38)
+                this:AddTaskCmdItem("魔族巢穴二层(0)", "u22000", 222012, 41)
+                this:AddTaskCmdItem("世外桃源(0)", "u22000", 222012, 42)
+				this:AddCloseItem("离开")
+				end
+				function MoveCanClose()
+					return false
+				end
+				this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="222012" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<innation/>
+				<changejob value="0"/>
+				<charvip type="Great" value="0"/>
+			</conditions>
+			<actions>				
+				<changejob type="Add" value="6"/>
+				<notify content="转职全职业成功"/>
+				<notify1 content="转职全职业成功"/>
+				<var1bulletin kind="42" content="成功转职-全职业"/>
+				<timeouts/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·王城" pos="882,496"/>
+				<notify content="你来到了汉国·王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·凤凰城" pos="411,394"/>
+				<notify content="你来到了汉国·凤凰城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·清源村" pos="139,126"/>
+				<notify content="你来到了汉国·清源村"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·百兽谷" pos="276,242"/>
+				<notify content="你来到了汉国·百兽谷"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·白骨洞五层" pos="242,143"/>
+				<notify content="你来到了汉国·白骨洞五层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·白骨洞十层" pos="334,310"/>
+				<notify content="你来到了汉国·白骨洞十层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·精怪洞穴八层" pos="143,63"/>
+				<notify content="你来到了汉国·精怪洞穴八层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="18" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·精怪洞穴十层" pos="19,91"/>
+				<notify content="你来到了汉国·精怪洞穴十层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·凤祥镇" pos="23,157"/>
+				<notify content="你来到了汉国·凤祥镇"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·凤祥镇西郊" pos="32,250"/>
+				<notify content="你来到了汉国·凤祥镇西郊"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="24" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·沼泽湿地" pos="39,43"/>
+				<notify content="你来到了汉国·沼泽湿地"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·蛟龙洞一" pos="20,187"/>
+				<notify content="你来到了汉国·蛟龙洞一层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="28" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·蛟龙洞二" pos="18,99"/>
+				<notify content="你来到了汉国·蛟龙洞二层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·龙冈山四寨" pos="174,169"/>
+				<notify content="你来到了汉国·龙冈山四寨"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·边境" pos="187,142"/>
+				<notify content="你来到了汉国·边境"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·王城" pos="875,500"/>
+				<notify content="你来到了楚国·王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·凤凰城" pos="411,394"/>
+				<notify content="你来到了楚国·凤凰城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·清源村" pos="139,126"/>
+				<notify content="你来到了汉国·清源村"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·百兽谷" pos="276,242"/>
+				<notify content="你来到了楚国·百兽谷"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·白骨洞五层" pos="242,143"/>
+				<notify content="你来到了楚国·白骨洞五层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·白骨洞十层" pos="334,310"/>
+				<notify content="你来到了楚国·白骨洞十层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·精怪洞穴八层" pos="143,63"/>
+				<notify content="你来到了楚国·精怪洞穴八层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="17" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·精怪洞穴十层" pos="19,91"/>
+				<notify content="你来到了楚国·精怪洞穴十层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·凤祥镇" pos="23,157"/>
+				<notify content="你来到了楚国·凤祥镇"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·凤祥镇西郊" pos="32,250"/>
+				<notify content="你来到了楚国·凤祥镇西郊"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·沼泽湿地" pos="39,43"/>
+				<notify content="你来到了楚国·沼泽湿地"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="25" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·蛟龙洞一" pos="20,187"/>
+				<notify content="你来到了楚国·蛟龙洞一层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="27" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·蛟龙洞二" pos="18,99"/>
+				<notify content="你来到了楚国·蛟龙洞二层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·龙冈山四寨" pos="174,169"/>
+				<notify content="你来到了楚国·龙冈山四寨"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·边境" pos="187,142"/>
+				<notify content="你来到了楚国·边境"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="33" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·皇城" pos="848,694"/>
+				<notify content="你来到了中立区·皇城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="34" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·栖息地" pos="44,64"/>
+				<notify content="你来到了中立区·栖息地"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="35" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·滨海之岛" pos="22,122"/>
+				<notify content="你来到了中立区·滨海之岛"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="36" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓一层" pos="172,265"/>
+				<notify content="你来到了中立区·武夷王墓一层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="37" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓五层" pos="68,191"/>
+				<notify content="你来到了中立区·武夷王墓五层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="38" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·武夷王墓十一层" pos="146,126"/>
+				<notify content="你来到了中立区·武夷王墓十一层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="39" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·机械工厂六层" pos="42,147"/>
+				<notify content="你来到了中立区·机械工厂六层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="40" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·机械工厂十层" pos="43,169"/>
+				<notify content="中立区·机械工厂十层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·魔族巢穴二层" pos="293,172"/>
+				<notify content="中立区·魔族巢穴二层"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·世外桃源" pos="22,299"/>
+				<notify content="中立区·世外桃源"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>	
+</event>

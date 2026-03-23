@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1100" name="王城-功勋竞猜地图传送鬼谷子(831,418)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960101">
+		<embranchment id="1">
+			<conditions>
+			    <innation/>
+			    <space size="1"/>
+			    <uservar type="Less" name="xingyunjinfu" value="1"/>
+			    <!--selfcountry value="1"/-->
+				<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTaskCmdItem("到功勋符地图(0)", "v1100", 100901, 1)
+this:AddDialogItem("领取幸运金符--可用于功勋竞猜(0)", "Dialog7")
+this:AddCloseItem("离开")
+end
+function Dialog7()
+this:AddTalk("    (GetName)，你好！你每天都可以在我这里领取一个幸运金符，用于功勋竟猜。好机会千万别错过哦！\n    请注意，只有等级达到30级的玩家才可以来领取哦！")
+this:AddTaskCmdItem("我要领取幸运金符(0)", "v1100", 100901, 2)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>	
+		<embranchment id="2">
+			<conditions>
+			    <innation/>
+			    <uservar type="Great" name="xingyunjinfu" value="0"/>
+			    <!--selfcountry value="1"/-->
+				<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTaskCmdItem("到功勋符地图(0)", "v1100", 100901, 1)
+this:AddDialogItem("领取幸运金符--可用于功勋竞猜(0)", "Dialog8")
+this:AddCloseItem("离开")
+end
+function Dialog8()
+this:AddTalk("    (GetName)，你今天已经领取过了幸运金符了。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+			    <innation/>
+			    <uservar type="Less" name="xingyunjinfu" value="1"/>
+			    <!--selfcountry value="1"/-->
+				<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTaskCmdItem("到功勋符地图(0)", "v1100", 100901, 1)
+this:AddDialogItem("领取幸运金符--可用于功勋竞猜(0)", "Dialog9")
+this:AddCloseItem("离开")
+end
+function Dialog9()
+this:AddTalk("    (GetName)，对不起，你的包裹满了，请整理一下你的包裹。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+</quest>
+	<quest id="100901" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+			    <innation/>
+				<isguard/>
+				<!--selfcountry value="1"/-->
+				<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+			    <tracelog name="坐车夫花费0两银子" state="1"/> 
+				<goto name="中立区·功勋符地图" pos="65,85"/>
+				<notify content="你来到了到功勋符地图"/>
+				<notify1 content="你来到了到功勋符地图"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+			    <innation/>
+				<isguard/>
+				<uservar type="Less" name="xingyunjinfu" value="1"/>
+				<level type="Great" value="129"/>
+			</conditions>
+			<actions>
+				<addbinditem value="1" id="1060"/>
+				<notify content="领取一个幸运金符"/>
+				<notify1 content="领取一个幸运金符"/>
+				<uservar type="Set" name="xingyunjinfu" value="1"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+	</quest>
+</event>

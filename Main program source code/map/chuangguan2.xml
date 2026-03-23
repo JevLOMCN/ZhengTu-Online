@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+<!--怪物安置-->
+	<npc id="13002" name="2级·幻魔蜘蛛" width="1" height="1" x="29" y="43" num="1" interval="1" color="0,255,0,0"/>
+<!--地图点对点传送-->
+	<waypoint>
+	</waypoint>
+<!--地图属性 1=PK 2=绝对安全 16=竞技区 -->
+	<zonedef width="40" height="40" x="12" y="22" type="1" color="0,0,255,0"/>
+</map>

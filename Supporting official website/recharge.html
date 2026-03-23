@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<title>征途私服 - 充值 / 余额 / CDK - 征途</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+  body{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Microsoft Yahei",sans-serif;
+    margin:0;padding:24px;background:#fafafa;
+  }
+  .grid{
+    max-width:980px;margin:0 auto;
+    display:grid;grid-template-columns:1fr 1fr;gap:16px;
+  }
+  .card{
+    background:#fff;border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    padding:16px;
+  }
+  h2{margin:0 0 8px 0;font-size:18px}
+  input,select{
+    width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;margin-top:6px;
+  }
+  button{
+    padding:10px 14px;border:0;border-radius:10px;
+    background:#16a34a;color:#fff;font-weight:700;
+    cursor:pointer;margin-top:10px;transition:background .2s;
+  }
+  button:hover{background:#15803d;}
+  .secondary{background:#1118270f;color:#111827;border:1px solid #e5e7eb}
+  pre{
+    background:#0b1020;color:#e5e7eb;padding:10px;
+    border-radius:10px;overflow:auto;max-height:220px;
+  }
+  .muted{color:#6b7280;font-size:12px;margin-top:6px}
+  .calc{font-size:13px;margin-top:6px}
+  .calc b{font-size:14px}
+
+  /* === 底部醒目导航区 === */
+  .footer-links{
+    grid-column:1 / -1;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:24px;
+  }
+  .footer-links a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:700;
+    transition:all .25s;
+  }
+  .footer-links a.register{
+    background:#f0f9ff;
+    color:#0369a1;
+    border:1px solid #bae6fd;
+  }
+  .footer-links a.register:hover{background:#e0f2fe;}
+  .footer-links a.reset{
+    background:#fef2f2;
+    color:#b91c1c;
+    border:1px solid #fecaca;
+  }
+  .footer-links a.reset:hover{background:#fee2e2;}
+  .footer-links a.home{
+    background:#ecfdf5;
+    color:#065f46;
+    border:1px solid #a7f3d0;
+  }
+  .footer-links a.home:hover{background:#d1fae5;}
+  @media(max-width:640px){
+    .grid{grid-template-columns:1fr;}
+    .footer-links{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+<div class="grid">
+
+  <div class="card">
+    <h2>余额查询</h2>
+    <input id="q_account" placeholder="账号（登陆游戏账号）"/>
+    <input id="q_passwd" placeholder="密码（登陆时的密码）"/>
+    <button id="btnQuery">查询</button>
+    <pre id="outQ">{ "提示": "操作结果会显示在这里"}</pre>
+  </div>
+
+  <div class="card">
+    <h2>在线直充</h2>
+    <input id="r_account" placeholder="账号（请勿输入错误）"/>
+    <input id="r_uid" placeholder="（留空将自动查询）"/>
+    <input id="r_amount" placeholder="金额（元）"/>
+    <div class="calc" id="calcHint">
+      比例：<b id="rateTxt">1元=100000点</b>；
+      预计到账：<b id="estPoint">0</b> 点（约 <b id="estGold">0</b> 锭金子）
+    </div>
+    <button id="btnRecharge">创建订单 → 前往收银台</button>
+    <pre id="outR">{ "提示": "操作结果会显示在这里"}</pre>
+    <div class="muted">提示：创建成功后会跳转至易支付收银台，支付完成后系统将自动入账（可在上方查询或进游戏在“高级钱庄老板”处兑换金子）。</div>
+  </div>
+
+  <div class="card">
+    <h2>CDK 兑换</h2>
+    <input id="c_account" placeholder="账号（请勿输入错误）"/>
+    <input id="c_key" placeholder="CDK 兑换码"/>
+    <button id="btnCdk">兑换</button>
+    <pre id="outC">{ "提示": "操作结果会显示在这里"}</pre>
+  </div>
+
+  <!-- 🔥 醒目的底部导航按钮 -->
+  <div class="footer-links">
+    <a href="register.html" class="register">📝 注册新账号</a>
+    <a href="reset_password.html" class="reset">🔑 找回密码</a>
+    <a href="index.html" class="home">🏠 返回首页</a>
+  </div>
+  <a href="/lottery.html" class="lottery" style="background:#fff7ed;color:#92400e;border:1px solid #fed7aa;">🎁 抽奖中心</a>
+</div>
+
+<script>
+const RECHARGE_RATE = 100000;  // 1元 = 多少点
+const GOLD_PER = 10000;       // 1锭 = 多少点
+
+function show(id,obj){document.getElementById(id).textContent=JSON.stringify(obj,null,2);}
+async function post(url,data){
+  const fd=new FormData();
+  Object.keys(data).forEach(k=>fd.append(k,data[k]));
+  const r=await fetch(url,{method:'POST',body:fd});
+  const j=await r.json().catch(()=>({ok:false,msg:'返回不是JSON'}));
+  return j;
+}
+function fmt(n){return (n||0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');}
+function refreshCalc(){
+  const raw=parseFloat(document.getElementById('r_amount').value||'0');
+  const pts=Math.round((isNaN(raw)?0:raw)*RECHARGE_RATE);
+  const gold=Math.floor(pts/GOLD_PER);
+  document.getElementById('estPoint').textContent=fmt(pts);
+  document.getElementById('estGold').textContent=fmt(gold);
+}
+document.getElementById('r_amount').addEventListener('input',refreshCalc);
+document.getElementById('rateTxt').textContent='1元='+fmt(RECHARGE_RATE)+'点';
+
+document.getElementById('btnQuery').onclick=async()=>{
+  const j=await post('balance_query.php',{account:q_account.value.trim(),passwd:q_passwd.value.trim()});
+  show('outQ',j);
+};
+document.getElementById('btnRecharge').onclick=async()=>{
+  const j=await post('recharge_compat.php',{
+    account:r_account.value.trim(),
+    uid:r_uid.value.trim(),
+    money:r_amount.value.trim() 
+  });
+  show('outR',j);
+  if(j.ok && j.payUrl){
+    alert("订单创建成功，即将跳转收银台！");
+    location.href=j.payUrl;
+  }
+};
+document.getElementById('btnCdk').onclick=async()=>{
+  const j=await post('cdk_recharge.php',{account:c_account.value.trim(),key:c_key.value.trim()});
+  show('outC',j);
+};
+refreshCalc();
+</script>
+</body>
+</html>

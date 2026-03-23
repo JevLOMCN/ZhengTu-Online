@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2005 rel. 2 U (http://www.xmlspy.com) by MakiTeaM -->
+<event id="1695" name="活动大使">
+	<!--new means new quest, default is quest on user-->
+<quest id="88801"><!--领取恶鬼树-->
+<embranchment id="1"><!--领取金木恶鬼树种子99-105-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="99"/>	
+     <level type="Less" value="105"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 1)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="2"><!--领取水火恶鬼树种子104-110-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="104"/>	
+     <level type="Less" value="110"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 2)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="3"><!--领取金土恶鬼树种子109-115-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="109"/>	
+     <level type="Less" value="115"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 3)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="4"><!--领取金水恶鬼树种子114-120-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="114"/>	
+     <level type="Less" value="120"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 4)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="5"><!--领取木水恶鬼树种子119-125-->
+     <conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="119"/>	
+     <level type="Less" value="125"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 5)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="6"><!--领取土火恶鬼树种子124-130-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="124"/>	
+     <level type="Less" value="130"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 6)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="7"><!--领取金火恶鬼树种子129-135-->
+    <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="129"/>	
+     <level type="Less" value="135"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 7)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="8"><!--领取土火恶鬼树种子134-138-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="134"/>
+     <level type="Less" value="138"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 8)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="9"><!--领取金火恶鬼树种子137-141-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="137"/>	
+     <level type="Less" value="141"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 9)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="10"><!--领取土火恶鬼树种子140-144-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="140"/>	
+     <level type="Less" value="144"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 11)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="11"><!--领取金水恶鬼树种子143-146-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="143"/>	
+     <level type="Less" value="146"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 4)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="12"><!--领取土水恶鬼树种子145-148-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="145"/>	
+     <level type="Less" value="148"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 11)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="13"><!--领取金木恶鬼树种子147-150-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="147"/>	
+     <level type="Less" value="150"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 1)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="14"><!--领取木水恶鬼树种子149-153-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="149"/>	
+     <level type="Less" value="153"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 5)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="15"><!--领取金水恶鬼树种子152-155-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="152"/>	
+     <level type="Less" value="155"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 4)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="16"><!--领取土水恶鬼树种子154-158-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="154"/>	
+     <level type="Less" value="158"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 11)
+end
+	    </menu>
+			</actions>
+</embranchment>
+<embranchment id="17"><!--领取金火恶鬼树种子157-161-->
+     <conditions>  
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+     <timer start="18:00:00" end="23:59:59"/>
+     <innation/>
+     <level type="Great" value="157"/>	
+     <level type="Less" value="261"/>
+     </conditions>
+	  <actions>
+	  <menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1000, 7)
+end
+	    </menu>
+			</actions>
+</embranchment>
+</quest>
+<quest id="88802"><!--交付五行令牌开始-->
+<!--交付五行令牌 99-120 开始-->
+<embranchment id="1"><!--五行令牌(金)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="99"/>	
+<level type="Less" value="120"/>
+<item value="2" id="3810"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1001, 1)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="2"><!--五行令牌(木)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="99"/>	
+<level type="Less" value="120"/>
+<item value="2" id="3811"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1001, 2)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="3"><!--五行令牌(水)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="99"/>	
+<level type="Less" value="120"/>
+<item value="2" id="3812"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1001, 3)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="4"><!--五行令牌(火)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="99"/>	
+<level type="Less" value="120"/>
+<item value="2" id="3813"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1001, 4)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="5"><!--五行令牌(土)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="99"/>	
+<level type="Less" value="120"/>
+<item value="2" id="3814"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1001, 5)
+end
+</menu>
+</actions>
+</embranchment>
+<!--交付五行令牌 119-135 开始-->
+<embranchment id="6"><!--五行令牌(金)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="119"/>	
+<level type="Less" value="135"/>
+<item value="2" id="3810"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1002, 1)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="7"><!--五行令牌(木)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="119"/>	
+<level type="Less" value="135"/>
+<item value="2" id="3811"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1002, 2)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="8"><!--五行令牌(水)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="119"/>	
+<level type="Less" value="135"/>
+<item value="2" id="3812"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1002, 3)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="9"><!--五行令牌(火)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="119"/>	
+<level type="Less" value="135"/>
+<item value="2" id="3813"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1002, 4)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="10"><!--五行令牌(土)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="119"/>	
+<level type="Less" value="135"/>
+<item value="2" id="3814"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1002, 5)
+end
+</menu>
+</actions>
+</embranchment>
+<!--交付五行令牌 134-150 开始-->
+<embranchment id="11"><!--五行令牌(金)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="134"/>	
+<level type="Less" value="150"/>
+<item value="2" id="3810"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1003, 1)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="12"><!--五行令牌(木)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="134"/>	
+<level type="Less" value="150"/>
+<item value="2" id="3811"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1003, 2)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="13"><!--五行令牌(水)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="134"/>	
+<level type="Less" value="150"/>
+<item value="2" id="3812"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1003, 3)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="14"><!--五行令牌(火)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="134"/>	
+<level type="Less" value="150"/>
+<item value="2" id="3813"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1003, 4)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="15"><!--五行令牌(土)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="134"/>	
+<level type="Less" value="150"/>
+<item value="2" id="3814"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1003, 5)
+end
+</menu>
+</actions>
+</embranchment>
+<!--交付五行令牌 149-160 开始-->
+<embranchment id="111"><!--五行令牌(金)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="149"/>	
+<level type="Less" value="256"/>
+<item value="2" id="3810"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1004, 1)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="112"><!--五行令牌(木)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="149"/>	
+<level type="Less" value="256"/>
+<item value="2" id="3811"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1004, 2)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="113"><!--五行令牌(水)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="149"/>	
+<level type="Less" value="256"/>
+<item value="2" id="3812"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1004, 3)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="114"><!--五行令牌(火)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="149"/>	
+<level type="Less" value="256"/>
+<item value="2" id="3813"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1004, 4)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="115"><!--五行令牌(土)-->
+<conditions>  
+<uservar type="Less" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="149"/>	
+<level type="Less" value="256"/>
+<item value="2" id="3814"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("【交付五行令牌】(22)", "v1695", 1004, 5)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="300"><!--交付过五行令牌-->
+<conditions>  
+<uservar type="Equal" name="wxlp_state_1" value="1"/>
+<timer start="18:00:00" end="23:59:59"/>
+<innation/>
+<level type="Great" value="99"/>	
+<level type="Less" value="256"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1009, 9)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="301"><!--18-24点时间段外-->
+<conditions>  
+<timer start="00:00:01" end="17:59:59"/>
+<innation/>
+<level type="Great" value="99"/>	
+<level type="Less" value="166"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1009, 8)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="309"><!--等级低于100级提示-->
+<conditions>  
+<level type="Great" value="1"/>	
+<level type="Less" value="100"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("  你好，你在我这里可以参加每日活动！")
+this:AddDialogItem("五行令牌(0)", "Dialog001")
+end
+function Dialog001()
+this:AddTalk("  天灵灵,地灵灵，降妖伏魔我最行！")
+this:AddTaskCmdItem("领取-恶鬼树种子(22)", "v1695", 1009, 99)
+end
+</menu>
+</actions>
+</embranchment>
+
+</quest>
+<!--五行令牌活动执行参数开始-->
+<quest id="1000" new="1"><!--99-160恶鬼种子领取-->
+<embranchment id="1" active="1"><!--金木恶鬼种子-->
+	<conditions>
+        <uservar type="Less" name="wxlpeg_state_1" value="1"/>	
+	</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="320"/><!--五行令牌金·恶鬼种子-->
+        <addbinditem value="1" id="321"/><!--五行令牌木·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="2" active="1"><!--水火恶鬼种子-->
+			<conditions>
+  <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="322"/><!--五行令牌水·恶鬼种子-->
+        <addbinditem value="1" id="323"/><!--五行令牌火·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="3" active="1"><!--金土恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="320"/><!--五行令牌金·恶鬼种子-->
+        <addbinditem value="1" id="324"/><!--五行令牌土·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="4" active="1"><!--金水恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="320"/><!--五行令牌金·恶鬼种子-->
+        <addbinditem value="1" id="322"/><!--五行令牌水·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="5" active="1"><!--木水恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="321"/><!--五行令牌木·恶鬼种子-->
+        <addbinditem value="1" id="322"/><!--五行令牌水·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="6" active="1"><!--土火恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="324"/><!--五行令牌土·恶鬼种子-->
+        <addbinditem value="1" id="323"/><!--五行令牌火·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="7" active="1"><!--金火恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="320"/><!--五行令牌金·恶鬼种子-->
+        <addbinditem value="1" id="323"/><!--五行令牌火·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="8" active="1"><!--木土恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="321"/><!--五行令牌木·恶鬼种子-->
+        <addbinditem value="1" id="324"/><!--五行令牌土·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="9" active="1"><!--金火恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="320"/><!--五行令牌金·恶鬼种子-->
+        <addbinditem value="1" id="323"/><!--五行令牌火·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="10" active="1"><!--木土恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="321"/><!--五行令牌木·恶鬼种子-->
+        <addbinditem value="1" id="324"/><!--五行令牌土·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="11" active="1"><!--土水恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="324"/><!--五行令牌土·恶鬼种子-->
+        <addbinditem value="1" id="322"/><!--五行令牌水·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="111" active="1"><!--祝福令牌·土恶鬼种子-->
+			<conditions>
+          <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="325"/><!--祝福五行令牌·恶鬼种子-->
+        <addbinditem value="1" id="324"/><!--五行令牌土·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="112" active="1"><!--祝福令牌·水恶鬼种子-->
+			<conditions>
+     <uservar type="Less" name="wxlpeg_state_1" value="1"/>
+			</conditions>
+			<actions>
+        <uservar type="Add" name="wxlpeg_state_1" value="1"/>
+        <refresh name="clock"/>
+	      <addbinditem value="1" id="325"/><!--祝福五行令牌·恶鬼种子-->
+        <addbinditem value="1" id="322"/><!--五行令牌水·恶鬼种子-->
+      <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+
+<embranchment id="99" active="1"><!--领取过的设置-->
+	<conditions>                                        
+ </conditions>
+	<actions>
+  <flexmenu content="你已经领取过恶鬼树种子!"/>	
+  </actions>
+</embranchment>
+</quest>
+<quest id="1001" new="1"><!--99-120交付五行令牌-->
+<embranchment id="1" active="1"><!--五行令牌(金)-->
+      <conditions>
+       <item value="2" id="1586"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1586" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验2.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="2" active="1"><!--五行令牌(木)-->
+      <conditions>
+       <item value="2" id="1587"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1587" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验2.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="3" active="1"><!--五行令牌(水)-->
+      <conditions>
+       <item value="2" id="1588"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1588" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验2.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="4" active="1"><!--五行令牌(火)-->
+      <conditions>
+       <item value="2" id="1589"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1589" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验2.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="5" active="1"><!--五行令牌(土)-->
+      <conditions>
+       <item value="2" id="1590"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1590" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验2.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+</quest>
+<quest id="1002" new="1"><!--119-135交付五行令牌-->
+<embranchment id="1" active="1"><!--五行令牌(金)-->
+      <conditions>
+       <item value="2" id="1586"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1586" log="删除五行令牌"/>
+       <exp value="500000000"/><!--增加经验5.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="2" active="1"><!--五行令牌(木)-->
+      <conditions>
+       <item value="2" id="1587"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1587" log="删除五行令牌"/>
+       <exp value="500000000"/><!--增加经验5.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="3" active="1"><!--五行令牌(水)-->
+      <conditions>
+       <item value="2" id="1588"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1588" log="删除五行令牌"/>
+       <exp value="500000000"/><!--增加经验5.0E-->
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="4" active="1"><!--五行令牌(火)-->
+      <conditions>
+       <item value="2" id="1589"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1589" log="删除五行令牌"/>
+       <exp value="500000000"/><!--增加经验5.0E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="5" active="1"><!--五行令牌(土)-->
+      <conditions>
+       <item value="2" id="1590"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1590" log="删除五行令牌"/>
+       <exp value="500000000"/><!--增加经验5.0E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+</quest>
+<quest id="1003" new="1"><!--134-150交付五行令牌-->
+<embranchment id="1" active="1"><!--五行令牌(金)-->
+      <conditions>
+       <item value="2" id="1586"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1586" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验20E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="2" active="1"><!--五行令牌(木)-->
+      <conditions>
+       <item value="2" id="1587"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1587" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验20E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="3" active="1"><!--五行令牌(水)-->
+      <conditions>
+       <item value="2" id="1588"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1588" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验20E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="4" active="1"><!--五行令牌(火)-->
+      <conditions>
+       <item value="2" id="1589"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1589" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验20E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="5" active="1"><!--五行令牌(土)-->
+      <conditions>
+       <item value="2" id="1590"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1590" log="删除五行令牌"/>
+       <exp value="200000000"/><!--增加经验20E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+</quest>
+<quest id="1004" new="1"><!--150-160交付五行令牌-->
+<embranchment id="1" active="1"><!--五行令牌(金)-->
+      <conditions>
+       <item value="2" id="1586"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>>
+       <removeitem value="2" id="1586" log="删除五行令牌"/>
+        <exp value="200000000"/><!--增加经验20E-->
+       <exp value="150000000"/><!--增加经验15E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="2" active="1"><!--五行令牌(木)-->
+      <conditions>
+       <item value="2" id="1587"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1587" log="删除五行令牌"/>
+        <exp value="200000000"/><!--增加经验20E-->
+       <exp value="150000000"/><!--增加经验15E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="3" active="1"><!--五行令牌(水)-->
+      <conditions>
+       <item value="2" id="1588"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1588" log="删除五行令牌"/>
+        <exp value="200000000"/><!--增加经验20E-->
+       <exp value="150000000"/><!--增加经验15E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="4" active="1"><!--五行令牌(火)-->
+      <conditions>
+       <item value="2" id="1589"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1589" log="删除五行令牌"/>
+        <exp value="200000000"/><!--增加经验20E-->
+       <exp value="150000000"/><!--增加经验15E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+<embranchment id="5" active="1"><!--五行令牌(土)-->
+      <conditions>
+       <item value="2" id="1590"/>
+       <uservar type="Less" name="wxlp_state_1" value="1"/>
+      </conditions>
+      <actions>
+        <uservar type="Add" name="wxlp_state_1" value="1"/>
+        <refresh name="clock"/>
+       <removeitem value="2" id="1590" log="删除五行令牌"/>
+        <exp value="200000000"/><!--增加经验20E-->
+       <exp value="150000000"/><!--增加经验15E-->
+       <bindgold type="Add" value="10"/>
+       <salary type="Add" value="30000"/> 
+       <flexmenu content="完成五行令牌任务，获得金子3锭/工资3锭"/>
+       <var type="Set" name="state" value="-2"/>
+      </actions>
+</embranchment>
+</quest>
+<quest id="1009" new="1"><!--交付过五行令牌提示-->
+ <embranchment id="8" active="1"><!--交付任务过的设置-->
+	<conditions>                                        
+ </conditions>
+	<actions>
+  <flexmenu content="活动还未开始！活动时间每天18点-24点结束"/>	
+  </actions>
+</embranchment>
+ <embranchment id="9" active="1"><!--交付任务过的设置-->
+	<conditions>                                        
+ </conditions>
+	<actions>
+  <flexmenu content="你今天已经参与过五行令牌活动了请明天再来!活动时间每天18点-24点结束"/>	
+  </actions>
+</embranchment>
+ <embranchment id="99" active="1"><!--交付任务过的设置-->
+	<conditions>                                        
+ </conditions>
+	<actions>
+  <flexmenu content="你的等级不足100级无法参与此活动!请升级到100级在来找我"/>	
+  </actions>
+</embranchment>
+</quest>
+</event>

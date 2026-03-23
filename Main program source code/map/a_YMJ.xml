@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by zhengtu (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的 country:0表示本国 非0表示指定国家-->
+	<waypoint>
+		<point x="37" y="64"/>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="200" height="200" x="1" y="1" type="16"/>
+
+	<npc id="33001" name="绿" width="1" height="1" x="81" y="56" num="1" interval="1800"/>
+	<npc id="33002" name="绿" width="1" height="1" x="88" y="47" num="1" interval="1800"/>
+	<npc id="33003" name="绿" width="1" height="1" x="50" y="84" num="1" interval="1800"/>
+	<npc id="33004" name="绿" width="1" height="1" x="57" y="70" num="1" interval="1800"/>
+	<npc id="33005" name="绿" width="1" height="1" x="38" y="138" num="1" interval="1800"/>
+	<npc id="33006" name="绿" width="1" height="1" x="38" y="155" num="1" interval="1800"/>
+	<npc id="33007" name="绿" width="1" height="1" x="57" y="187" num="1" interval="1800"/>
+	<npc id="33008" name="绿" width="1" height="1" x="65" y="194" num="1" interval="1800"/>
+	<npc id="33101" name="绿" width="1" height="1" x="105" y="185" num="1" interval="1800"/>
+	<npc id="33102" name="绿" width="1" height="1" x="102" y="197" num="1" interval="1800"/>
+	<npc id="33103" name="绿" width="1" height="1" x="132" y="132" num="1" interval="1800"/>
+	<npc id="33104" name="绿" width="1" height="1" x="140" y="150" num="1" interval="1800"/>
+	<npc id="33103" name="绿" width="1" height="1" x="114" y="86" num="1" interval="1800"/>
+	<npc id="33104" name="绿" width="1" height="1" x="129" y="89" num="1" interval="1800"/>
+    <npc id="30104" name="橙" width="1" height="1" x="86" y="126" num="1" interval="3600"/>
+	<npc id="30132" name="紫" width="1" height="1" x="93" y="56" num="1" interval="900"/>
+	<npc id="30133" name="紫" width="1" height="1" x="51" y="73" num="1" interval="900"/>
+	<npc id="30134" name="紫" width="1" height="1" x="32" y="141" num="1" interval="900"/>
+	<npc id="30135" name="紫" width="1" height="1" x="59" y="195" num="1" interval="900"/>
+	<npc id="30101" name="紫" width="1" height="1" x="115" y="188" num="1" interval="900"/>
+	<npc id="30111" name="紫" width="1" height="1" x="134" y="137" num="1" interval="900"/>
+	<npc id="30112" name="紫" width="1" height="1" x="122" y="81" num="1" interval="900"/>
+
+</map>

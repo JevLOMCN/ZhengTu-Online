@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="909" name="返回传送师(53,52)">
+	<quest id="200909">
+
+	<embranchment id="1">
+			<conditions>
+				<week value="1"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今天星期一-祝您有个愉快的休假！\n我可以送你回世外桃源！(getwday")
+this:AddTaskCmdItem("回城(0)", "v909", 1000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>	
+		<embranchment id="2">
+			<conditions>
+				<week value="2"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今天星期二-祝您有个愉快的休假！\n我可以送你回世外桃源！(getwday")
+this:AddTaskCmdItem("回城(0)", "v909", 1000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<week value="3"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今天星期三-祝您有个愉快的休假！\n我可以送你回世外桃源！(getwday")
+this:AddTaskCmdItem("回城(0)", "v909", 1000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>		
+		<embranchment id="4">
+			<conditions>
+				<week value="4"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今天星期四-祝您有个愉快的休假！\n我可以送你回世外桃源！(getwday")
+this:AddTaskCmdItem("回城(0)", "v909", 1000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>						
+		<embranchment id="5">
+			<conditions>
+				<week value="5"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今天星期五-祝您有个愉快的休假！\n我可以送你回世外桃源！(getwday")
+this:AddTaskCmdItem("回城(0)", "v909", 1000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>			
+		<embranchment id="6">
+			<conditions>
+				<week value="6"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今天星期六-祝您有个愉快的休假！\n我可以送你回世外桃源！(getwday")
+this:AddTaskCmdItem("回城(0)", "v909", 1000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>	
+		<embranchment id="7">
+			<conditions>
+				<week value="7"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今天星期日-祝您有个愉快的休假！\n我可以送你回世外桃源！(getwday")
+this:AddTaskCmdItem("回城(0)", "v909", 1000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>			
+	
+		
+	</quest>
+	<quest id="1000" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·世外桃源" pos="111,250"/>
+				<notify content="你被带到了世外桃源。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="2000" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫一层" pos="53,80"/>
+				<notify content="你被带到了迷宫一层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫二层" pos="53,80"/>
+				<notify content="你被带到了迷宫二层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫三层" pos="53,80"/>
+				<notify content="你被带到了迷宫三层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫四层" pos="53,80"/>
+				<notify content="你被带到了迷宫四层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫五层" pos="53,80"/>
+				<notify content="你被带到了迷宫五层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫六层" pos="53,80"/>
+				<notify content="你被带到了迷宫六层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫七层" pos="53,80"/>
+				<notify content="你被带到了迷宫七层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫八层" pos="53,80"/>
+				<notify content="你被带到了迷宫八层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫九层" pos="53,80"/>
+				<notify content="你被带到了迷宫九层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十层" pos="53,80"/>
+				<notify content="你被带到了迷宫十层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十一层" pos="53,80"/>
+				<notify content="你被带到了迷宫十一层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十二层" pos="53,80"/>
+				<notify content="你被带到了迷宫十二层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十三层" pos="53,80"/>
+				<notify content="你被带到了迷宫十三层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十四层" pos="53,80"/>
+				<notify content="你被带到了迷宫十四层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十五层" pos="53,80"/>
+				<notify content="你被带到了迷宫十五层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十六层" pos="53,80"/>
+				<notify content="你被带到了迷宫十六层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="17" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十七层" pos="53,80"/>
+				<notify content="你被带到了迷宫十七层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="18" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十八层" pos="53,80"/>
+				<notify content="你被带到了迷宫十八层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫十九层" pos="53,80"/>
+				<notify content="你被带到了迷宫十九层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫二十层" pos="53,80"/>
+				<notify content="你被带到了迷宫二十层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫二十一层" pos="53,80"/>
+				<notify content="你被带到了迷宫二十一层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫二十二层" pos="53,80"/>
+				<notify content="你被带到了迷宫二十二层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫二十三层" pos="53,80"/>
+				<notify content="你被带到了迷宫二十三层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="24" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫二十四层" pos="53,80"/>
+				<notify content="你被带到了迷宫二十四层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="25" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<goto name="中立区·迷宫二十五层" pos="53,80"/>
+				<notify content="你被带到了迷宫二十五层。"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

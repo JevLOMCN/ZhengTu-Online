@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<Zebra>
+	<Skill>
+		<type id="1">
+			<!--value var="2"/>
+			<value var="3"/>
+			<value var="4"/>
+			<value var="5"/>
+			<value var="6"/>
+			<value var="10"/>
+			<value var="12"/>
+			<value var="13"/>
+			<value var="15"/>
+			<value var="16"/>
+			<value var="26"/>
+			<value var="30"/>
+			<value var="21"/>
+			<value var="33"/>
+			<value var="34"/>
+			<value var="36"/>
+			<value var="37"/>
+			<value var="38"/>
+			<value var="40"/-->
+		</type>
+		<type id="2">
+			<value var="42"/>
+			<value var="43"/>
+			<value var="44"/>
+			<value var="46"/>
+			<value var="50"/>
+			<value var="51"/>
+			<value var="52"/>
+			<value var="53"/>
+			<value var="54"/>
+			<value var="58"/>
+			<value var="61"/>
+			<value var="64"/>
+			<value var="66"/>
+			<value var="70"/>
+			<value var="74"/>
+			<value var="75"/>
+			<value var="77"/>
+			<value var="78"/>
+			<value var="79"/>
+			<value var="80"/>
+		</type>
+		<type id="4">
+			<value var="163"/>
+			<value var="165"/>
+			<value var="169"/>
+			<value var="171"/>
+			<value var="182"/>
+		</type>
+		<type id="8">
+			<value var="201"/>
+			<value var="202"/>
+			<value var="203"/>
+			<value var="204"/>
+			<value var="206"/>
+			<value var="207"/>
+			<value var="209"/>
+			<value var="210"/>
+			<value var="213"/>
+			<value var="214"/>
+			<value var="227"/>
+			<value var="233"/>
+		</type>
+		<type id="16">
+			<value var="82"/>
+			<value var="86"/>
+			<value var="89"/>
+			<value var="90"/>
+			<value var="91"/>
+			<value var="92"/>
+			<value var="93"/>
+			<value var="109"/>
+			<value var="117"/>
+		</type>
+		<type id="32">
+			<value var="121"/>
+			<value var="124"/>
+			<value var="125"/>
+			<value var="126"/>
+			<value var="127"/>
+			<value var="128"/>
+			<value var="130"/>
+			<value var="131"/>
+			<value var="133"/>
+			<value var="134"/>
+			<value var="136"/>
+			<value var="139"/>
+			<value var="142"/>
+			<value var="146"/>
+			<value var="149"/>
+			<value var="150"/>
+			<value var="153"/>
+		</type>
+		<type id="64">
+			<value var="253"/>
+			<value var="256"/>
+			<value var="257"/>
+			<value var="261"/>
+			<value var="262"/>
+			<value var="265"/>
+			<value var="268"/>
+			<value var="270"/>
+			<value var="275"/>
+			<value var="277"/>
+		</type>
+		<type id="128">
+			<value var="281"/>
+			<value var="285"/>
+			<value var="287"/>
+			<value var="291"/>
+			<value var="300"/>
+			<value var="301"/>
+			<value var="310"/>
+		</type>
+	</Skill>
+	<Timer>
+		<frequency fre="0">
+			<operation oper="分散"/>
+			<operation oper="////callpet id=9001 type=7"/>
+			<!--operation oper="////callpet id=42001"/-->
+		</frequency>
+		<frequency fre="1">
+			<!--operation oper="攻击"/-->
+			<!--operation oper="pk"/-->
+		</frequency>
+		<frequency fre="5">
+			<!--operation oper="攻击"/-->
+		</frequency>
+		<frequency fre="10">
+			<!--operation oper="//大家好,我是机器人"/-->
+			<!--operation oper="//大家好,我是机器人"/-->
+			<!--operation oper="////levelup num=20"/>
+			<operation oper="////gomap name=凤凰城 type=128"/>
+			<operation oper="招收队员"/>
+			<operation oper="小退"/-->
+			<!--operation oper="退出"/-->
+			<!--operation oper="补体力"/-->
+			<!--operation oper="补魔法"/-->
+			<!--operation oper="恢复耐久"/-->
+			<!--operation oper="取消技能冷却"/-->
+			<!--operation oper="////gomap name=清源村 type=8"/-->
+		</frequency>
+		<frequency fre="60">
+			<!--operation oper="解散队伍"/-->
+			<!--operation oper="召怪"/-->
+			<!--operation oper="小退"/-->
+			<!--operation oper="招收队员"/-->
+		</frequency>
+	</Timer>
+	<Global>
+		<!--是否随机选择角色登陆-->
+		<random_role>true</random_role>
+		<loop_run>true</loop_run>
+		<!--移动速度-->
+		<move_speed>1000</move_speed>
+		<!--小退重新登陆等待时间-->
+		<login_sleep>5</login_sleep>
+		<mapfile>qingyuancun-main</mapfile>
+	</Global>
+</Zebra>

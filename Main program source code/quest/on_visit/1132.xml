@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<event id="1132" name="年夜饭">
+<!--new means new quest, default is quest on user-->
+<quest id="900012">
+<embranchment id="1">
+<conditions>
+<gold type="Great" value="49"/>
+<timeouts long="864000" id="100903" less="0"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("    尊敬的(GetName)您好；牛牛再这里  祝大家新年快乐，开开心心，团圆团圆!")
+this:AddDialogItem("新年活动已经结束(0)", "Dialog70")
+end
+function Dialog74()
+this:AddTalk("    尊敬的(GetName)您好；牛牛再这里  祝大家新年快乐，开开心心，团圆团圆!")
+this:AddTaskCmdItem("领取新年福利(0)", "v1132", 100903, 11)
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="2">
+<conditions>
+<gold type="Great" value="49"/>
+<timeouts long="864000" id="100903" less="1"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddTalk("    尊敬的(GetName)您好；你领取了新年福利!很丰富吧!祝你新年快乐")
+end
+</menu>
+</actions>
+</embranchment>
+<embranchment id="15">
+<conditions>
+<gold type="Less" value="50"/>
+</conditions>
+<actions>
+<menu>
+function TaskDialog()
+this:AddDialogItem("恭喜发财红包拿来(2)", "Dialog75")
+end
+function Dialog75()
+tthis:AddTalk("    尊敬的(GetName)您好；新年了您那么穷啊.先去找点银子垫垫您自已的腰包再来找我领红包哟!")
+this:AddCloseItem("离开")
+end
+</menu>
+</actions>
+</embranchment>
+</quest>
+<quest id="100903" new="1">
+<embranchment id="11" active="1">
+<conditions>
+<space size="1"/>
+<timeouts long="864000" id="100903" less="0"/>
+<gold type="Great" value="49"/>
+</conditions>
+<actions>
+<umaxgold type="Add" value="88888888"/><!--8888锭金子-->
+<salary type="Add" value="88888888"/><!--8888锭工资-->
+<addGradebinditem value="6666" id="548" level="6"/>
+<var1bulletin kind="42" content="再王城年夜饭桌（836,500）领取新年福利！获得八千八百八十八锭八十八两八十八文金子和八千八百八十八锭八十八两八十八文工资和六千六百六十六颗星灵石，牛牛再这里祝大家新年快乐-年年有余。"/>
+<timeouts/>
+</actions>
+</embranchment>
+</quest>
+</event>

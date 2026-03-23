@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1137" name="天下令">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<umaxgold type="Add" value="1"/> 
+				<notify content="使用天下令 获得金子1文"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1026" name="龙脉">
+	<!--new means new quest, default is quest on user-->
+	<quest id="9601206">
+		<embranchment id="1">
+			<conditions>
+				<extentimer start="2008-12-03-00:00:05" end="2109-12-23-23:59:55"/>
+				<uservar type="Less" name="lm_state_2" value="3"/>
+                                 <innation/>
+					<var type="Differ" name="state" value="-1" id="21151"/>
+				<var type="Differ" name="state" value="1" id="21151"/>
+				<var type="Differ" name="state" value="-3" id="21151"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;我是龙神：尊敬的勇士！&lt;/n&gt;&lt;n&gt; \n&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;你能接受我交付给你的任务吗？任务可是很艰巨的！但是完成后会获得丰厚的奖励！ &lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;任务名称：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;【皇族龙脉】&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;目标地点：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;【敌国王城】&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;\n10分钟刷新“皇族龙脉”将其砍断!&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;任务奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1398\"&gt;  金子40锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1451\"&gt;  工资10锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"665\"&gt;  银子100锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接受任务:砍杀敌国龙脉(2)", "v1026", 21151, 1)
+this:AddCloseItem("离开")
+end
+		
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<extentimer start="2008-12-03-00:00:05" end="2109-12-23-23:59:55"/>
+				<uservar type="Equal" name="lm_state_2" value="3"/>
+                                 <innation/>
+				<var type="Differ" name="state" value="-1" id="21151"/>
+				<var type="Differ" name="state" value="1" id="21151"/>
+				<var type="Differ" name="state" value="-3" id="21151"/>
+			</conditions>
+			<actions>
+				<menu>
+
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;提示：&lt;/n&gt;&lt;n&gt; \n&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt; 亲 今天能做的任务次数已经用完，明天在来 &lt;/n&gt;&lt;/p&gt;");
+this:AddCloseItem("我知道了")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<extentimer start="2008-12-03-00:00:05" end="2109-12-23-23:59:55"/>
+				<var type="Equal" name="state" value="1" id="21151"/>
+				</conditions>
+			<actions>
+					<menu>
+					function TaskDialog()
+this:AddDialogItem("任务：斩断龙脉(0)", "Dialog43")
+this:AddCloseItem("离开")
+end
+function Dialog43()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,20,240,0\"&gt;  (GetName),你已经接受了去敌国斩断龙脉的任务，赶快行动吧。&lt;/n&gt;&lt;/p&gt;")
+this:AddCloseItem("我知道了")
+this:AddCloseItem("离开")
+end
+		</menu>
+				</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<extentimer start="2008-12-03-00:00:05" end="2109-12-23-23:59:55"/>
+				<var type="Differ" name="state" value="1" id="21151"/>
+				<var type="Equal" name="state" value="-3" id="21151"/>
+				<var type="Differ" name="state" value="-1" id="21151"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("亲，恭喜您完成了任务，请选择完成的任务，接受奖励吧！")
+this:AddTaskCmdItem("领取奖励{10002}", "v1026", 21151, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21151" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="39"/>
+                                 <timeouts long="1800" id="21151" less="0"/>
+				<var type="Differ" name="state" value="-3" id="21151"/>
+				<var type="Differ" name="state" value="1" id="21151"/>
+				<uservar type="Less" name="lm_state_2" value="3"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="1"/>
+				<uservar type="Add" name="lm_state_2" value="1"/>
+				<var type="GetP" name="lm_kill_selflevel" value="1"/>
+				<vars type="Mul" name1="lm_kill_selflevel" name2="lm_kill_selflevel"/>
+				<var type="Set" name="baseexp" value="2220"/>
+				<var type="Set" name="lm_kill_selflevel2" value="3"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="lm_kill_selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="lm_kill_selflevel2" name2="lm_kill_selflevel"/>
+				<vars type="Mul" name1="lm_kill_selflevel" name2="stupid"/>
+				<vars type="Div" name1="lm_kill_selflevel" name2="div"/>
+				<vars type="Mul" name1="lm_kill_selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="lm_kill_selflevel2" name2="div"/>
+				<vars type="Add" name1="lm_kill_selflevel" name2="lm_kill_selflevel2"/>
+				<refresh name="lm_kill_selflevel"/>
+		<var1bulletin kind="41" content="接受了砍龙脉任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21151"/>
+			</conditions>
+			<actions>
+		<exp value="100000000"/>
+		<exp value="100000000"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+		
+	<var1bulletin kind="41" content="完成了龙脉任务，获得丰厚奖励！" var1="country_name" var2="name"/>
+				<flexmenu content="完成任务，获取奖励"/>
+				<var type="Set" name="kill_npc1" value="0"/>
+				<refresh name="kill_npc1"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

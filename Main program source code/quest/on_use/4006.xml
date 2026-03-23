@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="4006" name="坐骑图鉴(LV.6)">
+<!--坐骑图鉴对话框-->
+<quest id="10000">
+	<!--坐骑图鉴可领取坐骑金子足够-->	
+<embranchment id="2">
+  <conditions>
+  	<!--金子大于500锭-->
+  </conditions>
+<actions>
+<mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;尊敬的玩家(GetName)！\n您可以升级您的坐骑图鉴等级以此获得更好的属性的马铠！！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;当前坐骑图鉴等级：6级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;升级7级所需材料：\n天之碎片需求数量：100个 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("领取6级马铠(33)", "u4006", 1000, 1)
+this:AddTaskCmdItem("升级坐骑图鉴(33)", "u4006", 1010, 2)
+this:AddCloseItem("离开")
+end
+
+function MoveCanClose()
+	return false
+end 
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>					
+	<!--坐骑图鉴可领取坐骑金子足够材料足够-->	
+<embranchment id="3">
+  <conditions>
+  	<item value="100" id="1081"/>
+  	<!--金子大于500锭材料足够-->
+  </conditions>
+<actions>
+<mainmenu>
+function MainDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;尊敬的玩家(GetName)！\n您可以升级您的坐骑图鉴等级以此获得更好的属性的马铠！！&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;当前坐骑图鉴等级：6级 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;升级7级所需材料：\n天之碎片需求数量：100个 &lt;/n&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,100\"&gt;----------------------------------&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("领取6级马铠(33)", "u4006", 1000, 1)
+this:AddTaskCmdItem("升级坐骑图鉴(33)", "u4006", 1010, 1)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end 
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+</quest>
+<!--参数指定-->
+<quest id="1000" new="1">
+<embranchment id="1" active="1">
+            <conditions>
+            </conditions>
+                <actions>
+                <addgreenbinditem value="1" id="3631"/>
+                </actions>
+         </embranchment>
+ </quest>        
+<quest id="1010" new="1">
+<embranchment id="1" active="1">
+            <conditions>           	          
+              	
+              	<item value="100" id="1081"/>
+            </conditions>
+                <actions>
+              	
+              	<removeitem value="100" id="1081"/>
+                <addbinditem value="1" id="4007"/>
+                <removeitem value="1" id="4006"/>
+                <notify content="升级成功,获得7级·坐骑图鉴" /> 
+                </actions>
+         </embranchment>   
+            <embranchment id="2" active="1">
+            <conditions>
+            </conditions>
+                <actions>
+               <flexmenu content="升级失败!请检查背包材料条件是否满足升级要求！"/> 
+            </actions>
+         </embranchment> 
+             <embranchment id="3" active="1">
+            <conditions>
+            </conditions>
+                <actions>
+               <flexmenu content="金子不足500锭不能升级坐骑图鉴!"/> 
+            </actions>
+         </embranchment> 
+    </quest>    
+</event> 

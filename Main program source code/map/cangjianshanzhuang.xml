@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by zhengtu (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<waypoint>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<npc id="5505" name="万剑阵·神兵" width="1" height="1" x="70" y="76" num="1" interval="1" color="0,255,0,0"/>
+	<npc id="21041" name="神兵封印之灵" width="1" height="1" x="41" y="61" num="1" interval="1" color="0,255,0,0"/>
+	<npc id="21042" name="神兵·剑灵" width="1" height="1" x="60" y="42" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21043" name="神兵·剑魔(物)" width="1" height="1" x="44" y="41" num="1" interval="120" color="0,255,0,0"/>
+	<npc id="21044" name="神兵·剑魔(魔)" width="1" height="1" x="57" y="60" num="1" interval="120" color="0,255,0,0"/>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="24" height="31" x="10" y="244" type="1" color="0,0,255,0"/>
+</map>

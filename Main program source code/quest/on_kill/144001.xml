@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by wt (zt) -->
+<event id="144001" name="世界BOSS">
+	<!--new means new quest, default is quest on user-->
+	<quest id="20391" new="1">
+		<embranchment id="1">
+			<conditions>
+				
+			</conditions>
+			<actions>
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				<adddropitem value="250" id="799" odds="13333"/> 
+				
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/> 
+				<adddropitem value="200" id="1402" odds="13333"/>
+				
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				<adddropitem value="250" id="50003" odds="13333"/> 
+				
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				<adddropitem value="250" id="50000" odds="13333"/> 
+				
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				<adddropitem value="100" id="3540" odds="13333"/>
+				
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				<adddropitem value="200" id="1100" odds="13333"/>
+				
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				<adddropitem value="200" id="1150" odds="13333"/>
+				
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				<adddropitem value="50" id="3980" odds="13333"/>
+				
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				<adddropitem value="100" id="5315" odds="13333"/>
+				
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				<adddropitem value="100" id="5316" odds="13333"/>
+				
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				<adddropitem value="100" id="3924" odds="13333"/>
+				
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				<adddropitem value="100" id="3936" odds="13333"/>
+				
+				<adddropitem value="1" id="1140" odds="13333"/>
+				<adddropitem value="1" id="1140" odds="13333"/>
+				
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				<adddropitem value="150" id="1141" odds="13333"/>
+				
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				<adddropitem value="150" id="1153" odds="13333"/>
+				
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				<adddropitem value="10" id="5313" odds="13333"/>
+				
+				
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				<adddropitem value="2" id="52002" odds="13333"/>
+				
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				<adddropitem value="10" id="3542" odds="13333"/>
+				
+				
+				
+				
+			</actions>
+		</embranchment>
+	</quest>
+</event>

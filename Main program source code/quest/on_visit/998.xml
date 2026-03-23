@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="998" name="王城-华英雄(823,450)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="90710">		
+		<embranchment id="101">
+			<conditions>
+				<level type="Great" value="29"/>
+				<level type="Less" value="300"/>
+				<uservar type="Less" name="heroquest" value="1"/>
+				<var type="Differ" name="state" value="-1" id="20711"/>
+				<var type="Differ" name="state" value="1" id="20711"/>
+				<var type="Differ" name="state" value="-3" id="20711"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    昨晚我梦中有一个人通过了英雄的试炼，你一定就是那个英雄了\n    在我这里你可以通过试炼提高你的能力，每次试炼需要花费少量银子，通过试炼的英雄可以获得海量经验值。\n    你可以选择不同程度的试炼，试炼的等级越高获得的经验值也越多\n    每天只能进行一次试炼")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;任务奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1398\"&gt;  金子100锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1451\"&gt;  工资10锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"665\"&gt;  银子100锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"21000\"&gt;  鬼谷子金币*50&lt;/object&gt;&lt;/p&gt;")
+
+this:AddDialogItem("接受试炼-5000怪(2)", "Dialog40")
+end
+function Dialog40()
+this:AddTalk("中级试炼：\n    去消灭60级以上怪物的5000只完成试炼，你将获得海量经验，试炼费为50两银子")
+this:AddTaskCmdItem("接受试炼-50两{10001}", "v998", 20711, 56)
+end
+                     </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="20711"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    恭喜你完成了今天的英雄试炼任务，你果然是个英雄")
+this:AddTaskCmdItem("领取奖励{10001}", "v998", 20711, 101)
+end
+</menu>
+			</actions>
+		</embranchment>
+
+	</quest>
+	<quest id="20711" new="1">
+		<!--击杀5000只怪物-->
+		<embranchment id="56" active="1">
+			<conditions>
+				<gold type="Great" value="4999"/>
+				<level type="Great" value="29"/>
+				<level type="Less" value="300"/>
+				<uservar type="Less" name="heroquest" value="1"/>
+				<var type="Differ" name="state" value="-1" id="20711"/>
+				<var type="Differ" name="state" value="1" id="20711"/>
+				<var type="Differ" name="state" value="-3" id="20711"/>
+			</conditions>
+			<actions>
+				<gold type="Sub" value="5000"/>
+				<tracelog name="接受杀5000怪物任务*华英雄" state="0"/>
+				<notify content="任务：击败60级以上的怪物5000只"/>
+				<uservar type="Set" name="heroquest" value="1"/>
+				<uservar type="Set" name="heroquest_5000" value="1" broadcast="1"/>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="60"/>
+				<var type="Set" name="hero_num" value="5000"/>
+				<var type="GetP" name="hero_selflevel" value="1"/>
+				<vars type="Mul" name1="hero_selflevel" name2="hero_selflevel"/>
+				<var type="Set" name="baseexp" value="2000"/>
+				<var type="Set" name="hero_selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="hero_selflevel" name2="baseexp"/>
+				<vars type="Div" name1="hero_selflevel" name2="div"/>
+				<vars type="Mul" name1="hero_selflevel2" name2="hero_selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="hero_selflevel" name2="stupid"/>
+				<var type="Set" name="time" value="1"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="hero_selflevel2" name2="verystupid"/>
+				<vars type="Add" name1="hero_selflevel" name2="hero_selflevel2"/>
+				<!--以下是弱国经验值乘10%-->
+				<var type="Set" name="hero_x" value="10"/>
+				<var type="Set" name="hero_y" value="100"/>
+				<vars type="Div" name1="hero_selflevel" name2="hero_y"/>
+				<vars type="Mul" name1="hero_selflevel" name2="hero_x"/>
+				<refresh name="hero_selflevel"/>
+				<refresh name="level"/>
+				<refresh name="hero_num"/>
+			</actions>
+		</embranchment>
+		<embranchment id="101" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="20711"/>
+			</conditions>
+			<actions>
+				<tracelog name="完成杀5000怪物任务*华英雄" state="1"/>
+				<exp1 value="100" id="20711" name="hero_selflevel"/>
+				<var type="Set" name="state" value="-2"/>
+				<getname name="name" id="20711"/>
+				<varnotify1 content="完成英雄试炼任务，经验增加%u" value="hero_selflevel" id="20711"/>
+				<umaxgold type="Add" value="1000000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+				<addbinditem value="50" id="21000"/>
+                <flexmenu content="完成英雄试炼任务，获得金子40锭/工资10锭/银子100锭"/>
+                <flexmenu content="完成英雄试炼任务，获得金子40锭/工资10锭/银子100锭"/>
+				<refresh name="kill"/>
+				<refresh name="state"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+<messageSystem>
+	<messages starttime="2017/4/5 23:33:45" endtime="2018/4/25 23:33:45" login="1">
+		<message>欢迎来到天下征途,汉国YY 894087 楚国YY 674380</message>
+	</messages>
+	<messages starttime="2004/3/25 23:33:45" interval="600">
+		<message>欢迎来到天下征途,汉国YY 894087 楚国YY 674380</message>
+	</messages>
+	<!--
+	<messages starttime="2016/5/25 23:33:45" endtime="2017/3/25 23:33:45" interval="600" order="1"> 
+
+		<message>这是一分钟一次的顺序消息，第一条</message>
+		<message>这是一分钟一次的顺序消息，第二条</message>
+		<message>这是一分钟一次的顺序消息，第三条</message>
+	</messages>-->
+	<!--messages endtime="2015/7/25 23:33:45">
+		<message>test end time</message>
+	</messages-->
+</messageSystem>

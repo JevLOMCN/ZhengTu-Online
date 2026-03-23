@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<config>
+	<!-- 回收系统配置 -->
+	<meridianMap>
+		<meridian index="1">
+			<pointMap>
+				<!--  objectID:回收道具ID  price:回收单价 type:回收类型（1银子 2金子 3工资）-->
+				<point objectID="799" name="无暇升级宝石" price="50000" type="1" />
+				<point objectID="795" name="精致升级宝石" price="20000" type="2" />
+				<point objectID="1100" name="鲜花" price="1000" type="3" />
+				
+			</pointMap>
+		</meridian>
+	</meridianMap>
+</config>

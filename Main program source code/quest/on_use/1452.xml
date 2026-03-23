@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="1452" name="10锭工资袋">
+		<quest id="300121">
+		<embranchment id="101">
+			<conditions>
+				<item value="1" id="1452"/>
+			</conditions>
+			<actions>
+				<mainmenu>
+
+function MainDialog()
+                this:AddTalk("    尊敬的(GetName)您好,欢迎使用工资袋。")
+				this:AddTaskCmdItem("使用工资袋(0)", "u1452", 121216, 10)
+				this:AddTaskCmdItem("使用10工资袋(0)", "u1452", 121216, 11)
+				this:AddTaskCmdItem("使用100工资袋(0)", "u1452", 121216, 12)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+
+			</actions>
+		</embranchment>
+	</quest>
+
+  <quest id="121216" new="1">
+    <embranchment id="10" active="1">
+      <conditions>
+       <item value="1" id="1452"/>
+      </conditions>
+      <actions>
+          <removeitem value="1" id="1452"/>
+			    <salary type="Add" value="1000000"/>
+				<notify1 content="获得工资100锭"/>
+      </actions>
+    </embranchment>
+	<embranchment id="11" active="1">
+      <conditions>
+       <item value="10" id="1452"/>
+      </conditions>
+      <actions>
+          <removeitem value="10" id="1452"/>
+			   <salary type="Add" value="10000000"/>
+				<notify1 content="获得工资1000锭"/>
+      </actions>
+    </embranchment>
+	<embranchment id="12" active="1">
+      <conditions>
+       <item value="100" id="1452"/>
+      </conditions>
+      <actions>
+          <removeitem value="100" id="1452"/>
+			    <salary type="Add" value="100000000"/>
+				<notify1 content="获得工资10000锭"/>
+      </actions>
+    </embranchment>
+  </quest>
+</event>

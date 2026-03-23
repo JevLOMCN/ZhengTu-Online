@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5151" name="赏金使者">
+	<!--new means new quest, default is quest on user-->
+	<quest id="9005151">
+		<embranchment id="1">
+			<!-- 当日任务次数用完对话-->
+			<conditions>
+				<uservar type="Equal" name="sgold_num" value="2"/>
+				<innation/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！我这里有悬赏任务需要交付给你!")
+this:AddTalk("1档任务:击杀 1000只红眼魔")
+this:AddTalk("2档任务:击杀 3000只红眼魔")
+this:AddTalk("3档任务:击杀 5000只红眼魔")
+this:AddTalk("4档任务:击杀 10000只红眼魔")
+this:AddTalk("5档任务:击杀 30000只红眼魔")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;温馨提示:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;\n4档需要：初级赏金令 才能接取任务\n5档需要：高级赏金令 才能接取任务&lt;/n&gt;&lt;/p&gt;");
+this:AddDialogItem("-----------------------------------------", "TaskDialog")
+this:AddTaskCmdItem("接取1档赏金任务(0)", "v5151", 1000, 99)
+this:AddTaskCmdItem("接取2档赏金任务(0)", "v5151", 1000, 99)
+this:AddTaskCmdItem("接取3档赏金任务(0)", "v5151", 1000, 99)
+this:AddTaskCmdItem("接取4档赏金任务(0)", "v5151", 1000, 99)
+this:AddTaskCmdItem("接取5档赏金任务(0)", "v5151", 1000, 99)
+this:AddDialogItem("-----------------------------------------", "TaskDialog")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<!--可以接取任务访问-->
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！我这里有悬赏任务需要交付给你!")
+this:AddTalk("1档任务:击杀 1000只红眼魔")
+this:AddTalk("2档任务:击杀 3000只红眼魔")
+this:AddTalk("3档任务:击杀 5000只红眼魔")
+this:AddTalk("4档任务:击杀 10000只红眼魔")
+this:AddTalk("5档任务:击杀 30000只红眼魔")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;温馨提示:&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;\n4档需要：初级赏金令 才能接取任务\n5档需要：高级赏金令 才能接取任务&lt;/n&gt;&lt;/p&gt;");
+this:AddDialogItem("-----------------------------------------", "TaskDialog")
+this:AddTaskCmdItem("接取1档赏金任务(0)", "v515101",1000, 0)
+this:AddTaskCmdItem("接取2档赏金任务(0)", "v515102",1000, 0)
+this:AddTaskCmdItem("接取3档赏金任务(0)", "v515103",1000, 0)
+this:AddTaskCmdItem("接取4档赏金任务(0)", "v515104",1000, 0)
+this:AddTaskCmdItem("接取5档赏金任务(0)", "v515105",1000, 0)
+this:AddDialogItem("-----------------------------------------", "TaskDialog")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<!--1档完成任务奖励-->
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+				<var type="Differ" name="state" value="-1" id="281"/>
+				<var type="Differ" name="state" value="1" id="281"/>
+				<var type="Equal" name="state" value="-3" id="281"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！恭喜你完成了1档悬赏任务")
+this:AddCloseItem("-------------------------------------------------------")
+this:AddTaskCmdItem("确定-提交完成任务(0)", "v515101", 281, 12)
+this:AddCloseItem("-------------------------------------------------------")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<!--2档完成任务奖励-->
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+				<var type="Differ" name="state" value="-1" id="282"/>
+				<var type="Differ" name="state" value="1" id="282"/>
+				<var type="Equal" name="state" value="-3" id="282"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！恭喜你完成了2档悬赏任务")
+this:AddCloseItem("-------------------------------------------------------")
+this:AddTaskCmdItem("确定-提交完成任务(0)", "v515102", 282, 12)
+this:AddCloseItem("-------------------------------------------------------")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="13">
+			<!--3档完成任务奖励-->
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+				<var type="Differ" name="state" value="-1" id="283"/>
+				<var type="Differ" name="state" value="1" id="283"/>
+				<var type="Equal" name="state" value="-3" id="283"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！恭喜你完成了3档悬赏任务")
+this:AddCloseItem("-------------------------------------------------------")
+this:AddTaskCmdItem("确定-提交完成任务(0)", "v515103", 283, 12)
+this:AddCloseItem("-------------------------------------------------------")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<!--4档完成任务奖励-->
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+				<var type="Differ" name="state" value="-1" id="284"/>
+				<var type="Differ" name="state" value="1" id="284"/>
+				<var type="Equal" name="state" value="-3" id="284"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！恭喜你完成了4档悬赏任务")
+this:AddCloseItem("-------------------------------------------------------")
+this:AddTaskCmdItem("确定-提交完成任务(0)", "v515104", 284, 12)
+this:AddCloseItem("-------------------------------------------------------")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<!--5档完成任务奖励-->
+			<conditions>
+				<uservar type="Less" name="sgold_num" value="2"/>
+				<var type="Differ" name="state" value="-1" id="285"/>
+				<var type="Differ" name="state" value="1" id="285"/>
+				<var type="Equal" name="state" value="-3" id="285"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("尊敬的勇士！恭喜你完成了5档悬赏任务")
+this:AddCloseItem("-------------------------------------------------------")
+this:AddTaskCmdItem("确定-提交完成任务(0)", "v515105", 285, 12)
+this:AddCloseItem("-------------------------------------------------------")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="1000" new="1">
+		<embranchment id="99" active="1">
+			<conditions>
+           </conditions>
+			<actions>
+				<flexmenu content="今日任务次数已经用完！请明日再来!!!"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

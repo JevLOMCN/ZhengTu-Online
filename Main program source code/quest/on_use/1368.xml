@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1368" name="乌木卡片">
+	<quest id="10000">
+		<embranchment id="1">
+			<conditions>
+				<level type="Great" value="1"/>
+			</conditions>
+			<actions>
+				<addbindnewitem value="100" id="537" level="3"/>
+				<notify1 content="得到100个四等绑定乌木"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

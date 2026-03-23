@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5514" name="中立区-独眼捕快(140,256)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="120068"><!--玩家随机领取四大疑案-->
+	<embranchment id="1">
+		<conditions>
+		        <timer start="00:00:00" end="23:59:00"/>
+				<level type="Less" value="60"/>
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("领取疑案(2)", "Dialog39")
+this:AddDialogItem("疑案抄录兑换丰厚经验奖励(0)", "Dialog21")
+end
+function Dialog39()
+this:AddTalk("    随机获得“妖书”、“梃击”、“红丸”、“移宫”四大疑案其中一个任务，并扣除2锭通用银子。\n    此任务活动期间每天都可以完成一次，任务注销后当天内不可再接")
+this:AddDialogItem("领取疑案(0)", "Dialog20")
+end
+function Dialog20()
+this:AddTalk("     只有等级达到60级的玩家才能领取疑案")
+end
+function Dialog21()
+this:AddTalk("     如果你获得了四大疑案抄录，即可兑换奖励！如果你获得每个疑案抄录各一本，可以兑换相当于8本单本疑案抄录兑换的经验奖励。")
+this:AddTaskCmdItem("《妖书案抄录》兑换奖励{10001}", "v5514", 110069, 10)
+this:AddTaskCmdItem("《梃击案抄录》兑换奖励{10001}", "v5514", 110069, 20)
+this:AddTaskCmdItem("《红丸案抄录》兑换奖励{10001}", "v5514", 110069, 30)
+this:AddTaskCmdItem("《移宫案抄录》兑换奖励{10001}", "v5514", 110069, 40)
+this:AddTaskCmdItem("四大疑案抄录各一本兑换奖励{10001}", "v5514", 110069, 50)
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="2">
+		<conditions>
+		        <timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="2"/>
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("领取疑案(2)", "Dialog39")
+this:AddDialogItem("疑案抄录兑换丰厚经验奖励(0)", "Dialog21")
+end
+function Dialog39()
+this:AddTalk("    随机获得“妖书”、“梃击”、“红丸”、“移宫”四大疑案其中一个任务，并扣除2锭通用银子。\n    此任务活动期间每天都可以完成一次，任务注销后当天内不可再接")
+this:AddDialogItem("领取疑案(0)", "Dialog20")
+end
+function Dialog20()
+this:AddTalk("     你今天已经领取过四大疑案了")
+end
+function Dialog21()
+this:AddTalk("     如果你获得了四大疑案抄录，即可兑换奖励！如果你获得每个疑案抄录各一本，可以兑换相当于8本单本疑案抄录兑换的经验奖励。")
+this:AddTaskCmdItem("《妖书案抄录》兑换奖励{10001}", "v5514", 110069, 10)
+this:AddTaskCmdItem("《梃击案抄录》兑换奖励{10001}", "v5514", 110069, 20)
+this:AddTaskCmdItem("《红丸案抄录》兑换奖励{10001}", "v5514", 110069, 30)
+this:AddTaskCmdItem("《移宫案抄录》兑换奖励{10001}", "v5514", 110069, 40)
+this:AddTaskCmdItem("四大疑案抄录各一本兑换奖励{10001}", "v5514", 110069, 50)
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="6">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				
+				<level type="Great" value="59"/>
+				<uservar type="Differ" name="sidayian" value="1"/>
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：领取疑案(2)", "Dialog39")
+this:AddDialogItem("疑案抄录兑换丰厚经验奖励(0)", "Dialog21")
+end
+function Dialog39()
+this:AddTalk("    随机获得“妖书”、“梃击”、“红丸”、“移宫”四大疑案其中一个任务，并扣除2锭通用银子。\n    此任务活动期间每天都可以完成一次，任务注销后当天内不可再接")
+this:AddTaskCmdItem("领取疑案-2锭银子{10001}", "v5514", 110068, 6)
+end
+function Dialog21()
+this:AddTalk("     如果你获得了四大疑案抄录，即可兑换奖励！如果你获得每个疑案抄录各一本，可以兑换相当于8本单本疑案抄录兑换的经验奖励。")
+this:AddTaskCmdItem("《妖书案抄录》兑换奖励{10001}", "v5514", 110069, 10)
+this:AddTaskCmdItem("《梃击案抄录》兑换奖励{10001}", "v5514", 110069, 20)
+this:AddTaskCmdItem("《红丸案抄录》兑换奖励{10001}", "v5514", 110069, 30)
+this:AddTaskCmdItem("《移宫案抄录》兑换奖励{10001}", "v5514", 110069, 40)
+this:AddTaskCmdItem("四大疑案抄录各一本兑换奖励{10001}", "v5514", 110069, 50)
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="80">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				
+				<var type="Equal" name="state" value="1" id="80031"/> 
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：妖书案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你已经接受了妖书案，请完成后再来")
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="81">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1436"/>
+				<var type="Differ" name="state" value="1" id="80031"/> 
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：妖书案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你被批准追查“妖书案”，去精怪洞九层找赵士桢询问此事")
+this:AddTaskCmdItem("追查“妖书案”{10001}", "v5514", 80031, 8)
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="90">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				
+				<var type="Equal" name="state" value="1" id="80033"/>
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：梃击案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你已经接受了梃击案，请完成后再来")
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="91">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1437"/> 
+				<var type="Differ" name="state" value="1" id="80033"/>  
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：梃击案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你被批准追查“梃击案”，去凤尾村找张差询问此事")
+this:AddTaskCmdItem("追查“梃击案”{10001}", "v5514", 80033, 8)
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="100">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				
+				<var type="Equal" name="state" value="1" id="80035"/> 
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：红丸案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你已经接受了红丸案，请完成后再来")
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="101">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1438"/> 
+				<var type="Differ" name="state" value="1" id="80035"/> 
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：红丸案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你被批准追查“红丸案”，去凤凰城找李可灼询问此事")
+this:AddTaskCmdItem("追查“红丸案”{10001}", "v5514", 80035, 8)
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="110">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				
+				<var type="Equal" name="state" value="1" id="80037"/>
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：移宫案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你已经接受了移宫案，请完成后再来")
+end
+				</menu>
+			</actions>
+	</embranchment>
+	<embranchment id="111">
+		<conditions>
+				<timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1439"/>
+				<var type="Differ" name="state" value="1" id="80037"/>
+		</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：移宫案(2)", "Dialog39")
+end
+function Dialog39()
+this:AddTalk("    你被批准追查“移宫案”，去王城找西李询问此事")
+this:AddTaskCmdItem("追查“移宫案”{10001}", "v5514", 80037, 8)
+end
+				</menu>
+			</actions>
+	</embranchment>
+	</quest>	
+	<quest id="110068" new="1"><!--玩家随机领取四大疑案（执行）-->
+	    <embranchment id="6" active="1">
+		    <conditions>
+		        <gold type="Great" value="19999"/>
+				<timer start="00:00:00" end="23:59:00"/>
+				
+				<level type="Great" value="59"/>
+				<uservar type="Differ" name="sidayian" value="1"/>
+		   </conditions>
+	       <actions>
+			    <gold type="Sub" value="20000"/>
+			    <addranditem id="1436" value="1" odds="2500" id2="1437" value2="1" odds2="2500" id3="1438" value3="1" odds3="2500" id4="1439" value4="1" odds4="2500"/>
+			    <uservar type="Add" name="sidayian" value="1" broadcast="1"/>
+				<refresh name="sidayian"/>
+				<notify content="你领取了四大疑案任务，请再次点击我查看具体领取的任务"/>
+				<notify1 content="你领取了四大疑案任务，请再次点击我查看具体领取的任务"/>
+		    </actions>
+	    </embranchment>
+	</quest>
+	<quest id="80031" new="1"><!--领取四大疑案-妖书案（执行）-->
+	    <embranchment id="8" active="1">
+		    <conditions>
+		        <timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1436"/>
+		   </conditions>
+	       <actions>
+			    <var type="Set" name="state" value="1"/>
+			    <uservar type="Add" name="sidayian" value="1" broadcast="1"/>
+			    <uservar type="Set" name="ys_times" value="0" broadcast="1"/>
+			    <refresh name="sidayian"/>
+				<refresh name="state"/>
+				<notify content="你领取了四大疑案之妖书案，去精怪洞九层找赵士桢询问此事"/>
+				<notify1 content="你领取了四大疑案之妖书案，去精怪洞九层找赵士桢询问此事"/>
+                                <removeitem value="1" id="1436"/>
+			</actions>
+	    </embranchment>
+	</quest>
+	<quest id="80033" new="1"><!--领取四大疑案-梃击案（执行）-->
+	    <embranchment id="8" active="1">
+		    <conditions>
+		        <timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1437"/>
+		   </conditions>
+	       <actions>
+			    <var type="Set" name="state" value="1"/>
+			    <uservar type="Add" name="sidayian" value="1" broadcast="1"/>
+			    <uservar type="Set" name="tj_times" value="0" broadcast="1"/>
+			    <refresh name="sidayian"/>
+				<refresh name="state"/>
+				<notify content="你领取了四大疑案之梃击案，去凤尾村找张差询问此事"/>
+				<notify1 content="你领取了四大疑案之梃击案，去凤尾村找张差询问此事"/>
+                                <removeitem value="1" id="1437"/>
+			</actions>
+	    </embranchment>
+	</quest>
+	<quest id="80035" new="1"><!--领取四大疑案-红丸案（执行）-->
+	    <embranchment id="8" active="1">
+		    <conditions>
+		        <timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1438"/>
+		   </conditions>
+	       <actions>
+			    <var type="Set" name="state" value="1"/>
+			    <uservar type="Add" name="sidayian" value="1" broadcast="1"/>
+			    <uservar type="Set" name="finish_times" value="0" broadcast="1"/>
+			    <refresh name="sidayian"/>
+				<refresh name="state"/>
+				<notify content="你领取了四大疑案之红丸案，去凤凰城找李可灼询问此事"/>
+				<notify1 content="你领取了四大疑案之红丸案，去凤凰城找李可灼询问此事"/>
+                                <removeitem value="1" id="1438"/>
+			</actions>
+	    </embranchment>
+	</quest>
+	<quest id="80037" new="1"><!--领取四大疑案-移宫案（执行）-->
+	    <embranchment id="8" active="1">
+		    <conditions>
+		        <timer start="00:00:00" end="23:59:00"/>
+				<uservar type="Equal" name="sidayian" value="1"/>
+				<item value="1" id="1439"/>
+		   </conditions>
+	       <actions>
+			    <var type="Set" name="state" value="1"/>
+			    <uservar type="Add" name="sidayian" value="1" broadcast="1"/>
+			    <uservar type="Set" name="yg_times" value="0" broadcast="1"/>
+			    <refresh name="sidayian"/>
+				<refresh name="state"/>
+				<notify content="你领取了四大疑案之移宫案，去王城找西李询问此事"/>
+				<notify1 content="你领取了四大疑案之移宫案，去王城找西李询问此事"/>
+                                <removeitem value="1" id="1439"/>
+			</actions>
+	    </embranchment>
+	</quest>
+	<quest id="110069" new="1"><!--四大疑案抄录兑换经验奖励（执行）-->
+	    <embranchment id="10" active="1">
+		    <conditions>
+				<item value="1" id="1321"/>
+		   </conditions>
+	       <actions>
+			    <tracelog name="妖书案抄录兑换经验奖励" state="1"/>
+			    <removeitem value="1" id="1321" log="妖书案抄录兑换经验奖励"/>
+				<var type="GetP" name="sidayian_selflevel" value="1"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="sidayian_selflevel"/>
+				<var type="Set" name="baseexp" value="10000"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="baseexp"/>
+				<refresh name="sidayian_selflevel"/>
+				<exp1 value="100" id="110069" name="sidayian_selflevel"/>
+				<notify content="妖书案抄录兑换经验奖励"/>
+				<notify1 content="妖书案抄录兑换经验奖励"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+	    </embranchment>
+	    <embranchment id="20" active="1">
+		    <conditions>
+				<item value="1" id="1322"/>
+		   </conditions>
+	       <actions>
+			    <tracelog name="梃击案抄录兑换经验奖励" state="1"/>
+			    <removeitem value="1" id="1322" log="梃击案抄录兑换经验奖励"/>
+				<var type="GetP" name="sidayian_selflevel" value="1"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="sidayian_selflevel"/>
+				<var type="Set" name="baseexp" value="10000"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="baseexp"/>
+				<refresh name="sidayian_selflevel"/>
+				<exp1 value="100" id="110069" name="sidayian_selflevel"/>
+				<notify content="梃击案抄录兑换经验奖励"/>
+				<notify1 content="梃击案抄录兑换经验奖励"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+	    </embranchment>
+	    <embranchment id="30" active="1">
+		    <conditions>
+				<item value="1" id="1323"/>
+		   </conditions>
+	       <actions>
+			    <tracelog name="红丸案抄录兑换经验奖励" state="1"/>
+			    <removeitem value="1" id="1323" log="红丸案抄录兑换经验奖励"/>
+				<var type="GetP" name="sidayian_selflevel" value="1"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="sidayian_selflevel"/>
+				<var type="Set" name="baseexp" value="10000"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="baseexp"/>
+				<refresh name="sidayian_selflevel"/>
+				<exp1 value="100" id="110069" name="sidayian_selflevel"/>
+				<notify content="红丸案抄录兑换经验奖励"/>
+				<notify1 content="红丸案抄录兑换经验奖励"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+	    </embranchment>
+	    <embranchment id="40" active="1">
+		    <conditions>
+				<item value="1" id="1324"/>
+		   </conditions>
+	       <actions>
+			    <tracelog name="移宫案抄录兑换经验奖励" state="1"/>
+			    <removeitem value="1" id="1324" log="移宫案抄录兑换经验奖励"/>
+				<var type="GetP" name="sidayian_selflevel" value="1"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="sidayian_selflevel"/>
+				<var type="Set" name="baseexp" value="10000"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="baseexp"/>
+				<refresh name="sidayian_selflevel"/>
+				<exp1 value="100" id="110069" name="sidayian_selflevel"/>
+				<notify content="移宫案抄录兑换经验奖励"/>
+				<notify1 content="移宫案抄录兑换经验奖励"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+	    </embranchment>
+	    <embranchment id="50" active="1">
+		    <conditions>
+				<item value="1" id="1321"/>
+				<item value="1" id="1322"/>
+				<item value="1" id="1323"/>
+				<item value="1" id="1324"/>
+		   </conditions>
+	       <actions>
+			    <tracelog name="四大疑案抄录兑换经验奖励" state="1"/>
+			    <removeitem value="1" id="1321" log="四大疑案抄录兑换经验奖励"/>
+			    <removeitem value="1" id="1322" log="四大疑案抄录兑换经验奖励"/>
+			    <removeitem value="1" id="1323" log="四大疑案抄录兑换经验奖励"/>
+			    <removeitem value="1" id="1324" log="四大疑案抄录兑换经验奖励"/>
+				<var type="GetP" name="sidayian_selflevel" value="1"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="sidayian_selflevel"/>
+				<var type="Set" name="baseexp" value="80000"/>
+				<vars type="Mul" name1="sidayian_selflevel" name2="baseexp"/>
+				<refresh name="sidayian_selflevel"/>
+				<exp1 value="100" id="110069" name="sidayian_selflevel"/>
+				<notify content="四大疑案抄录兑换经验奖励"/>
+				<notify1 content="四大疑案抄录兑换经验奖励"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+	    </embranchment>
+	</quest>
+</event>

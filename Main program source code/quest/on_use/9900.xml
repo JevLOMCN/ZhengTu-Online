@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="9900" name="推广礼包">
+	<quest id="989900">
+		<embranchment id="101">
+			<conditions>
+				<item value="1" id="9900"/>
+			</conditions>
+			<actions>
+	    <mainmenu>
+function MainDialog()
+this:AddTalk("尊敬的玩家，感谢你推广本游戏！礼包内含：\n、金子1000锭")
+this:AddTaskCmdItem("确认-打开推广礼包(0)", "u9900", 1000, 1)
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>  
+        <var type="Set" name="state" value="-2"/>   
+				</actions>
+		</embranchment>
+</quest>
+
+<quest id="1000" new="1">
+     <embranchment id="1" active="1">
+       <conditions>
+	    <item value="1" id="9900"/>
+       </conditions>
+		<actions>   
+<umaxgold type="Add" value="10000000"/><!--金子--> 
+<removeitem value="1" id="9900"/><!--删除推广礼包--> 
+<var1bulletin kind="41" content="打开推广活动福利包获得:金子1000锭!感谢你的推广!祝您游戏愉快！"/>  
+<var type="Set" name="state" value="-2"/>
+	   </actions>
+    </embranchment>
+  </quest>
+</event>
+
+

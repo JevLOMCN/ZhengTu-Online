@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Property", "Property.vcproj", "{747ADBD4-8A04-4397-8C07-2DEB5060AD89}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {2D7AFA02-D0BA-4691-ABC3-C44A0F01264B}
+		SccProjectUniqueName1 = Property.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{747ADBD4-8A04-4397-8C07-2DEB5060AD89}.Debug.ActiveCfg = Debug|Win32
+		{747ADBD4-8A04-4397-8C07-2DEB5060AD89}.Debug.Build.0 = Debug|Win32
+		{747ADBD4-8A04-4397-8C07-2DEB5060AD89}.Release.ActiveCfg = Release|Win32
+		{747ADBD4-8A04-4397-8C07-2DEB5060AD89}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

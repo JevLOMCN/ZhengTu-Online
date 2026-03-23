@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="GB2312"?>
+<event id="16831" name="异域偷猎者">
+	<quest id="20629" new="1">
+		<embranchment id="1">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Equal" name="three_bed_level" value="1" id="20629"/>
+				<var type="Less" name="kill_异域偷猎者_活动" value="5"/>
+			</conditions>
+			<actions>
+				<var type="Add" name="kill_异域偷猎者_活动" value="1"/>
+				<refresh name="kill_异域偷猎者_活动"/>
+				<var type="Add" name="kill_bed_shock" value="1"/>
+				<refresh name="kill_bed_shock"/>
+				<notify1 content="异域偷猎者加1"/>
+				<notify  content="异域偷猎者加1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Equal" name="three_bed_level" value="1" id="20629"/>
+				<var type="Great" name="kill_异域偷猎者_活动" value="4"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="num_异域偷猎者_活动" value="5" id="20629"/>
+				<refresh name="state"/>
+				<refresh name="kill_异域偷猎者_活动"/>
+				<notify1 content="你已经打败了5个异域偷猎者"/>
+				<notify  content="你已经打败了5个异域偷猎者"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<var type="Equal" name="three_bed_level" value="1" id="20629"/>
+					<var type="Great" name="kill_bed_shock" value="14"/>
+			</conditions>
+			<actions>
+			  <var type="Set" name="state" value="-3" id="20629"/>
+			  <refresh name="state"/>
+				<refresh name="kill_bed_shock"/>
+				<notify1 content="你完成了“幸运之门”任务，快去交任务吧"/>
+				<notify  content="你完成了“幸运之门”任务，快去交任务吧"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="911" name="C车夫(67,63)">
+	<!--new means new quest, default is quest on user-->
+	<!--week=周六(0) week=周日(1) week=周一(2) week=周二(3) week=周三(4) week=周四(5) week=周五(6)-->
+	<quest id="2006065">
+		<!--周一访问-->
+		<embranchment id="101">
+			<conditions>
+				<mapid id="2006065" name="223"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="102">
+			<conditions>
+				<mapid id="2006065" name="224"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 1)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="103">
+			<conditions>
+				<mapid id="2006065" name="225"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="104">
+			<conditions>
+				<mapid id="2006065" name="226"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 5)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="105">
+			<!--正确路线-->
+			<conditions>
+				<mapid id="2006065" name="227"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 4)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="106">
+			<conditions>
+				<mapid id="2006065" name="228"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 6)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="107">
+			<conditions>
+				<mapid id="2006065" name="229"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 7)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="108">
+			<conditions>
+				<mapid id="2006065" name="230"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 5)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="109">
+			<conditions>
+				<mapid id="2006065" name="231"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 7)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="110">
+			<conditions>
+				<mapid id="2006065" name="232"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 8)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="111">
+			<conditions>
+				<mapid id="2006065" name="233"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 10)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="112">
+			<conditions>
+				<mapid id="2006065" name="234"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 13)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="113">
+			<conditions>
+				<mapid id="2006065" name="235"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 14)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="114">
+			<conditions>
+				<mapid id="2006065" name="236"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 15)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="115">
+			<conditions>
+				<mapid id="2006065" name="237"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 11)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="116">
+			<conditions>
+				<mapid id="2006065" name="238"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 17)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="117">
+			<conditions>
+				<mapid id="2006065" name="239"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 18)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="118">
+			<conditions>
+				<mapid id="2006065" name="240"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 13)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="119">
+			<conditions>
+				<mapid id="2006065" name="241"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 17)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="120">
+			<conditions>
+				<mapid id="2006065" name="242"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 20)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="121">
+			<conditions>
+				<mapid id="2006065" name="243"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 22)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="122">
+			<conditions>
+				<mapid id="2006065" name="244"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 23)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="123">
+			<conditions>
+				<mapid id="2006065" name="245"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 20)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="124">
+			<conditions>
+				<mapid id="2006065" name="246"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("注意了，这里的迷宫，是世界上最难的迷宫\n\n不同时间不同线路哦，如果你运气好很快就去下层了\n\n当你到达5、10、15、20、25层得到的经验很高，奖品也很丰富!")
+this:AddTaskCmdItem("下一层(0)", "v909", 2000, 23)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="125">
+			<conditions>
+				<mapid id="2006065" name="247"/>
+								<level type="Great" value="29"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你还想去那里，快去领经验吧!")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

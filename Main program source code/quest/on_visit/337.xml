@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="337" name="国家任务">
+	<!--new means new quest, default is quest on user-->
+<quest id="9100337">
+
+  <embranchment id="10"><!--任务接取显示-->
+  	<conditions>
+	<uservar type="Less" name="guojiarw01" value="3"/>			
+<innation/>
+				<var type="Differ" name="state" value="-1" id="25553"/>
+				<var type="Differ" name="state" value="1" id="25553"/>
+				<var type="Differ" name="state" value="-1" id="25553"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("今日国家任务击败300只敌国的嗜血屠夫！")
+this:AddTalk("温馨提示：\n \n    每日只有3次奖励！")
+this:AddTalk("温馨提示：\n \n    任务地点敌国千江镇！")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;任务奖励：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1398\"&gt;  金子40锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"1451\"&gt;  工资10锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"665\"&gt;  银子100锭&lt;/object&gt;&lt;/p&gt;")
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,66,0\"&gt;&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"21000\"&gt;  鬼谷子金币50个&lt;/object&gt;&lt;/p&gt;")
+
+this:AddTaskCmdItem("接受国家任务(0)", "v337", 25553, 10)
+end
+             </menu>
+			</actions>
+	</embranchment>
+
+<embranchment id="15"><!--已接取活动显示-->
+			<conditions>
+				<innation/>
+				<var type="Differ" name="state" value="-1" id="25553"/>
+				<var type="Equal" name="state" value="1" id="25553"/>
+				<var type="Differ" name="state" value="-1" id="25553"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你已经接受了活动了,赶快去完成吧！")
+this:AddCloseItem("离开")
+end
+             </menu>
+			</actions>
+</embranchment>
+<embranchment id="21">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="25553"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    恭喜你完成了今天的活动，要现在领取奖励么。")
+this:AddTaskCmdItem("完成任务(0)", "v337", 25553, 11)
+end
+        </menu>
+			</actions>
+</embranchment>
+<embranchment id="30"><!--当日次数完成后显示-->
+			<conditions>
+        <uservar type="Equal" name="guojiarw01" value="3"/>
+				<innation/>
+				<var type="Differ" name="state" value="-1" id="25553"/>
+				<var type="Differ" name="state" value="1" id="25553"/>
+				<var type="Differ" name="state" value="-1" id="25553"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    对不起,您今天的活动已经完成，请明天再来。")
+this:AddCloseItem("离开")
+end
+             </menu>
+			</actions>
+</embranchment>
+</quest>
+
+
+<quest id="25553" new="1">
+  <embranchment id="10" active="1"><!--活动接取参数-->
+			<conditions>
+                         <innation/>
+                         <uservar type="Less" name="guojiarw01" value="3"/>
+			 <var type="Differ" name="state" value="-1" id="25553"/>
+			 <var type="Differ" name="state" value="1" id="25553"/>
+			 <var type="Differ" name="state" value="-1" id="25553"/>
+			</conditions>
+			<actions>
+                           <uservar type="Add" name="guojiarw01" value="1"/>
+	          	   <notify content="任务：击杀300只嗜血屠夫"/>
+	                   <var type="Set" name="state" value="1"/>
+                           <var type="Set" name="kill_嗜血屠夫" value="0"/>
+                           <refresh name="kill_嗜血屠夫"/>	
+                            <!-- 奖励经验值=int(0.4*角色等级^2)  -->
+				<var type="GetP" name="huodong_selflevel" value="1"/>
+				<vars type="Mul" name1="huodong_selflevel" name2="huodong_selflevel"/>
+				<var type="Set" name="baseexp" value="100"/>
+				<vars type="Mul" name1="huodong_selflevel" name2="baseexp"/>
+				<refresh name="huodong_selflevel"/>
+
+			</actions>
+    </embranchment>
+    <embranchment id="11" active="1">
+	<conditions>
+         <innation/>
+	    <var type="Equal" name="state" value="-1" id="25553"/>
+	</conditions>
+	<actions>
+		<exp value="1000" id="25553" name="huodong_selflevel"/>
+				<umaxgold type="Add" value="400000"/><!--10锭金子-->
+				<salary type="Add" value="100000"/><!--10锭工资-->
+				<gold type="Add" value="1000000"/><!--100锭银子-->
+				<addbinditem value="50" id="21000"/>
+		<var1bulletin kind="41" content="完成了国家任务，获得了大量奖励，太羡慕了！" var1="country_name" var2="name"/> 
+		<var type="Set" name="state" value="-2"/>
+	</actions>
+    </embranchment>
+	</quest>
+</event>

@@ -1,0 +1,17 @@
+#!/bin/bash
+#rm -f ./log/*.*
+SuperServer/SuperServer -d
+sleep 1
+FLServer/FLServer -d
+sleep 1
+RecordServer/RecordServer -d
+sleep 1
+BillServer/BillServer -d
+sleep 1
+MiniServer/MiniServer -d
+sleep 1
+SessionServer/SessionServer -d
+sleep 5
+ScenesServer/ScenesServer -d
+sleep 2
+GatewayServer/GatewayServer -d

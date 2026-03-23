@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+<!--怪物安置-->
+	<npc id="5109" name="赌博大师" width="1" height="1" x="13" y="21" num="1" interval="60" color="0,255,0,0"/>
+	<npc id="5110" name="1号" width="1" height="1" x="23" y="21" num="1" interval="60" color="0,255,0,0"/>
+	<npc id="5111" name="2号" width="1" height="1" x="18" y="26" num="1" interval="60" color="0,255,0,0"/>
+	<npc id="5112" name="3号" width="1" height="1" x="13" y="31" num="1" interval="60" color="0,255,0,0"/>
+<!--地图点对点传送-->
+	<waypoint>
+	</waypoint>
+<!--地图属性 1=PK 2=绝对安全 16=竞技区 -->
+	<zonedef width="70" height="70" x="10" y="11" type="1" color="0,0,255,0"/>
+</map>

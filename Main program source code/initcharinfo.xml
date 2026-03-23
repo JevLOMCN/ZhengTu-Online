@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by wt (zt) -->
+<CharInfo>
+	<!-- 这里定义了新创建角色需要分配的物品，profession表示职业，id表示物品编号，name表示物品名称，number表示物品数量 -->
+	<!-- localeID表示物品存放在那个地方，0表示普通装备栏，1表示直接装备在身上 -->
+	<object id="689" name="布衣" localeID="1" number="1" profession="1"/>
+	<object id="697" name="铜剑" localeID="1" number="1" profession="1"/>
+	<object id="690" name="布裙" localeID="1" number="1" profession="2"/>
+	<object id="698" name="铁剑" localeID="1" number="1" profession="2"/>
+	<object id="691" name="粗布衣" localeID="1" number="1" profession="4"/>
+	<object id="699" name="木弓" localeID="1" number="1" profession="4"/>
+	<object id="660" name="箭支" localeID="0" number="1" profession="4"/>
+	<object id="692" name="布衣裙" localeID="1" number="1" profession="8"/>
+	<object id="700" name="十字弩" localeID="1" number="1" profession="8"/>
+	<object id="661" name="箭矢" localeID="0" number="1" profession="8"/>
+	<object id="693" name="布衫" localeID="1" number="1" profession="16"/>
+	<object id="701" name="乌木剑" localeID="1" number="1" profession="16"/>
+	<object id="694" name="布帔" localeID="1" number="1" profession="32"/>
+	<object id="702" name="檀木扇" localeID="1" number="1" profession="32"/>
+	<object id="695" name="布袍" localeID="1" number="1" profession="64"/>
+	<object id="703" name="柳木杖" localeID="1" number="1" profession="64"/>
+	<object id="696" name="布纱" localeID="1" number="1" profession="128"/>
+	<object id="704" name="檀木环" localeID="1" number="1" profession="128"/>
+	<object id="578" name="铁仙丹" localeID="0" number="5" profession="255"/>
+</CharInfo>

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+mkdir -p tmp
+rm -f ./tmp/*.*
+
+./SuperServer &
+sleep 3
+
+./RecordServer &
+sleep 3
+
+./BillServer &
+sleep 3
+
+./MiniServer &
+sleep 3
+
+./SessionServer &
+sleep 3
+
+./ScenesServer &
+sleep 3
+
+./GatewayServer &
+sleep 3

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="361" name="杂货商">
+	<!--new means new quest, default is quest on user-->
+	<quest id="900011">
+		<embranchment id="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("天下令兑换金子(0)", "Dialog75")
+this:AddTaskCmdItem("10000个无暇兑换100锭金子(0)", "v361", 100901, 21)
+this:AddTaskCmdItem("1000个璀璨石兑换100锭金子(0)", "v361", 100901, 22)
+this:AddTaskCmdItem("1000个神斧石兑换100锭金子(0)", "v361", 100901, 23)
+this:AddTaskCmdItem("1000个精金石兑换100锭金子(0)", "v361", 100901, 24)
+this:AddTaskCmdItem("1000个神翼白羽兑换150锭金子(0)", "v361", 100901, 25)
+this:AddTaskCmdItem("1000个玄麟精魄兑换100锭金子(0)", "v361", 100901, 26)
+this:AddTaskCmdItem("1000个麒麟丹兑换200锭金子(0)", "v361", 100901, 27)
+this:AddTaskCmdItem("1000个红水晶兑换200锭金子(0)", "v361", 100901, 28)
+end
+function Dialog74()
+this:AddTalk("本店现开放精致升级宝石的存储功能，每10颗精致升级宝石加10两银子能够换取1张精致宝石券，可以随时拿精致宝石券换取10颗精致升级宝石。")
+this:AddTaskCmdItem("存储10颗宝石+10两(0)", "v361", 100901, 11)
+this:AddTaskCmdItem("宝石券换取10颗宝石(0)", "v361", 100901, 12)
+end
+function Dialog75()
+this:AddTalk("本店现开放天下令兑换金子功能！")
+this:AddTaskCmdItem("天下令兑换金子(0)", "v361", 100901, 13)
+this:AddDialogItem("返回", "TaskDialog")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="100901" new="1">
+		<embranchment id="11" active="1">
+			<conditions>
+				<item value="10" id="795"/>
+				<gold type="Great" value="999"/>
+			</conditions>
+			<actions>
+				<notify1 content="获得精致宝石券"/>
+				<notify1 content="金钱-10两"/>
+				<removeitem value="10" id="795"/> 
+				<gold type="Sub" value="1000"/>
+				<additem value="1" id="797"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="12" active="1">
+			<conditions>
+				<space size="1"/>
+				<item value="1" id="797"/>
+			</conditions>
+			<actions>
+				<notify1 content="获得10颗精致宝石"/>
+				<removeitem value="1" id="797"/> 
+				<gold type="Sub" value="1000"/>
+				<additem value="10" id="795"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="13" active="1">
+			<conditions>
+				<space size="1"/>
+				<item value="1" id="1137"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获得金子！"/>
+				<removeitem value="1" id="1137"/>
+                                  <umaxgold type="Add" value="5000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+				<space size="1"/>
+				<item value="1" id="1470"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获得不绑定智力石头一颗"/>
+				<removeitem value="1" id="1470"/>
+				<additem value="1" id="1470"/> 
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+				<space size="1"/>
+				<item value="1" id="1475"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获得不绑定敏捷石头一颗"/>
+				<removeitem value="1" id="1475"/>
+				<additem value="1" id="1475"/> 
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="1"/>
+				<item value="1" id="1480"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获得不绑定精神石头一颗"/>
+				<removeitem value="1" id="1480"/>
+				<additem value="1" id="1480"/> 
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="17" active="1">
+			<conditions>
+				<space size="1"/>
+				<item value="1" id="1485"/>
+			</conditions>
+			<actions>
+				<notify1 content="兑换成功，获得不绑定体质石头一颗"/>
+				<additem value="1" id="1485"/> 
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>    
+                <uservar type="Less" name="gqjkl" value="1"/>
+			</conditions>
+			<actions>
+                    <uservar type="Add" name="gqjkl" value="1"/>
+					<umaxgold type="Add" value="10000000"/>
+					<gold type="Add" value="100000000"/>       
+                    <var1bulletin kind="41" content="领取了今日国庆节奖励！祝愿祖国繁荣昌盛！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		
+			<embranchment id="20" active="1">
+			<conditions>    
+                <uservar type="Less" name="gqjkl" value="1"/>
+			</conditions>
+			<actions>
+                    <uservar type="Add" name="gqjkl" value="1"/>
+					<umaxgold type="Add" value="10000000"/>
+					<gold type="Add" value="100000000"/>       
+                    <var1bulletin kind="41" content="领取了今日国庆节奖励！祝愿祖国繁荣昌盛！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+			<embranchment id="21" active="1">
+			<conditions>    
+               <item value="10000" id="799"/>
+			</conditions>
+			<actions>
+                   <removeitem value="10000" id="799"/>
+					<addbinditem value="100" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="22" active="1">
+			<conditions>    
+               <item value="1000" id="3850"/>
+			</conditions>
+			<actions>
+                   <removeitem value="1000" id="3850"/>
+					<addbinditem value="100" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="23" active="1">
+			<conditions>    
+               <item value="1000" id="3851"/>
+			</conditions>
+			<actions>
+                   <removeitem value="1000" id="3851"/>
+					<addbinditem value="100" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="24" active="1">
+			<conditions>    
+               <item value="1000" id="3853"/>
+			</conditions>
+			<actions>
+                   <removeitem value="1000" id="3853"/>
+					<addbinditem value="100" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		
+		<embranchment id="25" active="1">
+			<conditions>    
+               <item value="1000" id="3905"/>
+			</conditions>
+			<actions>
+                   <removeitem value="1000" id="3905"/>
+					<addbinditem value="150" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="26" active="1">
+			<conditions>    
+               <item value="1000" id="3844"/>
+			</conditions>
+			<actions>
+                   <removeitem value="1000" id="3844"/>
+					<addbinditem value="100" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="27" active="1">
+			<conditions>    
+               <item value="1000" id="3866"/>
+			</conditions>
+			<actions>
+                   <removeitem value="1000" id="3866"/>
+					<addbinditem value="200" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="28" active="1">
+			<conditions>    
+               <item value="1000" id="561"/>
+			</conditions>
+			<actions>
+                   <removeitem value="1000" id="561"/>
+					<addbinditem value="200" id="1402"/> 
+                    <var1bulletin kind="41" content="兑换成功！"/>
+					<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		
+	</quest>
+</event>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5127" name="超级传送">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960103">
+		<embranchment id="20">
+			<conditions>
+                <charzhanli type="Great" value="9999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="19">
+			<conditions>
+			 <selfcountry value="1"/>
+                <charzhanli type="Great" value="19999"/>					
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="18">
+			<conditions>
+                <charzhanli type="Great" value="39999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+                <charzhanli type="Great" value="59999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddTaskCmdItem("战力副本四层- -需达到6W战力值(26)", "v5127", 160103, 4)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+                <charzhanli type="Great" value="79999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddTaskCmdItem("战力副本四层- -需达到6W战力值(26)", "v5127", 160103, 4)
+this:AddTaskCmdItem("战力副本五层- -需达到8W战力值(26)", "v5127", 160103, 5)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+                <charzhanli type="Great" value="99999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddTaskCmdItem("战力副本四层- -需达到6W战力值(26)", "v5127", 160103, 4)
+this:AddTaskCmdItem("战力副本五层- -需达到8W战力值(26)", "v5127", 160103, 5)
+this:AddTaskCmdItem("战力副本六层- -需达到10W战力值(26)", "v5127", 160103, 6)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+                <charzhanli type="Great" value="119999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddTaskCmdItem("战力副本四层- -需达到6W战力值(26)", "v5127", 160103, 4)
+this:AddTaskCmdItem("战力副本五层- -需达到8W战力值(26)", "v5127", 160103, 5)
+this:AddTaskCmdItem("战力副本六层- -需达到10W战力值(26)", "v5127", 160103, 6)
+this:AddTaskCmdItem("战力副本七层- -需达到12W战力值(26)", "v5127", 160103, 7)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="13">
+			<conditions>
+                <charzhanli type="Great" value="139999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddTaskCmdItem("战力副本四层- -需达到6W战力值(26)", "v5127", 160103, 4)
+this:AddTaskCmdItem("战力副本五层- -需达到8W战力值(26)", "v5127", 160103, 5)
+this:AddTaskCmdItem("战力副本六层- -需达到10W战力值(26)", "v5127", 160103, 6)
+this:AddTaskCmdItem("战力副本七层- -需达到12W战力值(26)", "v5127", 160103, 7)
+this:AddTaskCmdItem("战力副本八层- -需达到14W战力值(26)", "v5127", 160103, 8)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+                <charzhanli type="Great" value="159999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddTaskCmdItem("战力副本四层- -需达到6W战力值(26)", "v5127", 160103, 4)
+this:AddTaskCmdItem("战力副本五层- -需达到8W战力值(26)", "v5127", 160103, 5)
+this:AddTaskCmdItem("战力副本六层- -需达到10W战力值(26)", "v5127", 160103, 6)
+this:AddTaskCmdItem("战力副本七层- -需达到12W战力值(26)", "v5127", 160103, 7)
+this:AddTaskCmdItem("战力副本八层- -需达到14W战力值(26)", "v5127", 160103, 8)
+this:AddTaskCmdItem("战力副本九层- -需达到16W战力值(26)", "v5127", 160103, 9)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+                <charzhanli type="Great" value="179999"/>	
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 1)
+this:AddTaskCmdItem("战力副本二层- -需达到2W战力值(26)", "v5127", 160103, 2)
+this:AddTaskCmdItem("战力副本三层- -需达到4W战力值(26)", "v5127", 160103, 3)
+this:AddTaskCmdItem("战力副本四层- -需达到6W战力值(26)", "v5127", 160103, 4)
+this:AddTaskCmdItem("战力副本五层- -需达到8W战力值(26)", "v5127", 160103, 5)
+this:AddTaskCmdItem("战力副本六层- -需达到10W战力值(26)", "v5127", 160103, 6)
+this:AddTaskCmdItem("战力副本七层- -需达到12W战力值(26)", "v5127", 160103, 7)
+this:AddTaskCmdItem("战力副本八层- -需达到14W战力值(26)", "v5127", 160103, 8)
+this:AddTaskCmdItem("战力副本九层- -需达到16W战力值(26)", "v5127", 160103, 9)
+this:AddTaskCmdItem("战力副本十层- -需达到18W战力值(26)", "v5127", 160103, 10)
+this:AddCloseItem("离开")
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="1">
+			<conditions>
+             <charzhanli type="Less" value="10000"/>			
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;战力副本会刷新大量boss,击杀它们可以获得不少物品哦。&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;30分钟刷新一次！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,0\"&gt;限制条件：&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;战力需达到1W&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;以上玩家。&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;爆率说明：&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,255\"&gt;一层：1倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,255\"&gt;二层：1.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,255,0\"&gt;三层：2倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,255,0\"&gt;四层：2.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,0,255,0\"&gt;五层：3倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,0,255,0\"&gt;六层：3.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,0,255\"&gt;七层：4倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,255\"&gt;八层：4.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,255,100,0\"&gt;九层：5倍爆率！&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;‖&lt;/n&gt;&lt;n&gt;&lt;/n&gt;&lt;n color=\"255,255,0,0\"&gt;十层：5.5倍爆率！&lt;/n&gt;&lt;/p&gt;");
+this:AddTaskCmdItem("战力副本一层- -需达到1W战力值(26)", "v5127", 160103, 99)
+this:AddCloseItem("离开")
+end
+
+
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160103" new="1">
+                 <embranchment id="1" active="1">
+			<conditions>
+                <charzhanli type="Great" value="9999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本一层地图！"/>
+				<goto name="中立区·战力副本一层" pos="44,82"/>
+				<notify content="你被带到了战力副本一层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+                 <embranchment id="2" active="1">
+			<conditions>
+                <charzhanli type="Great" value="19999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本二层地图！"/>
+				<goto name="中立区·战力副本二层" pos="44,82"/>
+				<notify content="你被带到了战力副本二层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+                 <embranchment id="3" active="1">
+			<conditions>
+                <charzhanli type="Great" value="39999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本三层地图！"/>
+				<goto name="中立区·战力副本三层" pos="44,82"/>
+				<notify content="你被带到了战力副本三层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+                 <embranchment id="4" active="1">
+			<conditions>
+                <charzhanli type="Great" value="59999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本四层地图！"/>
+				<goto name="中立区·战力副本四层" pos="44,82"/>
+				<notify content="你被带到了战力副本四层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>		
+                 <embranchment id="5" active="1">
+			<conditions>
+                <charzhanli type="Great" value="79999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本五层地图！"/>
+				<goto name="中立区·战力副本五层" pos="44,82"/>
+				<notify content="你被带到了战力副本五层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+                 <embranchment id="6" active="1">
+			<conditions>
+                <charzhanli type="Great" value="99999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本六层地图！"/>
+				<goto name="中立区·战力副本六层" pos="44,82"/>
+				<notify content="你被带到了战力副本六层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+                 <embranchment id="7" active="1">
+			<conditions>
+                <charzhanli type="Great" value="119999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本七层地图！"/>
+				<goto name="中立区·战力副本七层" pos="44,82"/>
+				<notify content="你被带到了战力副本七层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+                 <embranchment id="8" active="1">
+			<conditions>
+                <charzhanli type="Great" value="139999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本八层地图！"/>
+				<goto name="中立区·战力副本八层" pos="44,82"/>
+				<notify content="你被带到了战力副本八层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+                 <embranchment id="9" active="1">
+			<conditions>
+                <charzhanli type="Great" value="159999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本九层地图！"/>
+				<goto name="中立区·战力副本九层" pos="44,82"/>
+				<notify content="你被带到了战力副本九层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>		
+                 <embranchment id="10" active="1">
+			<conditions>
+                <charzhanli type="Great" value="179999"/>	
+			</conditions>
+			<actions>
+<var1bulletin kind="41" content="进入了战力副本十层地图！"/>
+				<goto name="中立区·战力副本十层" pos="44,82"/>
+				<notify content="你被带到了战力副本十层！"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>	
+                 <embranchment id="99" active="1">
+			<conditions>
+			</conditions>
+			<actions>
+				<notify content="对不起！战力值需要达到1万以上才能进入哦！"/>
+				<notify6 content="对不起！战力值需要达到1万以上才能进入哦！"/>
+			</actions>
+		</embranchment>				
+   </quest>
+</event>

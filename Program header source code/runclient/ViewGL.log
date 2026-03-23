@@ -1,0 +1,26 @@
+[24-03-25 14:15:13] CpuFrequency£º10000000
+[24-03-25 14:15:13] Rendering device count 1
+[24-03-25 14:15:13] Rendering device 0: D3D9on12.dll [ Intel(R) Iris(R) Xe Graphics ] version 10.0.22621.2506
+[24-03-25 14:15:13] create device succeeded. D3DDEVTYPE_HAL : D3DCREATE_HARDWARE_VERTEXPROCESSING
+[24-03-25 14:15:13] 
+Device capabilities
+--------------------------------------------------
+Current Mode 2560 x 1600, 32 bits, 60 hz
+Max texture size        : 16384 x 16384
+MaxSimultaneousTextures : 8
+MaxTextureBlendStages   : 8
+MaxPrimitiveCount       : 8388607
+MaxVertexIndex          : 16777215
+CursorCaps              : 0x1
+[24-03-25 14:15:13] 
+Texture formats
+--------------------------------------------------
+A8R8G8B8     : 1
+X8R8G8B8     : 1
+A4R4G4B4     : 1
+R5G6B5       : 1
+A1R5G5B5     : 1
+A8           : 1
+DXT1         : 1
+DXT3         : 1
+[24-03-25 14:15:13] AvailableTextureMem: 4094M

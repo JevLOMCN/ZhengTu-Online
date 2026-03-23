@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5502" name="天关使者">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960103">
+		<embranchment id="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="510"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  听说你已经通过了天关十层.真是厉害!&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 11)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="509"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第九关了,我可以送你去挑战第十关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关十层!{10001}", "v5502", 160103, 1)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 12)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="508"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第八关了,我可以送你去挑战第九关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关九层!{10001}", "v5502", 160103, 2)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 13)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="507"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第七关了,我可以送你去挑战第八关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关八层!{10001}", "v5502", 160103, 3)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 14)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="506"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第六关了,我可以送你去挑战第七关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关七层!{10001}", "v5502", 160103, 4)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 15)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="505"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第五关了,我可以送你去挑战第六关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关六层!{10001}", "v5502", 160103, 5)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 16)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="504"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第四关了,我可以送你去挑战第五关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关五层!{10001}", "v5502", 160103, 6)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 17)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="8">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="503"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第三关了,我可以送你去挑战第四关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关四层!{10001}", "v5502", 160103, 7)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 18)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="9">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="502"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第二关了,我可以送你去挑战第三关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关三层!{10001}", "v5502", 160103, 8)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 19)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="501"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  你是(GetName)吗?&lt;/n&gt;&lt;n&gt;\n  真看不出来你居然已经通过第一关了,我可以送你去挑战第二关,你有自信吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关二层!{10001}", "v5502", 160103, 9)
+this:AddTaskCmdItem("免费领取新版本天关紧箍咒!{10001}", "v5502", 160103, 20)
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,255,0,0\&quot;&gt;  (GetName)我看你骨骼清奇,是个人才.&lt;/n&gt;&lt;n&gt;\n  我这里有个宝贝想要吗?&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("进入天关一层!{10001}", "v5502", 160103, 10)
+this:AddCloseItem("离开.")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160103" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关十层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关九层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关八层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关七层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关六层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关五层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关四层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关三层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关二层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="中立区·天关一层" pos="85,60"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32119"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32118"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32117"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32116"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32115"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32114"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="17" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32113"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="18" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32112"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32111"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+
+			</conditions>
+			<actions>
+				<addpurplebinditem value="1" id="32110"/>
+				<notify1 content="领取成功"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

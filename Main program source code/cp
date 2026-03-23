@@ -1,0 +1,29 @@
+#!/bin/bash
+#rm -f /tmp/*.*
+#SuperServer/SuperServer -d
+#sleep 1
+#FLServer/FLServer -d
+#RecordServer/RecordServer -d
+#BillServer/BillServer -d
+#sleep 1
+#InfoServer/InfoServer -d
+#roleRegServer/roleRegServer -d
+#sleep 1
+#MiniServer/MiniServer -d
+#sleep 2
+#SessionServer/SessionServer -d
+#sleep 2
+#ScenesServer/ScenesServer -d
+#sleep 2
+#GatewayServer/GatewayServer -d
+
+cp -r /mnt/hgfs/Server/SuperServer/SuperServer /home/Ztgame/SuperServer
+cp -r /mnt/hgfs/Server/FLServer/FLServer /home/Ztgame/FLServer
+cp -r /mnt/hgfs/Server/RecordServer/RecordServer /home/Ztgame/RecordServer
+cp -r /mnt/hgfs/Server/BillServer/BillServer /home/Ztgame/BillServer
+#cp -r /mnt/hgfs/Server/InfoServer/InfoServer /home/Ztgame/InfoServer
+#cp -r /mnt/hgfs/Server/roleRegServer/roleRegServer /home/Ztgame/roleRegServer
+cp -r /mnt/hgfs/Server/MiniServer/MiniServer /home/Ztgame/MiniServer
+cp -r /mnt/hgfs/Server/SessionServer/SessionServer /home/Ztgame/SessionServer
+cp -r /mnt/hgfs/Server/ScenesServer/ScenesServer /home/Ztgame/ScenesServer
+cp -r /mnt/hgfs/Server/GatewayServer/GatewayServer /home/Ztgame/GatewayServer

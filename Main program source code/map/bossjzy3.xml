@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+<!--怪物安置-->
+	<npc id="20003" name="BOSS(马装)" width="1" height="1" x="13" y="78" num="1" interval="60" color="0,255,0,0"/>
+	<npc id="20011" name="BOSS(魂魄)" width="1" height="1" x="36" y="51" num="1" interval="60" color="0,255,0,0"/>
+	<npc id="20013" name="BOSS(补天)" width="1" height="1" x="58" y="75" num="1" interval="60" color="0,255,0,0"/>
+	<npc id="20016" name="BOSS(战将)" width="1" height="1" x="60" y="20" num="1" interval="60" color="0,255,0,0"/>
+	<npc id="20012" name="BOSS(斗魂)" width="1" height="1" x="33" y="12" num="1" interval="60" color="0,255,0,0"/>
+<!--地图点对点传送-->
+	<waypoint>
+	</waypoint>
+<!--地图属性 1=PK 2=绝对安全 16=竞技区 -->
+	<zonedef width="70" height="70" x="10" y="11" type="1" color="0,0,255,0"/>
+</map>

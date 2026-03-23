@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+<!--怪物安置-->
+	<npc id="21011" name="初级BOSS(综合)" width="1" height="1" x="14" y="76" num="1" interval="500" color="0,255,0,0"/>
+	<npc id="21012" name="中级BOSS(综合)" width="1" height="1" x="31" y="43" num="1" interval="1200" color="0,255,0,0"/>
+	<npc id="21013" name="高级BOSS(综合)" width="1" height="1" x="51" y="17" num="1" interval="2400" color="0,255,0,0"/>
+	<npc id="21014" name="超级BOSS(综合)" width="1" height="1" x="48" y="53" num="1" interval="3600" color="0,255,0,0"/>
+<!--地图点对点传送-->
+	<waypoint>
+	</waypoint>
+<!--地图属性 1=PK 2=绝对安全 16=竞技区 -->
+	<zonedef width="40" height="40" x="12" y="22" type="2" color="0,0,255,0"/>s
+</map>
