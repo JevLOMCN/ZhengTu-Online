@@ -43,14 +43,6 @@ https://zt.ztgame.com/
 
 ---
 
-## 📂 Project Structure (Placeholder)
-
-/Assets        # Placeholder - game assets  
-/Code          # Placeholder - client/server source  
-/Tools         # Placeholder - utilities and tools  
-
----
-
 ## 🚀 Getting Started
 
 ### I. Directory Structure and File Description
